@@ -88,8 +88,9 @@ def get_all_commits(owner, repo):
     path = Path(__file__).parent.parent
     with open(f"{path}/datasets/{repo}_train.jsonl", "w") as train_outfile:
         for sha in tqdm(train_commit_sha):
-            diff = get_commit_diffs(owner, repo, sha)
-            train_outfile.write(json.dumps(diff) + "\n")
+            diffs = get_commit_diffs(owner, repo, sha)
+            for diff in diffs:
+                train_outfile.write(json.dumps(diff) + "\n")
 
 
 def get_commit_diffs(owner, repo, sha):
@@ -108,17 +109,30 @@ def get_commit_diffs(owner, repo, sha):
                 print("No files changed in this commit.")
                 return None
 
-            diff = ""
+            diffs = []
             for file in commit_data["files"]:
                 if "patch" in file and file["patch"] is not None:
-                    diff += file["patch"] + "\n"
+                    diff = file["patch"]
+                    hunk_header_pattern = r"@@\s*-\d+(?:,\d+)?\s*\+\d+(?:,\d+)?\s*@@.*?\n"
+                    mod_diff = re.sub(hunk_header_pattern, "", diff)
 
-            diff_line = {
-                "message": commit_data["commit"]["message"],
-                "sha": commit_data["sha"],
-                "diff": diff,
-            }
-            return diff_line
+                    new_fileName = file["filename"]
+                    old_fileName = file.get("previous_filename", None)
+                    if old_fileName is None:
+                        old_fileName = new_fileName
+
+                    mod_diff = f"mmm a / {old_fileName} <nl> ppp b / {new_fileName} <nl>{mod_diff}"
+                    # replace \n with <nl> in mod_diff
+                    mod_diff = mod_diff.replace("\n", "<nl>")
+                    diff_line = {
+                        "message": commit_data["commit"]["message"],
+                        "sha": commit_data["sha"],
+                        "og_diff": diff,
+                        "mod_diff": mod_diff,
+                    }
+                    diffs.append(diff_line)
+
+            return diffs
     except requests.exceptions.RequestException as e:
         print(f"❌ Network error: {e}")
         return None
