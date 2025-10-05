@@ -24,15 +24,15 @@ def is_camel_case(s):
 
 
 def to_Underline(x):
-    """转空格命名"""
+    """Convert to underscore naming"""
     return re.sub("(?<=[a-z])[A-Z]|(?<!^)[A-Z](?=[a-z])", " \g<0>", x).lower()
 
 
 def remove_between_identifiers(text, identifier_start, identifier_end):
-    # 定义正则表达式模式
+    # Define regular expression pattern
     pattern = f"(?<={identifier_start}).*?(?={identifier_end})"
 
-    # 使用re.sub方法替换匹配到的部分为空字符串
+    # Use re.sub method to replace matched parts with empty string
     result = re.sub(pattern, "", text)
     if identifier_start == "mmm a":
         result = result.replace("mmm a<nl>", "")
@@ -75,7 +75,7 @@ def process_diff(diff):
     return get_tokens(diff)
 
 
-# 打开JSONL文件并读取数据
+# Open JSONL file and read data
 with open(lan, "r", encoding="utf8") as f:
     json_data = f.readlines()
 data = {
@@ -87,7 +87,7 @@ data = {
     "ROUGE-L Score": f"0",
 }
 
-# 遍历 JSON 数据，提取并存储 diff 和 msg
+# Iterate through JSON data, extract and store diff and msg
 num = 0
 temp = 0
 for item in json_data:
@@ -101,10 +101,10 @@ for item in json_data:
         temp += 1
         if temp == 20:
             temp = 0
-        # 解析 JSON 数据
+        # Parse JSON data
         data = json.loads(item)
 
-        # 提取 diff 和 msg
+        # Extract diff and msg
         diff_id = data["diff_id"]
         diff = data["diff"]
         result = remove_between_identifiers(diff, "mmm a", "<nl>")
@@ -122,7 +122,7 @@ for item in json_data:
                 msg_list.append(word)
         msg = " ".join(msg_list)
         # Example usage:
-        # 提取对应的best_diff和best_msg
+        # Extract corresponding best_diff and best_msg
         best_diffs_msgs = []
         with open(best_file, "r", encoding="utf8") as file:
             for line in file:
@@ -132,7 +132,7 @@ for item in json_data:
                         diff_key = f"best_diff{i}"
                         msg_key = f"best_msg{i}"
                         if diff_key in best_data and msg_key in best_data:
-                            # 应用相同的预处理步骤
+                            # Apply same preprocessing steps
                             result_b = remove_between_identifiers(best_data[diff_key], "mmm a", "<nl>")
                             best_diff = get_tokens(remove_between_identifiers(result_b, "ppp b", "<nl>"))
                             best_msg = best_data[msg_key]
@@ -184,7 +184,7 @@ for item in json_data:
                         msgGPTs.append(msgGPT)
                     print(msgGPTs)
 
-                    # 将 diff 和 msg ,score添加到列表中
+                    # Add diff and msg, score to list
                     data = {"diff_id": diff_id, "msg": f"{msg}"}
                     for i in range(5):
                         data[f"msgGPT{i}"] = f"{msgGPTs[i]}"
@@ -201,7 +201,7 @@ for item in json_data:
             time.sleep(1)
             attempts += 1
             if attempts == 5:
-                print(f"{item} 已经重试了3次，仍然失败。")
-                # 这里可以选择记录失败的item，或者是进行其他错误处理
+                print(f"{item} has been retried 3 times and still failed.")
+                # Here you can choose to log failed items or perform other error handling
                 # ...
-                break  # 重试达到3次后，跳出内部循环，处理下一个item
+                break  # After 3 retries, break out of inner loop and process next item
