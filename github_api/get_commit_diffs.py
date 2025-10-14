@@ -51,15 +51,20 @@ def get_all_commits(owner, repo):
     headers["Authorization"] = f"token {GITHUB_TOKEN}"
 
     base_url = f"https://api.github.com/repos/{owner}/{repo}/commits"
+    print(f"Base URL: {base_url}")
+
+    total_commits = []
     train_commit_sha = []
     test_commit_sha = []
+    validation_commit_sha = []
+
     page = 1
     per_page = 100  # Maximum allowed by GitHub API
 
     print(f"🔍 Fetching commits from {owner}/{repo}...")
 
-    #  Get Train Commits
-    while len(train_commit_sha) < 400:
+    #  Get Commits
+    while len(total_commits) < 1500:
         # Add pagination parameters
         url = f"{base_url}?page={page}&per_page={per_page}"
 
@@ -68,6 +73,7 @@ def get_all_commits(owner, repo):
 
             if resp.status_code == 200:
                 commits = resp.json()
+                print(f"Fetched {len(commits)} commits from page {page}")
 
                 # If no commits returned, we've reached the end
                 if not commits:
@@ -76,21 +82,44 @@ def get_all_commits(owner, repo):
 
                 for commit in commits:
                     if len(commit["parents"]) == 1:
-                        train_commit_sha.append(commit["sha"])
+                        total_commits.append(commit["sha"])
 
             page += 1
         except requests.exceptions.RequestException as e:
             print(f"❌ Network error: {e}")
             return None
 
-    print(f"Total Train Commits fetched: {len(train_commit_sha)}")
+    # Take 1050 commits for training, 300 for testing, and 150 for validation
+    train_commit_sha = total_commits[:1050]
+    validation_commit_sha = total_commits[1050:1350]
+    test_commit_sha = total_commits[1350:1500]
 
+    print(f"Total Commits fetched: {len(total_commits)}")
+    print(f"Total Train Commits fetched: {len(train_commit_sha)}")
+    print(f"Total Validate Commits fetched: {len(validation_commit_sha)}")
+    print(f"Total Test Commits fetched: {len(test_commit_sha)}")
+
+    # Save Train Commits
     path = Path(__file__).parent.parent
-    with open(f"{path}/datasets/{repo}_train.jsonl", "w") as train_outfile:
+    with open(f"{path}/datasets/{repo}/train.jsonl", "w") as train_outfile:
         for sha in tqdm(train_commit_sha):
             diffs = get_commit_diffs(owner, repo, sha)
             for diff in diffs:
                 train_outfile.write(json.dumps(diff) + "\n")
+
+    # Save Validate Commits
+    with open(f"{path}/datasets/{repo}/validation.jsonl", "w") as val_outfile:
+        for sha in tqdm(validation_commit_sha):
+            diffs = get_commit_diffs(owner, repo, sha)
+            for diff in diffs:
+                val_outfile.write(json.dumps(diff) + "\n")
+
+    # Save Test Commits
+    with open(f"{path}/datasets/{repo}/test.jsonl", "w") as test_outfile:
+        for sha in tqdm(test_commit_sha):
+            diffs = get_commit_diffs(owner, repo, sha)
+            for diff in diffs:
+                test_outfile.write(json.dumps(diff) + "\n")
 
 
 def get_commit_diffs(owner, repo, sha):
@@ -109,30 +138,26 @@ def get_commit_diffs(owner, repo, sha):
                 print("No files changed in this commit.")
                 return None
 
-            diffs = []
+            diff_line = {
+                "message": commit_data["commit"]["message"],
+                "sha": commit_data["sha"],
+            }
+
+            diff = ""
+            mod_diff = ""
             for file in commit_data["files"]:
                 if "patch" in file and file["patch"] is not None:
-                    diff = file["patch"]
-                    hunk_header_pattern = r"@@\s*-\d+(?:,\d+)?\s*\+\d+(?:,\d+)?\s*@@.*?\n"
-                    mod_diff = re.sub(hunk_header_pattern, "", diff)
+                    diff += f" \n{file["patch"]}"
 
-                    new_fileName = file["filename"]
-                    old_fileName = file.get("previous_filename", None)
-                    if old_fileName is None:
-                        old_fileName = new_fileName
+            hunk_header_pattern = r"@@\s*-\d+(?:,\d+)?\s*\+\d+(?:,\d+)?\s*@@.*?\n"
+            mod_diff = re.sub(hunk_header_pattern, "", diff)
+            mod_diff = f"mmm a / old_file <nl> ppp b / new_file <nl>{mod_diff}"
+            # replace \n with <nl> in mod_diff
+            mod_diff = mod_diff.replace("\n", "<nl>")
 
-                    mod_diff = f"mmm a / {old_fileName} <nl> ppp b / {new_fileName} <nl>{mod_diff}"
-                    # replace \n with <nl> in mod_diff
-                    mod_diff = mod_diff.replace("\n", "<nl>")
-                    diff_line = {
-                        "message": commit_data["commit"]["message"],
-                        "sha": commit_data["sha"],
-                        "og_diff": diff,
-                        "mod_diff": mod_diff,
-                    }
-                    diffs.append(diff_line)
-
-            return diffs
+            diff_line["og_diff"] = diff
+            diff_line["mod_diff"] = mod_diff
+            return diff_line
     except requests.exceptions.RequestException as e:
         print(f"❌ Network error: {e}")
         return None
