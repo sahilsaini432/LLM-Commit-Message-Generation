@@ -41,97 +41,87 @@ def main():
         message = find_enter(message)
         message = find_table(message)
         messages.append(message)
-        # sample = str(sample)
-
-    # sample ="src/org/junit/experimental/theories/Theories.java- Moved InitializationError to ParentRunner, since it was only used by <enter>   subclasses of ParentRunner. <enter> - Broke up TestMethod into FrameworkMethod (which makes it more clear <enter>   that these methods can also be Before, After, etc.), and <enter>   TestAnnotation (for specific information only available on the @Test <enter>   annotation). <enter> - Created TestMethodElement to encapsulate the relationship between <enter>   @Test, @Before, and @After.  This class may go away again quickly <enter> - Updated version in docs to 4.5 <enter> - Included docs about junit-dep jar"
-    # sample = ['1','- Moved InitializationError to ParentRunnerhThis class may go away again quickly <enter>','src/org/junit/experimental/theories/Theories.java']
-    # sample = sample.split(" ")
-    # sample = sample.replace(' ','')
-    # b = replace_file_name(sample)
-    # print(b)
 
     update_jsonl_file(messages)
 
 
 def run_processing():
     global input_file, lan_output_file, other_output_file, lan
-    with open(input_file, "r") as infile, open(lan_output_file, "w") as lan_outfile, open(
-        other_output_file, "w"
-    ) as other_outfile:
+
+    # Stage 1 - Get All Commits with "mod_diff" Field
+    with open(input_file, "r") as infile, open(lan_output_file, "w") as lan_outfile:
         for line in infile:
             data = json.loads(line)
-            if "diff" in data:
-                diff_text = data["diff"]
-                start_index = diff_text.find("ppp b ")
-                end_index = diff_text.find("<nl>", start_index)
-                if start_index != -1 and end_index != -1:
-                    extracted_data = diff_text[start_index + len("ppp b ") : end_index]
-                    dot_index = extracted_data.rfind(".")
-                    if dot_index != -1:
-                        content_between_dot_nl = extracted_data[dot_index + 1 :]
-                        if content_between_dot_nl == " java ":
-                            lan_outfile.write(json.dumps(data) + "\n")
-                        elif content_between_dot_nl == " cs ":
-                            lan_outfile.write(json.dumps(data) + "\n")
-                        elif content_between_dot_nl == " js ":
-                            lan_outfile.write(json.dumps(data) + "\n")
-                        elif content_between_dot_nl == " py ":
-                            lan_outfile.write(json.dumps(data) + "\n")
-                        elif content_between_dot_nl == " cpp ":
-                            lan_outfile.write(json.dumps(data) + "\n")
-                        else:
-                            other_outfile.write(json.dumps(data) + "\n")
+            if "mod_diff" in data:
+                lan_outfile.write(json.dumps(data) + "\n")
 
     input_file1 = lan_output_file
     output_file1 = "1.jsonl"
 
+    # Stage 2 - Extract File Names from "mod_diff" and save to new field "file_name"
     with open(input_file1, "r") as infile, open(output_file1, "w") as outfile:
         for line in infile:
             data = json.loads(line)
-            if "diff" in data:
-                diff_text = data["diff"]
-                start_index = diff_text.find("ppp b ")
-                end_index = diff_text.find("<nl>", start_index)
-                if start_index != -1 and end_index != -1:
-                    extracted_data = diff_text[start_index + len("ppp b ") : end_index]
-                    # Keep only content between the last "/" and "."
-                    last_slash_index = extracted_data.rfind("/")
-                    last_dot_index = extracted_data.rfind(".")
-                    if last_slash_index != -1 and last_dot_index != -1:
-                        extracted_data = extracted_data[last_slash_index + 1 : last_dot_index]
-                    # Add extracted data to original dataset, overwriting "file_name"
-                    data["file_name"] = extracted_data
+            if "mod_diff" in data:
+                diff_text = data["mod_diff"]
+                file_names = []
+
+                # Find all occurrences of "ppp b "
+                search_start = 0
+                while True:
+                    start_index = diff_text.find("ppp b ", search_start)
+                    if start_index == -1:
+                        break
+
+                    end_index = diff_text.find("<nl>", start_index)
+                    if end_index != -1:
+                        extracted_data = diff_text[start_index + len("ppp b ") : end_index]
+                        # Keep only content between the last "/" and "."
+                        last_slash_index = extracted_data.rfind("/")
+                        last_dot_index = extracted_data.rfind(".")
+                        if last_slash_index != -1 and last_dot_index != -1:
+                            file_name = extracted_data[last_slash_index + 1 : last_dot_index]
+                            if file_name and file_name not in file_names:
+                                file_names.append(file_name)
+
+                    # Move search position forward
+                    search_start = start_index + len("ppp b ")
+
+                # Store all file names as a list
+                data["file_name"] = file_names
+
             # Write the original dataset containing processed data to output file
             outfile.write(json.dumps(data) + "\n")
 
-    # Read input JSONL file
     input_file2 = output_file1
     output_file2 = "2.jsonl"
 
+    # Stage 3 - Replace occurrences of any file name in "msg" with "<file_name>"
     with open(input_file2, "r") as infile, open(output_file2, "w") as outfile:
         for line in infile:
             data = json.loads(line)
             if "msg" in data and "file_name" in data:
                 msg = data["msg"]
-                file_name = data["file_name"]
-                # Check if "msg" contains content corresponding to "file_name"
-                if file_name in msg:
-                    # Replace the original corresponding character data in msg with "<file_name>"
-                    msg = msg.replace(file_name, " <file_name> ")
-                # 更新数据中的"msg"字段
+                file_names = data["file_name"]
+
+                # Check if "msg" contains any of the file names
+                for file_name in file_names:
+                    if file_name in msg:
+                        msg = msg.replace(file_name, f" <{file_name}> ")
+
                 data["msg"] = msg
-            # 将更新后的数据写入输出文件
             outfile.write(json.dumps(data) + "\n")
 
     input_file3 = output_file2
     output_file3 = "3.jsonl"
 
-    # 测试函数
-    process_jsonl(input_file3, output_file3)
+    # Stage 4 - Extract function names from diff
+    process_jsonl_extract_functions(input_file3, output_file3)
 
     input_file4 = output_file3
     output_file4 = "4.jsonl"
 
+    # Stage 5 - Replace occurrences of any function name in "msg" with "<method_name>"
     with open(input_file4, "r", encoding="UTF-8") as infile, open(
         output_file4, "w", encoding="UTF-8"
     ) as outfile:
@@ -150,12 +140,13 @@ def run_processing():
     input_file5 = output_file4
     output_file5 = "5.jsonl"
 
-    # Test function
-    process_jsonl(input_file5, output_file5)
+    # Stage 6 - Replace common identifiers in both "msg" and "diff" with "<iden>"
+    process_jsonl_replace_tokens(input_file5, output_file5)
 
     input_file6 = output_file5
     output_file6 = "6.jsonl"
 
+    # Stage 7 - Clean up "msg" field
     with open(input_file6, "r", encoding="UTF-8") as infile, open(
         output_file6, "w", encoding="UTF-8"
     ) as outfile:
@@ -170,6 +161,7 @@ def run_processing():
             # Write updated data to output file
             outfile.write(json.dumps(data) + "\n")
 
+    # TODO: Start Here
     global jsonl_file_path
     jsonl_file_path = output_file6
     global output_jsonl_file_path
@@ -178,13 +170,6 @@ def run_processing():
     # Read first and second JSONL files
     input_file_1 = output_file6
     input_file_2 = output_jsonl_file_path
-
-    def load_jsonl(file):
-        data = []
-        with open(file, "r", encoding="utf-8") as infile:
-            for line in infile:
-                data.append(json.loads(line))
-        return data
 
     data_1 = load_jsonl(input_file_1)
     data_2 = load_jsonl(input_file_2)
@@ -200,30 +185,127 @@ def run_processing():
             outfile.write(json.dumps(item) + "\n")
 
 
+def load_jsonl(file):
+    data = []
+    with open(file, "r", encoding="utf-8") as infile:
+        for line in infile:
+            data.append(json.loads(line))
+    return data
+
+
 # Define a function that takes diff as parameter and returns a list containing function names
 def extract_function_names(diff):
-    # Define an empty list to store function names
-    global lan
+    """Extract function/method names from diff - supports multiple languages."""
     function_names = []
-    # Define a regular expression to match return value type and function name
-    if lan == "java" or "cpp" or "csharp":
-        pattern = r"\w+\s+(\w+)\s*\("
-    if lan == "py":
-        pattern = r"def\s+(\w+)"
-    if lan == "js":
-        pattern = r"function\s+(\w+)"
-    # Use re module's findall method to find all strings in diff that match pattern, get a list
-    matches = re.findall(pattern, diff)
-    # Iterate through each string in matches list
-    for match in matches:
-        # Add string to function_names list
-        function_names.append(match)
-    # Return function_names list
+
+    # Multi-language patterns for function/method detection
+    patterns = [
+        # Java, C++, C#, TypeScript: modifier returnType functionName(
+        r"\b(?:public|private|protected|static|async|virtual|override|abstract|final)?\s*\w+\s+(\w+)\s*\(",
+        # Python: def function_name(
+        r"def\s+(\w+)\s*\(",
+        # JavaScript/TypeScript: function functionName(
+        r"function\s+(\w+)\s*\(",
+        # JavaScript/TypeScript: const/let/var functionName = function(
+        r"(?:const|let|var)\s+(\w+)\s*=\s*(?:async\s*)?\s*function\s*\(",
+        # Arrow functions: const/let/var name = () =>
+        r"(?:const|let|var)\s+(\w+)\s*=\s*(?:async\s*)?\s*\([^)]*\)\s*=>",
+        # Ruby: def function_name
+        r"def\s+(\w+)",
+        # Go: func (receiver) functionName( or func functionName(
+        r"func\s+(?:\(\w+\s+\*?\w+\)\s+)?(\w+)\s*\(",
+        # Rust: fn function_name( or pub fn function_name(
+        r"(?:pub\s+)?fn\s+(\w+)\s*(?:<[^>]+>)?\s*\(",
+        # Swift: func functionName(
+        r"func\s+(\w+)\s*(?:<[^>]+>)?\s*\(",
+        # PHP: function functionName(
+        r"function\s+(\w+)\s*\(",
+        # Kotlin: fun functionName(
+        r"fun\s+(\w+)\s*(?:<[^>]+>)?\s*\(",
+        # Scala: def functionName(
+        r"def\s+(\w+)\s*(?:\[[^\]]+\])?\s*\(",
+        # Objective-C: - (returnType)functionName:
+        r"[-+]\s*\([^)]+\)\s*(\w+)",
+    ]
+
+    # Apply all patterns to the diff
+    for pattern in patterns:
+        matches = re.findall(pattern, diff)
+        function_names.extend(matches)
+
+    # Remove duplicates and filter out common keywords
+    keywords = {
+        "if",
+        "for",
+        "while",
+        "class",
+        "return",
+        "import",
+        "from",
+        "new",
+        "this",
+        "self",
+        "super",
+        "switch",
+        "case",
+        "break",
+        "continue",
+        "try",
+        "catch",
+        "finally",
+        "throw",
+        "async",
+        "await",
+        "yield",
+        "lambda",
+        "def",
+        "var",
+        "let",
+        "const",
+        "function",
+        "void",
+        "int",
+        "string",
+        "bool",
+        "boolean",
+        "float",
+        "double",
+        "char",
+        "long",
+        "short",
+        "byte",
+        "public",
+        "private",
+        "protected",
+        "static",
+        "final",
+        "abstract",
+        "interface",
+        "extends",
+        "implements",
+        "package",
+        "namespace",
+        "using",
+        "include",
+        "require",
+        "export",
+        "default",
+        "get",
+        "set",
+        "constructor",
+        "destructor",
+    }
+
+    # Filter: remove keywords, duplicates, and names shorter than 2 characters
+    function_names = list(
+        set([name for name in function_names if name.lower() not in keywords and len(name) > 1])
+    )
+
     return function_names
 
 
 # Define a function that takes input filename and output filename as parameters for processing and saving
-def process_jsonl(input_file, lan_output_file):
+def process_jsonl_extract_functions(input_file, lan_output_file):
     # Use jsonlines module to open input file, get a reader object
     with jsonlines.open(input_file) as reader:
         # Use jsonlines module to open output file, get a writer object
@@ -231,11 +313,14 @@ def process_jsonl(input_file, lan_output_file):
             # Iterate through each json in reader object
             for obj in reader:
                 # Extract the value of diff attribute
-                diff = obj["diff"]
+                diff = obj["mod_diff"]
+
                 # Call extract_function_names function, get a list containing function names
                 function_names = extract_function_names(diff)
+
                 # Add a function_names attribute to obj with value as function_names list
                 obj["function_names"] = function_names
+
                 # print(function_names)
                 # 用writer对象把obj写入输出文件中
                 writer.write(obj)
@@ -248,7 +333,8 @@ def replace_function_names(msg, function_names):
     return msg
 
 
-# Define a function that takes msg and diff as parameters, returns replaced msgnew
+# This function anonymizes common identifiers that appear in both the commit message and
+# the diff by replacing them with a generic <iden> placeholder.
 def replace_token(msg, diff):
     # Use nltk's word_tokenize method to tokenize msg and diff, get two lists
     msg_tokens = nltk.word_tokenize(msg)
@@ -275,7 +361,7 @@ def replace_token(msg, diff):
 
 
 # Define a function that takes input filename and output filename as parameters for processing and saving
-def process_jsonl(input_file, lan_output_file):
+def process_jsonl_replace_tokens(input_file, lan_output_file):
     # Use jsonlines module to open input file, get a reader object
     with jsonlines.open(input_file) as reader:
         # Use jsonlines module to open output file, get a writer object
@@ -288,8 +374,6 @@ def process_jsonl(input_file, lan_output_file):
                 # Call replace_token function, get msgnew
                 msgnew = replace_token(msg, diff)
                 # print(msgnew)
-                # Replace msg attribute in obj with msgnew attribute
-                obj.pop("msg")
                 obj["msg"] = msgnew
 
                 # Use writer object to write obj to output file

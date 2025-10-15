@@ -1,6 +1,7 @@
 from calendar import c
 import datetime
 import json
+from regex import D
 import requests
 import time
 from pathlib import Path
@@ -61,7 +62,7 @@ def get_all_commits(owner, repo):
     print(f"🔍 Fetching commits from {owner}/{repo}...")
 
     #  Get Commits
-    while len(total_commits) < 3000:
+    while len(total_commits) < 100:
         # Add pagination parameters
         url = f"{base_url}?page={page}&per_page={per_page}"
 
@@ -91,9 +92,9 @@ def get_all_commits(owner, repo):
     # Save Train Commits
     path = Path(__file__).parent.parent
     with open(f"{path}/datasets/{repo}/un_clean_commits.jsonl", "w") as outfile:
-        for sha in tqdm(total_commits):
-            diff = get_commit_diffs(owner, repo, sha)
-            outfile.write(json.dumps(diff) + "\n")
+        # for sha in tqdm(total_commits):
+        diff = get_commit_diffs(owner, repo, total_commits[0])
+        outfile.write(json.dumps(diff) + "\n")
 
 
 def get_commit_diffs(owner, repo, sha):
@@ -112,23 +113,41 @@ def get_commit_diffs(owner, repo, sha):
                 print("No files changed in this commit.")
                 return None
 
-            diff = ""
-            mod_diff = ""
+            final_diff = ""
             for file in commit_data["files"]:
                 if "patch" in file and file["patch"] is not None:
-                    diff += f" \n{file["patch"]}"
+                    print("file with patch found")
+                    diff = file["patch"]
+                    hunk_header_pattern = r"@@\s*-\d+(?:,\d+)?\s*\+\d+(?:,\d+)?\s*@@.*?\n"
+                    diff = re.sub(hunk_header_pattern, "", diff)
 
-            hunk_header_pattern = r"@@\s*-\d+(?:,\d+)?\s*\+\d+(?:,\d+)?\s*@@.*?\n"
-            mod_diff = re.sub(hunk_header_pattern, "", diff)
-            mod_diff = f"mmm a / old_file <nl> ppp b / new_file <nl>{mod_diff}"
-            # replace \n with <nl> in mod_diff
-            mod_diff = mod_diff.replace("\n", "<nl>")
+                    new_fileName = file["filename"]
+                    old_fileName = file.get("previous_filename", None)
+                    if old_fileName is None:
+                        old_fileName = new_fileName
+
+                    diff = f"mmm a / {old_fileName} <nl> ppp b / {new_fileName} <nl> {diff}"
+
+                    # Add spaces around every special character/symbol
+                    special_chars = r'([+\-*/%=!&|^~?:;,.\[\]{}()\'"@#$`])'
+                    diff = re.sub(special_chars, r" \1 ", diff)
+
+                    # Normalize multiple spaces to single space
+                    diff = re.sub(r"\s+", " ", diff)
+
+                    # Clean up
+                    diff = diff.strip()
+
+                    # Replace newlines with <nl> first
+                    diff = diff.replace("\n", " <nl> ")
+
+                    final_diff += diff + " "
 
             diff_line = {
                 "message": commit_data["commit"]["message"],
                 "sha": commit_data["sha"],
-                "og_diff": diff,
-                "mod_diff": mod_diff,
+                # "og_diff": diff,
+                "mod_diff": final_diff,
             }
             return diff_line
     except requests.exceptions.RequestException as e:
