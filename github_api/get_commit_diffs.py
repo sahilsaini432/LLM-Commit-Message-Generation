@@ -54,9 +54,6 @@ def get_all_commits(owner, repo):
     print(f"Base URL: {base_url}")
 
     total_commits = []
-    train_commit_sha = []
-    test_commit_sha = []
-    validation_commit_sha = []
 
     page = 1
     per_page = 100  # Maximum allowed by GitHub API
@@ -64,7 +61,7 @@ def get_all_commits(owner, repo):
     print(f"🔍 Fetching commits from {owner}/{repo}...")
 
     #  Get Commits
-    while len(total_commits) < 1500:
+    while len(total_commits) < 3000:
         # Add pagination parameters
         url = f"{base_url}?page={page}&per_page={per_page}"
 
@@ -89,37 +86,14 @@ def get_all_commits(owner, repo):
             print(f"❌ Network error: {e}")
             return None
 
-    # Take 1050 commits for training, 300 for testing, and 150 for validation
-    train_commit_sha = total_commits[:1050]
-    validation_commit_sha = total_commits[1050:1350]
-    test_commit_sha = total_commits[1350:1500]
-
     print(f"Total Commits fetched: {len(total_commits)}")
-    print(f"Total Train Commits fetched: {len(train_commit_sha)}")
-    print(f"Total Validate Commits fetched: {len(validation_commit_sha)}")
-    print(f"Total Test Commits fetched: {len(test_commit_sha)}")
 
     # Save Train Commits
     path = Path(__file__).parent.parent
-    with open(f"{path}/datasets/{repo}/train.jsonl", "w") as train_outfile:
-        for sha in tqdm(train_commit_sha):
-            diffs = get_commit_diffs(owner, repo, sha)
-            for diff in diffs:
-                train_outfile.write(json.dumps(diff) + "\n")
-
-    # Save Validate Commits
-    with open(f"{path}/datasets/{repo}/validation.jsonl", "w") as val_outfile:
-        for sha in tqdm(validation_commit_sha):
-            diffs = get_commit_diffs(owner, repo, sha)
-            for diff in diffs:
-                val_outfile.write(json.dumps(diff) + "\n")
-
-    # Save Test Commits
-    with open(f"{path}/datasets/{repo}/test.jsonl", "w") as test_outfile:
-        for sha in tqdm(test_commit_sha):
-            diffs = get_commit_diffs(owner, repo, sha)
-            for diff in diffs:
-                test_outfile.write(json.dumps(diff) + "\n")
+    with open(f"{path}/datasets/{repo}/un_clean_commits.jsonl", "w") as outfile:
+        for sha in tqdm(total_commits):
+            diff = get_commit_diffs(owner, repo, sha)
+            outfile.write(json.dumps(diff) + "\n")
 
 
 def get_commit_diffs(owner, repo, sha):
@@ -138,11 +112,6 @@ def get_commit_diffs(owner, repo, sha):
                 print("No files changed in this commit.")
                 return None
 
-            diff_line = {
-                "message": commit_data["commit"]["message"],
-                "sha": commit_data["sha"],
-            }
-
             diff = ""
             mod_diff = ""
             for file in commit_data["files"]:
@@ -155,8 +124,12 @@ def get_commit_diffs(owner, repo, sha):
             # replace \n with <nl> in mod_diff
             mod_diff = mod_diff.replace("\n", "<nl>")
 
-            diff_line["og_diff"] = diff
-            diff_line["mod_diff"] = mod_diff
+            diff_line = {
+                "message": commit_data["commit"]["message"],
+                "sha": commit_data["sha"],
+                "og_diff": diff,
+                "mod_diff": mod_diff,
+            }
             return diff_line
     except requests.exceptions.RequestException as e:
         print(f"❌ Network error: {e}")

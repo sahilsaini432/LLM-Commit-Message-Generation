@@ -117,7 +117,7 @@ class BiLSTMLighting(pl.LightningModule):
         self.criterion = nn.CrossEntropyLoss()  # setup loss function
         self.train_dataset = MydataSet("./data/archive/train_clean.csv", "train")
         self.val_dataset = MydataSet("./data/archive/val_clean.csv", "train")
-        self.test_dataset = MydataSet("./data/archive/test_cleanjava.csv", "train")
+        self.test_dataset = MydataSet("./data/powertoys/test_cleanjava.csv", "train")
 
     def configure_optimizers(self):
         optimizer = optim.AdamW(self.parameters(), lr=lr)
