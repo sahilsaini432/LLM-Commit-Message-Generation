@@ -8,6 +8,8 @@ input_file = "input.jsonl"
 output_file = "output.jsonl"
 other_output_file = "other_data.jsonl"
 lan = ""
+lan_output_file = ""
+output_file1 = ""
 
 with open(input_file, "r") as infile, open(lan_output_file, "w") as lan_outfile, open(
     other_output_file, "w"
