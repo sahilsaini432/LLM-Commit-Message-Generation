@@ -52,7 +52,6 @@ def get_all_commits(owner, repo):
     headers["Authorization"] = f"token {GITHUB_TOKEN}"
 
     base_url = f"https://api.github.com/repos/{owner}/{repo}/commits"
-    print(f"Base URL: {base_url}")
 
     total_commits = []
 
@@ -92,9 +91,9 @@ def get_all_commits(owner, repo):
     # Save Train Commits
     path = Path(__file__).parent.parent
     with open(f"{path}/datasets/{repo}/un_clean_commits.jsonl", "w") as outfile:
-        # for sha in tqdm(total_commits):
-        diff = get_commit_diffs(owner, repo, total_commits[0])
-        outfile.write(json.dumps(diff) + "\n")
+        for sha in tqdm(total_commits):
+            diff = get_commit_diffs(owner, repo, sha)
+            outfile.write(json.dumps(diff) + "\n")
 
 
 def get_commit_diffs(owner, repo, sha):
@@ -116,7 +115,6 @@ def get_commit_diffs(owner, repo, sha):
             final_diff = ""
             for file in commit_data["files"]:
                 if "patch" in file and file["patch"] is not None:
-                    print("file with patch found")
                     diff = file["patch"]
                     hunk_header_pattern = r"@@\s*-\d+(?:,\d+)?\s*\+\d+(?:,\d+)?\s*@@.*?\n"
                     diff = re.sub(hunk_header_pattern, "", diff)

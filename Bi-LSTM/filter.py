@@ -1,38 +1,31 @@
 import argparse
+from ast import arg
 import json
+from anyio import Path
 import jsonlines
+from tqdm import tqdm
 import re
 import nltk
 
-# Declare global variables at the top before any assignment or usage
-global input_file, lan_output_file, other_output_file, lan, output_jsonl_file_path, jsonl_file_path
-
 
 def main():
-    global input_file, lan_output_file, other_output_file, lan
     parser = argparse.ArgumentParser(
         description="Args to run the filter script",
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
 
     parser.add_argument("-i", "--input_file", help="JSON file(s) to analyze (supports wildcards)")
-    parser.add_argument("-l", "--lan_output_file", help="The output file path of the selected language")
-    parser.add_argument("-o", "--other_output_file", help="The output file path of the other language")
-    parser.add_argument(
-        "-p", "--lan", help="The programming language to filter (e.g., java, py, js, cpp, cs)"
-    )
+    parser.add_argument("-r", "--repo", help="repo name")
 
     args = parser.parse_args()
 
-    input_file = args.input_file
-    lan_output_file = args.lan_output_file
-    other_output_file = args.other_output_file
-    lan = args.lan
+    path = f"{Path(__file__).parent}/data/{args.repo}"
+    output_file = f"{path}/filtered_data.jsonl"
 
-    run_processing()
+    last_file_path = run_processing(args, args.input_file, output_file)
 
     messages = []
-    samples = select_message_from_jsonl()
+    samples = select_message_from_jsonl(last_file_path)
     for sample in samples:
         # sample = sample.replace(' ','')
         message = find_url(sample)
@@ -45,22 +38,24 @@ def main():
     update_jsonl_file(messages)
 
 
-def run_processing():
-    global input_file, lan_output_file, other_output_file, lan
+def run_processing(args, input_file, output_file):
+    path = f"{Path(__file__).parent}/data/{args.repo}"
 
     # Stage 1 - Get All Commits with "mod_diff" Field
-    with open(input_file, "r") as infile, open(lan_output_file, "w") as lan_outfile:
-        for line in infile:
+    print(("Stage 1 - Get All Commits with mod_diff Field"))
+    with open(input_file, "r") as infile, open(output_file, "w") as lan_outfile:
+        for line in tqdm(infile):
             data = json.loads(line)
             if "mod_diff" in data:
                 lan_outfile.write(json.dumps(data) + "\n")
 
-    input_file1 = lan_output_file
-    output_file1 = "1.jsonl"
+    input_file1 = output_file
+    output_file1 = f"{path}/1.jsonl"
 
     # Stage 2 - Extract File Names from "mod_diff" and save to new field "file_name"
+    print("Stage 2 - Extract File Names from mod_diff and save to new field file_name")
     with open(input_file1, "r") as infile, open(output_file1, "w") as outfile:
-        for line in infile:
+        for line in tqdm(infile):
             data = json.loads(line)
             if "mod_diff" in data:
                 diff_text = data["mod_diff"]
@@ -94,11 +89,12 @@ def run_processing():
             outfile.write(json.dumps(data) + "\n")
 
     input_file2 = output_file1
-    output_file2 = "2.jsonl"
+    output_file2 = f"{path}/2.jsonl"
 
     # Stage 3 - Replace occurrences of any file name in "msg" with "<file_name>"
+    print("Stage 3 - Replace occurrences of any file name in msg with <file_name>")
     with open(input_file2, "r") as infile, open(output_file2, "w") as outfile:
-        for line in infile:
+        for line in tqdm(infile):
             data = json.loads(line)
             if "msg" in data and "file_name" in data:
                 msg = data["msg"]
@@ -113,19 +109,21 @@ def run_processing():
             outfile.write(json.dumps(data) + "\n")
 
     input_file3 = output_file2
-    output_file3 = "3.jsonl"
+    output_file3 = f"{path}/3.jsonl"
 
     # Stage 4 - Extract function names from diff
+    print("Stage 4 - Extract function names from diff")
     process_jsonl_extract_functions(input_file3, output_file3)
 
     input_file4 = output_file3
-    output_file4 = "4.jsonl"
+    output_file4 = f"{path}/4.jsonl"
 
     # Stage 5 - Replace occurrences of any function name in "msg" with "<method_name>"
+    print("Stage 5 - Replace occurrences of any function name in msg with <method_name>")
     with open(input_file4, "r", encoding="UTF-8") as infile, open(
         output_file4, "w", encoding="UTF-8"
     ) as outfile:
-        for line in infile:
+        for line in tqdm(infile):
             data = json.loads(line)
             if "msg" in data and "function_names" in data:
                 msg = data["msg"]
@@ -138,19 +136,21 @@ def run_processing():
             outfile.write(json.dumps(data) + "\n")
 
     input_file5 = output_file4
-    output_file5 = "5.jsonl"
+    output_file5 = f"{path}/5.jsonl"
 
     # Stage 6 - Replace common identifiers in both "msg" and "diff" with "<iden>"
+    print("Stage 6 - Replace common identifiers in both msg and diff with <iden>")
     process_jsonl_replace_tokens(input_file5, output_file5)
 
     input_file6 = output_file5
-    output_file6 = "6.jsonl"
+    output_file6 = f"{path}/6.jsonl"
 
     # Stage 7 - Clean up "msg" field
+    print("Stage 7 - Clean up msg field")
     with open(input_file6, "r", encoding="UTF-8") as infile, open(
         output_file6, "w", encoding="UTF-8"
     ) as outfile:
-        for line in infile:
+        for line in tqdm(infile):
             data = json.loads(line)
             if "msg" in data:
                 msg = data["msg"]
@@ -161,11 +161,7 @@ def run_processing():
             # Write updated data to output file
             outfile.write(json.dumps(data) + "\n")
 
-    # TODO: Start Here
-    global jsonl_file_path
-    jsonl_file_path = output_file6
-    global output_jsonl_file_path
-    output_jsonl_file_path = "6.jsonl"
+    output_jsonl_file_path = f"{path}/6.jsonl"
 
     # Read first and second JSONL files
     input_file_1 = output_file6
@@ -180,9 +176,11 @@ def run_processing():
             data_1[i]["msg"] = data_2[i]["msg"]
 
     # Write to output file
-    with open(lan_output_file, "w", encoding="utf-8") as outfile:
-        for item in data_1:
+    with open(output_file, "w", encoding="utf-8") as outfile:
+        for item in tqdm(data_1):
             outfile.write(json.dumps(item) + "\n")
+
+    return output_file6
 
 
 def load_jsonl(file):
@@ -305,13 +303,13 @@ def extract_function_names(diff):
 
 
 # Define a function that takes input filename and output filename as parameters for processing and saving
-def process_jsonl_extract_functions(input_file, lan_output_file):
+def process_jsonl_extract_functions(input_file, output_file):
     # Use jsonlines module to open input file, get a reader object
     with jsonlines.open(input_file) as reader:
         # Use jsonlines module to open output file, get a writer object
-        with jsonlines.open(lan_output_file, mode="w") as writer:
+        with jsonlines.open(output_file, mode="w") as writer:
             # Iterate through each json in reader object
-            for obj in reader:
+            for obj in tqdm(reader):
                 # Extract the value of diff attribute
                 diff = obj["mod_diff"]
 
@@ -361,11 +359,11 @@ def replace_token(msg, diff):
 
 
 # Define a function that takes input filename and output filename as parameters for processing and saving
-def process_jsonl_replace_tokens(input_file, lan_output_file):
+def process_jsonl_replace_tokens(input_file, output_file):
     # Use jsonlines module to open input file, get a reader object
     with jsonlines.open(input_file) as reader:
         # Use jsonlines module to open output file, get a writer object
-        with jsonlines.open(lan_output_file, mode="w") as writer:
+        with jsonlines.open(output_file, mode="w") as writer:
             # Iterate through each json in reader object
             for obj in reader:
                 # Extract values of msg and diff attributes
@@ -387,9 +385,9 @@ def replace_method_name(msg):
     return msg
 
 
-def select_message_from_jsonl():
+def select_message_from_jsonl(last_file_path):
     # Load data from JSONL file and return
-    with open(jsonl_file_path, "r", encoding="utf-8") as file:
+    with open(last_file_path, "r", encoding="utf-8") as file:
         lines = file.readlines()
     samples = []
     for line in lines:
@@ -401,10 +399,9 @@ def select_message_from_jsonl():
     return samples
 
 
-def update_jsonl_file(samples):
-    global output_jsonl_file_path
+def update_jsonl_file(samples, output_file):
     # Write processed data back to JSONL file
-    with open(output_jsonl_file_path, "w", encoding="utf-8") as file:
+    with open(output_file, "w", encoding="utf-8") as file:
         for sample in samples:
             data = {
                 #'diff_id': sample[0],
