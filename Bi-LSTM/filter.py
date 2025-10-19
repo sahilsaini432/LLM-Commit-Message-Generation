@@ -1,11 +1,13 @@
 import argparse
 from ast import arg
 import json
+import os
 from anyio import Path
 import jsonlines
 from tqdm import tqdm
 import re
 import nltk
+import shutil
 
 
 def main():
@@ -20,6 +22,10 @@ def main():
     args = parser.parse_args()
 
     path = f"{Path(__file__).parent}/data/{args.repo}"
+    if os.path.exists(path):
+        shutil.rmtree(path)
+    os.makedirs(path, exist_ok=True)
+
     output_file = f"{path}/filtered_data.jsonl"
 
     last_file_path = run_processing(args, args.input_file, output_file)
@@ -35,14 +41,14 @@ def main():
         message = find_table(message)
         messages.append(message)
 
-    update_jsonl_file(messages)
+    update_jsonl_file(messages, output_file)
 
 
 def run_processing(args, input_file, output_file):
     path = f"{Path(__file__).parent}/data/{args.repo}"
 
     # Stage 1 - Get All Commits with "mod_diff" Field
-    print(("Stage 1 - Get All Commits with mod_diff Field"))
+    print("Stage 1 - Get All Commits with mod_diff Field \n")
     with open(input_file, "r") as infile, open(output_file, "w") as lan_outfile:
         for line in tqdm(infile):
             data = json.loads(line)
@@ -53,7 +59,7 @@ def run_processing(args, input_file, output_file):
     output_file1 = f"{path}/1.jsonl"
 
     # Stage 2 - Extract File Names from "mod_diff" and save to new field "file_name"
-    print("Stage 2 - Extract File Names from mod_diff and save to new field file_name")
+    print("Stage 2 - Extract File Names from mod_diff and save to new field file_name \n")
     with open(input_file1, "r") as infile, open(output_file1, "w") as outfile:
         for line in tqdm(infile):
             data = json.loads(line)
@@ -84,6 +90,7 @@ def run_processing(args, input_file, output_file):
 
                 # Store all file names as a list
                 data["file_name"] = file_names
+                print(f"[SAHIL] {file_names}")
 
             # Write the original dataset containing processed data to output file
             outfile.write(json.dumps(data) + "\n")
@@ -92,7 +99,7 @@ def run_processing(args, input_file, output_file):
     output_file2 = f"{path}/2.jsonl"
 
     # Stage 3 - Replace occurrences of any file name in "msg" with "<file_name>"
-    print("Stage 3 - Replace occurrences of any file name in msg with <file_name>")
+    print("Stage 3 - Replace occurrences of any file name in msg with <file_name> \n")
     with open(input_file2, "r") as infile, open(output_file2, "w") as outfile:
         for line in tqdm(infile):
             data = json.loads(line)
@@ -112,14 +119,14 @@ def run_processing(args, input_file, output_file):
     output_file3 = f"{path}/3.jsonl"
 
     # Stage 4 - Extract function names from diff
-    print("Stage 4 - Extract function names from diff")
+    print("Stage 4 - Extract function names from diff \n")
     process_jsonl_extract_functions(input_file3, output_file3)
 
     input_file4 = output_file3
     output_file4 = f"{path}/4.jsonl"
 
     # Stage 5 - Replace occurrences of any function name in "msg" with "<method_name>"
-    print("Stage 5 - Replace occurrences of any function name in msg with <method_name>")
+    print("Stage 5 - Replace occurrences of any function name in msg with <method_name> \n")
     with open(input_file4, "r", encoding="UTF-8") as infile, open(
         output_file4, "w", encoding="UTF-8"
     ) as outfile:
@@ -139,14 +146,14 @@ def run_processing(args, input_file, output_file):
     output_file5 = f"{path}/5.jsonl"
 
     # Stage 6 - Replace common identifiers in both "msg" and "diff" with "<iden>"
-    print("Stage 6 - Replace common identifiers in both msg and diff with <iden>")
+    print("Stage 6 - Replace common identifiers in both msg and diff with <iden> \n")
     process_jsonl_replace_tokens(input_file5, output_file5)
 
     input_file6 = output_file5
     output_file6 = f"{path}/6.jsonl"
 
     # Stage 7 - Clean up "msg" field
-    print("Stage 7 - Clean up msg field")
+    print("Stage 7 - Clean up msg field \n")
     with open(input_file6, "r", encoding="UTF-8") as infile, open(
         output_file6, "w", encoding="UTF-8"
     ) as outfile:
@@ -368,7 +375,7 @@ def process_jsonl_replace_tokens(input_file, output_file):
             for obj in reader:
                 # Extract values of msg and diff attributes
                 msg = obj["msg"]
-                diff = obj["diff"]
+                diff = obj["mod_diff"]
                 # Call replace_token function, get msgnew
                 msgnew = replace_token(msg, diff)
                 # print(msgnew)

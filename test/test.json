@@ -1,5 +1,97 @@
 {
-  "message": "fixed light switch shortcut not working issue (#42340)\n\n<!-- Enter a brief description/summary of your PR here. What does it\nfix/what does it change/how was it tested (even manually, if necessary)?\n-->\n## Summary of the Pull Request\nThis pull request refactors how the `ToggleThemeHotkey` property is\nhandled in the LightSwitch settings and view model. The changes simplify\nproperty management by directly referencing the property within\n`LightSwitchProperties` and ensure that the hotkey setting is\nconsistently updated and serialized.\n\n**Settings property management:**\n\n* In `LightSwitchSettings.Clone()`, the `LightSwitchProperties` object\nnow directly references the existing property instances instead of\ncreating new ones, and also includes the `ToggleThemeHotkey` property.\n\n**View model property handling:**\n\n* In `LightSwitchViewModel.ToggleThemeActivationShortcut`, the getter\nand setter now directly access and update\n`ModuleSettings.Properties.ToggleThemeHotkey.Value`, removing the need\nfor a backing field and ensuring changes are properly serialized and\nnotified.\n<!-- Please review the items on the PR checklist before submitting-->\n## PR Checklist\n\n- [x] Closes: #42330\n- [ ] **Communication:** I've discussed this with core contributors\nalready. If the work hasn't been agreed, this work might be rejected\n- [ ] **Tests:** Added/updated and all pass\n- [ ] **Localization:** All end-user-facing strings can be localized\n- [ ] **Dev docs:** Added/updated\n- [ ] **New binaries:** Added on the required places\n- [ ] [JSON for\nsigning](https://github.com/microsoft/PowerToys/blob/main/.pipelines/ESRPSigning_core.json)\nfor new binaries\n- [ ] [WXS for\ninstaller](https://github.com/microsoft/PowerToys/blob/main/installer/PowerToysSetup/Product.wxs)\nfor new binaries and localization folder\n- [ ] [YML for CI\npipeline](https://github.com/microsoft/PowerToys/blob/main/.pipelines/ci/templates/build-powertoys-steps.yml)\nfor new test projects\n- [ ] [YML for signed\npipeline](https://github.com/microsoft/PowerToys/blob/main/.pipelines/release.yml)\n- [ ] **Documentation updated:** If checked, please file a pull request\non [our docs\nrepo](https://github.com/MicrosoftDocs/windows-uwp/tree/docs/hub/powertoys)\nand link it here: #xxx\n\n<!-- Provide a more detailed description of the PR, other things fixed,\nor any additional comments/features here -->\n## Detailed Description of the Pull Request / Additional comments\n\n<!-- Describe how you validated the behavior. Add automated tests\nwherever possible, but list manual validation steps taken as well -->\n## Validation Steps Performed\n\n---------\n\nSigned-off-by: Shawn Yuan (from Dev Box) <shuaiyuan@microsoft.com>",
-  "sha": "7b9d5af8c17d36df21acf240fdc3693a142abe8d",
-  "mod_diff": "mmm a / src / settings - ui / Settings . UI . Library / LightSwitchSettings . cs <nl> ppp b / src / settings - ui / Settings . UI . Library / LightSwitchSettings . cs <nl> / / See the LICENSE file in the project root for more information . using System ; + using System . Collections . Generic ; using System . Reflection ; using System . Text . Json . Serialization ; + using ManagedCommon ; using Microsoft . PowerToys . Settings . UI . Library ; + using Microsoft . PowerToys . Settings . UI . Library . Helpers ; using Microsoft . PowerToys . Settings . UI . Library . Interfaces ; namespace Settings . UI . Library { - public class LightSwitchSettings : BasePTModuleSettings , ISettingsConfig , ICloneable + public class LightSwitchSettings : BasePTModuleSettings , ISettingsConfig , ICloneable , IHotkeyConfig { public const string ModuleName = \" LightSwitch \" ; [ JsonPropertyName ( \" properties \" ) ] public LightSwitchProperties Properties { get ; set ; } + public HotkeyAccessor [ ] GetAllHotkeyAccessors ( ) + { + var hotkeyAccessors = new List<HotkeyAccessor> + { + new HotkeyAccessor ( + ( ) = > Properties . ToggleThemeHotkey . Value , + value = > Properties . ToggleThemeHotkey . Value = value ? ? LightSwitchProperties . DefaultToggleThemeHotkey , + \" LightSwitch_ThemeToggle_Shortcut \" ) , + } ; + + return hotkeyAccessors . ToArray ( ) ; + } + + public ModuleType GetModuleType ( ) = > ModuleType . LightSwitch ; + public object Clone ( ) { return new LightSwitchSettings ( ) SunsetOffset = new IntProperty ( ( int ) Properties . SunsetOffset . Value ) , Latitude = new StringProperty ( Properties . Latitude . Value ) , Longitude = new StringProperty ( Properties . Longitude . Value ) , + ToggleThemeHotkey = new KeyboardKeysProperty ( Properties . ToggleThemeHotkey . Value ) , } , } ; } mmm a / src / settings - ui / Settings . UI / SettingsXAML / Views / LightSwitchPage . xaml . cs <nl> ppp b / src / settings - ui / Settings . UI / SettingsXAML / Views / LightSwitchPage . xaml . cs <nl> this . InitializeComponent ( ) ; this . Loaded + = LightSwitchPage_Loaded ; + this . Loaded + = ( s , e ) = > ViewModel . OnPageLoaded ( ) ; } private void LightSwitchPage_Loaded ( object sender , RoutedEventArgs e ) mmm a / src / settings - ui / Settings . UI / ViewModels / LightSwitchViewModel . cs <nl> ppp b / src / settings - ui / Settings . UI / ViewModels / LightSwitchViewModel . cs <nl> / / See the LICENSE file in the project root for more information . using System ; + using System . Collections . Generic ; using System . Collections . ObjectModel ; using System . Globalization ; using System . Linq ; namespace Microsoft . PowerToys . Settings . UI . ViewModels { - public partial class LightSwitchViewModel : Observable + public partial class LightSwitchViewModel : PageViewModelBase { + protected override string ModuleName = > LightSwitchSettings . ModuleName ; + private Func<string , int> SendConfigMSG { get ; } public ObservableCollection<SearchLocation> SearchLocations { get ; } = new ( ) ; ForceDarkCommand = new RelayCommand ( ForceDarkNow ) ; AvailableScheduleModes = new ObservableCollection<string> - { - \" FixedHours \" , - \" SunsetToSunrise \" , - } ; + { + \" FixedHours \" , + \" SunsetToSunrise \" , + } ; _toggleThemeHotkey = _moduleSettings . Properties . ToggleThemeHotkey . Value ; } + public override Dictionary<string , HotkeySettings [ ] > GetAllHotkeySettings ( ) + { + var hotkeysDict = new Dictionary<string , HotkeySettings [ ] > + { + [ ModuleName ] = [ ToggleThemeActivationShortcut ] , + } ; + + return hotkeysDict ; + } + private void ForceLightNow ( ) { Logger . LogInfo ( \" Sending custom action : forceLight \" ) ; public HotkeySettings ToggleThemeActivationShortcut { - get = > _toggleThemeHotkey ; + get = > ModuleSettings . Properties . ToggleThemeHotkey . Value ; set { - if ( value ! = _toggleThemeHotkey ) + if ( value ! = ModuleSettings . Properties . ToggleThemeHotkey . Value ) { if ( value = = null ) { - _toggleThemeHotkey = LightSwitchProperties . DefaultToggleThemeHotkey ; + ModuleSettings . Properties . ToggleThemeHotkey . Value = LightSwitchProperties . DefaultToggleThemeHotkey ; } else { - _toggleThemeHotkey = value ; + ModuleSettings . Properties . ToggleThemeHotkey . Value = value ; } - _moduleSettings . Properties . ToggleThemeHotkey . Value = _toggleThemeHotkey ; NotifyPropertyChanged ( ) ; SendConfigMSG ( string . Format ( CultureInfo . InvariantCulture , \" { { \\ \" powertoys\\ \" : { { \\ \" { 0 } \\ \" : { 1 } } } } } \" , LightSwitchSettings . ModuleName , - JsonSerializer . Serialize ( _moduleSettings , ( System . Text . Json . Serialization . Metadata . JsonTypeInfo<LightSwitchSettings> ) SourceGenerationContextContext . Default . LightSwitchSettings ) ) ) ; + JsonSerializer . Serialize ( _moduleSettings , SourceGenerationContextContext . Default . LightSwitchSettings ) ) ) ; } } } "
+  "sha": "b3628aa06826841fa7ecc3ee112d973287925d20",
+  "node_id": "C_kwDOCv6UO9oAKGIzNjI4YWEwNjgyNjg0MWZhN2VjYzNlZTExMmQ5NzMyODc5MjVkMjA",
+  "commit": {
+    "author": {
+      "name": "Ji\u0159\u00ed Pol\u00e1\u0161ek",
+      "email": "me@jiripolasek.com",
+      "date": "2025-10-17T19:31:47Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2025-10-17T19:31:47Z"
+    },
+    "message": "CmdPal: Fix exception logging in ContentFormViewModel (#42460)\n\n<!-- Enter a brief description/summary of your PR here. What does it\nfix/what does it change/how was it tested (even manually, if necessary)?\n-->\n## Summary of the Pull Request\n\nThis PR fixes logging entry. The invocation resembled a semantic logger\ncall, but its signature doesn\u2019t match ManagedCommon.Logger. As a result,\nit logged the placeholder text instead of the intended exception value:\n```log\n[01:43:41.8235422] [Error] ContentFormViewModel.cs::Unexpected HRESULT has been returned from a call to a COM component.::55\n    Error building card from template: {Message}\n```\n\n<!-- Please review the items on the PR checklist before submitting-->\n## PR Checklist\n\n- [ ] Closes: #xxx\n- [ ] **Communication:** I've discussed this with core contributors\nalready. If the work hasn't been agreed, this work might be rejected\n- [ ] **Tests:** Added/updated and all pass\n- [ ] **Localization:** All end-user-facing strings can be localized\n- [ ] **Dev docs:** Added/updated\n- [ ] **New binaries:** Added on the required places\n- [ ] [JSON for\nsigning](https://github.com/microsoft/PowerToys/blob/main/.pipelines/ESRPSigning_core.json)\nfor new binaries\n- [ ] [WXS for\ninstaller](https://github.com/microsoft/PowerToys/blob/main/installer/PowerToysSetup/Product.wxs)\nfor new binaries and localization folder\n- [ ] [YML for CI\npipeline](https://github.com/microsoft/PowerToys/blob/main/.pipelines/ci/templates/build-powertoys-steps.yml)\nfor new test projects\n- [ ] [YML for signed\npipeline](https://github.com/microsoft/PowerToys/blob/main/.pipelines/release.yml)\n- [ ] **Documentation updated:** If checked, please file a pull request\non [our docs\nrepo](https://github.com/MicrosoftDocs/windows-uwp/tree/docs/hub/powertoys)\nand link it here: #xxx\n\n<!-- Provide a more detailed description of the PR, other things fixed,\nor any additional comments/features here -->\n## Detailed Description of the Pull Request / Additional comments\n\n<!-- Describe how you validated the behavior. Add automated tests\nwherever possible, but list manual validation steps taken as well -->\n## Validation Steps Performed\n\nCo-authored-by: Michael Jolley <mike@baldbeardedbuilder.com>",
+    "tree": {
+      "sha": "cff2d6733592948b4e1e8a724e2646eb2283cfef",
+      "url": "https://api.github.com/repos/microsoft/PowerToys/git/trees/cff2d6733592948b4e1e8a724e2646eb2283cfef"
+    },
+    "url": "https://api.github.com/repos/microsoft/PowerToys/git/commits/b3628aa06826841fa7ecc3ee112d973287925d20",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJo8pmjCRC1aQ7uu5UhlAAAWncQAKKozcFJm+DBkD6KkKqeIn5G\nbKYr6dPBAsw70xsbZpQZutuB3Nvyo/us4rAChLEzHbxBD7MdlM1v8e+Juq6LrUPX\niWxpQcMo/HwL+qislVAUpnfIYO6JImznLRxggcYAo3eEL2ZyOi7imD8ax2dBQI/8\nzQjsKWt8XDtxkHndwtMWjT2ErdnSPmJLfAS4K7t5CVOuKsVK5yhYgwtwcToa2Mvf\nrKpiDMEHCFs2UQ8ZH97+1rYThzM+h7cuGncvNnjGblR5s0t/WjaCP1QvENM1VIpd\nHKLSFSOHvokdsPUbJ8h/eY3IeX49K9+4luj1osFM6qksDMxYxbzHLGeGurrwVBJ8\nN8L7xAxob5esz5p1ukO8TSHHqWqMw4vG2PtSL9zMvqQnyF2L10FEbddtE+1CZYRp\ne3lGhrN2vDJOvV9w+e8Wu4CRSEeCEiMb6XRWHfaF+3+wDzLi2DAkFPmyVP4Ejkqj\njB9LLtOcvEpNhm68ThjQ4B9p8ue68tT+/v8b6zDNwLG8zclWhROvHefZKgus2JLz\nrYDxdOO0CZRLNSeQ03tciOKaEEIxjiCmiXE7GGL+qTihB7HIxNmyeISdMaX/QBB5\nj3VdlGQROorfGpVC/mVdSeBWuOgrgvg8xiFdO7GDUSBoSZH1sW9+ZqPAHOU8aNMT\nJKjh8wttInN+dHvT4I33\n=gjga\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree cff2d6733592948b4e1e8a724e2646eb2283cfef\nparent 55e974dea47b670784117a26f0630c72701ee239\nauthor Ji\u0159\u00ed Pol\u00e1\u0161ek <me@jiripolasek.com> 1760729507 +0200\ncommitter GitHub <noreply@github.com> 1760729507 -0500\n\nCmdPal: Fix exception logging in ContentFormViewModel (#42460)\n\n<!-- Enter a brief description/summary of your PR here. What does it\nfix/what does it change/how was it tested (even manually, if necessary)?\n-->\n## Summary of the Pull Request\n\nThis PR fixes logging entry. The invocation resembled a semantic logger\ncall, but its signature doesn\u2019t match ManagedCommon.Logger. As a result,\nit logged the placeholder text instead of the intended exception value:\n```log\n[01:43:41.8235422] [Error] ContentFormViewModel.cs::Unexpected HRESULT has been returned from a call to a COM component.::55\n    Error building card from template: {Message}\n```\n\n<!-- Please review the items on the PR checklist before submitting-->\n## PR Checklist\n\n- [ ] Closes: #xxx\n- [ ] **Communication:** I've discussed this with core contributors\nalready. If the work hasn't been agreed, this work might be rejected\n- [ ] **Tests:** Added/updated and all pass\n- [ ] **Localization:** All end-user-facing strings can be localized\n- [ ] **Dev docs:** Added/updated\n- [ ] **New binaries:** Added on the required places\n- [ ] [JSON for\nsigning](https://github.com/microsoft/PowerToys/blob/main/.pipelines/ESRPSigning_core.json)\nfor new binaries\n- [ ] [WXS for\ninstaller](https://github.com/microsoft/PowerToys/blob/main/installer/PowerToysSetup/Product.wxs)\nfor new binaries and localization folder\n- [ ] [YML for CI\npipeline](https://github.com/microsoft/PowerToys/blob/main/.pipelines/ci/templates/build-powertoys-steps.yml)\nfor new test projects\n- [ ] [YML for signed\npipeline](https://github.com/microsoft/PowerToys/blob/main/.pipelines/release.yml)\n- [ ] **Documentation updated:** If checked, please file a pull request\non [our docs\nrepo](https://github.com/MicrosoftDocs/windows-uwp/tree/docs/hub/powertoys)\nand link it here: #xxx\n\n<!-- Provide a more detailed description of the PR, other things fixed,\nor any additional comments/features here -->\n## Detailed Description of the Pull Request / Additional comments\n\n<!-- Describe how you validated the behavior. Add automated tests\nwherever possible, but list manual validation steps taken as well -->\n## Validation Steps Performed\n\nCo-authored-by: Michael Jolley <mike@baldbeardedbuilder.com>",
+      "verified_at": "2025-10-17T19:31:48Z"
+    }
+  },
+  "url": "https://api.github.com/repos/microsoft/PowerToys/commits/b3628aa06826841fa7ecc3ee112d973287925d20",
+  "html_url": "https://github.com/microsoft/PowerToys/commit/b3628aa06826841fa7ecc3ee112d973287925d20",
+  "comments_url": "https://api.github.com/repos/microsoft/PowerToys/commits/b3628aa06826841fa7ecc3ee112d973287925d20/comments",
+  "author": {
+    "login": "jiripolasek",
+    "id": 4773077,
+    "node_id": "MDQ6VXNlcjQ3NzMwNzc=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/4773077?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jiripolasek",
+    "html_url": "https://github.com/jiripolasek",
+    "followers_url": "https://api.github.com/users/jiripolasek/followers",
+    "following_url": "https://api.github.com/users/jiripolasek/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jiripolasek/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jiripolasek/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jiripolasek/subscriptions",
+    "organizations_url": "https://api.github.com/users/jiripolasek/orgs",
+    "repos_url": "https://api.github.com/users/jiripolasek/repos",
+    "events_url": "https://api.github.com/users/jiripolasek/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jiripolasek/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "55e974dea47b670784117a26f0630c72701ee239",
+      "url": "https://api.github.com/repos/microsoft/PowerToys/commits/55e974dea47b670784117a26f0630c72701ee239",
+      "html_url": "https://github.com/microsoft/PowerToys/commit/55e974dea47b670784117a26f0630c72701ee239"
+    }
+  ],
+  "stats": { "total": 2, "additions": 1, "deletions": 1 },
+  "files": [
+    {
+      "sha": "aea2125573bd2e84e24d6566743fcc63a22c6d4b",
+      "filename": "src/modules/cmdpal/Microsoft.CmdPal.UI.ViewModels/ContentFormViewModel.cs",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "blob_url": "https://github.com/microsoft/PowerToys/blob/b3628aa06826841fa7ecc3ee112d973287925d20/src%2Fmodules%2Fcmdpal%2FMicrosoft.CmdPal.UI.ViewModels%2FContentFormViewModel.cs",
+      "raw_url": "https://github.com/microsoft/PowerToys/raw/b3628aa06826841fa7ecc3ee112d973287925d20/src%2Fmodules%2Fcmdpal%2FMicrosoft.CmdPal.UI.ViewModels%2FContentFormViewModel.cs",
+      "contents_url": "https://api.github.com/repos/microsoft/PowerToys/contents/src%2Fmodules%2Fcmdpal%2FMicrosoft.CmdPal.UI.ViewModels%2FContentFormViewModel.cs?ref=b3628aa06826841fa7ecc3ee112d973287925d20",
+      "patch": "@@ -52,7 +52,7 @@ private static bool TryBuildCard(\n         }\n         catch (Exception ex)\n         {\n-            Logger.LogError(\"Error building card from template: {Message}\", ex.Message);\n+            Logger.LogError(\"Error building card from template\", ex);\n             error = ex;\n             return false;\n         }"
+    }
+  ]
 }

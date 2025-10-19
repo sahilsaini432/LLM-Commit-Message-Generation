@@ -96,6 +96,23 @@ def get_all_commits(owner, repo):
             outfile.write(json.dumps(diff) + "\n")
 
 
+def format_text(message):
+    diff = message
+    # Add spaces around every special character/symbol
+    special_chars = r'([+\-*/%=!&|^~?:;,.\[\]{}()\'"@#$`])'
+    diff = re.sub(special_chars, r" \1 ", diff)
+
+    # Normalize multiple spaces to single space
+    diff = re.sub(r"\s+", " ", diff)
+
+    # Clean up
+    diff = diff.strip()
+
+    # Replace newlines with <nl> first
+    diff = diff.replace("\n", " <nl> ")
+    return diff
+
+
 def get_commit_diffs(owner, repo, sha):
     global GITHUB_TOKEN
     """Get files diffs for a specific commit."""
@@ -125,26 +142,15 @@ def get_commit_diffs(owner, repo, sha):
                         old_fileName = new_fileName
 
                     diff = f"mmm a / {old_fileName} <nl> ppp b / {new_fileName} <nl> {diff}"
-
-                    # Add spaces around every special character/symbol
-                    special_chars = r'([+\-*/%=!&|^~?:;,.\[\]{}()\'"@#$`])'
-                    diff = re.sub(special_chars, r" \1 ", diff)
-
-                    # Normalize multiple spaces to single space
-                    diff = re.sub(r"\s+", " ", diff)
-
-                    # Clean up
-                    diff = diff.strip()
-
-                    # Replace newlines with <nl> first
-                    diff = diff.replace("\n", " <nl> ")
+                    diff = format_text(diff)
 
                     final_diff += diff + " "
 
+            message = commit_data["commit"]["message"]
+            message = message.split("\n\n<!--")[0]
             diff_line = {
-                "message": commit_data["commit"]["message"],
+                "msg": format_text(message),
                 "sha": commit_data["sha"],
-                # "og_diff": diff,
                 "mod_diff": final_diff,
             }
             return diff_line
