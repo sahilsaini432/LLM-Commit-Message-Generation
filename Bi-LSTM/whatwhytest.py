@@ -1,3 +1,6 @@
+import argparse
+from pickle import NONE
+from tkinter import NO
 import torch
 from datasets import load_dataset  # hugging-face dataset
 from torch.utils.data import Dataset
@@ -111,13 +114,13 @@ class BiLSTMClassifier(nn.Module):
 
 # todo: define pytorch lightning
 class BiLSTMLighting(pl.LightningModule):
-    def __init__(self, drop, hidden_dim, output_dim):
+    def __init__(self, drop, hidden_dim, output_dim, test_data_path=None):
         super(BiLSTMLighting, self).__init__()
         self.model = BiLSTMClassifier(drop, hidden_dim, output_dim)  # setup model
         self.criterion = nn.CrossEntropyLoss()  # setup loss function
         self.train_dataset = MydataSet("./data/archive/train_clean.csv", "train")
         self.val_dataset = MydataSet("./data/archive/val_clean.csv", "train")
-        self.test_dataset = MydataSet("./data/powertoys/test_cleanjava.csv", "train")
+        self.test_dataset = MydataSet(f"{test_data_path}", "train")
 
     def configure_optimizers(self):
         optimizer = optim.AdamW(self.parameters(), lr=lr)
@@ -208,10 +211,24 @@ def test():
 
 
 token = BertTokenizer.from_pretrained("bert-base-uncased")
+
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(
+        description="Args to run the filter script",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+    )
+
+    parser.add_argument("-t", "--test_data", help="test file path")
+
+    args = parser.parse_args()
+    test_data_path = args.test_data
 
     model = BiLSTMLighting.load_from_checkpoint(
-        checkpoint_path=PATH, drop=dropout, hidden_dim=rnn_hidden, output_dim=class_num
+        checkpoint_path=PATH,
+        drop=dropout,
+        hidden_dim=rnn_hidden,
+        output_dim=class_num,
+        test_data_path=test_data_path,
     )
     trainer = Trainer()
     trainer.test(model)

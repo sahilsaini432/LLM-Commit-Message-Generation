@@ -55,13 +55,13 @@ def get_all_commits(owner, repo):
 
     total_commits = []
 
-    page = 1
+    page = 100
     per_page = 100  # Maximum allowed by GitHub API
 
     print(f"🔍 Fetching commits from {owner}/{repo}...")
 
     #  Get Commits
-    while len(total_commits) < 100:
+    while len(total_commits) < 1500:
         # Add pagination parameters
         url = f"{base_url}?page={page}&per_page={per_page}"
 
@@ -72,16 +72,11 @@ def get_all_commits(owner, repo):
                 commits = resp.json()
                 print(f"Fetched {len(commits)} commits from page {page}")
 
-                # If no commits returned, we've reached the end
-                if not commits:
-                    print("no commits found")
-                    break
-
                 for commit in commits:
                     if len(commit["parents"]) == 1:
                         total_commits.append(commit["sha"])
 
-            page += 1
+            page -= 1
         except requests.exceptions.RequestException as e:
             print(f"❌ Network error: {e}")
             return None

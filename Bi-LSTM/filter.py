@@ -43,6 +43,15 @@ def main():
 
     update_jsonl_file(messages, output_file)
 
+    # create csv file
+    csv_file = f"{path}/filtered_data.csv"
+    with open(csv_file, "w") as outfile:
+        outfile.write("new_message1,label\n")
+        for line in tqdm(open(output_file, "r")):
+            data = json.loads(line)
+            msg = data.get("msg", "")
+            outfile.write(f"{msg},0\n")
+
 
 def run_processing(args, input_file, output_file):
     path = f"{Path(__file__).parent}/data/{args.repo}"
@@ -90,7 +99,6 @@ def run_processing(args, input_file, output_file):
 
                 # Store all file names as a list
                 data["file_name"] = file_names
-                print(f"[SAHIL] {file_names}")
 
             # Write the original dataset containing processed data to output file
             outfile.write(json.dumps(data) + "\n")
