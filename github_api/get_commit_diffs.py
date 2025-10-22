@@ -1,7 +1,6 @@
 from calendar import c
 import datetime
 import json
-from regex import D
 import requests
 import time
 from pathlib import Path
@@ -147,7 +146,8 @@ def get_commit_diffs(owner, repo, sha):
                 print("No files changed in this commit.")
                 return None
 
-            final_diff = ""
+            diff = ""
+            mod_diff = ""
             for file in commit_data["files"]:
                 if "patch" in file and file["patch"] is not None:
                     diff = file["patch"]
