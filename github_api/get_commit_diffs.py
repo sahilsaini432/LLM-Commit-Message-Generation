@@ -61,7 +61,7 @@ def get_all_commits(owner, repo):
     print(f"🔍 Fetching commits from {owner}/{repo}...")
 
     #  Get Commits
-    while len(total_commits) < 1500:
+    while True:
         # Add pagination parameters
         url = f"{base_url}?page={page}&per_page={per_page}"
 
@@ -70,13 +70,36 @@ def get_all_commits(owner, repo):
 
             if resp.status_code == 200:
                 commits = resp.json()
-                print(f"Fetched {len(commits)} commits from page {page}")
 
-                for commit in commits:
-                    if len(commit["parents"]) == 1:
-                        total_commits.append(commit["sha"])
+                # If no commits returned, we've reached the end
+                if not commits:
+                    print("no commits found")
+                    break
 
-            page -= 1
+                total_commits.extend(commits)
+                print(f"📄 Fetched page {page} - {len(commits)} commits (Total: {len(total_commits)})")
+
+                # If we got fewer commits than per_page, we're on the last page
+                if len(commits) < per_page:
+                    break
+
+                page += 1
+                # Small delay to be respectful to the API
+            elif resp.status_code == 403:
+                print("Received a 403 error.")
+                # Check for specific rate limit headers
+                if "retry-after" in resp.headers:
+                    wait_time = int(resp.headers["retry-after"])
+                    print(f"Waiting for {wait_time} seconds before retrying.")
+                    time.sleep(wait_time)
+                elif "X-RateLimit-Reset" in resp.headers:
+                    reset_timestamp = int(resp.headers["X-RateLimit-Reset"])
+                    wait_time = reset_timestamp - time.time()
+                    if wait_time > 0:
+                        print(f"Primary rate limit exceeded. Waiting for {wait_time} sec")
+                        time.sleep(wait_time)
+            else:
+                print(f"❌ Failed to fetch commits: {resp.status_code} - {resp.text}")
         except requests.exceptions.RequestException as e:
             print(f"❌ Network error: {e}")
             return None

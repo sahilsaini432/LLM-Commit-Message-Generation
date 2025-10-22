@@ -17,7 +17,7 @@ torch.backends.cudnn.enable = True
 torch.backends.cudnn.benchmark = True
 os.environ["CUDA_LAUNCH_BLOCKING"] = "1"
 torch.set_float32_matmul_precision("high")
-PATH = "./lightning_logs/version_1/checkpoints/epoch=29-step=330.ckpt"
+PATH = "./lightning_logs/best-checkpoint-epoch=05-val_loss=0.65.ckpt"
 batch_size = 64
 epochs = 30
 dropout = 0.4
@@ -33,13 +33,28 @@ import json
 class MydataSet(Dataset):
     def __init__(self, path, split):
         self.data = []
-        with open(path, "r", encoding="utf-8") as file:  # Use the path parameter
-            for line in file:
-                self.data.append(json.loads(line))
+        if not os.path.exists(path):
+            print(f"❌ File not found: {path}")
+            return
+
+        with open(path, "r", encoding="utf-8") as file:
+            for line_num, line in enumerate(file, 1):
+                line = line.strip()
+                if not line:
+                    continue
+                try:
+                    data_item = json.loads(line)
+                    self.data.append(data_item)
+                except json.JSONDecodeError as e:
+                    print(f"⚠️ Skipping line {line_num}: {e}")
+
+        print(f"✅ Loaded {len(self.data)} samples from {path}")
 
     def __getitem__(self, item):
-        text = self.data[item]["msg"]  # 根据实际的键名调整
-        label = 0  # 根据实际的键名调整
+        if item >= len(self.data):
+            return "", 0
+        text = self.data[item].get("msg", "")
+        label = self.data[item].get("label", 0)
         return text, label
 
     def __len__(self):
@@ -118,9 +133,14 @@ class BiLSTMLighting(pl.LightningModule):
         super(BiLSTMLighting, self).__init__()
         self.model = BiLSTMClassifier(drop, hidden_dim, output_dim)  # setup model
         self.criterion = nn.CrossEntropyLoss()  # setup loss function
-        self.train_dataset = MydataSet("./data/archive/train_clean.csv", "train")
-        self.val_dataset = MydataSet("./data/archive/val_clean.csv", "train")
-        self.test_dataset = MydataSet(f"{test_data_path}", "train")
+
+        # ✅ Store test step outputs manually
+        self.test_step_outputs = []
+
+        # Only initialize test dataset for testing
+        self.test_dataset = None
+        if test_data_path:
+            self.test_dataset = MydataSet(test_data_path, "train")
 
     def configure_optimizers(self):
         optimizer = optim.AdamW(self.parameters(), lr=lr)
@@ -129,85 +149,108 @@ class BiLSTMLighting(pl.LightningModule):
     def forward(self, input_ids, attention_mask, token_type_ids):  # forward(self,x)
         return self.model(input_ids, attention_mask, token_type_ids)
 
-    def train_dataloader(self):
-        train_loader = DataLoader(
-            dataset=self.train_dataset, batch_size=batch_size, collate_fn=collate_fn, shuffle=True
-        )
-        return train_loader
-
-    def training_step(self, batch, batch_idx):
-        input_ids, attention_mask, token_type_ids, labels = batch  # x, y = batch
-        y = one_hot(labels, num_classes=4)
-        # convert one_hot_labels type to float
-        y = y.to(dtype=torch.float)
-        # forward pass
-        y_hat = self.model(input_ids, attention_mask, token_type_ids)
-        y_hat = y_hat.squeeze()  # squeeze [128, 1, 3] to [128,3]
-        loss = self.criterion(y_hat, y)  # criterion(input, target)
-        self.log(
-            "train_loss", loss, prog_bar=True, logger=True, on_step=True, on_epoch=True
-        )  # output loss to console
-        return loss  # must return log for it to be useful
-
-    def val_dataloader(self):
-        val_loader = DataLoader(
-            dataset=self.val_dataset, batch_size=batch_size, collate_fn=collate_fn, shuffle=False
-        )
-        return val_loader
-
-    def validation_step(self, batch, batch_idx):
-        input_ids, attention_mask, token_type_ids, labels = batch
-        y = one_hot(labels, num_classes=4)
-        y = y.to(dtype=torch.float)
-        # forward pass
-        y_hat = self.model(input_ids, attention_mask, token_type_ids)
-        y_hat = y_hat.squeeze()
-        loss = self.criterion(y_hat, y)
-        self.log("val_loss", loss, prog_bar=False, logger=True, on_step=True, on_epoch=True)
-        return loss
-
     def test_dataloader(self):
+        if self.test_dataset is None or len(self.test_dataset) == 0:
+            print("❌ No test dataset available!")
+            return None
+
         test_loader = DataLoader(
-            dataset=self.test_dataset, batch_size=batch_size, collate_fn=collate_fn, shuffle=False
+            dataset=self.test_dataset,
+            batch_size=batch_size,
+            collate_fn=collate_fn,
+            shuffle=False,
+            num_workers=4,  # ✅ Add workers as suggested
         )
         return test_loader
 
     def test_step(self, batch, batch_idx):
         input_ids, attention_mask, token_type_ids, labels = batch
+
         # forward propagation
         y_hat = self.model(input_ids, attention_mask, token_type_ids)
         # prediction
         pred = torch.argmax(y_hat, dim=1)
-        with open("predgo.txt", "a", encoding="utf-8") as f:
-            f.write(str(pred))
-        # return prediction results and original data
-        return {"pred": pred, "text": [i[0] for i in batch], "label": labels}
+
+        # Write raw predictions to file
+        path = f"./data/Powertoys/predgo.txt"
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        with open(path, "a", encoding="utf-8") as f:
+            f.write(str(pred) + "\n")
+
+        # ✅ Get original texts from dataset using batch indices
+        batch_start = batch_idx * batch_size
+        batch_end = min(batch_start + len(labels), len(self.test_dataset))
+        texts = [self.test_dataset.data[i].get("msg", "") for i in range(batch_start, batch_end)]
+        shas = [self.test_dataset.data[i].get("sha", "") for i in range(batch_start, batch_end)]
+
+        # ✅ Store outputs for later processing
+        output = {
+            "pred": pred.cpu(),  # Move to CPU to avoid memory issues
+            "text": texts,
+            "label": labels.cpu(),
+            "sha": shas,
+        }
+        self.test_step_outputs.append(output)
+
+        return output
 
     def on_test_epoch_end(self):
+        if not self.test_step_outputs:
+            print("❌ No test outputs to process!")
+            return
+
         all_predictions = []
-        for output in self.trainer.callback_metrics:
+
+        print(f"📊 Processing {len(self.test_step_outputs)} batches...")
+
+        # ✅ Process collected outputs from test steps
+        for batch_num, output in enumerate(self.test_step_outputs):
             preds = output["pred"].tolist()
             texts = output["text"]
             labels = output["label"].tolist()
+            shas = output["sha"]
 
-            for pred, text, label in zip(preds, texts, labels):
-                updated_record = {"new_message1": text, "label": label, "result": pred}
+            print(f"Batch {batch_num}: {len(preds)} predictions, {len(texts)} texts, {len(labels)} labels")
+
+            # Make sure all lists have the same length
+            min_len = min(len(preds), len(texts), len(labels))
+
+            for i in range(min_len):
+                updated_record = {
+                    "sha": shas[i],
+                    "new_message1": texts[i],
+                    "label": labels[i],
+                    "predicted_result": preds[i],
+                }
                 all_predictions.append(updated_record)
 
-        # save as new JSONL file
-        with open("predictions.jsonl", "w", encoding="utf-8") as file:
+        # Save as new JSONL file
+        output_path = "./data/Powertoys/predictions.jsonl"
+        os.makedirs(os.path.dirname(output_path), exist_ok=True)
+
+        with open(output_path, "w", encoding="utf-8") as file:
             for record in all_predictions:
                 file.write(json.dumps(record) + "\n")
 
+        print(f"✅ Saved {len(all_predictions)} predictions to {output_path}")
 
-def test():
-    # load previously trained optimal model parameters
-    model = BiLSTMLighting.load_from_checkpoint(
-        checkpoint_path=PATH, drop=dropout, hidden_dim=rnn_hidden, output_dim=class_num
-    )
-    trainer = Trainer(fast_dev_run=False)
-    result = trainer.test(model)
-    print(result)
+        # Calculate some basic stats
+        if all_predictions:
+            label_counts = {}
+            result_counts = {}
+
+            for pred in all_predictions:
+                label = pred["label"]
+                result = pred["predicted_result"]
+
+                label_counts[label] = label_counts.get(label, 0) + 1
+                result_counts[result] = result_counts.get(result, 0) + 1
+
+            print(f"📊 Label distribution: {label_counts}")
+            print(f"📊 Prediction distribution: {result_counts}")
+
+        # ✅ Clear outputs for next test run
+        self.test_step_outputs.clear()
 
 
 token = BertTokenizer.from_pretrained("bert-base-uncased")
@@ -218,10 +261,13 @@ if __name__ == "__main__":
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
 
-    parser.add_argument("-t", "--test_data", help="test file path")
+    parser.add_argument("-t", "--test_data", required=True, help="test file path")
 
     args = parser.parse_args()
     test_data_path = args.test_data
+
+    print(f"🔄 Loading model from {PATH}")
+    print(f"📁 Test data: {test_data_path}")
 
     model = BiLSTMLighting.load_from_checkpoint(
         checkpoint_path=PATH,
@@ -230,5 +276,10 @@ if __name__ == "__main__":
         output_dim=class_num,
         test_data_path=test_data_path,
     )
+
+    print(f"📊 Dataset size: {len(model.test_dataset) if model.test_dataset else 0}")
+
     trainer = Trainer()
     trainer.test(model)
+
+    print("🎉 Testing completed!")

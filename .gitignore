@@ -209,3 +209,6 @@ __marimo__/
 .vscode
 .env
 lightning_logs/
+
+*.json
+*.jsonl
