@@ -1,0 +1,1516 @@
+{"msg": "Delete < > useless < > files"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Merge `` PythonPlugin `` branch"}
+{"msg": "Add < > <iden> < > <iden> < > installer"}
+{"msg": "Fix issue # 13"}
+{"msg": "delete cpp codes"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "research <iden> <iden> : seems ok in multiple <iden> now ."}
+{"msg": "try < > to < > use < > < <iden> > < > . < > net < > as < > < <iden> > < > bridge < > ."}
+{"msg": "research"}
+{"msg": "project file change"}
+{"msg": "structure change"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "add browser <iden> ( <iden> ) plugin"}
+{"msg": "update msg window"}
+{"msg": "start issue # 11"}
+{"msg": "Add progress bar"}
+{"msg": "fix <iden> didn ' t work issue"}
+{"msg": "fix program plugin doesn ' t work in XP issue ."}
+{"msg": "Add missed changes"}
+{"msg": "remove unused codes"}
+{"msg": "add translator <iden>"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Add <method_name> <iden>"}
+{"msg": "structure change"}
+{"msg": "python plugin test"}
+{"msg": "Add <iden> commands"}
+{"msg": "add pywinalfred test project"}
+{"msg": "Change <iden> C Wrapper"}
+{"msg": "Fix <iden> issues"}
+{"msg": "UI staff"}
+{"msg": "fixing embedding <iden> multithread problems"}
+{"msg": "UI staff"}
+{"msg": "regular update"}
+{"msg": "add <iden>"}
+{"msg": "UI staff"}
+{"msg": "UI staff"}
+{"msg": "some UI staff"}
+{"msg": "< < method_ <method_name> > od_ <method_name> > por <method_name> <iden> <method_name> ment"}
+{"msg": "add <iden> environment to execute <iden> <iden>"}
+{"msg": "regular commit"}
+{"msg": "project stucture change"}
+{"msg": "init"}
+{"msg": "Fix issues # 33"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Fix mouse click issues and add a new <iden> < <iden> > ."}
+{"msg": "Fix issue # 26 `` not count execute error command in history will be better ``"}
+{"msg": "Fix issue # 32"}
+{"msg": "Add wox < <iden> > <iden> ."}
+{"msg": "<iden> < <iden> > <iden> file <iden> ( from ini to json )"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Resert changes"}
+{"msg": "<iden> research"}
+{"msg": "Add <iden> < <iden> > ."}
+{"msg": "Fix dependency references issue of c # plugins ."}
+{"msg": "Change python plugin interface ."}
+{"msg": "Fix crash issue when user didn ' t install <iden> ."}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Log python plugin error ."}
+{"msg": "Fix select <iden> item delay issue ."}
+{"msg": "Change default height for result item"}
+{"msg": "Add custom <iden> <iden> feature ."}
+{"msg": "Add <iden> setting"}
+{"msg": "Fix theme bugs ."}
+{"msg": "UI changes ."}
+{"msg": "Add <iden> library ."}
+{"msg": "fix some small UI issue"}
+{"msg": "Bug fix"}
+{"msg": "remove useless codes"}
+{"msg": "bug fix"}
+{"msg": "Fix title aligment issue when subtitle is empty ."}
+{"msg": "Replace <method_name> usercontrol with listbox to improve ui performance"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Fix `` <iden> wox on <iden> start `` issue ."}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Init"}
+{"msg": "Add modifier key support when user action items ."}
+{"msg": "Remove number placeholder in the right of <iden> item ."}
+{"msg": "add fuzzy <iden> match support for < <iden> > plugin"}
+{"msg": "fix build error on release mode and add miss <iden> nuget <iden>"}
+{"msg": "Fix crash when UAC <iden> the <iden> . = _ = 英语不好连个说明和注释都写不出了"}
+{"msg": "`` start wox on system <iden> `` config changes ."}
+{"msg": "Add start < Wox > on <iden> <iden> <iden> & code refactorying ."}
+{"msg": "Revert project file changes of <iden> sdk ."}
+{"msg": "Implement <method_name> feature ."}
+{"msg": "Add <iden> x64 dll"}
+{"msg": "Fix : Prevent user from closing the main window via Alt + F4"}
+{"msg": "Fix < > : < > remove < > unnecessary < > binary < > <iden> < > . < > <iden> < > . < > dll"}
+{"msg": "Fix crash on null <iden> binded to <iden>"}
+{"msg": "Add support for < <iden> > both 32 - bit and 64 - bit"}
+{"msg": "Add web <iden> feature & some UI changes ."}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Rename < > the < > <iden> < > ."}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Simulate <iden> Run Dialog behaviors in the < CMD > worlflow ."}
+{"msg": "Fixed : File not found - ico . png"}
+{"msg": "Fixed : Calling null callback `` <iden> ``"}
+{"msg": "Create the `` Docsets `` directory if it not exists"}
+{"msg": "code refactoring and add web searches <iden> window ."}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "fix Issue # 16"}
+{"msg": "fix win + r issue ."}
+{"msg": "Mouse select support & Code refactoring"}
+{"msg": "show top 5 < CMD > <iden> when < CMD > query is empty ."}
+{"msg": "change the <iden> style ."}
+{"msg": "change vs2010 solution file ."}
+{"msg": "fix < CMD > <iden> and add <iden> support ."}
+{"msg": "Clean some references"}
+{"msg": "Use the NuGet <iden> of <iden>"}
+{"msg": "Add some workarounds for clean environment ."}
+{"msg": "Add <iden> win + r option"}
+{"msg": "add theme <iden> . And provide two themes default ."}
+{"msg": "update doc workflow"}
+{"msg": "add doc workflow"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "add <iden> option for <iden>"}
+{"msg": "add some comments"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Add kill <iden> workflow"}
+{"msg": "fix issues"}
+{"msg": "project file change"}
+{"msg": "add v2ex <iden>"}
+{"msg": "Add one <iden> support ."}
+{"msg": "Fix a UI issue ."}
+{"msg": "Limit the display <iden> item to 6 at most ."}
+{"msg": "Add <iden> 8 installation note and prefer <version> SP1 rather than <version> to XP users"}
+{"msg": "[ skip ci ] Fix typos"}
+{"msg": "Fix miss default font"}
+{"msg": "Fix not handle . ico image type"}
+{"msg": "Fix incorrect behavior with App Paths"}
+{"msg": "Auto Complete for < CMD > mode"}
+{"msg": "Fix typo Widow - > <iden>"}
+{"msg": "Fix # <version> + F4 will hide app now rather than crash"}
+{"msg": "Add <iden> support show file icon and add a file icon cache associate with file extension"}
+{"msg": "Change the default grid height of <iden> <iden> <iden> Panel ."}
+{"msg": "Fix # 58 : don ' t calc when input . length < = 2"}
+{"msg": "Revert `` Limit < <iden> > trigger must has one <iden> at least `` This reverts commit fe124310def2121520c4cc4588a3a0ee2e563ba7 ."}
+{"msg": "# 56 Add Font <iden>"}
+{"msg": "Limit < <iden> > trigger must has one <iden> at least make not <iden> some <iden> like `` pi ``"}
+{"msg": "Fix <iden> not support <iden> with space"}
+{"msg": "Close # 42 <iden> Source settings GUI"}
+{"msg": "# 2 change <iden> default search mode"}
+{"msg": "Close # 52 : Encoding issues with <iden> plugin"}
+{"msg": "Make Python plugin enabled by default # 51"}
+{"msg": "Remove useless field in <iden>"}
+{"msg": "Add <method_name> s settings ( code only , without GUI ) # 42"}
+{"msg": "Read . exe file description for <iden> name"}
+{"msg": "Add <iden> . com program source support . # 42"}
+{"msg": "Refactor to support multiple program <iden> # 42 App Paths is supported now # 41"}
+{"msg": "Make python <iden> optional"}
+{"msg": "Save <iden> setting"}
+{"msg": "<iden> - > <iden>"}
+{"msg": "add missing imports + save project changes"}
+{"msg": "move files to new globalhotkey file"}
+{"msg": "gloablHotkey - > <method_name>"}
+{"msg": "Remove useless codes ."}
+{"msg": "Optimize speed for CMD mode"}
+{"msg": "close # 38 Change Virtualizing Mode from <iden> to <iden> ."}
+{"msg": "Add drag support # 44"}
+{"msg": "fix closure bug sometimes will always open the last action item ."}
+{"msg": "Optimize <iden> results"}
+{"msg": "Remove compiler warnings"}
+{"msg": "add < <method_name> > system plugin"}
+{"msg": "Fix a null references issue that may crash wox ."}
+{"msg": "Close # 39 : Remove the shortcut arrow <iden>"}
+{"msg": "Fix line ending [ skip ci ]"}
+{"msg": "Remove <iden>"}
+{"msg": "<iden> AssemblyInfos [ skip ci ]"}
+{"msg": "Remove xml files in build folder ."}
+{"msg": "Remove dropshadow since it ' s buggy ."}
+{"msg": "Revert `` Fix Image didn ' t copy to output directory issues . ``"}
+{"msg": "Change < > <iden>"}
+{"msg": "Add CI <iden> ."}
+{"msg": "Fix Image didn ' t copy to output directory issues ."}
+{"msg": "Copy Images to output directory"}
+{"msg": "Update NuGet configuration"}
+{"msg": "Fix error in projects . . ."}
+{"msg": "Add missing NuGet < <iden> > into Wox . UAC"}
+{"msg": "Clean build configuration"}
+{"msg": "Add <iden> support for <iden> / ChromeSxS and multiple profiles"}
+{"msg": "Revert use <iden> on Bookmarks since it ' s too slow"}
+{"msg": "Fixed <iden> <version> configuration"}
+{"msg": "Add support for <iden> & <iden>"}
+{"msg": "<iden> for <method_name> s and some tweaks"}
+{"msg": "ToPinyin : Convert to SimpChinese at first"}
+{"msg": "Fix the bug in <iden>"}
+{"msg": "<method_name> trick"}
+{"msg": "Update 2010 <iden> file Fix a bug in <iden> plugin configuration"}
+{"msg": "fix a null references issues ."}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Remove <iden> which is buggy in XP and poor performance ."}
+{"msg": "Small issue changes ."}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Change < <iden> > Style ."}
+{"msg": "Add round corner support for < Wox > ."}
+{"msg": "Add tooltip for subtitle"}
+{"msg": "Add < <iden> > bat ."}
+{"msg": "implement WPM <iden>"}
+{"msg": "Strange changes ."}
+{"msg": "Remove unnecessary file ."}
+{"msg": "Fix bugs in CMD <iden> and PluginMangerment <iden> ."}
+{"msg": "Add < > <iden> < > < <iden> > < > ."}
+{"msg": "implement issue # 8 part 1"}
+{"msg": "Fix issue # 24"}
+{"msg": "Add global unhandled exception check ."}
+{"msg": "Refactoring `` <iden> with windows `` option ."}
+{"msg": "Fix issues # <version> image cache ."}
+{"msg": "Uncommented and removed junk code"}
+{"msg": "Files < > added < > to < > <iden> < > <iden> < > after < > folders < > I < > think < > it < > is < > time < > we < > release < > version < > 2"}
+{"msg": "Fixed Image Errors + Handing Bad <iden>"}
+{"msg": "Tab : Now adds Next s Title to tb <method_name>"}
+{"msg": "Fix crash issue when user clicked <iden> in UAC <iden> <iden> ."}
+{"msg": "Fix crash on invalid chars in path"}
+{"msg": "Combine <iden> and <iden> into < <iden> > cc @ aaroncampf"}
+{"msg": "close # 65 Hide when app loses focus"}
+{"msg": "Fix python plugin crash issues ."}
+{"msg": "Added < <method_name> > class , which is used to check <iden> an application is CUI . This fixes the issue introduced in e0eb8c8 ."}
+{"msg": "Feature : Added < <iden> > class , which prevents having duplicate windows of the same type opened at the same time"}
+{"msg": "- added option to open Wox Settings from the tray menu - added a checkbox option specifying <iden> to leave the <iden> line open after having run a <iden> like > ping google . com"}
+{"msg": "Removed FileSystemSourceShallow"}
+{"msg": "fix null references issues in commit 6b9f96697bb53f38ad01a11dee7ae9ef05924e72 @ aaroncampf"}
+{"msg": "Upgrading Features Now Parent <iden> will appear in search <iden> ."}
+{"msg": "Added <iden> for searching <iden> directories"}
+{"msg": "Add restart wox command into sys plugin ."}
+{"msg": "Use a better method to calculate relative coordinates while moving among screens"}
+{"msg": "a"}
+{"msg": "Fix issues in 636350c3952daa62346f49f790035aa2c5082727"}
+{"msg": "<iden> <iden> File Structure change ."}
+{"msg": "Added Features Feature : Search additional folders by default ( shallow <iden> ) Feature : Disable <iden>"}
+{"msg": "Show Wox on Mouse <iden>"}
+{"msg": "Use < <method_name> r > instead of < Chinese <method_name> > / / Please do not use the binary version on NuGet since there are some issues with the data table"}
+{"msg": "Fix performance issues while loading fonts"}
+{"msg": "Optimize settings order"}
+{"msg": "Move <iden> into featureBox"}
+{"msg": "Rename < < Wox > . <iden> > . <iden> to < < < Wox > . <iden> > . <iden> > Finish moving < <method_name> > into <iden>"}
+{"msg": "Move < <method_name> > into Feature"}
+{"msg": "Add Feature Tab in Settings . ( Still WIP )"}
+{"msg": "Remove useless code"}
+{"msg": "Fix < <iden> > Suggestion crash on network error"}
+{"msg": "Remove duplicated code"}
+{"msg": "Prevent from accessing last results if query has changed"}
+{"msg": "remove useless file ."}
+{"msg": "Fix duplicated <iden> in CMD"}
+{"msg": "Fix issues with web search icons"}
+{"msg": "Add < <method_name> > suggestions for web searches Fix issues with push <iden>"}
+{"msg": "Fix error in ac81d38acc76438028dc3f06704f21c147adc565"}
+{"msg": "Add <iden> for push <iden> before Query <iden> <iden>"}
+{"msg": "Add error report ( however it has no sending feature at this commit )"}
+{"msg": "Fix issue with Layered <iden>"}
+{"msg": "Add opacity mode settings"}
+{"msg": "Change Themes tab layout and add <iden> behind preview ."}
+{"msg": "Enable themes of <iden> Common Controls and Dialogs in Wox . UAC"}
+{"msg": "Fix issues with Aero"}
+{"msg": "Revert `` Use short name of Assembly instead of full name . `` since there are some Assembly loading issues . This reverts commit cf7ae<version> name will produce no errors when debugging using Visual Studio hosting process . However , this will crash outside Visual Studio ."}
+{"msg": "Add Aero theme"}
+{"msg": "Fix issues with <iden>"}
+{"msg": "Fix crash on querying when <iden> are <iden>"}
+{"msg": "Fix a bug with <iden> typefaces"}
+{"msg": "Use short name of Assembly instead of full name ."}
+{"msg": "Revert `` Revert use <iden> on Bookmarks since it ' s too slow ``"}
+{"msg": "Allow change <iden> , <iden> , <iden>"}
+{"msg": "Directory change use fuzzy to search"}
+{"msg": "Optimize fuzzy match"}
+{"msg": "Fix a file missing bug"}
+{"msg": "Change Directory plugin subdirectory list action"}
+{"msg": "Fix bug with theme in Windows 8"}
+{"msg": "Add <iden> <version>"}
+{"msg": "Fix added websearch twice issue ."}
+{"msg": "close # 47 Add log level <iden>"}
+{"msg": "Fix a bug when creating Config directory"}
+{"msg": "Fix ' Path ' is an ambiguous reference between ' <iden> . IO . Path ' and ' <iden> . <iden> . Shapes . Path '"}
+{"msg": "Update VS2010 <iden>"}
+{"msg": "Fix issues with <iden> . <iden> . <iden>"}
+{"msg": "Refactor setting storage related"}
+{"msg": "close # 48 Refactor <iden> <iden> ."}
+{"msg": "Remove <iden>"}
+{"msg": "Support data URI as Icon"}
+{"msg": "Allow plugins return null"}
+{"msg": "<iden> all plugins to their own repo"}
+{"msg": "Fix applicationDirectory issues and add <iden> <iden>"}
+{"msg": "Remove <iden> movie < <iden> > to <link>. com / <iden> / < Wox > . <iden> . DoubanMovie"}
+{"msg": "Add <iden> <iden> support list child <iden> and <iden>"}
+{"msg": "Fix Alt + Space <iden> affect by <iden> if no <iden> <iden> box , sometimes awake < Wox > with alt + space <iden> , the first input key is swallowed by <iden>"}
+{"msg": "Add support ClickOnce application ex . Github for Windows use this file extension"}
+{"msg": "Filter <iden> <iden> item"}
+{"msg": "Update WPM ."}
+{"msg": "Fix a bug with <iden>"}
+{"msg": "Optimize for text selection after pressing Win + R"}
+{"msg": "Move <iden>"}
+{"msg": "Fix a bug with <iden>"}
+{"msg": "Use <method_name> to provide unified experience"}
+{"msg": "Remove useless code ."}
+{"msg": "Fix some icon issues of some file types"}
+{"msg": "Better path handeling Thanks @ orzFly"}
+{"msg": "Better icon - handeling . And enumerate <iden> ICON instead of <iden>"}
+{"msg": "Save icons using GUID filename"}
+{"msg": "Control Panel Split Logic"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Refactoring <iden> and URL <iden> ."}
+{"msg": "Fix potential issues in control panel ."}
+{"msg": "Update Control Panel The Control Panel now also includes third party panel items ."}
+{"msg": "Fix < > <iden> < > env < > <iden> < > ."}
+{"msg": "Pack <iden> env < <iden> > < method_ < <iden> > >"}
+{"msg": "Fix issues in < <iden> > plugin ."}
+{"msg": "Optimized search Removed redundant check ."}
+{"msg": "Save icon ' s as . bmp . ico hack was unneccassary ."}
+{"msg": "Only <iden> top 2 relevent <iden>"}
+{"msg": "Added priority to title <iden>"}
+{"msg": "Trim query"}
+{"msg": "Cosmetic changes <iden> = > <iden>"}
+{"msg": "Added <iden> Panel"}
+{"msg": "Add proxy setting UI # 118"}
+{"msg": "Fix an issue when switch between plugin with icons and without icons ."}
+{"msg": "close # 113 can ' t check checkbox by clicking label"}
+{"msg": "Add browse more <iden> and theme link to setting dialog ."}
+{"msg": "Async loading item images = > huge performance improvements for old machines ."}
+{"msg": "get <iden> <iden> <iden> <iden> from <iden> . ini"}
+{"msg": "Add open pluign directory link in <iden> setting page ."}
+{"msg": "Add image loader class"}
+{"msg": "Python < > plugin < > loader < > bug < > fix < > ."}
+{"msg": "Pixel perfect alignment Seems the designview differs from reality"}
+{"msg": "Cosmetic changes Taskbar <iden> = > <iden> Alignment of combo boxes Alignment of checkboxes and text"}
+{"msg": "Implement # 15"}
+{"msg": "Fix spelling mistake seleted = > selected"}
+{"msg": "[ Programs ] Fix <iden> behaviour Fix <iden> asking user to select item if he clicks No after trying to <iden> an item in Programs Settings ."}
+{"msg": "[ <iden> ] Fix <iden> behaviour Fix <iden> asking user to select item if he clicks No ."}
+{"msg": "Add <method_name> <iden> < <iden> > as the Demo ."}
+{"msg": "Add v2ex <iden> < <iden> > demo ."}
+{"msg": "Add missing files ."}
+{"msg": "Add portable python environment"}
+{"msg": "Refa < <iden> > ing [ WIP ]"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Refactoring <iden> Loader [ WIP ] ."}
+{"msg": "Add Executable <iden> Loader"}
+{"msg": "Move < CMD > settings to < CMD > plugin details ."}
+{"msg": "Some <iden> style changes ."}
+{"msg": "close # 21 Allow user to set their custom <method_name>"}
+{"msg": "improved Firefox bookmark - pars <method_name> g query now gets bookmark title from <iden> table <method_name> stead of <iden>"}
+{"msg": "cache <iden> <iden> and support p <method_name> y <method_name> <iden>"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "update < <iden> > . json for the BrowserBookmarks <iden>"}
+{"msg": "Make sure the <iden> . <iden> file exists before <iden> <iden> <iden> ."}
+{"msg": "add <iden> for <iden> <iden>"}
+{"msg": "# 21 Add <iden> option for each <iden> ."}
+{"msg": "Add folder existence check for <iden> environment variable ."}
+{"msg": "Add Empty Check for <iden> Method ."}
+{"msg": "Change cwd to % <iden> % before executing command ."}
+{"msg": "Revert 3bbe54bb719cf40b477161fd6486916c1da1828e"}
+{"msg": "Bug fix for drag drop <iden> installer ."}
+{"msg": "Allow drag drop to install wox plugin ."}
+{"msg": "Revert `` Use sleep instead of ping . `` This reverts commit 3f1064b22d4ebb2223a9e82cd0a59c0191e6dc13 ."}
+{"msg": "Optimize files ."}
+{"msg": "Add <iden> < <iden> > descriptions ."}
+{"msg": "fix some bookmark plugin issues ."}
+{"msg": "close # 83 Merge <iden> tab and Feature tab"}
+{"msg": "# 94 and close # <version> <iden> as < <iden> > ."}
+{"msg": "Change cwd to % HOME % before executing command ."}
+{"msg": "Use sleep instead of ping ."}
+{"msg": "Remove unnecessary code ."}
+{"msg": "Add < > remember < > window < > position < > support < > ."}
+{"msg": "Add post - action"}
+{"msg": "Missed logo and title"}
+{"msg": "HEX colors plugin"}
+{"msg": "When user querying thirdparty plugins , system plugins shouldn ' t be included"}
+{"msg": "# 87 Add plugin deatails in <iden> tab . [ WIP ]"}
+{"msg": "Revert last two commits pushed by @ aaroncampf , which will cause build erros ."}
+{"msg": "Error Fix"}
+{"msg": "Added <iden> & <iden> to < <iden> > We still need a way to save the <iden> property"}
+{"msg": "URL plugin"}
+{"msg": "Namespaces fix"}
+{"msg": "Extract all converters into separate folder"}
+{"msg": "Working on Adding <iden>"}
+{"msg": "<iden> Check for invalid paths [ Open this <iden> ] <method_name> <iden> appears at top is path is existing <iden> or parent is"}
+{"msg": "Updated < > Ignore < > List"}
+{"msg": "Solving issues from last commit"}
+{"msg": "Cleaned < <iden> > + Enhanced THIS NEEDS TESTING !"}
+{"msg": "Update CI build script"}
+{"msg": "Update auto build script"}
+{"msg": "Auto publish Wox . <iden> to nuget ."}
+{"msg": "Reduce the icon size and <iden> unnecessary images ."}
+{"msg": "Remove unnecessary codes merged from <version>"}
+{"msg": "<iden> all third - party plugins into separate repos ( except WPM ) ."}
+{"msg": "Solution files change ."}
+{"msg": "Change the default width for themes ."}
+{"msg": "Remove unnecessary files ."}
+{"msg": "display <iden> icons in ' wpm list / uninstall '"}
+{"msg": "display <iden> icons in ' activate <iden> ' query"}
+{"msg": "Change the default with of < Wox > . Remove Aero themes ."}
+{"msg": "Remove XP related description We will not provide support for Wox in XP ."}
+{"msg": "Update assemblyinfo"}
+{"msg": "fix # 189 startup is too slow"}
+{"msg": "Fix errors that collections has been changed while <iden> collections"}
+{"msg": "Add search <iden>"}
+{"msg": "Add custom <iden> menu < <iden> > for findfile <iden> and improve the search speed ."}
+{"msg": "Merge"}
+{"msg": "Reduce memory usage ."}
+{"msg": "Update < <iden> > . cs"}
+{"msg": "fix # 189 startup is too slow"}
+{"msg": "Move <iden> to find file plugin ."}
+{"msg": "Allow unsafe codes in Release build ."}
+{"msg": "Update < <iden> > . md"}
+{"msg": "fix # 151 Add <iden> menu for <iden>"}
+{"msg": "Revert MFT Changes ."}
+{"msg": "Revert <iden> changes ."}
+{"msg": "Add Context menu"}
+{"msg": "Add find file < <iden> > ."}
+{"msg": "Add MFT Searcher"}
+{"msg": "Fix a issues that JSONPRCAction could be null ."}
+{"msg": "Refactoring <iden> args and change the signal <iden> implement ."}
+{"msg": "Add more python plugin api ."}
+{"msg": "Revert readme"}
+{"msg": "# 192 fix json loads <iden> issues ."}
+{"msg": "# 191 add < pip > . bat for < pip > installing ."}
+{"msg": "Move < Log > to <iden> project ."}
+{"msg": "Fix # 181 that <iden> could be removed by user when wox running ."}
+{"msg": "Fix # 183"}
+{"msg": "fix typo"}
+{"msg": "<iden> : convert search word to url encoding before opening the url"}
+{"msg": "Fix a <iden> crash issues & don ' t default exit Wox when exception happens ."}
+{"msg": "close # 150 Use tab to cycle switch candidates"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Fix plugin API issues ."}
+{"msg": "Including PythonHome in CI building"}
+{"msg": "Add afterload event for <method_name>"}
+{"msg": "fix # 46 Reload index cache when the file changed in index directories"}
+{"msg": "# 149 fix Path including space in their name issues"}
+{"msg": "Expose index <iden> setting"}
+{"msg": "Expose index file <iden> config [ WIP ]"}
+{"msg": "Add reindex button to programs setting dialog ."}
+{"msg": "Fix a programs bug if custom program folder is not exist ."}
+{"msg": "Add F1 to open wox function guide page ."}
+{"msg": "Refactoring < <method_name> s > system plugin and adding re - index function when adding new <iden> ."}
+{"msg": "Fix sys plugin setting panel style issue ."}
+{"msg": "close # 137"}
+{"msg": "Adjust score weight for programs ."}
+{"msg": "fix a typo : <iden> - > <iden>"}
+{"msg": "Fix a crash in Win8"}
+{"msg": "Forgot to add Files"}
+{"msg": "Changes : Added < Sys > Folder , Moved < Sys > into folder , Added <iden> , Made < Sys > use an AddRange and added ISettingProvider"}
+{"msg": "Finally Fixed AutoFormatting"}
+{"msg": "Corrected Automatic Formatting"}
+{"msg": "Combined 2 cases Stupid automatic formatting <iden> more then I wanted Here is the change I made if you just want the code case Key . Tab : case Key . Enter : <method_name> ( <iden> . <iden> ( ) ) ; e . <iden> = true ; break ;"}
+{"msg": "Optimize default icon method . Simply <iden> the first pointer , ignore the others . Assume if the first one doesn ' t work , none of them will work ."}
+{"msg": "Fix default icon retrieval . And replace <iden> ; with if ( ) statements ( supposably more compile friendly )"}
+{"msg": "# 129 exclude system plugins <iden> when searching <iden> ."}
+{"msg": "# 129 fix space issues in searching programs"}
+{"msg": "Fix websearch setting issues ."}
+{"msg": "remove bing search suggestions ."}
+{"msg": "# 129 Make web <iden> <iden> optional and add baidu suggeestion source ."}
+{"msg": "Replace all obsoleted method"}
+{"msg": "Contron panel item priority should be lower when compared to programs ."}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Update <iden> <iden> Link ."}
+{"msg": "Control Panel Command handeling Now works for everything"}
+{"msg": "Add pluginID for <iden> ."}
+{"msg": "Add activate statistics"}
+{"msg": "make some renames"}
+{"msg": "update cleanup . bat"}
+{"msg": "Implement # 202"}
+{"msg": "add < <iden> > CI job"}
+{"msg": "Update CI"}
+{"msg": "Add < Wox > . UpdateFeed <method_name>"}
+{"msg": "Update CI"}
+{"msg": "Sort plugin and <iden> in setting dialog"}
+{"msg": "Change CI"}
+{"msg": "update ci"}
+{"msg": "Update CI builds ."}
+{"msg": "Improve the <iden> progress ."}
+{"msg": "Remove unnecessary unit test"}
+{"msg": "remove unnessary files ."}
+{"msg": "Change log facility ."}
+{"msg": "Fix an issue if update failed"}
+{"msg": "Add Auto <iden> [ WIP ] & remove UAC project"}
+{"msg": "Refactoring"}
+{"msg": "<method_name> query <iden> < <iden> > & upgrade all third - party <iden>"}
+{"msg": "Better <iden> report ."}
+{"msg": "downgrade to . net <iden> <version>"}
+{"msg": "Upgrade to . net <iden> <version>"}
+{"msg": "Upgrade <method_name> . net framework <version>"}
+{"msg": "<method_name> # 233"}
+{"msg": "add translation for crash reporter"}
+{"msg": "Add < Wox > . Crash <method_name> er"}
+{"msg": "Change output folders for plugins in <iden>"}
+{"msg": "1 , fix < <iden> > <method_name> ( ) trigger FileNotFoundException when file not exist ; 2 , In < <iden> > when trigger Delete Action need confirm ; 3 , Add drag and drop functionality in < <iden> > and FileSystemSettings . Signed - off - by : 716 < 525223688 @ qq . com >"}
+{"msg": "<iden> structure change"}
+{"msg": "Fix a global hotkey issues in < CMD > , which will hang Wox on init ."}
+{"msg": "修复 <method_name> 可能出现的 FileNotFoundException 异常 重启电脑的时候会提示 FileNotFoundException ，所以在这里加一个检查。"}
+{"msg": "update <iden> <iden>"}
+{"msg": "Add translation for <iden> <iden>"}
+{"msg": "Add translation for < CMD > <iden>"}
+{"msg": "Add translation for web <iden> <iden>"}
+{"msg": "Add translations for <iden> <iden> ."}
+{"msg": "Implement <iden> i18n [ WIP ]"}
+{"msg": "Move some user settings to its own dll ( cmd , <iden> plugin and etc )"}
+{"msg": "Fix a issue when <iden> binary storage ."}
+{"msg": "Refactoring"}
+{"msg": "Fix crash issues when <iden> <iden>"}
+{"msg": "Refactoring . Move <iden> <iden> to seperate DLLs ."}
+{"msg": "Add i18n support [ WIP ]"}
+{"msg": "Add multiple <iden> . [ WIP ]"}
+{"msg": "Fix < > typo"}
+{"msg": "Fix a crash issue ."}
+{"msg": "Add unittest [ WIP ]"}
+{"msg": "Fix issues if didn ' t has permission to create dir"}
+{"msg": "Update the installer"}
+{"msg": "Refactoring . Move <iden> related work to Wox . Core"}
+{"msg": "Refactoring ."}
+{"msg": "Refactoring ."}
+{"msg": "Refactoring [ WIP ]"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Fix a http request issues ."}
+{"msg": "Upgrade to <version>"}
+{"msg": "Upcate CI Scripts"}
+{"msg": "Update CI"}
+{"msg": "Add installer"}
+{"msg": "Remove unittest for httprequest"}
+{"msg": "Refactoring"}
+{"msg": "fix Wox handled exception at launch # 221"}
+{"msg": "<iden> top used <iden> ."}
+{"msg": "Change icon for thirdpartyplugin indicator ."}
+{"msg": "Revert `` Add crashreproter `` This reverts commit ad81dfa001493272d1ea7e4a19ae74ca65c84622 ."}
+{"msg": "Add crashreproter"}
+{"msg": "Add new <iden> window"}
+{"msg": "Add About Page ."}
+{"msg": "Remove unnessary codes ."}
+{"msg": "fix # <version> ' t open url with port"}
+{"msg": "fix # 185 . <method_name> ing index cache on startup ."}
+{"msg": "make <iden> <iden> name readable ."}
+{"msg": "fix # 151 ."}
+{"msg": "Fix a crash issues when inputing after wox start ."}
+{"msg": "fix # <version> the weight of user selected items ."}
+{"msg": "Add <iden> check ."}
+{"msg": "Update wpm to use the new api"}
+{"msg": "Deploy nuget only when commits on <iden> <iden> ."}
+{"msg": "update ci scripts"}
+{"msg": "update ci scripts"}
+{"msg": "update CI scripts"}
+{"msg": "update ci scripts ."}
+{"msg": "Update CI scripts : cry :"}
+{"msg": "Update CI scripts : cry :"}
+{"msg": "Update CI scripts"}
+{"msg": "Update CI scripts"}
+{"msg": "Update CI build script ."}
+{"msg": "Update CI build script"}
+{"msg": "Change <iden> to <iden> for the language selector"}
+{"msg": "Added <iden> translations to Wox"}
+{"msg": "fix disable plugin not working"}
+{"msg": "fix < <method_name> > has no 0 <iden> constructor"}
+{"msg": "setting window : plugin"}
+{"msg": "set port number if not zero"}
+{"msg": "update plugin program translation"}
+{"msg": "readme . md <iden> and suggestions on the redaction"}
+{"msg": "Auto completion for the <iden> plugin"}
+{"msg": "Fix ShellExecCmdLine fucntion . Using <iden> : : <iden> . <iden> . <iden> . Start to run program without working directory specifying ."}
+{"msg": "Update < <iden> > . md"}
+{"msg": "add missing sleep images and translations"}
+{"msg": "Ajust maxium result item UI"}
+{"msg": "misc"}
+{"msg": "Add option to put <iden> to sleep"}
+{"msg": "Make the <iden> of <iden> show at a time customizable"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Support for assigning any key as a <iden> ; minor refactoring"}
+{"msg": "Google translated translations"}
+{"msg": "Support editing"}
+{"msg": "Allow disabling of default <iden> <iden>"}
+{"msg": "Fix <iden>"}
+{"msg": "fix proj file"}
+{"msg": "Add max depth and <iden> per <iden> <iden>"}
+{"msg": "fix # 249 Characters not being properly escaped in Python plugins"}
+{"msg": "Remove context shell load codes and change image cache path"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "fix # 249 , <iden> escapes before sending json rpc request to plugin [ WIP ]"}
+{"msg": "Add translation for < CMD > plugin"}
+{"msg": "Fix UI issues when using web <iden> <iden> with <iden>"}
+{"msg": "Using new thread to check upgrade"}
+{"msg": "fix # 256"}
+{"msg": "Fix # 255 , can ' t delete items in folder plugin"}
+{"msg": "Add translation for icon tray ."}
+{"msg": "adding fixed height for caculating windows top"}
+{"msg": "fix # 251 add auto center Wox option"}
+{"msg": "fix # 252 web <iden> items lost after restart Wox"}
+{"msg": "Implement ShellContextMenu [ WIP ]"}
+{"msg": "Add shell context [ WIP ]"}
+{"msg": "Add log for storage crashing"}
+{"msg": "Add <iden>"}
+{"msg": "Update query <iden> language"}
+{"msg": "Change project generate sequence"}
+{"msg": "Update <iden>"}
+{"msg": "<method_name> < <method_name> <iden> > to < Wox > ( Ctrl + Up and Ctrl + Down )"}
+{"msg": "Add item number [ WIP ]"}
+{"msg": "Add a new theme"}
+{"msg": "Add <iden> command as <iden> serivce will prevent move / remove wox <iden> ."}
+{"msg": "Improve < <iden> > < <iden> > user experience"}
+{"msg": "Improve setting window performance ( theme ) ."}
+{"msg": "fix a < <iden> > query issue"}
+{"msg": "Add < <iden> > <iden> & lazy load <iden> menus"}
+{"msg": "fix # 246 prompt <iden> wox after uninstall <iden>"}
+{"msg": "Add title translations"}
+{"msg": "<method_name> < <iden> > title translations"}
+{"msg": "Allow searches in <iden> menu"}
+{"msg": "fix regressive issues"}
+{"msg": "<method_name> top most function ."}
+{"msg": "Add IExclusivePlugin"}
+{"msg": "Add < <iden> > <iden> [ WIP ]"}
+{"msg": "Add init time and query time to setting view"}
+{"msg": "Improve <iden> <iden> ue"}
+{"msg": "Add drop event ."}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Merge"}
+{"msg": "Add hotkey for navigating result items ."}
+{"msg": "Add drop event [ WIP ]"}
+{"msg": "Add <iden> dialog"}
+{"msg": "<iden> <iden> feed url"}
+{"msg": "Forgot to remove some lines . No longer opening <iden> with admin rights ."}
+{"msg": "Added open in <iden> to the <iden> plugin ."}
+{"msg": "<iden> autohotkey and add <iden> command args"}
+{"msg": "Add autohotkey"}
+{"msg": "proj file changes ."}
+{"msg": "Implement < <iden> > for < CMD > and <iden> <iden>"}
+{"msg": "Change update logic"}
+{"msg": "Add clean script to < Wox > . <iden>"}
+{"msg": "Move web <iden> <iden> to its own project"}
+{"msg": "API changes"}
+{"msg": "Add < > <iden> < > <iden>"}
+{"msg": "some API changes for < <method_name> > class and renames ."}
+{"msg": "Remove all obsolete methods"}
+{"msg": "Fix < CMD > plugin for new <iden> panel"}
+{"msg": "Misc"}
+{"msg": "Fix web search plugin for new <iden> panel"}
+{"msg": "Enhance <iden> panel <iden> The last commit f132cb54baa000a245feb5da87149960f6dbd9f5 only fix UI <iden> for different icon . This commit also fix the commit for same icon . e . g . in web <iden> plugin , although the title is different , but the icon is not changes . part of # 350"}
+{"msg": "Fix clearance of old <iden> part of # 350"}
+{"msg": "Better <iden> <version> exception for fatal / error log when debugging <version> to debug output for warn / debug / info log when debugging <version> of # 355"}
+{"msg": "Fix exclusive for <iden> <iden>"}
+{"msg": "Misc"}
+{"msg": "Upgrade to . net <version>"}
+{"msg": "tmp"}
+{"msg": "Fix UI flickering See # 350"}
+{"msg": "Better crash report"}
+{"msg": "Fix ui for action keywords"}
+{"msg": "Add more comments See # 352"}
+{"msg": "Improve UI for <iden> <iden> <iden> See # 352"}
+{"msg": "Misc"}
+{"msg": "Fix <iden> <iden> for multiple action keyword <version> , part of # 352 2 . <iden> . Form - > WPF <version>"}
+{"msg": "Fix < <iden> > for <iden> action keywords <version> , part of # 352 <version>"}
+{"msg": "Misc <version> <version> progress bar : progress bar <iden> not be loaded when only white <iden> typed"}
+{"msg": "Enable <iden> <iden> <iden> See issue # 352"}
+{"msg": "Better name <iden> . < <method_name> > - > < <method_name> > . <method_name> <iden> . <method_name> <method_name> - > < <method_name> > . <method_name>"}
+{"msg": "Replace <method_name> with Lambda <version> <version> # 361"}
+{"msg": "Fix # 357 Fix bug introduced since a5abe9234faafcd170f9468a70f42bf60eda0f0d"}
+{"msg": "Fix # 362"}
+{"msg": "Remove unused reference"}
+{"msg": "bat - > ps1 Fix bug for <link>. com / Wox - launcher / Wox / commit / 8fe993ddd5f1590b84725314eff0dff88953f56e"}
+{"msg": "Only deploy to NuGet when API changed ( interface or implementation ) , see # 360"}
+{"msg": "Only tested build should be deployed"}
+{"msg": "Better instruction"}
+{"msg": "Change nuget api keys"}
+{"msg": "Update instruction for ci builds"}
+{"msg": "Fix continue integration in AppVeyor"}
+{"msg": "Fix typo"}
+{"msg": "Appveyor is case sensitive now"}
+{"msg": "Enable PreLoadImages Fix bug introduced in <link>. com / Wox - launcher / Wox / commit / cf87f68b42e00f087267cdeaf2fcb0d707e684c4"}
+{"msg": "<iden> query test <iden> query is <iden> <iden> with GUI , can ' t be <iden> ."}
+{"msg": "Misc"}
+{"msg": "Fix System . NullReferenceException for # 356"}
+{"msg": "Update build script for new nuget retore"}
+{"msg": "Add simple usage"}
+{"msg": "Update installation instruction"}
+{"msg": "Change copyright"}
+{"msg": "Ignore < > python < > in < > github < > language < > statistics"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Refactoring < <method_name> > <iden>"}
+{"msg": "Misc"}
+{"msg": "Refactoring <iden> query"}
+{"msg": "Misc"}
+{"msg": "Refactoring <iden> . <iden>"}
+{"msg": "Remove <iden>"}
+{"msg": "Refactor <method_name> g GetPlug <method_name> s < T > ( )"}
+{"msg": "Refactoring <iden>"}
+{"msg": "Misc"}
+{"msg": "Better log info"}
+{"msg": "Remove LoadInterfacesFromAppDoma <method_name> Much faster . ApplyPlug <method_name> Languages is 10 times faster now . 7ms vs 100ms ."}
+{"msg": "Fix < <iden> > <version> duplication for loading <iden> . <version> null reference when <iden> is not loaded . <version> ."}
+{"msg": "Add startup time measurement"}
+{"msg": "Fix bug for CMD This bug is introduced since commit : 73dadde5f077896129aa574d028c0343485f3ddc"}
+{"msg": "Misc"}
+{"msg": "Replace all <method_name> with <method_name>"}
+{"msg": "Don ' t sort <iden> every time , sort it when set it"}
+{"msg": "Rearrange code Fields - > Properties - > Init method - > Query methods - > Is methods - > Get Methods"}
+{"msg": "Refactoring <method_name> and <method_name> <iden> <iden> = <iden> with <iden> <iden> * Non system <iden> = exclusive <iden> + <iden> <iden> <iden>"}
+{"msg": "Refactoring <method_name> <method_name> half lines of code : )"}
+{"msg": "Fix <iden> . ArgumentException Fix <iden> . ArgumentException ( `` Illegal characters in path `` ) when parsing path <iden>"}
+{"msg": "Use Nlog . <iden> from Nuget"}
+{"msg": "Move NLog . xsd , let it handled by nuget"}
+{"msg": "Use consistent name convention"}
+{"msg": "Remove sensitive information"}
+{"msg": "Migrate < > MSBuild < > - < > Integrated < > solutions < > to < > use < > Automatic < > <iden> < > Restore < > http < > : < > / < > / < > docs < > . < > nuget < > . < > org < > / < > consume < > / < > <iden> < > - < > <iden> < > / < > migrating < > - < > to < > - < > automatic < > - < > <iden> < > - < > <iden>"}
+{"msg": "Use NuGet for <iden>"}
+{"msg": "Remove PluginDebugger"}
+{"msg": "Fix Debug output < <iden> > is useless , bacuase the <iden> statement is always executed before the actual code ."}
+{"msg": "Refactoring <method_name>"}
+{"msg": "Better comment"}
+{"msg": "Optimize using directives"}
+{"msg": "Refactoring <method_name> In < <iden> . xaml > . cs , the reference of origin <method_name> , last <method_name> and tb <method_name> . Text are same , so remove origin <method_name> is fine ."}
+{"msg": "Remove unnecessary thread switch"}
+{"msg": "Remove unnecessary decoration"}
+{"msg": "Remove unused reference <iden> . xaml also removed because . net <version> doesn ' t has this dll , and it resolve the issue when using code metrics"}
+{"msg": "Issue : If Wox was set to ignore hotkeys on full - screen it would fail . Cause : Compared <iden> with null . <iden> is never null ."}
+{"msg": "Reflected functionality changes from the last commit on the whole project ."}
+{"msg": "~ Changed how the fullscreen detection work . Checking by <iden> was a stupid idea . It will now check for the <iden> to fill the whole screen area ."}
+{"msg": "Wox now has an option to <iden> <iden> when the focused <iden> is topmost . This will <iden> not only the main Wox <iden> but also <iden> <iden> . ~ < <iden> > edited ~ User settings entry added ~ Checkbox added to <iden> tab ( as well as its events ) ~ <iden> entries added for < en > / ru"}
+{"msg": "Fixed commit # 334 multiple SelectionChanged firing"}
+{"msg": "close settings with esc"}
+{"msg": "fix tab populating in settings ( fixes # 291 )"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Recover <iden> count ."}
+{"msg": "The <iden> badge is useless"}
+{"msg": "Update < <iden> > . md download badges is not working ."}
+{"msg": "Update link for badges"}
+{"msg": "Add <iden> count"}
+{"msg": "Add a <iden> badge to <iden>"}
+{"msg": "Remove . net 4 compability"}
+{"msg": "fixup"}
+{"msg": "Update demo"}
+{"msg": "Fix leave open option for cmd plugin Add `` Wait for a key press before closing `` option . See # 141 for more info ."}
+{"msg": "Stripped < <iden> > of unneeded p / invoke methods"}
+{"msg": "- Removed <iden> . It is no <iden> needed for the plugin . - Added < <iden> > for invocation calls ."}
+{"msg": "Bugfix for issue # 397 Wallpaper is not cached in Wox ' s memory , so that the <iden> file remains unlocked"}
+{"msg": "Bugfix for # 404 When opening containing <iden> for ` * . lnk ` that can not be <iden> to a file name , the <iden> containing the ` . lnk ` will be opened ."}
+{"msg": "Fixup missing reference"}
+{"msg": "delete junk"}
+{"msg": "Messages should now display correctly on high dpi devices : now using Device Aware Pixels too ."}
+{"msg": "Added Pixel to <iden> <iden> Pixel transformation to < <iden> > <iden> <method_name> and <method_name> will use DIP when searching for the center of the <iden>"}
+{"msg": "Remove https link to <iden> due to ssl certificate expired Fix # 421"}
+{"msg": "change https to http becuase the SSL has expired"}
+{"msg": "Upgrade json <iden>"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Fix duplication of tray icons Fix # 413"}
+{"msg": "Disable blur when os is not supported Releated : # 330"}
+{"msg": "Fix <iden> Fix # 385"}
+{"msg": "Fix <iden> <link>. blogspot . ie / 2015 / 10 / wpf - applicationcurrentfindresource - and . html"}
+{"msg": "Refresh UI after change font"}
+{"msg": "Use opacity to set blur releated : # 330"}
+{"msg": "Misc"}
+{"msg": "Refactoring blur <version> blur , see discussion in : 7f8bb80 <version> issue : # 330"}
+{"msg": "Better mutex cleanup"}
+{"msg": "Fix < Wox > <iden> by wait <method_name> to be released Fix bug in 24866ff032829e9bd34704d3d5970d227a4c8db<version> existing <method_name> to release itself instead of create a new one . Relate issue : # 322"}
+{"msg": "Misc"}
+{"msg": "Add solution level < <iden> > file , and bump version <version> solution level < <iden> > file <version> <iden> version <version> # 324"}
+{"msg": "add fr to <iden>"}
+{"msg": "add french locale & xaml"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Add more badges ."}
+{"msg": "Misc IDE Misc"}
+{"msg": "Update faq for how to report bugs"}
+{"msg": "Manually <iden> is no longer needed . 24866ff032829e9bd34704d3d5970d227a4c8db3 fix the <iden>"}
+{"msg": "Fix Wox <iden> <version> <iden> <version> some windows forms methods <version> <iden> inteperlation and delete hard coeded new line char should fix # 322"}
+{"msg": "Updated spelling and grammar"}
+{"msg": "Fix <iden> Command plugin <version> error code handle for 39191a55187a36141bff42fcaf803135c0fe0b3c <version> WPF <iden> <version> postion / window handle for 39191a55187a36141bff42fcaf803135c0fe0b3c"}
+{"msg": "* Moved everything to dev branch - Sorry for the trouble"}
+{"msg": "Update < <iden> > URLs based on HTTP redirects"}
+{"msg": "Updated google search logo"}
+{"msg": "Add equality checking for old keyword and new keyword"}
+{"msg": "Fix `` The type initializer for ' System . Windows . Application ' threw an exception . ``"}
+{"msg": "Fix some unresolved reference for xaml"}
+{"msg": "Fix web <iden> icon part of # 384 bug introduced in 38cc115c1f9e1efbb2256f6e88168493797adb5c"}
+{"msg": "Fix incorrect fuzzy match result for <iden> plugin Fix # 270"}
+{"msg": "Fix the order of everything results Try to fix # 381"}
+{"msg": "Temp fix for < CMD > hotkey"}
+{"msg": "Fix missing dll for CMD plugin <version> # 382 <version> of # 387"}
+{"msg": "Better error log"}
+{"msg": "Fix output path for Wox . Core"}
+{"msg": "Fix unhandled <iden>"}
+{"msg": "Update faq for how to <iden> <method_name>"}
+{"msg": "Changed <iden> ( int32 ) < Theme > setting to <iden> ( boolean ) : - Exposed a new function `` <method_name> `` in < <iden> > that handles the blur . - Deleted < <iden> > and < Test > themes - Changed <iden> and < Base > themes according to changes"}
+{"msg": "Black and White <iden> updated and staged"}
+{"msg": "* forgot to stage files on last commit"}
+{"msg": "Applying theme before actually setting the theme accent . UserSettingStorage now stores current theme accent mode . <iden> : Added a bunch of them . Testing what works ."}
+{"msg": "Reversing <iden> Blur call and settings window modification Added <iden> to < Base > theme"}
+{"msg": "<iden> : <iden> set to True < <iden> > : Added <iden> handling SettingsWindow : Added combobox with <iden> selector to Theme tab ( not functional yet ) <iden> : Added entries for <iden> colors ( all are in english for now ) [ TEMP ] Blur and <iden> <iden> experiments [ TEMP ] blur set in mainwindow on load ."}
+{"msg": "Remove outdated <iden> downloads"}
+{"msg": "Fix <iden> bug introduced since e037e88"}
+{"msg": "Fix icon path for Web Search plugin"}
+{"msg": "Fix setting for <iden> <iden> <iden> 1 . <iden> rewrite the <iden> <iden> setting logic . <version> setting for <iden> <iden> <iden> in # 352 <version> setting for Web <iden> <iden>"}
+{"msg": "Move <iden>"}
+{"msg": "Typo"}
+{"msg": "fix a null pointer issue"}
+{"msg": "use caculated score for sys plugin item"}
+{"msg": "Update readme"}
+{"msg": "Update readme Because of the ongoing refactoring , the doc is outdated ."}
+{"msg": "Update readme"}
+{"msg": "Fix progress bar Bug introduced in 9962ddf2ed80a00036ebdb2965429675c4355472"}
+{"msg": "Fix query <iden> for the new result panel"}
+{"msg": "Refactoring for PR # 499 , part 2"}
+{"msg": "Refactoring for PR # 499 , part 1"}
+{"msg": "Remove yoda conditions part of refactoring for PR # 494"}
+{"msg": "Remove redundant code"}
+{"msg": "removes < <iden> <method_name> er > . cs"}
+{"msg": "updates < <iden> > visibility bindings to use <iden> . <iden> . <iden> instead of bool"}
+{"msg": "adds <iden> . <iden> . <iden> extension methods to validates if current value is <iden> or not"}
+{"msg": "<iden> redundant code <version> this <version> property <iden> be only 1 line <version> <version> of refactoring for PR # 494"}
+{"msg": "Misc part of refactoring for PR # 494"}
+{"msg": "<iden> - > <iden> , part 2 part of refactoring for PR # 494"}
+{"msg": "ResultItem - > Result , part 1 part of refactoring for PR # 494"}
+{"msg": "<iden> - > <iden>"}
+{"msg": "<iden> - > <iden> part of refactoring for PR # 494"}
+{"msg": "<method_name> - > < <method_name> > , part 2 part of refactoring for PR # 494"}
+{"msg": "ResultPanelViewModel - > ResultsViewModel , part 1 part of refactoring for PR # 494"}
+{"msg": "<method_name> - > < <method_name> > , part 2 part of refactoring for PR # 494"}
+{"msg": "<iden> - > <iden> , part 1 part of refactoring for PR # 494"}
+{"msg": "Misc part of refactoring for PR # 494"}
+{"msg": "<iden> - > <iden> , part 2 part of refactoring for PR # 494"}
+{"msg": "ResultItem - > Result , part 1 part of refactoring for PR # 494"}
+{"msg": "<iden> - > <iden>"}
+{"msg": "<iden> - > <iden> part of refactoring for PR # 494"}
+{"msg": "<method_name> - > < <method_name> > , part 1 part of refactoring for PR # 494"}
+{"msg": "ResultPanelViewModel - > ResultsViewModel , part 1 part of refactoring for PR # 494"}
+{"msg": "<method_name> - > < <method_name> > , part 2 part of refactoring for PR # 494"}
+{"msg": "tmp rename"}
+{"msg": "ResultPanel - > ResultListBox , part 1 part of refactoring for PR # 494"}
+{"msg": "Delete unnecessary file part of refactoring for PR # 494"}
+{"msg": "Try to fix the problem that the designer preview is empty"}
+{"msg": "<iden> <method_name> Opened related events Since we are going to refactor plugin - UI interaction mechanism in the near future , we just keep current implementation as simple as possible ."}
+{"msg": "Bug Fixing - The caret is not at the last of search text when switching back from context menu"}
+{"msg": "Revert Hotkey from <iden> back to KeyDown event"}
+{"msg": "Implement <method_name> and <method_name> methods for <iden>"}
+{"msg": "Bug Fixing - <iden> is not implemented in < <iden> > If this property is not implemented , the Theme of selected search result won ' t take effect ."}
+{"msg": "Add support for design time <iden> binding Add this support to suppress the warning from Resharper"}
+{"msg": "Fix UI Flickering issue"}
+{"msg": "Refactor according to MVVM implementation"}
+{"msg": "Remove unused code - <method_name> Event Handler - <iden> Handler - <method_name> method"}
+{"msg": "Remove unused code"}
+{"msg": "Fix dependency bugs"}
+{"msg": "Support for Sys Tray Icon"}
+{"msg": "Implement the support for shortcut key"}
+{"msg": "<iden> unused code and add required code for MVVM"}
+{"msg": "Comment out code for later update"}
+{"msg": "Refactor < <method_name> > / ResultItem with MVVM"}
+{"msg": "Refactor < <method_name> > with MVVM - Add MVVM structure ( < <iden> > ) - Create <iden> for < <method_name> > - Refactor < <method_name> > . xaml to support MVVM - Move PublicAPI implementation from < <method_name> > to <method_name>"}
+{"msg": "Fix websearch plugin query content"}
+{"msg": "Fix `` NoTranslation `` bug for plugins <version> # 475 <version> <method_name> , part of # 468 <version> introduced since 1f939ff3"}
+{"msg": "fix typo"}
+{"msg": "refs # 485 * Add more Japanese support"}
+{"msg": "refs # 484 * Add japanese Support . * I add following <iden> file * <iden> / < Wox > . <iden> . <iden> / <method_name> s / < ja > . xaml * < Wox > / <method_name> s / < ja > . xaml"}
+{"msg": "comment fix"}
+{"msg": "Refactoring directory path for plugins"}
+{"msg": "Refactoring directory path for misc"}
+{"msg": "Refactoring directory path for <iden> plugin"}
+{"msg": "Refactoring <iden> path for <iden>"}
+{"msg": "Merge language and theme into resource folder"}
+{"msg": "Refactoring directory path for UI resource"}
+{"msg": "Refactoring directory path for storage"}
+{"msg": "Fix missing using directive"}
+{"msg": "Add executable directory path"}
+{"msg": "ReSharper : remove redundant code"}
+{"msg": "Fix accident bug"}
+{"msg": "remove roslen cache"}
+{"msg": "merge ' <iden> '"}
+{"msg": "Fix using for Release build"}
+{"msg": "Optimize using"}
+{"msg": "Replace <method_name> with Task + Async"}
+{"msg": "Remove unused files"}
+{"msg": "Update score when titles are same"}
+{"msg": "Changed line endings for translation files to CL from CRLF"}
+{"msg": "Now checks if path has trailing slash before adding a new one"}
+{"msg": "Added trailing slash to saved folders action for <iden> plugin"}
+{"msg": "Ignore < > <iden> < > <iden>"}
+{"msg": "Including more web <iden> by default <version> # 376 <version> @ ishu3101"}
+{"msg": "Remove unused file since ShellRun has been removed"}
+{"msg": "Remove <method_name> <version> <method_name> using p / invoke <version> <method_name> when open contanning <iden> <version> # 88"}
+{"msg": "<iden> should be empty when there is no <iden>"}
+{"msg": "Fix UI <iden> under . net <version> <version> is part of . net <version> fix , check # 393 to see more <version> bug is introduced since commit df4ca3fecc9784a3b55f93806d8b2a662523056f"}
+{"msg": "Fix color of selected item and mouse item This is part of . net <version> fix , check # 393 to see more"}
+{"msg": "<iden> < build > <iden> 1 . <iden> <iden> generator from < build > <iden> <version> < build > <iden> to <iden> <iden> <method_name> name 3 . <iden> installer <iden> from <iden> <iden>"}
+{"msg": "Fix crashes for context menu on empty query Fixed issue # 434 , thanks @ pieper126"}
+{"msg": "rename"}
+{"msg": "Fix <iden> name and move <iden> to % APPDATA %"}
+{"msg": "use % APPDATA % <version> can ' t find < <method_name> > . ctor bug for <iden> introduced in c0889de1f9ae460b2cc189eb59e5bd90ddb7d17e <version> % APPDATA % for all data , part of # 389 <version>"}
+{"msg": "Misc"}
+{"msg": "Fix # 472 # 476 # 509 # 523 # 525 # 557 Fix numerous web <iden> plugin bugs"}
+{"msg": "Move < <method_name> > to < < Wox > . <iden> > , part 2"}
+{"msg": "Move ImageLoader to Wox . Infrastructure , part 1"}
+{"msg": "Json : Overwriting <iden> of add to list <link>. com / questions / 29113063 / json - net - why - does - it - add - to - list - <iden> - of - overwriting"}
+{"msg": "Use consistent new icons <link>. com"}
+{"msg": "Fix bug introduced in 7c2e2a01c24627d2b05e64b1a32349b8bb256e19 by @ aaroncampf"}
+{"msg": "Add <iden> info entry for all context menu"}
+{"msg": "Misc"}
+{"msg": "Fix # 483 Thanks @ wjcsharp to provide method"}
+{"msg": "Fix progressbar loading"}
+{"msg": "fix # 412 - use Task instead of <iden> - add <method_name> when updating result panel and executing query for all <iden>"}
+{"msg": "Fix flashing bug introduced in 152a7d719b15b3fb4559bea09b378b963555fe45 part of # 565"}
+{"msg": "Fix # 559 fix <iden> <iden>"}
+{"msg": "Fix # 565 <version> resultlistbox visibility <version> # 565 <version> unused convertor"}
+{"msg": "Add <iden> / <iden> <iden>"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "fix # 570"}
+{"msg": "Use <iden> when strat process As proposed in # 569"}
+{"msg": "Fix uninitialized ui fix # 569"}
+{"msg": "Fix suffixes converter , part 2 rename file"}
+{"msg": "Fix suffixes converter , part 1 <version> # 568 , fix # 566 fix # 553 , fix # 559 <version> refactoring"}
+{"msg": "Remove NLog schema from git"}
+{"msg": "Refactoring < > <iden> < > 1 < > . < > use < > custom < > patched < > <iden> < > library < > <iden> < > 2 < > . < > fix < > memory < > leak < > on < > <iden> < > : < > 360mb < > - < > > < > 160mb < > when < > using < > vs15 < > debugger"}
+{"msg": "Add custom patched pinyin library"}
+{"msg": "Add <method_name> <link>. yinwang . org / blog - cn / 2015 / 11 / 21 / programming - philosophy"}
+{"msg": "Use resharper <iden> nuget <iden>"}
+{"msg": "Update < <iden> > . yml"}
+{"msg": "Update READEME . md"}
+{"msg": "Add Github <iden> for stable <iden> build"}
+{"msg": "Add <iden>"}
+{"msg": "Remove NLog schema from git"}
+{"msg": "fix missing pinyin file"}
+{"msg": "fixup ( bump library <iden> )"}
+{"msg": "Refactoring < > <iden> < > 1 < > . < > use < > custom < > patched < > <iden> < > library < > <iden> < > 2 < > . < > fix < > memory < > leak < > on < > <iden> < > : < > 360mb < > - < > > < > 160mb < > when < > using < > vs15 < > debugger"}
+{"msg": "Add custom patched pinyin library"}
+{"msg": "Add <method_name> <link>. yinwang . org / blog - cn / 2015 / 11 / 21 / programming - philosophy"}
+{"msg": "Use resharper <iden> nuget <iden>"}
+{"msg": "Refactoring <iden> plugin to use parallel linq much master when use parallel"}
+{"msg": "Use default thread pool settings"}
+{"msg": "Misc"}
+{"msg": "Refactoring image cache use parallel linq to preload <iden> , <iden> be faster"}
+{"msg": "Rename , part 3"}
+{"msg": "Rename . part 2"}
+{"msg": "Rename , part 1"}
+{"msg": "Stop everything before every build"}
+{"msg": "Remove unused code"}
+{"msg": "Remove instance logic for BinaryStorage and JsonStorage , part 2 <version> of # 389 <version> rename <version>"}
+{"msg": "<iden> <iden> logic for < <method_name> > and < <iden> > , part 1 <version> of # 389 <version> refactoring"}
+{"msg": "Load < <iden> > base on CPU architecture"}
+{"msg": "Bump library version Fix # 538"}
+{"msg": "Update < <iden> > . yml"}
+{"msg": "Update READEME . md"}
+{"msg": "Add Github <iden> for stable <iden> build"}
+{"msg": "Add <iden>"}
+{"msg": "Bump library <iden> Fix # 538"}
+{"msg": "Add Chinese translation for <iden> resources"}
+{"msg": "Use variable instead of <iden> <iden> <iden> <version> variable <version> of # 389 <version> <iden> suffix in <iden> <iden> <version>，代码重构火葬场"}
+{"msg": "Rearrange query execution order <version> usage of Push <method_name> <version> query execution order <version> UserSetting dependency <version> instant query <version> backkeydown event <version> of # 389"}
+{"msg": "Remove unused code"}
+{"msg": "Kill < Wox > before <iden> build ref : <link>. com / questions / 2295454 / <iden> - wide - pre - build - event / <iden> # <iden>"}
+{"msg": "Update < > git < > <iden> < > file"}
+{"msg": "Add error info when file / application can ' t be open <version> # 492 <version> # 478"}
+{"msg": "Fix dll has been blocked problems <version> # 536 <version> # 279 ref : <link>. <iden> . com / en - us / <iden> / <iden> ( v = vs . 110 ) . aspx"}
+{"msg": "Remove unused code"}
+{"msg": "Cleanup using Resharper"}
+{"msg": "Bump nuget <iden> <iden>"}
+{"msg": "Refactoring <iden> 1 . <iden> ItemDropEvent 2 . <iden> <method_name> s from API <version> <iden> menu item can ' t be opened ( # 535 ) , bug introduced from PR # 494 ( commit 45dbb50 ) <version> open <iden> command and load <iden> menu command back to < <method_name> > <version> load <iden> menu logic <version> performance enhancement and potential bug fixed"}
+{"msg": "Fix position <version> `` Remember launch location `` , this was introduced since e7aa<version> # 511 <version> opening position ( # 510 ) , bug introduced from PR # 494 ( commit e7aa602 )"}
+{"msg": "Refactoring < <iden> > <version> the sequence of <iden> of <iden> . <version> dictionary for <iden> , so code logic like ` . <iden> ( o = > o . ID = = id ) ; ` are removed <version> of # 389"}
+{"msg": "made margins consistent"}
+{"msg": "Refactoring <iden> 1 . <iden> ItemDropEvent 2 . <iden> <method_name> s from API <version> <iden> menu item can ' t be opened ( # 535 ) , bug introduced from PR # 494 ( commit 45dbb50 ) <version> open <iden> command and load <iden> menu command back to < <method_name> > <version> load <iden> menu logic <version> performance enhancement and potential bug fixed"}
+{"msg": "Fix position <version> `` Remember launch location `` , this was introduced since e7aa<version> # 511 <version> opening position ( # 510 ) , bug introduced from PR # 494 ( commit e7aa602 )"}
+{"msg": "Refactoring < <iden> > <version> the sequence of <iden> of <iden> . <version> dictionary for <iden> , so code logic like ` . <iden> ( o = > o . ID = = id ) ; ` are removed <version> of # 389"}
+{"msg": "Emphasize the <iden> build"}
+{"msg": "Misc"}
+{"msg": "made margins consistent"}
+{"msg": "spelling"}
+{"msg": "grammar"}
+{"msg": "cleanup english translation"}
+{"msg": "Add issue template"}
+{"msg": "Add German Translation Add German Translation to Core and Defaultplugins"}
+{"msg": "<iden> harder coded text 1 . <iden> harder coded text , part of refactoring for PR # 494 2 . <iden> other arguments redundant"}
+{"msg": "Refactoring"}
+{"msg": "Fix textbox keyboard focusing"}
+{"msg": "lang / < en > : enlint ( # 644 )"}
+{"msg": "Misc"}
+{"msg": "rename , part 2"}
+{"msg": "rename"}
+{"msg": "Misc"}
+{"msg": "rename"}
+{"msg": "Bring run <iden> functionality back # 636"}
+{"msg": "Rename"}
+{"msg": "fix # 625"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Misc"}
+{"msg": "Fix # 620 , part of # 614"}
+{"msg": "Misc"}
+{"msg": "Log < > first < > change < > <iden>"}
+{"msg": "Fixed # 586 - add option to hide main window on <iden> - Fixed # 586"}
+{"msg": "fix download plugin"}
+{"msg": "Fix # 608"}
+{"msg": "Misc"}
+{"msg": "Add auto updates gui option"}
+{"msg": "Use system web proxy"}
+{"msg": "Add <iden> to disable auto updates"}
+{"msg": "fix <iden> <iden> + fix # 575 # 609"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "use unified http method for <iden> installation + add more exceptions # 573 # 610"}
+{"msg": "Log more update exceptions # 611"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Don ' t call init ( ) and constructor for <iden> <iden> part of # 351"}
+{"msg": "Fix proxy for github update"}
+{"msg": "Fix notify icon + move <iden> into <method_name>"}
+{"msg": "Fix # 606"}
+{"msg": "fix <iden>"}
+{"msg": "Refactoring <iden> <version> into a separate class <version> unused nuget <iden>"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Add hello world <iden> example"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Finally <version> ! ! ! !"}
+{"msg": "ignore more files"}
+{"msg": "remove commit number"}
+{"msg": "fix ci"}
+{"msg": "Misc"}
+{"msg": "fixup"}
+{"msg": "Remove <iden>"}
+{"msg": "<iden> based <iden> <iden> is not <iden> in < <iden> > , not sure why"}
+{"msg": "fixup"}
+{"msg": "fixup ci"}
+{"msg": "Misc"}
+{"msg": "Add manually check updates option <version> check updates <version> get http <iden> to use async <version> some generic <iden> catch <version> unused code"}
+{"msg": "Misc"}
+{"msg": "move <iden> into msbuild"}
+{"msg": "fix <iden> <iden>"}
+{"msg": "Remove unused updater and <iden> line arguments"}
+{"msg": "<iden> when restart"}
+{"msg": "Installer + auto update on startup 1 . <iden> <version> check update on startup <version> start on next startup 4 . <iden> <iden> line <iden> which breaks <iden> <version> generate <iden> on continue integration"}
+{"msg": "Refactoring <iden> <iden>"}
+{"msg": "Misc"}
+{"msg": "Move websearch images to % APPDATA %"}
+{"msg": "Added solution for executable <iden>"}
+{"msg": "fix tests"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "rename <iden> main file , part 2"}
+{"msg": "rename plugin main file , part 1"}
+{"msg": "Cleanup proxy enable / disable , fix # 518"}
+{"msg": "Allow open settings from main window context menu , fix # 519"}
+{"msg": "Fix # 548"}
+{"msg": "fix # 587"}
+{"msg": "fix selected item part of # 412"}
+{"msg": "<iden> <iden> + list is not <iden> safe"}
+{"msg": "Focuses first textbox on load fix # 516 thanks @ staff0rd for idea !"}
+{"msg": "Fix select result when there is no results part of # 412"}
+{"msg": "Refactoring multithreading 1 . <iden> - > Task <version> <iden> 3 . <iden> unnecessory application . dispatcher . invoke <version> non - main <iden> access to <iden> collection <version> <version> of # 412"}
+{"msg": "We don ' t need use ping to test website speed"}
+{"msg": "temp hack for folder plugin <iden>"}
+{"msg": "Fix default icon path when add new web search"}
+{"msg": "Web <iden> suggestion is loaded async <version> is async <version> ping time of domain less than 300ms , then suggestion is still sync 3 . # 578 # 539"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "fixup test code"}
+{"msg": "Fix # 572"}
+{"msg": "Add missing sdk files"}
+{"msg": "Misc"}
+{"msg": "Misc"}
+{"msg": "Delete un <method_name> <method_name> s"}
+{"msg": "Use existing installed <iden> <version> installed <iden> <version> <iden> to choose <iden> <iden> <version> py3 compability 4 . <iden> hello world <iden> example"}
+{"msg": "Use existing < <iden> > , < dll > is loaded by platform fix # 574"}
+{"msg": "fix missing image cache"}
+{"msg": "Fix file associated icon"}
+{"msg": "Refactoring Refactoring icon , part 2 <version> baidu , fix # 576 , # 582 <version>"}
+{"msg": "Refactoring icon , part 1 , rename"}
+{"msg": "Misc"}
+{"msg": "<method_name> when exit <version> image cache <version> save when exit since destructor won ' t be <iden> <version> # 583 # 582 ( partially ) # 581 ( partially ) # 580"}
+{"msg": "fixup"}
+{"msg": "manually <iden> use appveyoe"}
+{"msg": "fixup"}
+{"msg": "Fix SearchSource editing when action <iden> is not changed ( # 856 ) * Fixed SearchSource edit * Remove temp var"}
+{"msg": "fix # 813"}
+{"msg": "<iden> plugin : remove complicated inheritance"}
+{"msg": "move files"}
+{"msg": "simple refactoring"}
+{"msg": "Fix SearchSource editing when action <iden> is not changed ( # 856 ) * Fixed SearchSource edit * Remove temp var"}
+{"msg": "fix # 813 # 823"}
+{"msg": "add more <iden> info"}
+{"msg": "fixup"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Hardcoded supported accents version 8 ( Windows 8 is <version> , Windows 7 is <version> ) . ( # 817 ) Added check before applying blur ."}
+{"msg": "Fixed hide on startup problem ( # 852 ) * Fixed <iden> * Fixed tray icon not showing up and hiding properly"}
+{"msg": "Create < da > . xaml Thanks for a great app - heres a danish translation !"}
+{"msg": "Ramen Bless Your Repo"}
+{"msg": "fix everything error text"}
+{"msg": "fix bug introduced in 2a3bf727be1c8bc185f1b436893b1c4385d982ac"}
+{"msg": "fix names"}
+{"msg": "Add ability to configure <iden> <iden> <iden> <iden> ( # 718 )"}
+{"msg": "Bring <iden> back <version> <iden> back , disabled in 56d08663410916df0a4e408da6e4af3d2a2722c0 <version> # 632 # 722 3 . <iden> : ctrl + H"}
+{"msg": "Move < <iden> > <iden> <version> < <iden> > <iden> from < <iden> > to < <method_name> > <version>"}
+{"msg": "move properties into models"}
+{"msg": "Fix # 791"}
+{"msg": "fixup"}
+{"msg": "Temp fix for # 667 by add < wox > . py to <iden>"}
+{"msg": "Fix python plugin bug introduced in d7399204"}
+{"msg": "reformat"}
+{"msg": "MVVM refactoring for web search plugin , part 2 1 . # 486 2 . <iden>"}
+{"msg": "MVVM refactoring for web <iden> <iden> , part 1 1 . # 486 <version> # 778 # 763 # 742 <version> refactoring <version> IMultiple <method_name> <iden> , use < <iden> > <iden>"}
+{"msg": "Refactoring proxy , part 2"}
+{"msg": "Refactoring proxy , part 1"}
+{"msg": "move nuget auto <iden> back not sure why I can ' t < <iden> > environment"}
+{"msg": "Fix # 730 # 766"}
+{"msg": "Fix # 762"}
+{"msg": "fix # 749"}
+{"msg": "Fix # 706 , bug introduced in 2a3bf727be1c8bc185f1b436893b1c4385d982ac"}
+{"msg": "Added plugins Polish translations ( # 764 )"}
+{"msg": "<iden> German translations ( # 759 ) - some changes after review from @ gappeh - update for # 505"}
+{"msg": "refactor <method_name> . fix # 687 . ( # 712 )"}
+{"msg": "update < > ignore < > file"}
+{"msg": "Fixed languages files not included in build ( # 753 )"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Added <iden> <iden> ( # 750 )"}
+{"msg": "fix # 751"}
+{"msg": "Improved English translations ( # 748 ) * Improve English translation * Improve <iden> English translations"}
+{"msg": "Update < zh - tw > . xaml ( # 725 ) Make some adjustment to Chinese Traditional term ."}
+{"msg": "Update < <iden> > . md"}
+{"msg": "fix progressbar animation , bug introduced in 2a3bf727be1c8bc185f1b436893b1c4385d982ac"}
+{"msg": "add version number in installer , fix # 696"}
+{"msg": "Fix # 705"}
+{"msg": "fix # 695"}
+{"msg": "fix # 690"}
+{"msg": "Refactoring visibility related events <version> unnecessary events from < <iden> > <version> usage of <iden> api ( show , hide etc ) <version> space problem in # 660 <version> of # 486 <version> up / down key bug introduced in 92b7ca6a1bafd254e39ee92812ff691906cd85c1 <version> # 678"}
+{"msg": "temp disable <iden> command"}
+{"msg": "Remove redundant OnPropertyChagned"}
+{"msg": "fixup"}
+{"msg": "Add dutch translation ( # 683 )"}
+{"msg": "misc"}
+{"msg": "<iden>"}
+{"msg": "More data bindings ( <iden> + <iden> )"}
+{"msg": "Rename log file"}
+{"msg": "fix # 665"}
+{"msg": "<iden> for mainwindow"}
+{"msg": "<method_name> and close for setting tab"}
+{"msg": "misc"}
+{"msg": "Databinding for proxy tab"}
+{"msg": "Databinding for <iden> tab part of # 660"}
+{"msg": "misc"}
+{"msg": "remove unused code"}
+{"msg": "remove tab selection"}
+{"msg": "Databinding for theme tab"}
+{"msg": "misc"}
+{"msg": "misc"}
+{"msg": "Databinding for <iden> tab + faster image load"}
+{"msg": "misc"}
+{"msg": "Refactoring for tab <iden> event"}
+{"msg": "Databinding for <iden> tab"}
+{"msg": "Introduce viewmodel for settingwindow"}
+{"msg": "Misc"}
+{"msg": "use propertychanged helper"}
+{"msg": "rename"}
+{"msg": "update translation"}
+{"msg": "update < > <iden>"}
+{"msg": "rename"}
+{"msg": "fix # 608"}
+{"msg": "fix # 628"}
+{"msg": "Use Segoe UI # 655"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Refactoring error report <version> # 627 <version> # 646 <version> exceptionless"}
+{"msg": "rename , part 1"}
+{"msg": "fix # 655"}
+{"msg": "fix # 461"}
+{"msg": "fix null error when plugin doesn ' t set <iden> ( # 656 )"}
+{"msg": "move <iden> <iden> to the <iden> of the list"}
+{"msg": "<iden> : 看来我是对奇怪的大小写有种强迫症（"}
+{"msg": "<iden> / everything / lang / < en > : enlint ( # 645 )"}
+{"msg": "auto change log level"}
+{"msg": "temp fix for slow <iden> query # 1017"}
+{"msg": "add <iden> boundary to log"}
+{"msg": "fix 0 init time record"}
+{"msg": "speedup program load time"}
+{"msg": "fix stopwatch logging type"}
+{"msg": "refactoring <iden>"}
+{"msg": "enhance <iden> logging"}
+{"msg": "enhance lnk <iden> <iden> handling"}
+{"msg": "fix <iden> null"}
+{"msg": "reorganize methods"}
+{"msg": "fix log logic"}
+{"msg": "fix image"}
+{"msg": "rewrite uwp by not using <iden> , <iden> <version> is not squarelogo44x44 <version> ' t get details info ( <iden> etc )"}
+{"msg": "Update Themes URL link"}
+{"msg": "Updated French Translation"}
+{"msg": "update < > ignore < > file"}
+{"msg": "update nuget package version"}
+{"msg": "update nuget <iden> <iden>"}
+{"msg": "added <iden> <iden> guide line"}
+{"msg": "<version> version link bumped to <version>"}
+{"msg": "fix typo"}
+{"msg": "Corrected obvious error in the text in the template of Russian interface ( < ru > . xaml )"}
+{"msg": "<iden> language was added to the main list of <iden>"}
+{"msg": "Added new interface template ( < uk - UA > . xaml ) & was translated into the Ukrainian <iden>"}
+{"msg": "comments"}
+{"msg": "Fix non exe lnk for lnk like control panel . lnk , it has no <iden> and no exe <iden> ."}
+{"msg": "fix uwp parts for # 964"}
+{"msg": "partial fix for # 964"}
+{"msg": "temp hack for <iden> <iden> <iden> <iden> # 198 e . g . mail and <iden> , skype video and <iden> <link>. com / Wox - <iden> / Wox / <iden> / 198 # <iden> - <iden>"}
+{"msg": "Better logo handling for uwp # 198"}
+{"msg": "Leave only exe <iden> from start menus # 198"}
+{"msg": "fix js based <iden> logo # 198"}
+{"msg": "Improve < UWP > indexing # 954 <version> WinJS based < UWP > <version> bug of <iden> : <link>. microsoft . com / VisualStudio / feedback / details / 1690879 / vs2015 - can not - auto - uninstall - universal - windows - appss - debug - item"}
+{"msg": "add common known <iden>"}
+{"msg": "fixup"}
+{"msg": "Move <iden> menu and socre into <iden> model"}
+{"msg": "fixup"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "fixup"}
+{"msg": "Check <iden> # 198"}
+{"msg": "Better title and subtitle"}
+{"msg": "Fix multi <iden> uwp <iden> # 198"}
+{"msg": "fixup"}
+{"msg": "fixup"}
+{"msg": "Fix unicode in lnk dexcrption"}
+{"msg": "<iden> linq everywhere 1 . <iden> linq <version> depth <version> # 257"}
+{"msg": "Remove <iden> of shortcut icon again <version> GDI dependency <version> unused pinvoke define <version> <iden> of shortcut icon"}
+{"msg": "fixup"}
+{"msg": "disable file <iden> Filewatcher will only watch directory given by user , a bit useless . disable for now"}
+{"msg": "Merge models"}
+{"msg": "Add icon constant"}
+{"msg": "Ignore broken cache # 783"}
+{"msg": "rename"}
+{"msg": "rename"}
+{"msg": "rename"}
+{"msg": "Fix can ' t find file exception caused by abnormal scale"}
+{"msg": "Refactoring start menu <iden> <version> start menu <iden> <version> depth problems involved in last commit"}
+{"msg": "Refactoring App Paths source"}
+{"msg": "Remove <iden> from model"}
+{"msg": "Remove enable property from model"}
+{"msg": "Remove bonus points"}
+{"msg": "Code refactoring # 198"}
+{"msg": "Fix uwp background color / plated icon # 198"}
+{"msg": "add missing dll"}
+{"msg": "<method_name> ial <iden> for uwp app # 198 <version> <iden> , better than nothing . . . <version> great contribution from @ talynone 3 . # 198"}
+{"msg": "Fixes issue # 846 IndexOutOfRangeException when reading empty icon from registry in <iden> plugin"}
+{"msg": "fix typo preventing last PR from taking effect"}
+{"msg": "added sqrt as calculator keyword too"}
+{"msg": "added various keywords to calculator Added functions I commonly use on e . g . google calculator but were missed by parser . Specifically I added : e ( constant like pi ) tan , <iden> , and <iden> log and ln"}
+{"msg": "update < zh - tw > locale strings for plugins ( # 898 ) * update < zh - tw > locale strings for plugins"}
+{"msg": "update < zh - tw > locale strings"}
+{"msg": "Change <iden> to <iden> ( # 887 )"}
+{"msg": "Simple fixes ( # 871 )"}
+{"msg": "fixed the origin root <iden> of web search plugin ICon images <iden> ."}
+{"msg": "fixed # 881 could not normally display the Icon"}
+{"msg": "Added german and danish language support"}
+{"msg": "Providing User Agent for < Http > . <method_name> method ( # 874 )"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "<iden> plugin : simple refactoring"}
+{"msg": "<iden> plugin : remove lock lock is not needed since assignment is atomic"}
+{"msg": "<iden> plugin : remove complicated inheritance"}
+{"msg": "<iden> plugin : move files"}
+{"msg": "simple refactoring"}
+{"msg": "More exception info"}
+{"msg": "Misc"}
+{"msg": "Revert `` Remove first chance exception `` This reverts commit 4aa4d98c08f3bcc176bd3ac1b9b718ab98298ca<version> squirrel crash is not caused by this # 1320"}
+{"msg": "error report windows won ' t crashs"}
+{"msg": "Decouple runtime info and dependencies info"}
+{"msg": "Add more <iden> check"}
+{"msg": "Remove some useless code for error reporting"}
+{"msg": "fix debug info"}
+{"msg": "let it crash"}
+{"msg": "Add build instruction"}
+{"msg": "<iden> more <iden> dll"}
+{"msg": "Ensure <iden> is Disposed # 1320"}
+{"msg": "Remove first chance exception Remove first chance exception , it crash the app frequently when squirrel throw / catch exception internally ."}
+{"msg": "update # 1266 help info"}
+{"msg": "fix <iden> update error handling # 1266"}
+{"msg": "Add default <iden>"}
+{"msg": "add script into solution"}
+{"msg": "fixup"}
+{"msg": "Make the name same as post build event in vs"}
+{"msg": "ignore < > more < > files"}
+{"msg": "Clean solution items"}
+{"msg": "Merge appveor < build > script and visual studio < build > script into one"}
+{"msg": "fixup"}
+{"msg": "Rewrite < <iden> > < build > script"}
+{"msg": "misc"}
+{"msg": "Use own update <iden> , so we can pass proxy # 1266"}
+{"msg": "let it crash for http get"}
+{"msg": "misc"}
+{"msg": "Merge update logic # 1266"}
+{"msg": "Add new <iden> popup"}
+{"msg": "add local buil script"}
+{"msg": "test"}
+{"msg": "Misc"}
+{"msg": "fix can ' t catch exception issue - Origin code can ' t catch exception in code , and all exceptions goes into first chance exception hanlding . - releated : # 1266 - <link>. com / a / 5383408 / 2833083 - <link>. microsoft . com / en - us / magazine / jj<version> ? f = 255 & MSPPError = - 2147217396"}
+{"msg": "More exception info"}
+{"msg": "update nuget <iden>"}
+{"msg": "make the font list sorted ( # 1263 ) fix # 790"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "fixup"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Add coding style"}
+{"msg": "Save more"}
+{"msg": "Add more error handling , fix # 1252"}
+{"msg": "Add <iden> <iden> . Add <iden> <iden> ."}
+{"msg": "fixup"}
+{"msg": "Don ' t <iden> / < <method_name> > / Dark . xaml"}
+{"msg": "Fix # 1255"}
+{"msg": "typo"}
+{"msg": "Add universal pretty print method"}
+{"msg": "more error handling for i18n"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "fix # 1252 # 1251"}
+{"msg": "fix # 1199 <iden> / <iden> for result list"}
+{"msg": "update badges"}
+{"msg": "fix mainwindow <iden> issue # 823 # 1172 thanks @ slav for <link>. com / Wox - launcher / Wox / pull / 960"}
+{"msg": "misc"}
+{"msg": "remove useless code"}
+{"msg": "Completely rewrite <iden> load / update / <iden> <version> of # 468 <version> # 1245 , bug introduced in 7e1c77beddf2c978fa1440e799fec4eb9554739d"}
+{"msg": "catch more json exception"}
+{"msg": "click event will occur when <iden> is clicked and cause blur in center of <iden> window # 711"}
+{"msg": "Fix unremoved <iden> bug # 711"}
+{"msg": "remove blur when there is no blur in theme # 711"}
+{"msg": "add note"}
+{"msg": "null enhance"}
+{"msg": "fixup 30dfad29f6100153247db4edb6753d8db5112888"}
+{"msg": "Add last query mode # 1141 # 1050 <link>. com / Wox - launcher / Wox / issues / 1050 <link>. com / Wox - launcher / Wox / issues / 1141"}
+{"msg": "<iden> existing broken file"}
+{"msg": "add nonnull check"}
+{"msg": "add issue link to comment"}
+{"msg": "force <iden> <iden> <iden> <iden> <iden> # 858"}
+{"msg": "change init order"}
+{"msg": "Cache for <iden> <link>. com / Wox - launcher / Wox / issues / 1189"}
+{"msg": "Move initia and save from < <iden> > to App"}
+{"msg": "remove storage dependency from jsonstorage"}
+{"msg": "fix null bug in 4c07698c99a1e30f441af5d2782a679c5ff68968"}
+{"msg": "move constant into local scope"}
+{"msg": "use proper plugin metadata"}
+{"msg": "remove useless <iden> method"}
+{"msg": "remove custom exception"}
+{"msg": "Fixed typo in <iden>"}
+{"msg": "unfied log format validation and log format <iden>"}
+{"msg": "fixup"}
+{"msg": "Rewrite all log <iden> <iden>"}
+{"msg": "remove useless <iden> . close and more log"}
+{"msg": "rename cache file"}
+{"msg": "Use cache type directly instead of a new class , decouple binarystorage and storage"}
+{"msg": "remove unused stop watcher"}
+{"msg": "faster startup time for control panel plugin"}
+{"msg": "fixup"}
+{"msg": "genuine cache for program plugin"}
+{"msg": "format"}
+{"msg": "calculate score for addtional info"}
+{"msg": "add pinyin cache for control panel plugin # 858"}
+{"msg": "prefill pinyin cache for program plugin # 858"}
+{"msg": "Add cache for <iden> query # 858"}
+{"msg": "Simplified <iden> with <iden>"}
+{"msg": "Fix post_build . ps1 script failing due to PS <iden>"}
+{"msg": "Update <iden> plugin as System <iden> or User <iden>"}
+{"msg": "Open URL in new <iden> browser"}
+{"msg": "Add folder location display"}
+{"msg": "added build instructions for VS 2019"}
+{"msg": "Link F1 help to current website ( # 2414 ) Pressing F1 leads to the - now unavailable - old wox website . The updated URL should be <link>. wox . one / # 2413"}
+{"msg": "Update Japanese translation ( # 2511 )"}
+{"msg": "June update to the What ' s <iden> section Added info and links to the intern PT specs and info about FancyZones"}
+{"msg": "add issue links to Backlog list"}
+{"msg": "Minor spelling corrections Corrected letter transpositions , and capitalized Alt + Tab for consistency ( all other key names were at the beginning of their respective lines , so were already capitalized , but on my Surface Book all modifier keys and Tab are capitalized )"}
+{"msg": "s / <iden> / <iden>"}
+{"msg": "fix a couple typos"}
+{"msg": "Added links and info about the inspiration for the <iden> <iden>"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Fix a couple typeos"}
+{"msg": "Updating with images for the first two <iden>"}
+{"msg": "Adding preview utilities images"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Adding updated logo image"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Adding logo image"}
+{"msg": "Delete PowerToys . jpg"}
+{"msg": "Adding logo"}
+{"msg": "Uploading logo image"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Initial commit"}
+{"msg": "Initial commit"}
+{"msg": "fix cs"}
+{"msg": "follow up for new language support"}
+{"msg": "Added <iden> translation ( # 2376 )"}
+{"msg": "fix # 2363 theme font changes both whenever one is changed"}
+{"msg": "Added <iden> translation ( # 2376 )"}
+{"msg": "fix unexpected hovor without mouse moving ( # 2368 ) fix # 975 close # 2043"}
+{"msg": "Add everything plugin <iden> menu and add <iden> in Url plugin ( # 2299 ) <version> useful <iden> menu items in everything <version> <iden> in Url plugin , can set <iden> path * let url plugin support multi <iden>"}
+{"msg": "update badge to show <iden> for <iden> only [ ci skip ] [ skip ci ]"}
+{"msg": "error handling for theme loader"}
+{"msg": "use Pack URIs for Base . xaml ( as a demo for 3rd party themes )"}
+{"msg": "support user defined theme files in % appdata % ( close # 1267 , # 662 )"}
+{"msg": "Open With <iden> ( # 2261 )"}
+{"msg": "fix loading language package for it , nb - NO , pt - br , sr , uk - UA ( fix # 1319 )"}
+{"msg": "fix # 1456 Error when empty <iden> bin"}
+{"msg": "improve chinese translation"}
+{"msg": "validate path before save ( fix # 1869 )"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "hide tray icon ( close # 563 )"}
+{"msg": "skip calculation of <iden> score if <iden> <iden> is too long ( # 1683 )"}
+{"msg": "Removed <iden> entries in < Base > Theme ( # 2186 )"}
+{"msg": "Translate to Norwegian <iden> ( dev branch , properly this time ) ( # 2184 ) * Translate to Norwegian <iden> * Add Norwegian to < Available <method_name> s > . cs"}
+{"msg": "Add <iden> <iden> ( # 2143 ) * Add <iden> <iden>"}
+{"msg": "Add support for Portuguese ( Brazil ) ( # 2119 ) Translates <method_name> file into Portuguese ( Brazil )"}
+{"msg": "Update < <iden> > . md <iden> chinese translation for issue template"}
+{"msg": "fix < <iden> > build failure"}
+{"msg": "UWP HiDPI icon support ( # 1515 ) * Add HiDPI support for < UWP > on Windows 10 * Code structure improvement"}
+{"msg": "Fix typo ( # 2055 )"}
+{"msg": "skip broken folder when re - index ( # 2004 ) * skip broken folder when re - index * add log for <iden>"}
+{"msg": "Added support for <iden> ( # 2029 )"}
+{"msg": "Update < <iden> > . md ( # 2006 ) Update < <iden> > . md , set latest version link to <version>"}
+{"msg": "Translate some words into Japanese . ( # 1982 )"}
+{"msg": "Image <method_name> er now loads everything <iden> <iden> : : <method_name> ( # 1836 ) * Added <iden> loader * Deleted old shell icon extraction logic . Refactored < Image <method_name> er > . <method_name> to improve readibility . * Moved error handling down into the API call itself * Minor renamings in < Image <method_name> er > * <method_name> icons only for files that are not images . Fixes stutters when loading <iden> . * Added the ability to load a full image <iden> < Image <method_name> er > . < Image <method_name> er > . <method_name> now also has a `` <iden> `` parameter . * Max image cache is now 5000 <iden> of 200 . * Added some commentaries on how <iden> are loaded"}
+{"msg": "back"}
+{"msg": "update website"}
+{"msg": "disable input method when binding hotkey ( fix # 1876 )"}
+{"msg": "Issue template update ( # 1846 ) * Update to < <iden> > Template partially based on <link>. com / facebook / react - native / blob / master / . <iden> / < <iden> > . md"}
+{"msg": "Execute the OpenResultComand with Ctrl and Alt modifiers when pressing enter ( # 1685 )"}
+{"msg": "<iden> paths fix + # 1779 ( # 1780 ) * <iden> now searches for files on a per - folder basis using a Queue instead of calling <iden> . This allows us to escape <iden> errors . Issue # 1779 is fixed because of this too ."}
+{"msg": "Update < <iden> > . md minor fix for `` <iden> `` part"}
+{"msg": "Changed <iden> ' s <iden> formatting back to <iden> . <iden> ( ) call as it is more detailed and provides more information for AggregateException and others ."}
+{"msg": "Added file <iden> check before loading cache and removed < <iden> > . Save when file was already locked ."}
+{"msg": "Updated French Translation ( # 1522 ) added : <iden> <iden> <iden> <iden> <iden> <iden>"}
+{"msg": "fix # 1397 action keywords should not be set to empty string"}
+{"msg": "re - enabled exception during debug"}
+{"msg": "Fixed typos and swapped <iden> for <iden> , Corrections due to PR"}
+{"msg": "since Yamp is not maintained anymore , i switched it for Mages <link>. com / FlorianRappl / Mages fixes also # 1022"}
+{"msg": "Notes for maintenance"}
+{"msg": "Removed extra leading space char ( # 1368 )"}
+{"msg": "Fix folder <iden> # 1282 # 1357"}
+{"msg": "ContextMenu 4 : for non c # <iden> # 1366"}
+{"msg": "ContextMenu 3 : Format # 1366"}
+{"msg": "ContextMenu 2 : Extract <method_name> # 1366"}
+{"msg": "ContextMenu 1 : Rename # 1366"}
+{"msg": "Convert <iden> <iden> from / to user locale . Tries to <iden> <iden> in query <iden> to invariant <iden> <iden> before passing to YAMP , and the other way around when presenting <iden> from YAMP . Nothing fancy , just a regular expression scanning for substrings consisting of <iden> , <iden> separator and group separator , trying a parse and <iden> on them . Translation is skipped if no <iden> <iden> user locale and invariant <iden> <iden> <iden> is necessary . Closes # 436 ."}
+{"msg": "Update < <iden> > . md"}
+{"msg": "Update < <iden> > . md"}
+{"msg": "remove annoying fail prompt # 1339"}
+{"msg": "Handle more exceptions for < <method_name> > # 1309"}
+{"msg": "Filter windows moved by keyboard in <iden>"}
+{"msg": "Move <iden> filter to separate function , filter more <iden> ."}
+{"msg": "PR feedback"}
+{"msg": "remove previous <iden> upon upgrade fix link to documentation"}
+{"msg": "Need to adjust x / y by <iden> diff <iden> <iden> and work area rect"}
+{"msg": "Fix for # 292 ( Zone Editor opens behind PowerToys Window )"}
+{"msg": "Everything is working ."}
+{"msg": "Fix typos in src / < <iden> > . md ( # 364 )"}
+{"msg": "Use < <iden> > in lieu of the standard <iden> dialog"}
+{"msg": "Use friendlier font in License . rtf file"}
+{"msg": "bug fix"}
+{"msg": "Update btn name to ' All <iden> '"}
+{"msg": "Update multi - selection"}
+{"msg": "Add sorting"}
+{"msg": "activate zones for windows with <iden> <iden> fixes <link>. com / microsoft / PowerToys / issues / 209"}
+{"msg": "default ' flashZones ' to false"}
+{"msg": "Add documentation about <iden> installation ( # 349 )"}
+{"msg": "Don ' t show the tasklist <iden> when <iden> is autohide ( # 340 ) Ref : <link>. com / microsoft / PowerToys / issues / 291"}
+{"msg": "Make Alt - F4 always close the settings <iden> ( # 334 ) Fixes : <link>. com / microsoft / PowerToys / issues / 289"}
+{"msg": "Fix cppcheck reported issues ( # 333 ) Fixes : <link>. com / microsoft / PowerToys / issues / 266"}
+{"msg": "remove debug code"}
+{"msg": "Update load programsources with uniqueidentifier"}
+{"msg": "Update class to inherite from <iden> . <iden>"}
+{"msg": "Update disable logic and add unique identifier for <iden>"}
+{"msg": "<iden> shortcuts * Change <iden> to advertised Note that I had to remove the ability to not <iden> a Start Menu <iden> , as advertised shortcuts must always be installed . Also note that I had to change the `` Core `` feature to always be installed ( disabling Install - on - Demand ) as having that turned on broke the Scheduled Task <iden> . * Disable <iden>"}
+{"msg": "Added Hi - res logo ( 4k PNG )"}
+{"msg": "add build <iden> to readme"}
+{"msg": "Update CI pipeline update Visual Studio version to 16 move CI pipeline to . <iden> folder"}
+{"msg": "Cleanup <iden> - web ( # 280 )"}
+{"msg": "Pass <method_name> through to <iden> . It is more reliable ."}
+{"msg": "Almost working . Doesn ' t apply on my small <method_name> running at 150 % scaling ."}
+{"msg": "Add initial disable program code"}
+{"msg": "Refactor <iden> . <iden>"}
+{"msg": "<method_name> or <iden> come up on the <iden> with the <iden> <iden> . Defaults to primary <iden> if there is no <iden> <iden> ."}
+{"msg": "Updated button positions and name"}
+{"msg": "Add disable programs functionality"}
+{"msg": "[ ImgBot ] Optimize images ( # 225 ) * Total - - 3 , <version> - > 2 , <version> ( <version> % ) / doc / images / example_powertoy / settings . png - - <version> - > <version> ( <version> % ) / src / modules / fancyzones / FancyZonesSettings . png - - <version> - > <version> ( <version> % ) / Logo . jpg - - <version> - > <version> ( <version> % ) / doc / images / Logo . jpg - - <version> - > <version> ( <version> % ) / src / modules / fancyzones / Picker . png - - <version> - > <version> ( <version> % ) / doc / images / runner / tray . png - - <version> - > <version> ( <version> % ) / doc / images / shortcut_guide / usage . png - - <version> - > <version> ( <version> % ) / doc / images / shortcut_guide / settings . png - - <version> - > <version> ( <version> % ) / src / modules / fancyzones / FancyZones . png - - 1 , <version> - > <version> ( <version> % ) / doc / images / MTNDWidget . jpg - - <version> - > <version> ( <version> % ) / MTNDWidget . jpg - - <version> - > <version> ( <version> % ) / src / modules / fancyzones / TableEditor . png - - 28<version>3kb - > <version> ( <version> % ) / WindowsKeyShortcutGuide . jpg - - <version> - > <version> ( <version> % ) / doc / images / WindowsKeyShortcutGuide . jpg - - <version> - > <version> ( <version> % ) / src / modules / fancyzones / WindowEditor . png - - <version> - > <version> ( <version> % ) / doc / images / FZTutorial . jpg - - <version> - > <version> ( <version> % ) / src / settings - web / src / components / fabric . png - - <version> - > <version> ( <version> % ) Signed - off - by : ImgBotApp < ImgBotHelp @ gmail . com >"}
+{"msg": "Fix typos in < <iden> > . md ( # 258 ) Minor typos and more concise language ."}
+{"msg": "Fix typo in fancy <method_name> / < <iden> > . md ( # 259 )"}
+{"msg": "Fix typo in < <iden> > . md ( # 231 )"}
+{"msg": "Fix typo in < <iden> > . md ( # 221 )"}
+{"msg": "Escape less - than - sign in fancy <method_name> / < <iden> > . md ( # 222 ) Without escaping this is rendered as an HTML , which is invisible ."}
+{"msg": "Fix typo in < <iden> > . md ( # 220 )"}
+{"msg": "Fix typo in < <iden> > . md ( # 214 )"}
+{"msg": "Fix typo in src / < <iden> > . md ( # 207 )"}
+{"msg": "Update backlog links ( # 201 ) - Update FZ backlog links - Update ShortcutGuide backlog links"}
+{"msg": "Fix typo in < <iden> > . md ( # 153 )"}
+{"msg": "Add display of all loaded <iden>"}
+{"msg": "<iden> < > <method_name> < > <iden> < > <method_name> < > <method_name> ial < > <iden> < > Co < > - < > <iden> < > - < > by < > : < > Alexis < > Campailla < > < alexis < > @ < > janea <method_name> s < > . < > com > < > Co < > - < > <iden> < > - < > by < > : < > Bret < > Anderson < > < bretan < > @ < > <iden> < > . < > com > < > Co < > - < > <iden> < > - < > by < > : < > Enrico < > Giordani < > < enrico < > . < > giordani < > @ < > gmail < > . < > com > < > Co < > - < > <iden> < > - < > by < > : < > Jaime < > Bernardo < > < jaime < > @ < > janea <method_name> s < > . < > com > < > Co < > - < > <iden> < > - < > by < > : < > Jeff < > Bogdan < > < jeffbog < > @ < > <iden> < > . < > com > < > Co < > - < > <iden> < > - < > by < > : < > Mar <method_name> < > Rogers < > < mar <method_name> r < > @ < > <iden> < > . < > com > < > Co < > - < > <iden> < > - < > by < > : < > Mike < > Harsh < > < mharsh < > @ < > <iden> < > . < > com > < > Co < > - < > <iden> < > - < > by < > : < > Na <method_name> um < > Bundak < > < Na <method_name> um < > . < > Bundak < > @ < > <iden> < > . < > com > < > Co < > - < > <iden> < > - < > by < > : < > Oliver < > Jones < > < ojones < > @ < > <iden> < > . < > com > < > Co < > - < > <iden> < > - < > by < > : < > Patrick < > Little < > < plittle < > @ < > <iden> < > . < > com >"}
+{"msg": "Enable user selected program loading only Update logic , add program source only loading"}
+{"msg": "Fix < <iden> > <iden> comparison bug"}
+{"msg": "Add reindex when updating plugin . program suffix"}
+{"msg": "Save all plugins ' settings on settings menu close"}
+{"msg": "update showmsg"}
+{"msg": "Revert get translation as none is provided"}
+{"msg": "Add to Sys plugin - save all Wox <iden>"}
+{"msg": "Fix typo ' <iden> '"}
+{"msg": "Increase error message fade from 1 to 5 secs"}
+{"msg": "Handling chrome <iden> not installed"}
+{"msg": "update"}
+{"msg": "Move comment to PR"}
+{"msg": "Enable <iden> mode"}
+{"msg": "Add check null for event"}
+{"msg": "Update < <iden> > . md build instructions for VS 2017 / 2019"}
+{"msg": "Update < <iden> > . md build instructions for VS 2017 / 2019"}
+{"msg": "Speed up <iden> plugin when suggestions turned on"}
+{"msg": "Set <iden> off as default setting"}
+{"msg": "Use shared command and open in new browser window"}
+{"msg": "update"}
+{"msg": "use shared commands"}
+{"msg": "Add shared commands and move to shared"}
+{"msg": "Add shared commands for plugins to use"}
+{"msg": "Add BrowserBooks < <iden> > as <iden> <iden>"}
+{"msg": "update"}
+{"msg": "update"}
+{"msg": "Update Initialisation of <iden> method Handle when <iden> has a mix of global and non - global action keywords"}
+{"msg": "Update <method_name> method Update the method to handle removal when a <iden> has <iden> <iden> ie . mix of <iden> and non - <iden> <iden>"}
+{"msg": "update"}
+{"msg": "Mini refactor Move <iden> . Start to <iden> class level"}
+{"msg": "Add Black And White Theme"}
+{"msg": "Bugfix and update Fix bug when no <iden> path specified will be null instead of . <iden> = = <version> open url in new <iden> <iden> by default"}
+{"msg": "Bug fix - Edit & Delete buttons will crash if <iden> search source is null <iden> will be null if the user clicks on Edit or Delete after finishing with previous edit and not highlighting the search source again ."}
+{"msg": "Update < Main > . cs"}
