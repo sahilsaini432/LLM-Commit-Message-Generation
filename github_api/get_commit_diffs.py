@@ -54,7 +54,7 @@ def get_all_commits(owner, repo):
 
     total_commits = []
 
-    page = 0
+    page = 1
     per_page = 100  # Maximum allowed by GitHub API
 
     print(f"🔍 Fetching commits from {owner}/{repo}...")
@@ -107,9 +107,13 @@ def get_all_commits(owner, repo):
 
     # Save Train Commits
     path = Path(__file__).parent.parent
+
+    # check if the output directory exists, if not create it
+    os.makedirs(f"{path}/datasets/{repo}", exist_ok=True)
+
     with open(f"{path}/datasets/{repo}/un_clean_commits.jsonl", "w") as outfile:
-        for sha in tqdm(total_commits):
-            diff = get_commit_diffs(owner, repo, sha)
+        for commit in tqdm(total_commits):
+            diff = get_commit_diffs(owner, repo, commit["sha"])
             outfile.write(json.dumps(diff) + "\n")
 
 
@@ -146,8 +150,7 @@ def get_commit_diffs(owner, repo, sha):
                 print("No files changed in this commit.")
                 return None
 
-            diff = ""
-            mod_diff = ""
+            final_diff = ""
             for file in commit_data["files"]:
                 if "patch" in file and file["patch"] is not None:
                     diff = file["patch"]
@@ -172,6 +175,25 @@ def get_commit_diffs(owner, repo, sha):
                 "mod_diff": final_diff,
             }
             return diff_line
+
+        elif resp.status_code == 403:
+            print("Received a 403 error.")
+            # Check for specific rate limit headers
+            if "retry-after" in resp.headers:
+                wait_time = int(resp.headers["retry-after"]) + 5
+                print(f"Waiting for {wait_time} seconds before retrying.")
+                time.sleep(wait_time)
+                return get_commit_diffs(owner, repo, sha)
+            elif "X-RateLimit-Reset" in resp.headers:
+                reset_timestamp = int(resp.headers["X-RateLimit-Reset"])
+                wait_time = reset_timestamp - time.time()
+                if wait_time > 0:
+                    print(f"Primary rate limit exceeded. Waiting for {wait_time} sec")
+                    time.sleep(wait_time)
+                    return get_commit_diffs(owner, repo, sha)
+        else:
+            print(f"❌ Failed to fetch commit {sha}: {resp.status_code} - {resp.text}")
+            return None
     except requests.exceptions.RequestException as e:
         print(f"❌ Network error: {e}")
         return None
