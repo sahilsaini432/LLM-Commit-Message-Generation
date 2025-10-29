@@ -210,7 +210,6 @@ __marimo__/
 .env
 lightning_logs/
 
-.json
-**/*.jsonl
-.jsonl
-.csv
+test/
+datasets/
+data/
