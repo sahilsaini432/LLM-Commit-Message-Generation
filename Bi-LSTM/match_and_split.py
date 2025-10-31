@@ -8,6 +8,7 @@ import os
 import argparse
 import random
 from collections import defaultdict
+import zipfile
 
 
 def load_jsonl_file(file_path):
@@ -117,6 +118,39 @@ def split_data(matched_entries, train_ratio=0.7, test_ratio=0.1, val_ratio=0.2):
     return train_data, test_data, val_data
 
 
+def compress_directory(dir_path, zip_path):
+    """
+    Compress a directory into a ZIP file.
+
+    Args:
+        dir_path (str): Path to the directory to compress
+        zip_path (str): Path for the output ZIP file (including .zip extension)
+
+    Returns:
+        bool: True if successful, False otherwise
+    """
+    if not os.path.exists(dir_path):
+        print(f"❌ Directory not found: {dir_path}")
+        return False
+
+    if not os.path.isdir(dir_path):
+        print(f"❌ Path is not a directory: {dir_path}")
+        return False
+
+    try:
+        with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as zipf:
+            for root, dirs, files in os.walk(dir_path):
+                for file in files:
+                    file_path = os.path.join(root, file)
+                    arcname = os.path.relpath(file_path, dir_path)
+                    zipf.write(file_path, arcname)
+        print(f"✅ Successfully compressed '{dir_path}' to '{zip_path}'")
+        return True
+    except Exception as e:
+        print(f"❌ Error compressing directory: {e}")
+        return False
+
+
 def save_jsonl_file(data, output_path):
     """
     Save data to JSONL file
@@ -218,6 +252,15 @@ def match_and_split_files(
     save_jsonl_file(train_data, train_path)
     save_jsonl_file(test_data, test_path)
     save_jsonl_file(val_data, val_path)
+
+    # Zip the data
+    zip_path = os.path.join(output_dir, "data_splits.zip")
+    compress_directory(output_dir, zip_path)
+
+    # delete the jsonl files
+    os.remove(train_path)
+    os.remove(test_path)
+    os.remove(val_path)
 
     print(f"🎉 Successfully created train/test/val splits in: {output_dir}")
 

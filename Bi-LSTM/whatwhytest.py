@@ -17,7 +17,7 @@ torch.backends.cudnn.enable = True
 torch.backends.cudnn.benchmark = True
 os.environ["CUDA_LAUNCH_BLOCKING"] = "1"
 torch.set_float32_matmul_precision("high")
-PATH = "./lightning_logs/best-checkpoint-epoch=05-val_loss=0.65.ckpt"
+PATH = "./lightning_logs/best-checkpoint-epoch=06-val_loss=0.62.ckpt"
 batch_size = 64
 epochs = 30
 dropout = 0.4
@@ -54,8 +54,12 @@ class MydataSet(Dataset):
     def __getitem__(self, item):
         if item >= len(self.data):
             return "", 0
-        text = self.data[item].get("msg", "")
-        label = self.data[item].get("label", 0)
+        try:
+            text = self.data[item].get("msg", "")
+            label = self.data[item].get("label", 0)
+        except Exception as e:
+            print(f"⚠️ Error accessing item {item}: {e}")
+            raise e
         return text, label
 
     def __len__(self):
@@ -173,7 +177,7 @@ class BiLSTMLighting(pl.LightningModule):
         pred = torch.argmax(y_hat, dim=1)
 
         # Write raw predictions to file
-        path = f"./data/Powertoys/predgo.txt"
+        path = f"./data/next.js/predgo.txt"
         os.makedirs(os.path.dirname(path), exist_ok=True)
         with open(path, "a", encoding="utf-8") as f:
             f.write(str(pred) + "\n")
@@ -226,7 +230,7 @@ class BiLSTMLighting(pl.LightningModule):
                 all_predictions.append(updated_record)
 
         # Save as new JSONL file
-        output_path = "./data/Powertoys/predictions.jsonl"
+        output_path = "./data/next.js/predictions.jsonl"
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
 
         with open(output_path, "w", encoding="utf-8") as file:

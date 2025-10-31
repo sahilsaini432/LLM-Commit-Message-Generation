@@ -13,6 +13,7 @@ import pytorch_lightning as pl
 from pytorch_lightning import Trainer
 import os
 import argparse
+import functools
 import json
 
 torch.backends.cudnn.enable = True
@@ -47,7 +48,7 @@ class MydataSet(Dataset):
 
 
 # todo: define batch processing function
-def collate_fn(data):
+def collate_fn(token, data):
     sents = [i[0] for i in data]
     labels = [i[1] for i in data]
     # tokenize and encode
@@ -134,7 +135,11 @@ class BiLSTMLighting(pl.LightningModule):
 
     def train_dataloader(self):
         train_loader = DataLoader(
-            dataset=self.train_dataset, batch_size=batch_size, collate_fn=collate_fn, shuffle=True
+            dataset=self.train_dataset,
+            batch_size=batch_size,
+            collate_fn=functools.partial(collate_fn, token),
+            shuffle=True,
+            num_workers=5,
         )
         return train_loader
 
@@ -154,7 +159,11 @@ class BiLSTMLighting(pl.LightningModule):
 
     def val_dataloader(self):
         val_loader = DataLoader(
-            dataset=self.val_dataset, batch_size=batch_size, collate_fn=collate_fn, shuffle=False
+            dataset=self.val_dataset,
+            batch_size=batch_size,
+            collate_fn=functools.partial(collate_fn, token),
+            shuffle=False,
+            num_workers=5,
         )
         return val_loader
 
@@ -171,7 +180,11 @@ class BiLSTMLighting(pl.LightningModule):
 
     def test_dataloader(self):
         test_loader = DataLoader(
-            dataset=self.test_dataset, batch_size=batch_size, collate_fn=collate_fn, shuffle=False
+            dataset=self.test_dataset,
+            batch_size=batch_size,
+            collate_fn=functools.partial(collate_fn, token),
+            shuffle=False,
+            num_workers=5,
         )
         return test_loader
 
