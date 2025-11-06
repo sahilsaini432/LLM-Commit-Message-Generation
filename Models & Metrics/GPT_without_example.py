@@ -74,6 +74,35 @@ def process_diff(diff):
     return get_tokens(diff)
 
 
+def _estimate_tokens(text: str) -> int:
+    # Rough estimate: ~4 characters per token
+    return max(1, len(text) // 4)
+
+
+def _sleep_after_call(diff_text: str, n: int = 30, max_tokens: int = 50, tpm: int = 30000):
+    # Pace calls to stay under the Tokens-Per-Minute limit
+    approx_in = _estimate_tokens(diff_text)
+    approx_out = n * max_tokens  # upper bound
+    sleep_s = ((approx_in + approx_out) / max(1, tpm)) * 60.0
+    time.sleep(min(max(sleep_s, 0.5), 6.0))  # clamp between 0.5s and 6s
+
+
+def _chat_with_retry(client, req_kwargs, max_retries: int = 6):
+    # Retry on rate limits with exponential backoff
+    for attempt in range(max_retries):
+        try:
+            return client.chat.completions.create(**req_kwargs)
+        except Exception as e:
+            msg = str(e).lower()
+            if "rate limit" in msg or "429" in msg:
+                wait = min(8.0, 0.5 * (2**attempt))
+                print(f"Rate limited. Waiting {wait:.2f}s then retrying ({attempt+1}/{max_retries})...")
+                time.sleep(wait)
+                continue
+            raise
+    raise RuntimeError("Exceeded max retries due to rate limits")
+
+
 def main():
     # Get file path from as argument
     parser = argparse.ArgumentParser()
@@ -131,8 +160,8 @@ def main():
         msg = " ".join(msg_list)
 
         try:
-            completion = client.chat.completions.create(
-                model="gpt-3.5-turbo",
+            req = dict(
+                model="gpt-4.1-2025-04-14",
                 messages=[
                     {
                         "role": "system",
@@ -148,6 +177,9 @@ def main():
                 n=30,
                 top_p=0.95,
             )
+
+            completion = _chat_with_retry(client, req)
+
             num_answers = 30
             msgGPTs = []
             for i in range(num_answers):
@@ -171,12 +203,16 @@ def main():
                 data[f"msgGPT{i}"] = f"{msgGPTs[i]}"
 
             results.append(data)
+
+            # Wait to respect rate limits (TPM) before next request
+            _sleep_after_call(diff, n=30, max_tokens=50)
+
         except:
             traceback.print_exc()
             print(f"{item} has been retried 3 times and still failed.")
             break
 
-    with open(f"{args.output}/gpt.jsonl", "a") as f:
+    with open(f"{args.output}/gpt4.1_responses_2.jsonl", "a") as f:
         for result in results:
             json.dump(result, f)
             f.write("\n")

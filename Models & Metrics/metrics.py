@@ -19,29 +19,29 @@ from tenacity import (
 )
 import nltk
 
-file = 'csgptnoexample.jsonl'
-nlp_file_path = 'gptjavainnlp.jsonl'
+file = "csgptnoexample.jsonl"
+nlp_file_path = "gptjavainnlp.jsonl"
 
 def calculate_meteor(sentence1, sentence2):
     """
-    计算两个句子之间的METEOR分数
+    Calculate METEOR score between two sentences
     """
-    # 将两个句子转换为词频向量
+    # Convert both sentences to word frequency vectors
     vectorizer = CountVectorizer().fit([sentence1, sentence2])
     sentence1_vector = vectorizer.transform([sentence1])
     sentence2_vector = vectorizer.transform([sentence2])
 
-    # 计算两个向量的余弦相似度
+    # Calculate cosine similarity between the two vectors
     similarity = cosine_similarity(sentence1_vector, sentence2_vector)[0][0]
 
-    # 根据METEOR公式计算分数
+    # Calculate score based on METEOR formula
     score = 2 * similarity * len(sentence1) * len(sentence2) / (len(sentence1) + len(sentence2))
     return score
 
 
 def calculate_bleu(reference, translation):
     """
-    计算BLEU分数
+    Calculate BLEU score
     """
     bleu_score = sentence_bleu([reference], translation)
     return bleu_score
@@ -49,10 +49,10 @@ def calculate_bleu(reference, translation):
 
 def calculate_rouge_l(reference, translation):
     """
-    计算ROUGE-L分数
+    Calculate ROUGE-L score
     """
     rouge = Rouge()
-    rouge_l_score = rouge.get_scores(translation, reference, avg=True)['rouge-l']
+    rouge_l_score = rouge.get_scores(translation, reference, avg=True)["rouge-l"]
     return rouge_l_score
 
 
@@ -61,67 +61,71 @@ def is_camel_case(s):
 
 
 def to_Underline(x):
-    """转空格命名"""
-    return re.sub('(?<=[a-z])[A-Z]|(?<!^)[A-Z](?=[a-z])', ' \g<0>', x).lower()
+    """Convert to space-separated naming"""
+    return re.sub("(?<=[a-z])[A-Z]|(?<!^)[A-Z](?=[a-z])", " \g<0>", x).lower()
 
 
 def get_tokens(text):
     tokens = nltk.word_tokenize(text)
     if len(tokens) > 1024:
-        return ' '.join(tokens[:1024])
+        return " ".join(tokens[:1024])
     else:
-        return ' '.join(tokens)
+        return " ".join(tokens)
 
 
 def remove_between_identifiers(text, identifier_start, identifier_end):
-    # 定义正则表达式模式
-    pattern = f'(?<={identifier_start}).*?(?={identifier_end})'
+    # Define regular expression pattern
+    pattern = f"(?<={identifier_start}).*?(?={identifier_end})"
 
-    # 使用re.sub方法替换匹配到的部分为空字符串
-    result = re.sub(pattern, '', text)
-    if identifier_start == 'mmm a':
-        result = result.replace('mmm a<nl>', '')
-    if identifier_start == 'ppp b':
-        result = result.replace('ppp b<nl>', '')
-        result = result.replace('<nl>', '\n')
-    result = result.replace(' . ', '.')
-    result = result.replace('  ', '.')
-    result = result.replace(' = ', '=')
-    result = result.replace(' ; ', ';')
-    result = result.replace(' (', '(')
-    result = result.replace(') ', ')')
+    # Use re.sub method to replace matched parts with empty string
+    result = re.sub(pattern, "", text)
+    if identifier_start == "mmm a":
+        result = result.replace("mmm a<nl>", "")
+    if identifier_start == "ppp b":
+        result = result.replace("ppp b<nl>", "")
+        result = result.replace("<nl>", "\n")
+    result = result.replace(" . ", ".")
+    result = result.replace("  ", ".")
+    result = result.replace(" = ", "=")
+    result = result.replace(" ; ", ";")
+    result = result.replace(" (", "(")
+    result = result.replace(") ", ")")
     return result
 
 
-# 读取JSONL文件
-with open(file, 'r') as f:
+# Read JSONL file
+with open(file, "r") as f:
     lines = f.readlines()
-with open(nlp_file_path, 'w') as f:
-    f.write('')
-# 处理每一行JSON数据
+with open(nlp_file_path, "w") as f:
+    f.write("")
+# Process each line of JSON data
 new_lines = []
 for line in lines:
     data = json.loads(line)
-    # 检查msg和msgGPT是否都为字符串'0'
-    if isinstance(data['msg'], str) and data['msg'] == '0' and isinstance(data['msgGPT'], str) and data[
-        'msgGPT'] == '0':
-        # 如果是，则删除该行数据
+    # Check if both msg and msgGPT are the string '0'
+    if (
+        isinstance(data["msg"], str)
+        and data["msg"] == "0"
+        and isinstance(data["msgGPT"], str)
+        and data["msgGPT"] == "0"
+    ):
+        # If so, delete this line of data
         continue
     new_lines.append(line)
 
-# 将处理后的JSON数据写回文件
-with open(file, 'w') as f:
+# Write processed JSON data back to file
+with open(file, "w") as f:
     f.writelines(new_lines)
 
-# 打开JSONL文件并读取数据
-with open(file, 'r') as f:
+# Open JSONL file and read data
+with open(file, "r") as f:
     json_data = f.readlines()
 
 for item in json_data:
-    # 解析 JSON 数据
+    # Parse JSON data
     data = json.loads(item)
-    diff_id = data['diff_id']
-    msg = data['msg']
+    diff_id = data["diff_id"]
+    msg = data["msg"]
     words = msg.split()
     msg_list = []
     for word in words:
@@ -132,8 +136,8 @@ for item in json_data:
                 msg_list.append(word)
         else:
             msg_list.append(word)
-    msg = ' '.join(msg_list)
-    msgGPT = data['msgGPT0']
+    msg = " ".join(msg_list)
+    msgGPT = data["msgGPT0"]
     wordsGPT = msgGPT.split()
     msgGPT_list = []
     for wordGPT in wordsGPT:
@@ -144,59 +148,64 @@ for item in json_data:
                 msgGPT_list.append(wordGPT)
         else:
             msgGPT_list.append(wordGPT)
-    msgGPT = ' '.join(msgGPT_list)
+    msgGPT = " ".join(msgGPT_list)
 
     bleu_score = calculate_bleu(msg, msgGPT)
     rouge_l_score = calculate_rouge_l(msg, msgGPT)
     meteor_score = calculate_meteor(msg, msgGPT)
 
-
-    # 将 diff 和 msg ,score添加到列表中
-    data = {"diff_id": diff_id, "msg": f"{msg}", "msgGPT": f"{msgGPT}", "METEOR Score": f"{meteor_score}",
-            "BLEU Score": f"{bleu_score}", "ROUGE-L Score": f"{rouge_l_score['f']}"}
-    with open(nlp_file_path, 'a') as f:
+    # Add diff and msg, score to list
+    data = {
+        "diff_id": diff_id,
+        "msg": f"{msg}",
+        "msgGPT": f"{msgGPT}",
+        "METEOR Score": f"{meteor_score}",
+        "BLEU Score": f"{bleu_score}",
+        "ROUGE-L Score": f"{rouge_l_score['f']}",
+    }
+    with open(nlp_file_path, "a") as f:
         json.dump(data, f)
-        f.write('\n')
+        f.write("\n")
 
 
-
-# 初始化变量来保存总分
+# Initialize variables to save total scores
 total_meteor_score = 0
 total_bleu_score = 0
 total_rouge_l_score = 0
 
-# 文件句柄
+
+# File handle
 def count_jsonl_lines(file_path):
-    with open(file_path, 'r') as file:
+    with open(file_path, "r") as file:
         lines = file.readlines()
     return len(lines)
 
 
- # 这里放你的 JSONL 文件路径
+# Put your JSONL file path here
 x = count_jsonl_lines(nlp_file_path)
 
-with open(nlp_file_path, 'r') as f:
-    # 逐行读取文件
+with open(nlp_file_path, "r") as f:
+    # Read file line by line
     for line in f:
-        # 解码每一行，得到一个json对象
+        # Decode each line to get a json object
         json_obj = json.loads(line)
 
-        # 从json对象中获取分数
+        # Get scores from json object
         meteor_score = float(json_obj.get("METEOR Score", 0))
         bleu_score = float(json_obj.get("BLEU Score", 0))
         rouge_l_score = float(json_obj.get("ROUGE-L Score", 0))
 
-        # 添加到总分中
+        # Add to total scores
         total_meteor_score += meteor_score
         total_bleu_score += bleu_score
         total_rouge_l_score += rouge_l_score
 
-    # 计算平均分
+    # Calculate average scores
 average_meteor_score = total_meteor_score / x
 average_bleu_score = total_bleu_score / x
 average_rouge_l_score = total_rouge_l_score / x
 
-# 输出平均分
+# Output average scores
 print(f"Average METEOR Score: {average_meteor_score}")
 print(f"Average BLEU Score: {average_bleu_score}")
 print(f"Average ROUGE-L Score: {average_rouge_l_score}")
