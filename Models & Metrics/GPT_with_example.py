@@ -146,7 +146,7 @@ for item in json_data:
         try:
             for num_examples in [1, 3, 5, 10]:
                 if len(best_diffs_msgs) >= num_examples:
-                    # 构建prompt
+                    # Build prompt
                     prompt = ""
                     for best_diff, best_msg in best_diffs_msgs[:num_examples]:
                         prompt += f"{best_diff}\nPlease write a commit message for the above code change.\n{best_msg}\n\n"

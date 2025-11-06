@@ -230,7 +230,7 @@ class BiLSTMLighting(pl.LightningModule):
                 all_predictions.append(updated_record)
 
         # Save as new JSONL file
-        output_path = "./data/next.js/predictions.jsonl"
+        output_path = "./data/PowerToys/predictions.jsonl"
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
 
         with open(output_path, "w", encoding="utf-8") as file:

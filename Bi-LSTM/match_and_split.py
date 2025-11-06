@@ -175,7 +175,14 @@ def save_jsonl_file(data, output_path):
 
 
 def match_and_split_files(
-    pred_file_path, og_data_path, output_dir, train_ratio=0.7, test_ratio=0.1, val_ratio=0.2, seed=42
+    pred_file_path,
+    og_data_path,
+    output_dir,
+    train_ratio=0.7,
+    test_ratio=0.1,
+    val_ratio=0.2,
+    seed=42,
+    zip=False,
 ):
     """
     Main function to match files by SHA and split into train/test/val
@@ -253,14 +260,15 @@ def match_and_split_files(
     save_jsonl_file(test_data, test_path)
     save_jsonl_file(val_data, val_path)
 
-    # Zip the data
-    zip_path = os.path.join(output_dir, "data_splits.zip")
-    compress_directory(output_dir, zip_path)
+    if zip:
+        # Zip the data
+        zip_path = os.path.join(output_dir, "data_splits.zip")
+        compress_directory(output_dir, zip_path)
 
-    # delete the jsonl files
-    os.remove(train_path)
-    os.remove(test_path)
-    os.remove(val_path)
+        # delete the jsonl files
+        os.remove(train_path)
+        os.remove(test_path)
+        os.remove(val_path)
 
     print(f"🎉 Successfully created train/test/val splits in: {output_dir}")
 
@@ -291,6 +299,8 @@ Examples:
 
     parser.add_argument("--val", type=float, default=0.2, help="Validation set ratio (default: 0.2)")
 
+    parser.add_argument("-z", "--zip", action="store_true", help="Zip data files after splitting")
+
     parser.add_argument(
         "--seed", type=int, default=42, help="Random seed for reproducible splits (default: 42)"
     )
@@ -303,8 +313,10 @@ Examples:
         print(f"⚠️  Warning: Train + Test + Val ratios = {total_ratio}, not 1.0")
         print(f"   Will normalize automatically")
 
+    print(f"🚀 Starting matching and splitting process...")
+    print(args.zip)
     match_and_split_files(
-        args.pred_file, args.og_data, args.output, args.train, args.test, args.val, args.seed
+        args.pred_file, args.og_data, args.output, args.train, args.test, args.val, args.seed, args.zip
     )
 
 

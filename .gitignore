@@ -213,3 +213,5 @@ lightning_logs/
 test/
 datasets/
 data/
+
+*.jsonl
