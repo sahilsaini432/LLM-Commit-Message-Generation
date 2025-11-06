@@ -212,7 +212,7 @@ def main():
             print(f"{item} has been retried 3 times and still failed.")
             break
 
-    with open(f"{args.output}/gpt4.1_responses_2.jsonl", "a") as f:
+    with open(f"{args.output}/gpt4.1_response_on_test.jsonl", "a") as f:
         for result in results:
             json.dump(result, f)
             f.write("\n")
