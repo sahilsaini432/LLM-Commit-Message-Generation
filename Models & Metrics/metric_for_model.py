@@ -2,7 +2,7 @@ import json
 import statistics
 import re
 import nltk
-from nltk.translate.bleu_score import sentence_bleu
+from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
 from rouge import Rouge
 import numpy as np
 from sklearn.feature_extraction.text import CountVectorizer
@@ -10,12 +10,6 @@ from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 import argparse
 import tqdm
-
-from tenacity import (
-    retry,
-    retry_if_exception_type,
-    wait_random_exponential,
-)
 import nltk
 
 
@@ -40,7 +34,8 @@ def calculate_bleu(reference, translation):
     """
     Calculate BLEU score
     """
-    bleu_score = sentence_bleu([reference], translation)
+    smoothing = SmoothingFunction().method1
+    bleu_score = sentence_bleu([reference], translation, smoothing_function=smoothing)
     return bleu_score
 
 
@@ -85,47 +80,57 @@ def main():
     all_rouge_l_scores = []
 
     for truth, predict in tqdm.tqdm(data_pairs):
-        print("Truth: ", truth)
-        print("Predict: ", predict)
-    #     # Process reference message
-    #     words = msg.split()
-    #     msg_list = []
-    #     for word in words:
-    #         if len(word) > 1:
-    #             if is_camel_case(word):
-    #                 msg_list.append(to_Underline(word))
-    #             else:
-    #                 msg_list.append(word)
-    #         else:
-    #             msg_list.append(word)
-    #     msg = " ".join(msg_list)
+        # remove integer tokens from truth and predict
+        truth = " ".join([word for word in truth.split() if not word.isdigit()])
+        predict = " ".join([word for word in predict.split() if not word.isdigit()])
 
-    #     # Process generated message
-    #     wordsGPT = msgGPT.split()
-    #     msgGPT_list = []
-    #     for wordGPT in wordsGPT:
-    #         if len(wordGPT) > 1:
-    #             if is_camel_case(wordGPT):
-    #                 msgGPT_list.append(to_Underline(wordGPT))
-    #             else:
-    #                 msgGPT_list.append(wordGPT)
-    #         else:
-    #             msgGPT_list.append(wordGPT)
-    #     msgGPT = " ".join(msgGPT_list)
+        truth = truth.strip()
+        predict = predict.strip()
 
-    #     m_score = calculate_meteor(msg, msgGPT)
-    #     all_meteor_scores.append(m_score)
+        # Process reference message
+        words = truth.split()
+        msg_list = []
+        for word in words:
+            if len(word) > 1:
+                if is_camel_case(word):
+                    msg_list.append(to_Underline(word))
+                else:
+                    msg_list.append(word)
+            else:
+                msg_list.append(word)
+        truth = " ".join(msg_list)
 
-    #     b_score = calculate_bleu(msg, msgGPT)
-    #     all_bleu_scores.append(b_score)
+        # Process generated message
+        wordsGPT = predict.split()
+        msgGPT_list = []
+        for wordGPT in wordsGPT:
+            if len(wordGPT) > 1:
+                if is_camel_case(wordGPT):
+                    msgGPT_list.append(to_Underline(wordGPT))
+                else:
+                    msgGPT_list.append(wordGPT)
+            else:
+                msgGPT_list.append(wordGPT)
+        predict = " ".join(msgGPT_list)
 
-    #     r_score = calculate_rouge_l(msg, msgGPT)
-    #     all_rouge_l_scores.append(r_score["f"])
+        m_score = calculate_meteor(truth, predict)
+        all_meteor_scores.append(m_score)
 
-    # # Output average scores
-    # print(f"Median METEOR Score: {statistics.median(all_meteor_scores)}")
-    # print(f"Median BLEU Score: {statistics.median(all_bleu_scores)}")
-    # print(f"Median ROUGE-L Score: {statistics.median(all_rouge_l_scores)}")
+        b_score = calculate_bleu(truth, predict)
+        all_bleu_scores.append(b_score)
+
+        r_score = calculate_rouge_l(truth, predict)
+        all_rouge_l_scores.append(r_score["f"])
+
+    # Output average scores
+    print(f"\nAverage METEOR Score: {statistics.mean(all_meteor_scores)}")
+    print(f"Average BLEU Score: {statistics.mean(all_bleu_scores)}")
+    print(f"Average ROUGE-L Score: {statistics.mean(all_rouge_l_scores)}")
+
+    # Output average scores
+    print(f"\nMedian METEOR Score: {statistics.median(all_meteor_scores)}")
+    print(f"Median BLEU Score: {statistics.median(all_bleu_scores)}")
+    print(f"Median ROUGE-L Score: {statistics.median(all_rouge_l_scores)}")
 
 
 if __name__ == "__main__":

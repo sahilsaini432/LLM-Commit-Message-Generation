@@ -2,7 +2,7 @@ import json
 import json
 import statistics
 import re
-from nltk.translate.bleu_score import sentence_bleu
+from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
 from rouge import Rouge
 import numpy as np
 from sklearn.feature_extraction.text import CountVectorizer
@@ -10,12 +10,6 @@ from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 import argparse
 import tqdm
-
-from tenacity import (
-    retry,
-    retry_if_exception_type,
-    wait_random_exponential,
-)
 import nltk
 
 
@@ -40,7 +34,8 @@ def calculate_bleu(reference, translation):
     """
     Calculate BLEU score
     """
-    bleu_score = sentence_bleu([reference], translation)
+    smoothing = SmoothingFunction().method1
+    bleu_score = sentence_bleu([reference], translation, smoothing_function=smoothing)
     return bleu_score
 
 
@@ -59,7 +54,7 @@ def is_camel_case(s):
 
 def to_Underline(x):
     """Convert to space-separated naming"""
-    return re.sub("(?<=[a-z])[A-Z]|(?<!^)[A-Z](?=[a-z])", " \g<0>", x).lower()
+    return re.sub(r"(?<=[a-z])[A-Z]|(?<!^)[A-Z](?=[a-z])", r" \g<0>", x).lower()
 
 
 def main():
@@ -110,14 +105,19 @@ def main():
         m_score = calculate_meteor(msg, msgGPT)
         all_meteor_scores.append(m_score)
 
-        b_score = calculate_bleu(msg, msgGPT)
+        b_score = calculate_bleu(msg.split(), msgGPT.split())
         all_bleu_scores.append(b_score)
 
         r_score = calculate_rouge_l(msg, msgGPT)
         all_rouge_l_scores.append(r_score["f"])
 
     # Output average scores
-    print(f"Median METEOR Score: {statistics.median(all_meteor_scores)}")
+    print(f"\nAverage METEOR Score: {statistics.mean(all_meteor_scores)}")
+    print(f"Average BLEU Score: {statistics.mean(all_bleu_scores)}")
+    print(f"Average ROUGE-L Score: {statistics.mean(all_rouge_l_scores)}")
+
+    # Output average scores
+    print(f"\nMedian METEOR Score: {statistics.median(all_meteor_scores)}")
     print(f"Median BLEU Score: {statistics.median(all_bleu_scores)}")
     print(f"Median ROUGE-L Score: {statistics.median(all_rouge_l_scores)}")
 
