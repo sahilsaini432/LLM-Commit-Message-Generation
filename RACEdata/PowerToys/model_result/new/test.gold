@@ -1,0 +1,1428 @@
+0	merge branch ' master ' of https : / / www . github . com / qianlifeng / wox
+1	[ settings ] enable analyzer and fix warnings ( # 16515 )
+2	crop and lock added to run plugin ( # 27927 )
+3	added share folder
+4	add one instance support .
+5	[ fancyzones ] split zones - settings : layout templates ( # 15588 )
+6	remove redundancy
+7	[ vcm ] activate the module ( # 13662 )
+8	pt run service notification improvements ( # 9772 )
+9	implement powershell script which enables devs to clang - format modified source files
+10	initial changes to enable espresso
+11	added zone count test and " waitelementby . . . " methods ( # 1645 )
+12	merge pull request # 7990 from microsoft / lego / hb_2939_20201111110613998 lego : pull request from lego / hb_2939_20201111110613998 to master
+13	[ fancyzones ] convert argb color values to rgb ( # 6277 )
+14	change key mappings according to keyboard layout
+15	removing anycpu
+16	updating the threading model for timed keep - awake
+17	revert " swallow shift keyboard event when dragging window ( # 1362 ) " ( # 1363 ) this reverts commit 2f9b753c5b9a1de365d8aeada1fcd7e770baa2d4 .
+18	merge remote - tracking branch ' refs / remotes / origin / master ' into dev
+19	adjust template tab non - highlighted color ( # 7638 )
+20	reduce the icon size and remove unnecessary images .
+21	use cache type directly instead of a new class , decouple binarystorage and storage
+22	add file path to files search result in folder plugin ( # 139 ) * add file path to files in folder plugin * add folder subtitle display path when wildcard ' > ' is used
+23	merge remote - tracking branch ' upstream / master ' into locpowerrename
+24	[ settings ] close settings app if running as standalone process after showing message dialog ( # 19620 ) . . . in release mode in debug mode leave settings app running after closing message dialog
+25	support for assigning any key as a hotkey ; minor refactoring
+26	revert " work for . 12 release . adjusted formatting a bit too " this reverts commit cd9208b541cf16d03800627b9cf9076a6cc76e30 .
+27	merge pull request # 89 from antigravity / plugin - colors colors
+28	merge branch ' dev ' of https : / / github . com / qianlifeng / wox . git
+29	[ settings ] add the new badge to cmdpal ( # 38037 )
+30	updating : add support for prereleases ( # 8296 )
+31	merge branch ' dev / build - features ' into users / niels9001 / settingsv2uxtweaks
+32	change how settings and tray are handled .
+33	merge pull request # 7717 from microsoft / lego / hb_2939_20201030230621684 lego : pull request from lego / hb_2939_20201030230621684 to master
+34	removing sqlite
+35	merge pull request # 7660 from microsoft / lego / hb_2939_20201029230554135 lego : pull request from lego / hb_2939_20201029230554135 to master
+36	auto complete for cmd mode
+37	added improved narrator support for custom shortcut control
+38	autoupdate option visible only for administrators group ( # 2945 ) * added isadmin value to settings . ui . changed elevation check to user group check for autodownload toggle
+39	introduce viewmodel for settingwindow
+40	revert " remove binaries from signing list " ( # 3078 ) * revert " remove binaries from signing list ( # 3029 ) " this reverts commit 64d9e9054ce3eead8c258a63075e4a755c8c8d66 . * removing wox . exe from cdpx build assemblies
+41	add requirenonnull http : / / www . yinwang . org / blog - cn / 2015 / 11 / 21 / programming - philosophy
+42	appveyor is case sensitive now
+43	added assets and behaviours
+44	revert " [ pt run ] smooth scrolling of the results list " ( # 15420 ) this reverts commit 3ada3c20a204d7905164b5811237099630a3ef29 .
+45	positioning contextbuttons and adding background .
+46	[ ci ] sign always on top ( # 15278 )
+47	mouse highlighter : support a spotlight mode - inner transparent , out a backdrop ( # 40043 )
+48	added placeholder labels
+49	merge branch ' master ' of https : / / github . com / wox - launcher / wox
+50	merge pull request # 7756 from microsoft / lego / hb_2939_20201101110551694 lego : pull request from lego / hb_2939_20201101110551694 to master
+51	added the wox projects to the powertoys solution
+52	merge pull request # 60 from microsoft / removeredxprops remove red x props
+53	remove prerelease
+54	added aka . ms link for espresso
+55	merge pull request # 7609 from microsoft / lego / hb_2939_20201028145308375 lego : pull request from lego / hb_2939_20201028145308375 to master
+56	merge branch ' dev / traies / build_features_launcher_integration ' into dev / traies / fix - bad - build - features - launcher - merge
+57	small issue changes .
+58	move window filter to separate function , filter more windows .
+59	set object before using it ( # 6497 )
+60	cherry picked pinyin performance changes from jjw24 ' s master branch
+61	corrected automatic formatting
+62	[ analyzers ] [ cpp ] turn on warning 4457 ( # 22149 )
+63	remove allowstransparency which is buggy in xp and poor performance .
+64	merge branch ' dev / build - features ' into dev / traies / buld - features - integration
+65	[ powerocr ] [ telemetry ] cancel and capture events ( # 20165 )
+66	revert " fixed runtime xaml load failure " this reverts commit f5686cc15451b93ea3c56deb45a1135a46bca079 .
+67	merge appveor build script and visual studio build script into one
+68	[ analyzers ] [ cpp ] turn on warning 4389 ( # 22082 )
+69	merge pull request # 8178 from microsoft / lego / hb_2939_20201122000609690 lego : pull request from lego / hb_2939_20201122000609690 to master
+70	add powerrename entry
+71	[ installer ] update installed . net to 6 . 0 . 2 ( # 16472 )
+72	added the code to launch another process
+73	add property storage capabilities
+74	# 94 and close # 91 . make bookmark as plugin .
+75	removing ' wox ' branded logos from powerlauncher . csproj as was done previously or wox . csproj
+76	merge pull request # 104 from theclueless / querypluginsupdates querypluginsupdates
+77	adding in hittester app
+78	merge pull request # 8168 from microsoft / lego / hb_2939_20201121000545634 lego : pull request from lego / hb_2939_20201121000545634 to master
+79	[ awake ] enable analyzer and fix warnings ( # 16899 ) * [ awake ] enable analyzer and fix warnings * suppress " ca1051 : do not declare visible instance fields " for structs * revert " suppress " ca1051 : do not declare visible instance fields " for structs " this reverts commit bea215bffa7fac3f7ea4218b1b857108cfd8c396 . * suppress " ca1051 : do not declare visible instance fields " for structs * spellchecker
+80	apply correct theme at startup ( # 7796 )
+81	system plugin file structure change .
+82	merge branch ' master ' of https : / / github . com / qianlifeng / winalfred . git
+83	adding file watchers for uwp detecting when apps are installed or deleted and reindexing the uwp apps
+84	add reindex button to programs setting dialog .
+85	merge branch ' master ' of https : / / github . com / qianlifeng / winalfred . git
+86	[ setup ] always elevate bootstrapper to avoid multiple uac prompts on upgrade
+87	[ dev ] add additional winget dsc scripts for vs pro and enterprise ( # 31325 ) * create configuration . enterprise . dsc . yaml * create configuration . professional . dsc . yaml * update configuration . enterprise . dsc . yaml * update configuration . professional . dsc . yaml * update configuration . dsc . yaml * rename configuration . enterprise . dsc . yaml to configuration . vsenterprise . dsc . yaml * rename configuration . professional . dsc . yaml to configuration . vsprofessional . dsc . yaml
+88	change outputpath
+89	revert " remove first chance exception " this reverts commit 4aa4d98c08f3bcc176bd3ac1b9b718ab98298ca4 . the squirrel crash is not caused by this # 1320
+90	merge pull request # 77 from theclueless / pinyininfrasettings pinyin infra settings
+91	[ settings ] move the dll imports to nativemethods file ( # 24381 ) * move the dll imports to nativemethods file * change the dll import from public to internal .
+92	remove unused updater and command line arguments
+93	[ run ] switch to wpf ui theme manager ( # 30520 ) * switch to wpf ui theme manager * fix * add theme manager * fix * fix * update error icon * moved image initialization * cleanup
+94	adjusting settings to leverage base class ( # 5127 ) * renaming / deleting file * adding in base class co - authored - by : clint rutkas <crutkas @ microsoft . com>
+95	[ colorpicker ] order colors with up / down buttons . ( # 10392 )
+96	merge branch ' master ' of https : / / github . com / qianlifeng / wox
+97	merge branch ' master ' of https : / / github . com / microsoft / powertoys
+98	tweak acrylic ( # 21083 )
+99	changed default value of m_enabled ( # 1756 )
+100	now checks if path has trailing slash before adding a new one
+101	add prevention from double clicking disable in context menu
+102	merge branch ' master ' into dotnet45
+103	[ fzeditor ] stop event waiter ( # 12529 )
+104	program plugin : remove lock lock is not needed since assignment is atomic
+105	update maintenance and all releases badge
+106	add ' src / modules / launcher / ' from commit ' 28acd466b352a807910cebbc74477d3173b31511 ' git - subtree - dir : src / modules / launcher git - subtree - mainline : 852689b3dfcd9d7e46aa9e524f1782aa5a5c798a git - subtree - split : 28acd466b352a807910cebbc74477d3173b31511
+107	add disable programs functionality
+108	better icon - handeling . and enumerate through icon instead of group_icon
+109	add afterload event for loaddefaultconfig
+110	adding the option to have timed keep - awake
+111	merge branch ' dev ' of https : / / github . com / jjw24 / wox into upstreamdev
+112	merge branch ' dev '
+113	enable preloadimages fix bug introduced in https : / / github . com / wox - launcher / wox / commit / cf87f68b42e00f087267cdeaf2fcb0d707e684c4
+114	add custom plugin hotkey feature .
+115	move installer into msbuild
+116	merge pull request # 605 from wox - launcher / dev dev
+117	adding conetxt menu start
+118	address feedback + cleanup
+119	merge pull request # 329 from lances101 / master added russian translation
+120	merge pull request # 67 from aaroncampf / master added features
+121	handle desktop switch and open on active monitor functionality ( # 5065 )
+122	added priority to title results
+123	merge branch ' master ' into dev / crutkas / updatingnugetpackages
+124	merge branch ' master ' into dotnet45
+125	more error handling for i18n
+126	revert " [ ci ] fix dead links for wix 3 binaries " ( # 23433 ) this reverts commit 07f3507f11abb2eb7aa5e1d80a6a6d0413dce655 .
+127	wix : add ( preview ) for msi product name
+128	moving plugins from wox . plugin . * to microsoft . plugin . * . this is to rename the assemblies that get saved to the settings directory . external plugins will get saved to their on assembly folder in the future .
+129	remove unused packages
+130	merge branch ' v1 . 2 . 0 '
+131	[ oobe ] changed modules order ( # 10020 )
+132	change directory name to the name used in build farm ( # 10117 )
+133	auto completion for the folder plugin
+134	" download updates automatically " toggle enabled only for administrator account ( # 2357 ) * added condition to disable auto updates toggle in settings for non - administrator accounts
+135	[ ui tests ] enhance ui test automation and pipeline support for cmdpal module ( # 40871 )
+136	[ ci ] upgrade check - spelling to v0 . 0 . 20 ( # 19574 )
+137	use a better method to calculate relative coordinates while moving among screens
+138	removed python path and python plugin functions
+139	add error message specification
+140	[ settings ] remove cmdnotfound from dashboard and flyout ( # 31006 )
+141	proper use of serialization routines
+142	add context menu
+143	enable closing edit canvas layout and edit grid layout windows by pressing esc button ( # 7643 )
+144	[ fancyzones ] capture strong_this ( # 6066 )
+145	ededf added into expect . txt
+146	change russian to русский for the language selector
+147	modified output folder from wox to launcher
+148	runner : move launcher to its own folder and simplify dll loading ( # 4379 )
+149	display plugin icons in ' activate plugin ' query
+150	changed line endings for translation files to cl from crlf
+151	localize renameparts combo box ( # 27950 )
+152	merge pull request # 7779 from microsoft / lego / hb_2939_20201102110603120 lego : pull request from lego / hb_2939_20201102110603120 to master
+153	added the plugin . json file
+154	color picker - show color name ( # 8553 ) * added color name ported from winui implementation * added new words into expect . txt * change color name foreground * moved show color name checkbox
+155	better exception report .
+156	simplified command with bypass
+157	merge pull request # 61 from theclueless / defualtmatchoption defualt match option
+158	powertoys interface : remove powertoys events and system_menu_helper functionality ( # 5323 )
+159	rename variables and functions supress warning c26444
+160	allow fz editor windows to minimize this is useful on small screens
+161	merge branch ' master ' of https : / / github . com / qianlifeng / winalfred . git
+162	update environment variables changed ( # 12689 )
+163	use opacity to set blur releated : # 330
+164	added a main landmark to all settings pages ( # 7568 )
+165	merge branch ' moreresponsibleui '
+166	merge branch ' dev / powerlauncher ' into dev / traies / merge - powerlauncher
+167	merge pull request # 86 from theclueless / smallfixes smallfixes
+168	temp disable history command
+169	# 21 add disable option for each plugin .
+170	order powertoys aplhabetically settings ( # 1706 ) * order powertoys aplhabetically in both settings list and general settings enable ' s list * remove uneeded include
+171	enable only ci - nightly build will update build cache for ci build ( # 41968 )
+172	refactoring command args and change the signal instance implement .
+173	merge pull request # 7565 from microsoft / lego / hb_2939_20201026230523649 lego : pull request from lego / hb_2939_20201026230523649 to master
+174	merge pull request # 7612 from microsoft / lego / hb_2939_20201028172704848 lego : pull request from lego / hb_2939_20201028172704848 to master
+175	[ peek ] force white background on html after webview2 update ( # 29995 )
+176	merge branch ' upstreamdev ' into querypluginsupdates
+177	reverse out test package for merge prep
+178	adding hash ability to image loader ( reducing the load on memory )
+179	add uniqiue identifier when adding customer user program source
+180	added launcher to runner
+181	add everything support show file icon and add a file icon cache associate with file extension
+182	remove duplicated code
+183	[ pt run ] [ new plugin ] unit converter ( # 9800 ) ( # 11406 )
+184	add default config
+185	remove autohotkey and add toggle command args
+186	adjusting locations
+187	add run as admin toggle option to plugin settings
+188	update program plugin with new code
+189	merge branch ' master ' into dev / crutkas / buildfarmversioningtake3
+190	contron panel item priority should be lower when compared to programs .
+191	move programsources
+192	add reindex when updating plugin . program suffix
+193	change log facility .
+194	add top most function .
+195	set everything plugin as disabled by default
+196	merge remote - tracking branch ' origin / v1 . 2 . 0 ' into v1 . 2 . 0
+197	merge branch ' microsoft - master '
+198	high contrast support for installer
+199	merge pull request # 122 from coenraads / master update control panel
+200	[ analyzers ] [ cpp ] turn on warning 4701 ( # 22151 )
+201	increment version to 0 . 17 . 0 ( # 2415 )
+202	merge branch ' dev '
+203	enable powerlauncher toggle
+204	merge from upstream
+205	[ installer ] add awake and powerocr localization files ( # 29976 )
+206	code to terminate wox when we exit powertoys
+207	fz editor support for small screens
+208	merge branch ' master ' of https : / / github . com / qianlifeng / wox
+209	close # 21 allow user to set their custom actionkeyword
+210	runner logging ( # 8068 )
+211	merge pull request # 133 from aaroncampf / master combined redundant cases
+212	[ peek , explorer ] update qoi reader for 3 - channel images ( # 39304 )
+213	rectyfying title display
+214	[ sg ] change suppress key code ( # 6750 )
+215	autoformatting document .
+216	[ powerrename ] introduce advanced counter functionality ( # 27895 )
+217	wrapping agressively the timer . ( # 5560 ) co - authored - by : clint rutkas <crutkas @ microsoft . com>
+218	update variable names make variables more descriptive of the state they represent
+219	# 56 add font setting
+220	add support for pageup & pagedown
+221	revert readme
+222	[ settings ] [ findmymouse ] disable excluded apps ui ( # 17940 )
+223	changes : added sys folder , moved sys into folder , added syssettings , made sys use an addrange and added isettingprovider
+224	high contrast support for installer ( # 8043 )
+225	[ installer ] extract module related stuff from product . wxs to per - module . wxs file ( # 23378 ) * extract module related stuff from product . wxs to per - module . wxs file * spellcheck * minor changes
+226	[ settings ] adding minwidth ( # 25405 ) * adding minwidth * proper reflowing of info
+227	moved component to kbm directory ( # 4009 )
+228	merge pull request # 7964 from microsoft / lego / hb_2939_20201109230607691 lego : pull request from lego / hb_2939_20201109230607691 to master
+229	merge pull request # 7686 from microsoft / lego / hb_2939_20201030110544911 lego : pull request from lego / hb_2939_20201030110544911 to master
+230	[ awake ] [ settings ] don ' t hide " keep screen on " ( # 23575 ) * [ awake ] [ settings ] don ' t hide " keep screen on " * change tray menu as well
+231	null left / rightwindowcommands ( # 8028 )
+232	[ chore ] consolidate nuget packages ( # 19063 )
+233	add black and white theme
+234	add modifier key support when user action items .
+235	removed ui related to python path and the bindings related to that
+236	updating ui and making it fluent
+237	added sdk const by default
+238	add system commands
+239	add programsources settings ( code only , without gui ) # 42
+240	prevent from accessing last results if query has changed
+241	set focus on text box control on hotkey invoke ( # 1859 )
+242	[ peek ] expand image format support for image previewer using local capabilities ( # 35622 ) * use bitmapdecoder to query compatible file extensions . * delete spellcheck exceptions for removed file types * remove unused usings .
+243	improve code formatting
+244	add releasebuild bat .
+245	refactoring updater 1 . move into a separate class 2 . remove unused nuget package
+246	added logging to action - runner project ( # 9034 )
+247	control panel command handeling now works for everything
+248	replace delayinvoke with task + async
+249	merge pull request # 88 from theclueless / folderpluginupdates folderpluginupdates
+250	msix : implement initial msix installer
+251	clean build configuration
+252	add support for everything both 32 - bit and 64 - bit
+253	wox . core project deleted
+254	added logic that disables input boxes when custom size is not selected
+255	[ updating ] set dotnet version to 3 . 1 . 15 ( # 11403 )
+256	added tooltips for add and delete buttons ( # 7564 )
+257	also request a low latency lock when hiding the zone window
+258	merge pull request # 372 from wox - launcher / dev multiple action keywords implemented
+259	[ analyzers ] [ cpp ] turn on warning 26427 ( # 22743 )
+260	implement iinstantsearch for cmd and websearch plugin
+261	merge branch ' add_dedicated_programplugin_logger ' into dev
+262	getting the settings ui to show espresso .
+263	remove commit number
+264	fancyzones : fz & fze now live in a dedicated dir ( # 2837 )
+265	merge branch ' pythonplugin '
+266	merge branch ' master ' into lego / hb_2939_20201108230556187
+267	making dev env call vs hardcoded path
+268	add expected spelling
+269	merge branch ' add_hidedeactive_defaulttrue ' into dev
+270	dispose when restart
+271	remove unnecessary using
+272	merge branch ' dev ' into add_dedicated_programplugin_logger
+273	always on top accent color borders ( # 15709 )
+274	implement tostring and gethashcode methods for resultitemviewmodel
+275	[ msi ] do not use advertised icon ( # 10246 )
+276	add custom context menu setting for findfile plugin and improve the search speed .
+277	raise notification event on delete key / shortcut button click ( # 12546 )
+278	rewrite all log message format
+279	merge branch ' master ' into dev
+280	merge pull request # 103 from theclueless / folderpluginupdates folderpluginupdates
+281	merge branch ' dev ' of https : / / github . com / qianlifeng / wox into dev
+282	merge branch ' dev / powerlauncher ' into dev / traies / build_features_launcher_integration
+283	adding in frontmatter and latex ( # 6711 )
+284	merge branch ' master ' of https : / / github . com / wox - launcher / wox
+285	updating build dependencies . wox . launcher wasn ' t built as part of the f5 experience , and nor were the plugins
+286	execute the openresultcomand with ctrl and alt modifiers when pressing enter ( # 1685 )
+287	optimized search removed redundant check .
+288	merge pull request # 84 from antigravity / dev dev
+289	light switch : add new tag to light switch ( # 42351 )
+290	remove debug code
+291	revert " removed folder plugin " this reverts commit 064d638588cfb2d2d69cd1f88b92127c200eac2d . we will use the folder plugin to better mimic the way the start menu and run prompt deal with directories
+292	changed to where it is in line with powertoys ( # 4885 )
+293	keepass window showing from tray ( # 1938 )
+294	update settings config .
+295	set warning level to 4 : release
+296	merge branch ' dev '
+297	[ settings ] loading powerpreview module from subfolder ( # 2709 ) * loading module in sub - folders * reverted un - related change
+298	added in generic viewmodel
+299	using new thread to check upgrade
+300	initial commit
+301	skip cloning device information from parent virtual desktop if it is deleted . ( # 1415 )
+302	revert hotkey from inputbinding back to keydown event
+303	last stylecop issue
+304	[ analyzers ] [ cpp ] turn on warnings 26800 , 28251 , 6387 and 6248 ( # 22411 )
+305	merge pull request # 607 from wox - launcher / dev dev
+306	[ workspaces ] sequential launch ( # 35297 )
+307	control panel split logic
+308	adding in trim ( # 6584 )
+309	added visaul assets
+310	powerlauncher settings integration
+311	[ pt run ] [ new plugin ] unit converter ( # 9800 ) ( # 11406 )
+312	remove duplicated programs loading from registry
+313	adding in comments / adjusting for 8468 ( # 8532 )
+314	merge pull request # 106 from coenraads / master cosmetic changes
+315	adding in fancyzone comments to help with localization
+316	[ shortcut guide ] move into separate process ( # 11359 )
+317	add dependencies to the msi installer
+318	merge pull request # 7808 from microsoft / lego / hb_2939_20201103110547248 lego : pull request from lego / hb_2939_20201103110547248 to master
+319	simplifying the xaml and making things tighter ( # 2327 )
+320	merge branch ' master ' of https : / / github . com / qianlifeng / winalfred . git
+321	added getting started guide line
+322	merge branch ' json - rpc '
+323	drop privileges if running elevated make sure the settings process is not running elevated otherwise the webview control will fail to start
+324	added control panel
+325	move cmd settings to cmd plugin details .
+326	update requirements and added release milestones
+327	merge branch ' master ' of https : / / github . com / qianlifeng / wox . git
+328	added more logging ( # 10445 )
+329	added open in folder to the program plugin .
+330	handle numeric input ( # 11885 )
+331	modernized unique pointer construction ( # 6982 )
+332	merge pull request # 312 from junjie020 / master specify a working directory when run a program from a process
+333	move zonesetpersisteddataold to jsonhelpers ( # 1405 )
+334	enable keyboard accessibility for template and custom layout items ( # 7977 )
+335	use jsonserializer instead of utf8writer ( # 1670 ) * use jsonserializer instead of utf8writer * rename method
+336	add autohotkey
+337	removing action on folder result , and displaying folder path on selecting a folder result from the folder plugin .
+338	minimum size width and height ( # 11380 )
+339	support for sys tray icon
+340	uniform style for button designations in settings ( # 4070 )
+341	merge branch ' master ' into dev
+342	[ analyzers ] [ cpp ] turn on warning 26475 ( # 22824 )
+343	updated to use share folder
+344	revert " limit calculator trigger must has one number at least " this reverts commit fe124310def2121520c4cc4588a3a0ee2e563ba7 .
+345	add startup time measurement
+346	adding functionality to not sleep
+347	enable user selected program loading only update logic , add program source only loading
+348	merge pull request # 132 from coenraads / master optimize default icon method .
+349	merge branch ' master ' into dev
+350	merge branch ' master ' of https : / / github . com / qianlifeng / wox . git
+351	merge pull request # 8272 from microsoft / lego / hb_2939_20201130074650503 lego : pull request from lego / hb_2939_20201130074650503 to master
+352	[ advancedpaste ] fixed issues with screen reader integration ( # 36778 )
+353	[ settings ] add gpo control ( # 40256 )
+354	adjustments for runner process logging ( # 8112 )
+355	removed folder plugin
+356	move initia and save from mainviewmodel to app
+357	refactoring directory path for storage
+358	[ installer ] add version to the winappsdk filename ( # 18543 )
+359	merge branch ' master ' of https : / / github . com / qianlifeng / wox . git
+360	resharper : remove redundant code
+361	add nonnull check
+362	added the test project back
+363	add reindex call for enable / disable button for when program source enable & & disable + where program not in cache
+364	rename log file
+365	iconmarginconverter class now partial to resolve aot warning ( # 41943 )
+366	merge pull request # 477 from kingwl / master misc
+367	add right click option on query to disable program
+368	[ pt settings ] rename the oobe opening button and ' file explorer ' section ( # 10023 )
+369	[ ptrun ] [ unitconverter ] support negative values ( # 30776 )
+370	notifications : add support for unpackaged apps and protocol activation
+371	[ chore ] remove unused functions ( # 10051 )
+372	allow unsafe codes in release build .
+373	update test with updated method name
+374	runner : initial automatic update ( # 2141 )
+375	close # 150 use tab to cycle switch candidates
+376	[ powertoys run ] logging ( # 11378 )
+377	add drag support # 44
+378	refactoring query initialisation
+379	added unit tests
+380	update multi - selection
+381	add hotkey for navigating result items .
+382	add french locale & xaml
+383	initial prep of settings and start up default
+384	readme : 看来我是对奇怪的大小写有种强迫症（
+385	add f1 to open wox function guide page .
+386	merge pull request # 55 from jjw24 / dev merge pr 54 from dev to master
+387	prevent number being swallow while dragging . ( # 788 )
+388	delete useless files
+389	updated video editor menu and minor fixes
+390	stop everything before every build
+391	merge pull request # 8132 from microsoft / lego / hb_2939_20201119120652245 lego : pull request from lego / hb_2939_20201119120652245 to master
+392	[ findmymouse ] setting for minimum shake distance ( # 16756 ) * [ findmymouse ] setting for minimum shake distance * group inside activation method
+393	merge with v1 . 2 . 0
+394	increase error message fade from 1 to 5 secs
+395	merge tag ' v1 . 3 . 524 + jjw24 . v1 . 26 . 13 '
+396	update destination folder this is a regression from renaming the ' editor ' folder to ' settings '
+397	added x64 for all wox project - debug mode
+398	merge pull request # 8214 from microsoft / lego / hb_2939_20201125000600534 lego : pull request from lego / hb_2939_20201125000600534 to master
+399	[ fancyzones ] fixed type cast warning ( # 6311 )
+400	[ oobe ] add pt hero image ( # 10016 ) * [ oobe ] add pt hero image * spell checker
+401	ignore broken cache # 783
+402	merge branch ' master ' into add_reindix_program_suffix
+403	if process elevated and - - dont - elevate arg - run non elevated ( # 15920 )
+404	updating with images for the first two utilities
+405	adding support for xaml islands
+406	added the folder plugin
+407	add auto scroll when adding a remap ( # 2969 )
+408	merge pull request # 7946 from microsoft / lego / hb_2939_20201109110559091 lego : pull request from lego / hb_2939_20201109110559091 to master
+409	supressing warning 8305 as there is nothing we can do about as this is a winui ( # 5393 ) co - authored - by : clint rutkas <crutkas @ microsoft . com>
+410	added theming support
+411	removed restrictions for image - resizer file format ( # 3377 )
+412	merge branch ' master ' of https : / / github . com / microsoft / powertoys into microsoft - master
+413	place cursor in the end of the name on textbox focus ( # 12607 )
+414	disable project caching for forks ( # 32676 )
+415	[ awake ] keep settings after returning to passive mode ( # 31921 ) * [ awake ] keep settings after set passive mode . * [ awake ] added new exceptions .
+416	[ localization ] move file to its correct location ( # 8914 )
+417	autoupdating : ignore local builds
+418	merge branch ' enable_userselected_programloading ' into dev
+419	created a helper class to use indexer and return search results
+420	merge pull request # 7630 from microsoft / lego / hb_2939_20201029110538004 lego : pull request from lego / hb_2939_20201029110538004 to master
+421	fixing all warnings and info for infra ( # 5891 )
+422	removed notify icon component
+423	[ advancedpaste ] custom actions follow - up fixes # 1 ( # 34404 )
+424	update load programsources with uniqueidentifier
+425	allowing launcher to be run as startup project with no command line args ( # 4267 )
+426	hide tray icon ( close # 563 )
+427	refactoring folderlink and url plugin .
+428	merge pull request # 7574 from microsoft / lego / hb_2939_20201027110546671 lego : pull request from lego / hb_2939_20201027110546671 to master
+429	merge pull request # 879 from he4d / dev added german and danish language support
+430	merge pull request # 1 from jjw24 / add_folderplugin_displaylocation add folder location display to wox . plugin . folder
+431	adding in specs from gh and from mike ' s repo
+432	add startup boundary to log
+433	[ enterprise ] adml file : text improvements and typo fixes ( # 29805 )
+434	merge branch ' master ' of https : / / github . com / qianlifeng / winalfred . git
+435	[ fancyzones ] increase the number of zones limit to 128 ( # 15976 )
+436	merge branch ' master ' of https : / / github . com / qianlifeng / winalfred . git
+437	added common as a reference project
+438	[ ptrun ] [ program ] set logo on app package installation ( # 31495 )
+439	- making open directory subtitle fixed , and the title as the current directory .
+440	merge pull request # 8078 from microsoft / lego / hb_2939_20201117000533444 lego : pull request from lego / hb_2939_20201117000533444 to master
+441	revert " results and query update fixes " this reverts commit ced0faf9164a11012b5f3276d3acf3416986589c .
+442	merge pull request # 7865 from microsoft / lego / hb_2939_20201105110544059 lego : pull request from lego / hb_2939_20201105110544059 to master
+443	[ gpo ] chore : move asset files to src path ( # 22906 )
+444	implement the support for shortcut key
+445	removing anycpu ( # 16184 )
+446	don ' t sort plugins every time , sort it when set it
+447	merge pull request # 8097 from microsoft / lego / hb_2939_20201118000548825 lego : pull request from lego / hb_2939_20201118000548825 to master
+448	disabling powertoy only if it ' s explicitly off ( # 1888 ) * disabling powertoy only if it ' s explicitly off
+449	add settings . ui as dependency of runner
+450	merge models
+451	use check boxes ( # 3396 )
+452	update installation instruction
+453	add return to main query window from context menu after selection
+454	removed the batch renamer now that powerrename is released
+455	[ tool ] delete export pfx function to remove use of hard coded password ( # 39144 ) don ' t need export pfx functionality
+456	add pinyin cache for control panel plugin # 858
+457	[ fancyzones ] zone indexes type change ( # 12724 )
+458	merge pull request # 7982 from microsoft / lego / hb_2939_20201110230622796 lego : pull request from lego / hb_2939_20201110230622796 to master
+459	adding powerlaunchertelemetry events
+460	[ new utility ] mouse without borders * integrate mouse without borders into powertoys - - - - - - - - - co - authored - by : jaime bernardo <jaime @ janeasystems . com>
+461	remove ' anycpu ' build configuration ( # 5999 )
+462	merge branch ' master ' of https : / / github . com / qianlifeng / winalfred . git
+463	remove unnessary files .
+464	improved logging for better diagnostics
+465	runner : fix restart as . . . option
+466	add ci status .
+467	[ light switch ] hotfixes ( # 42434 )
+468	kbm : increase compiler memory limit
+469	merge pull request # 119 from coenraads / master added control panel
+470	merge branch ' master ' into users / niels9001 / settings - accesbilitynarratorsupportforshortcutcontrol
+471	prefill pinyin cache for program plugin # 858
+472	updated priorities to focus on gif then video
+473	added logs to fancy zones ( # 8190 )
+474	[ ci ] add version number to symbols artifact ( # 19400 )
+475	removing unecessary implementation of irepository interface as this is implemented by the base class .
+476	removing unused post build and deploy scripts .
+477	revert " [ settings / oobe ] adding mica ( # 24327 ) " ( # 24875 ) this reverts commit 4291fa57f9001ed84ce5d6f90f992c77aa8b964f .
+478	add bookmarks support for chromium / chromesxs and multiple profiles
+479	merge branch ' master ' of https : / / github . com / qianlifeng / wox . git
+480	revert " use sleep instead of ping . " this reverts commit 3f1064b22d4ebb2223a9e82cd0a59c0191e6dc13 .
+481	remove task to wait for the program reload to complete
+482	[ colorpicker ] fix picker opaque corners ( # 33457 )
+483	merge branch ' master ' into users / niels9001 / settings - accesbilitynarratorsupportforshortcutcontrol
+484	merge branch ' ci '
+485	merge branch ' master ' into fix_error_message
+486	tmp rename
+487	better instruction
+488	merge branch ' dev '
+489	to avoid dbnull to string typecast exception
+490	enable " space " only to activate peek ( # 41867 )
+491	rename variable state allwordsfullymatched
+492	merge branch ' master ' of https : / / github . com / qianlifeng / wox . git
+493	opening explorer if the user has types a file path .
+494	merge branch ' dev '
+495	merge branch ' master ' into issue - 7336
+496	downgrade to . net framework 3 . 5
+497	merge pull request # 7857 from microsoft / lego / hb_2939_20201104230553771 lego : pull request from lego / hb_2939_20201104230553771 to master
+498	upgrading boost dependencies ( # 38782 ) upgrading boost
+499	remove containedfully variable state not necessary to have and not needed to add another dimension to the scoring
+500	allow plugins return null
+501	moving converters , fixing spacing issues
+502	[ runner ] add ' quick access ' menu entry to the tray icon ( # 30087 )
+503	made margins consistent
+504	[ general ] upgrade to winappsdk 1 . 1 . 2 ( # 19321 ) * move powerrename and settings to winappsdk - 1 . 1 . 2 * cleanup globalsuppressions file
+505	removed setting ui xaml file and references
+506	[ window walker ] path for elevated process ( # 15186 )
+507	[ setup ] ignore exit code 1638 ( # 16228 )
+508	renamed wox . launcher to microsoft . launcher
+509	display plugin icons in ' wpm list / uninstall '
+510	removing unecessary event name from settingsenabledmoduleevent
+511	changed flags for newly pressed key after invoking shortcut
+512	# 14020 and # 12630 - show color as a float and as a decimal value
+513	removed string resources from the settings . cpp file
+514	adding wsx , think this is everything needed
+515	merge branch ' add_sharedplugin_commands ' into update_plugin_openurl_newbrowser
+516	program plugin : remove complicated inheritance
+517	moved each test class to a separate file ( # 4592 )
+518	merge pull request # 8158 from microsoft / lego / hb_2939_20201120120553737 lego : pull request from lego / hb_2939_20201120120553737 to master
+519	merge branch ' master ' into enable_userselected_programloading
+520	revert change based on pr feedback
+521	merge branch ' master '
+522	shifted three functions to common ( # 1101 )
+523	merge pull request # 7797 from microsoft / lego / hb_2939_20201102230612006 lego : pull request from lego / hb_2939_20201102230612006 to master
+524	leave only exe programs from start menus # 198
+525	added shellapi header
+526	merge pull request # 66 from jjw24 / add_known_programplugin_error add known errors during debug run
+527	changed wox to launcher in the build events
+528	merge pull request # 89 from theclueless / addalthomeforfirstresult addalthomeforfirstresult
+529	update espresso managed application with proper command line parsing
+530	add initial disable program code
+531	merge branch ' master ' of https : / / github . com / qianlifeng / wox . git
+532	merge branch ' v1 . 2 . 0 '
+533	powerlaunchersettings unit tests ( # 2276 )
+534	disable forwarding the scroll event ( # 10513 )
+535	allow change fontstyle , fontweight , fontstretch
+536	auto change log level
+537	few more adjustmnets
+538	tests on pipeline ( # 10244 )
+539	merge pull request # 8452 from microsoft / lego / hb_2939_20201207140656093 lego : pull request from lego / hb_2939_20201207140656093 to master
+540	update mainview model with new code
+541	merge branch ' master ' into dev / crutkas / upgradenuget
+542	changed release build paths of base projects
+543	add dynamic delete to the enable / disable button
+544	added a searchresult helper class
+545	merge branch ' v1 . 2 . 0 ' of https : / / github . com / qianlifeng / wox . git
+546	merge branch ' dev ' of https : / / github . com / wox - launcher / wox . git
+547	refresh ui after change font
+548	add bountysource
+549	merge branch ' dev / powerlauncher ' into dev / traies / build_features_launcher_integration
+550	settings : add a clarifying label if running as elevated ( # 1330 )
+551	[ fancyzones ] additional logs ( # 16927 )
+552	merge remote - tracking branch ' origin / master '
+553	added turkish translation and some other i18n work .
+554	add everything plugin
+555	[ fancyzones ] only process windows located on currently active work area when moving them ( # 2691 ) * only process windows located on currently active work area when moving them . * move all editor exit handling into dedicated method .
+556	create foo
+557	[ colorpicker ] prevent creation of duplicate colors in history ( # 10705 ) if color already exists in history , move it to position 0 . this prevents new duplicate colors , but ignores existing duplicates .
+558	initial add of powerrename from smartrename repo ( # 499 ) * initial add of powerrename from smartrename repo
+559	removed fancyzones unit - test ( # 1360 )
+560	add drop event [ wip ]
+561	[ settings ] added recursive delete for ioprovider deletedirectory to prevent crash on non - empty directory ( # 6818 ) * added recursive delete flag * changed to named parameter
+562	[ settings ] added delete button tooltip to image resizer page ( # 7827 )
+563	added mock ups and fixed figure labelings
+564	refactoring programs system plugin and adding re - index function when adding new location .
+565	merged powertoys master into launcher master
+566	[ settings ] added disabled state to fz preview control ( # 15166 ) * added disabled state * added wallpaper image to installer file
+567	providing user agent for http . download method ( # 874 )
+568	mini refactor move process . start to static class level
+569	add round corner support for wox .
+570	merge branch ' dev '
+571	add reindex requirement for startup
+572	renamed the dll produced
+573	added context menu support ( same as everything plugin )
+574	merge branch ' master ' of https : / / github . com / microsoft / launcher into terminatelauncher
+575	merge pull request # 73 from kerams / master opening settings from tray and the ability to leave the windows command prompt open after running a command
+576	update test framework + add test adaptor
+577	support data uri as icon
+578	introduce worktree helper scripts for faster multi - branch development in powertoys ( # 42076 )
+579	renaming nativemethods
+580	add enable program source to program plugin view
+581	remove single white space , no code change
+582	black icons with light windows theme ( # 9091 )
+583	flash zones only when new virtual desktop is created ( # 818 )
+584	remove roslen cache
+585	hybrid crt for powertys ( # 42073 )
+586	[ kbm ] supress warning ( # 10983 )
+587	merge pull request # 8220 from microsoft / lego / hb_2939_20201125120624164 lego : pull request from lego / hb_2939_20201125120624164 to master
+588	[ powerrename ] scale window size ( # 19378 )
+589	removing unused namespace .
+590	apply search precision filter on assignment the search precision must be used , so it makes sense to apply the filter directly on score assignment . score will be " 0 " if precision filter was not met .
+591	move code from main class to bookmarks class for cleanliness
+592	add opacity mode settings
+593	[ installer ] add arabic , farsi / persian , hebrew and ukrainian ( # 31137 )
+594	add executable plugin loader
+595	merge pull request # 76 from theclueless / uwperrorfix fixed broken log
+596	update control panel the control panel now also includes third party panel items .
+597	[ pt settings ] rename " microsoft . powertoys . setting . ui . runner " to " powertoys . settings " ( # 9637 )
+598	move properties into models
+599	reverted the platform target to all cpu , was made x86 by mistake
+600	use en - us locale when using toupper ( ) ( # 6177 )
+601	[ aot compatible ] add common msbuild props for aot compatibility validation to be imported by projects for future aot support ( # 36176 ) [ aot compatible ] add common msbuild props for aot compatibility validation to be imported by projects for future support
+602	merge pull request # 7883 from microsoft / remove - wox . core - from - yml update pipeline . user . windows . yml
+603	migrate numberboxes to compact mode ( # 3375 )
+604	add program plugin
+605	add reload success message
+606	merge pull request # 8041 from microsoft / lego / hb_2939_20201114120538945 lego : pull request from lego / hb_2939_20201114120538945 to master
+607	adding preview tag for desktop and start menu ( # 1384 )
+608	merge pull request # 16 from jjw24 / tunoff_auto_update set autoupdates off as default setting
+609	custom autosuggestbox style ( # 15847 )
+610	some api changes for query class and renames .
+611	add image loader class
+612	[ ci ] enable powerrename tests ( # 8585 )
+613	revert " [ poweraccent ] cancel previous showtoolbar task if a new one is triggered " ( # 39563 ) revert " [ poweraccent ] cancel previous showtoolbar task if a new one is triggered ( # 37757 ) " this reverts commit e1ad7e39c69072ac21eeaec73f0b2de19dc93e4b .
+614	added step to dispose the keyboard hook object ( # 4449 )
+615	stylecop enabled .
+616	add workflow for automatic issue deduplication ( # 41942 )
+617	adding in fxcop to svg tests ( # 6111 )
+618	[ quickaccent ] upgrade vanara . invoke dependencies to 3 . 4 . 11 ( # 22351 )
+619	[ analyzers ] [ cpp ] turn on warning 26492 ( # 23492 )
+620	readding the plugin . json file
+621	merge branch ' update_allow_plugindisabled_default ' into dev
+622	use shared command and open in new browser window
+623	settings : remove restart as a user button in an elevated context ( # 1328 )
+624	shortcutguide : change vk_code to suppress start use reserved 0xcf virtual key - code to suppress the start menu from appearing instead of 0x07 which is used by the xbox controller for the xbox guide button . fixes : https : / / github . com / microsoft / powertoys / issues / 595
+625	when moving window to a zone , ensure it does not remain in maximized state .
+626	add main view model binding
+627	merge branch ' master ' into dev
+628	add doc workflow
+629	[ settings , oobe ] set location to center screen ( # 10022 ) and ensure the window is inside the screen work area
+630	add requirenonnull http : / / www . yinwang . org / blog - cn / 2015 / 11 / 21 / programming - philosophy
+631	[ settings ] move title bar shutdown button to navigation view ( # 40714 )
+632	update instruction for ci builds
+633	setting treat warnings as errors to true for release as well .
+634	added in abstraction
+635	merge pull request # 7745 from microsoft / lego / hb_2939_20201031230528313 lego : pull request from lego / hb_2939_20201031230528313 to master
+636	[ installer ] update . net framework to 6 . 0 . 4 ( # 17936 )
+637	merge master latest in dev / build - features 4 / 17 / 20
+638	merge pull request # 8286 from microsoft / lego / hb_2939_20201201033406876 lego : pull request from lego / hb_2939_20201201033406876 to master
+639	[ runner ] save before opening settings ( # 25799 ) * revert " [ runner ] don ' t save settings on settings app start ( # 25647 ) " this reverts commit 4b1aadafc2a8db6ffeb954d57d7d12b4289d7e24 . * [ runner ] save before opening settings
+640	add folder existence check for userprofile environment variable .
+641	merge branch ' master ' into dev
+642	" start wox on system startup " config changes .
+643	installer + auto update on startup 1 . installer 2 . auto check update on startup 3 . auto start on next startup 4 . remove command line arguments which breaks squirrel 5 . auto generate installer on continue integration
+644	make detection of windows creation more robust
+645	merge branch ' master ' into dev / crutkas / updatingnugetpackages
+646	fixed process executing on clicking enter if no text in search box
+647	merge pull request # 8107 from microsoft / lego / hb_2939_20201118120708793 lego : pull request from lego / hb_2939_20201118120708793 to master
+648	preload top used images .
+649	[ analyzers ] [ cpp ] turn on warning 26445 ( # 22644 )
+650	[ analyzers ] [ cpp ] turn on warning 4515 ( # 22226 )
+651	added references and renamed a class
+652	[ installer ] move all installer registry entries to hkcu ( # 23252 ) * move registry entries to hkcu * use the same reg key for powerrename
+653	working up / down arrow key
+654	revert use fuzzymatcher on bookmarks since it ' s too slow
+655	[ installer ] keep mwb service on upgrade ( # 26517 )
+656	merge branch ' dev '
+657	revert " updated release notes for kbm note ( # 28131 ) " ( # 28170 ) this reverts commit ac0677bdeecc398a6763a2850d1052cfe15fc7b9 .
+658	merge branch ' master ' into lego / hb_2939_20201123120634392
+659	merge pull request # 8145 from davidegiacometti / dll - sign dll without signature
+660	merge remote - tracking branch ' origin / master ' into dotnet45
+661	[ runner ] change way of dropping privileges to start pt run
+662	changed the name to be displayed from wox . launcher to launcher
+663	limit the display result item to 6 at most .
+664	fz : fix currently selected zone tracking ( # 8797 )
+665	merge pull request # 98 from zlsun / master change cwd to % userprofile % before executing command .
+666	[ ptrun ] [ calc ] improve handling of non - base 10 numbers ( # 36700 )
+667	added new lines to the end of the file
+668	[ workspaces ] close editor when pt runner exited . ( # 34477 ) * [ workspaces ] close editor when pt runner exited . * removed trailing whitespace
+669	added keyboardmanager directory
+670	[ setup ] update . net core to 3 . 1 . 14
+671	misc ide misc
+672	send undefined keystroke instead of ctrl to suppress the start menu .
+673	add reload call for programs plugin
+674	change nuget api keys
+675	changed to match msft in appwiz . cpl ( # 8596 )
+676	merge pull request # 8090 from microsoft / lego / hb_2939_20201117120642255 lego : pull request from lego / hb_2939_20201117120642255 to master
+677	switch focus to last image size listviewitem on adding new size ( # 7505 )
+678	program lock bug
+679	added build instructions for vs 2019
+680	fancyzones : lowlevelkeyboardproc & other improvements
+681	remove underline from sidepanel hyperlink buttons
+682	move to . net 6 . 0 . 7 ( # 19522 )
+683	fixing color picker warnings and enabling warnings as errors ( # 6006 )
+684	localized the settings file
+685	[ ptrun ] [ unitconverter ] use " to " instead of " in " for the example ( # 33268 )
+686	# 191 add pip . bat for pip installing .
+687	msix : use com_object_factory for powerrename
+688	[ new module ] light switch ( # 41987 )
+689	remove xml files in build folder .
+690	adding code to launch espresso
+691	change the scrollbar style .
+692	added german and danish language support
+693	exposes reload command via ipublicapi
+694	updated settings ui project output directory
+695	merge pull request # 83 from theclueless / smallfixes smallfixes
+696	getting navview unbroke
+697	expose index suffix setting
+698	[ ci ] fancyzones unit tests ( # 17910 )
+699	merge branch ' master ' of https : / / github . com / microsoft / powertoys
+700	merge remote - tracking branch ' upstream / master ' into locpowerrename
+701	remove unnecessary thread switch
+702	adding directory . build . targets file to kill the powerlauncher pprocess on build or clean operations of all ' launcher ' projects .
+703	renaming appdata directory from ' wox ' to ' powerlauncher ' . also replacing issue link with powertoys github .
+704	merge branch ' dev ' of https : / / github . com / qianlifeng / wox . git
+705	remove redundant assignment
+706	renamed for defualt match option
+707	remove redundant onpropertychagned
+708	[ powerlauncher ] enable analyzer and fix warnings ( # 16900 )
+709	add a new theme
+710	change update logic
+711	merge update logic # 1266
+712	save icons using guid filename
+713	removing dlls from removed sqlite dep
+714	fixed light switch shortcut not working issue ( # 42340 )
+715	merge pull request # 8012 from microsoft / lego / hb_2939_20201112174858480 lego : pull request from lego / hb_2939_20201112174858480 to master
+716	merge branch ' master ' into update_readme_badges
+717	merge pull request # 7974 from microsoft / lego / hb_2939_20201110110635301 lego : pull request from lego / hb_2939_20201110110635301 to master
+718	adding launcher telemetry for context buttons clicked .
+719	cleanup using resharper
+720	merge pull request # 8065 from microsoft / lego / hb_2939_20201116120631658 lego : pull request from lego / hb_2939_20201116120631658 to master
+721	merge branch ' master ' of https : / / github . com / qianlifeng / wox . git
+722	revert " # 14020 and # 12630 - show color as a float and as a decimal value " this reverts commit 022dde4754d39600ce3e5a488bdf6ad7e20ff8d4 .
+723	proj file changes .
+724	[ installer ] enable web search plugin localization ( # 16894 )
+725	separate a big function call to several functions
+726	[ fancyzones ] child windows support ( # 16507 )
+727	[ previewpane ] use permonitorv2 dpi mode ( # 36174 ) use permonitorv2 dpi mode
+728	add upgrade dialog
+729	merge branch ' v1 . 1 . 0 ' into dev
+730	merge pull request # 8017 from microsoft / lego / hb_2939_20201113000515080 lego : pull request from lego / hb_2939_20201113000515080 to master
+731	making wox . csproj build wox assembly instead of powerlauncher
+732	settings unit tests ( # 921 )
+733	implement websearch feature .
+734	refactoring " startup with windows " option .
+735	add check null for event
+736	[ quickaccent ] add ǽ and ϑ ( # 32816 )
+737	make build script less noisy
+738	set the fill property to currentcolor in the image resizer svg ( # 1714 )
+739	fz : remove restoreorginaltransparency ( ) from zonewindow : : ~ zonewindow ( ) and from zonewindow : : movesizeenter ( )
+740	change cwd to % home % before executing command .
+741	add option to disable auto updates
+742	adding bootevent for load time telemetry
+743	merge pull request # 134 from jjw24 / everythingfixes everythingfixes
+744	merge remote - tracking branch ' origin / master '
+745	change default style .
+746	added features feature : search additional folders by default ( shallow search ) feature : disable bookmarks
+747	[ setup ] update dotnet to 3 . 1 . 20
+748	small refactor to use common powertoys telemetry event source accross modules .
+749	initial dsc v3 support for powertoys ( # 41132 )
+750	[ settings ] updated text shown on the settings page of shortcut guide ( # 2840 )
+751	manually deploy use appveyoe
+752	moved app name to constructor to init only once
+753	[ setup ] add support for embedded msix packages ( # 13263 )
+754	adding two back in
+755	merge branch ' dev '
+756	use variable instead of global static method 1 . introduce variable 2 . part of # 389 3 . refactoring program suffix in program plugin 4 . 全局变量一时爽，代码重构火葬场
+757	[ cdpx ] use explicit filenames for the msix assets ( # 1393 ) approved
+758	moving oobe to wiki ( # 9459 )
+759	making alt - f4 ignored ( # 4023 )
+760	* moved everything to dev branch - sorry for the trouble
+761	add coding style
+762	revert changes to submodule as it doesn ' t build for 16 . 10 ( # 11642 )
+763	mouse highlighter spotlight mode , fix the gpu perf issue ( # 41079 )
+764	updating msi installer with new icons ( # 4998 )
+765	add precision score tests for new function
+766	rename cache file
+767	adding in a code of conduct
+768	merge ' master '
+769	made margins consistent
+770	merge pull request # 8034 from microsoft / lego / hb_2939_20201114000606270 lego : pull request from lego / hb_2939_20201114000606270 to master
+771	merge branch ' master ' into dev
+772	remove compiler warnings
+773	adding updated logo image
+774	project structure change
+775	[ cmdpal ] close gracefully ( # 39589 )
+776	copy resource files to output folder
+777	updating msi installer to use microsoft . plugin . * directory paths .
+778	add error report ( however it has no sending feature at this commit )
+779	add two way ipc
+780	[ awake ] don ' t exit from tray icon unless standalone ( # 22232 )
+781	[ ci ] rename windowstylesreporttool to stylesreporttool ( # 17950 )
+782	update auto build script
+783	load everything base on cpu architecture
+784	remove namespace prefix since it is declared to be used
+785	swallow shift keyboard event when dragging window ( # 1423 )
+786	[ installer ] revert ignore start menu shortcut on update ( # 19715 ) this reverts commit 7f6c91e166f692c5a456c370ec32a1797a8402ea . co - authored - by : jaime bernardo <jaime @ janeasystems . com>
+787	add universal pretty print method
+788	merge branch ' microsoft : master ' into master
+789	add kill process workflow
+790	merge pull request # 7886 from microsoft / lego / hb_2939_20201105230548571 lego : pull request from lego / hb_2939_20201105230548571 to master
+791	release ptr which get from cocreateinstance to prevent memory leak ( # 39898 )
+792	merge pull request # 1106 from alekhyareddy28 / locpowerrename localize powerrename
+793	revert mftsearch changes .
+794	merge branch ' master ' of https : / / github . com / microsoft / powertoys
+795	merge pull request # 8189 from microsoft / lego / hb_2939_20201123120634392 lego : pull request from lego / hb_2939_20201123120634392 to master
+796	announce automatically corrected hotkey ( # 12362 )
+797	adding in hybrid shutdown for fast startup ( # 16151 ) https : / / docs . microsoft . com / en - us / windows - server / administration / windows - commands / shutdown
+798	revert " added a mutex to zonewindow , ensured no data races occur ( # 2154 ) " this reverts commit af4678ff18c9faa03ca5d4882bb7bcff9628467d .
+799	some plugin style changes .
+800	merge branch ' dev '
+801	merge branch ' master ' of https : / / github . com / qianlifeng / winalfred . git
+802	[ cmdpal ] [ unittest ] refactor system command unit test ( # 40874 )
+803	merge branch ' master ' into spelling
+804	address feedback
+805	force pinyin library static constructor initialize # 858
+806	added protection when creating uwp
+807	associate name label with textbox ( # 7621 )
+808	delete foo
+809	[ fancy zones ] restore console applications ( # 12905 )
+810	add autoajustscore option for results
+811	merge pull request # 7725 from microsoft / lego / hb_2939_20201031110538538 lego : pull request from lego / hb_2939_20201031110538538 to master
+812	change themes tab layout and add wallpaper behind preview .
+813	exclude alan ' s usernname and tweak url
+814	add null check in selectprevtabitem ( # 7139 )
+815	add environment exit statement ( # 4496 )
+816	initial readme . md commit
+817	merge branch ' master ' into dev
+818	revert changes to other plugin . will refactor as a separate pr
+819	revert " merge powerlauncher branch ( # 2345 ) " this reverts commit d9c4abe0df9a88b9c2c93f6fd5ddc10e60e83bed .
+820	merge branch ' dev / powerlauncher ' into dev / traies / build_features_launcher_integration
+821	[ auto - update ] remove special case logic for autoupdate disabling
+822	add find file plugin .
+823	forgot to remove some lines . no longer opening explorer with admin rights .
+824	change cwd to % userprofile % before executing command .
+825	make start menu not appear if shortcut guide fade - in animation completes .
+826	merge language and theme into resource folder
+827	merge pull request # 78 from theclueless / programsyncissue fixed lock issue
+828	add clipboard plugin .
+829	finally fixed autoformatting
+830	add drop event .
+831	merge pull request # 7998 from microsoft / lego / hb_2939_20201111230612596 lego : pull request from lego / hb_2939_20201111230612596 to master
+832	merge pull request # 485 from niwatolli3 / niwatolli3 / japanese_support japanese support
+833	optimize speed for cmd mode
+834	move files to new globalhotkey file
+835	added cold start fix ( # 2385 )
+836	revert " fix misaligned display of zones in layout priview and grid editor ( # 1010 ) " ( # 1097 ) this reverts commit d03690cffd6503ae6d5d1b359cca5fc89c4bad38 .
+837	merge pull request # 408 from vankasteelj / dev add french locale & xaml
+838	[ pt run ] closing pt run and new settings app when powertoys is not running ( # 3853 ) closing powerlauncher , fz editor and new settings app when powertoys is not running
+839	handling percentage unit ( # 8567 )
+840	move programsetting into feature
+841	extract all converters into separate folder
+842	undo change internal
+843	move to touchdownbuild task v5 ( # 39382 )
+844	remove custom exception
+845	[ fancyzones ] replace " keep windows in their zones " option to include work area and turn on by default ( # 29105 )
+846	[ installer ] upgrade the installer from wix3 to wix5 ( # 40877 )
+847	add iexclusiveplugin
+848	add build status to readme
+849	removed some ids from resource file . changed shift to shift
+850	[ fancyzones ] obtain device id ( # 8451 )
+851	init commit
+852	add folder location display
+853	merge pull request # 453 from wox - launcher / master merge branch ' master ' into ' dotnet45 '
+854	[ quickaccent ] change " slovakian " to " slovak " ( # 29792 )
+855	revert " few more adjustmnets " this reverts commit e3b7038003c77238a51ee582134d270e213d3628 .
+856	remove whitespace
+857	merge pull request # 7766 from microsoft / lego / hb_2939_20201101230540961 lego : pull request from lego / hb_2939_20201101230540961 to master
+858	removed . yml files
+859	merge branch ' master ' of https : / / github . com / qianlifeng / wox
+860	pack python env to zip
+861	[ mwb ] [ logger ] make logger actually track the code ( # 37896 ) make logger actually track the code
+862	merge branch ' dev / build - features ' into merge / build - features - to - master - 05062020
+863	added empty match option
+864	adding fxcop to powerlauncher . telemetryproject ( # 6259 )
+865	adding in comment for do not loc product names
+866	move code from . h to . cpp
+867	updated user selected record
+868	option to disable zones activation by mouse ( # 2717 ) * added option to enable / disable mouse to activate zones , added telemetry and unit tests
+869	adding newline to end of file for iprogramrepository
+870	remove unused code and add required code for mvvm
+871	[ runner ] add logging ( # 16503 )
+872	[ installer ] upgrade . net framework to 3 . 1 . 23 ( # 17537 )
+873	change the default grid height of custom plugin hotkey panel .
+874	[ installer ] add missing json dll to text extractor ( # 23092 )
+875	opacity fix
+876	ensure the keyword version is read out before reading out the version number
+877	make the number of results show at a time customizable
+878	adding animations ( # 23208 )
+879	wox . core merged into powerlauncher
+880	add restart wox command into sys plugin .
+881	add max depth and suffixes per program source
+882	merge branch ' master ' into dev / build - features
+883	merge pull request # 68 from theclueless / uwperrorfix uwperrorfix
+884	proper threading support for all parts of the keep - awake process
+885	databinding for plugin tab + faster image load
+886	improve window filter to include start menu and cortana search box . ( # 474 ) also moves getprocesspath * functions to common , renaming both to get_process_path .
+887	add ui for user preference selection
+888	[ pt run ] remove duplicated dll ' s from plugins ( # 7617 ) * added copy local false for project references of plugins * remove infra and plugin dll from pt run plugins
+889	uncommented and removed junk code
+890	merge pull request # 7708 from jsoref / spelling spelling
+891	merge branch ' allow_option_websearch_openintab ' into add_browserpath_userselection
+892	merge pull request # 1265 from bagjob / master add korean language .
+893	add wox plugin installer .
+894	add custom patched pinyin library
+895	unlinked the maxresults value from settings and set to fixed value of 30 ( # 5742 )
+896	merge branch ' master ' of https : / / github . com / qianlifeng / wox . git
+897	register the hotkey after pt run is initialized ( # 11858 )
+898	rename get program methods
+899	powertoys settings and oobe title localization ( # 10054 )
+900	speedup program load time
+901	[ installer ] remove ngen step for imageresizer ( # 9651 ) * removed ngen step in installer for imageresizer * removed unused extension
+902	allow pluginmanager class to manage the reload call
+903	title display working correctly
+904	powerrename : implement shellext support for uwp
+905	change the default with of wox . remove aero themes .
+906	merge branch ' dev ' into add_shell_plugin_runasadmin
+907	simulate windows run dialog behaviors in the cmd worlflow .
+908	default ' flashzones ' to false
+909	update and rename documentation - issue1 . md to documentation - issue . md
+910	merge branch ' dev '
+911	prevent duplication from loading start menu programs
+912	add run as different user option when file is of certain type
+913	emphasize the master build
+914	shifting from solution dir to actual local path ( # 34204 )
+915	image resizer and settings percentage unit ( # 8674 )
+916	ui improvements
+917	announce delete dialog ( # 13994 )
+918	updating build dependencies to so that wox . launcher depends on powerlauncher . csproj not wox . csproj
+919	merge latest master : 4 / 22 / 20
+920	add to sys plugin - save all wox settings
+921	setting runcommand as the default execution method , and turning off run as admin by default .
+922	merge remote - tracking branch ' refs / remotes / origin / master ' into dev
+923	improve setting window performance ( theme ) .
+924	[ chore ] remove unused telemetry events ( # 10030 )
+925	expanding ' community ' section ( # 4028 ) * updating for # 3977 * spelling
+926	remove suffixes from model
+927	updated general settings model
+928	add browserpath display on load
+929	merge branch ' master ' of https : / / github . com / microsoft / powertoys into microsoft - master
+930	add launcher telemetry for show / hide , and query ( elapsed time , num chars , num results ) .
+931	file watcher with keep - awake state binding
+932	merge branch ' dev '
+933	winmain annotation and argument name
+934	make some renames
+935	[ fancyzones ] reduce vram use ( # 8469 )
+936	merge remote - tracking branch ' origin / master ' into dotnet45
+937	merge branch ' master ' of https : / / github . com / microsoft / powertoys
+938	update query defualt to string empty instead of null and update result plugin id to be internal
+939	remove useless virtual method
+940	merge branch ' master ' into dev
+941	updated namespaces
+942	[ screen ruler ] update module interface on activation hotkey change ( # 20237 )
+943	adding telemetry events for settings enabled or disabled modules
+944	removing unused mutex string
+945	change python plugin interface .
+946	improving ci build times with new build agent ( # 8516 )
+947	bring run command functionality back # 636
+948	add threading task run for startprocess context menu hides immediately after user selection
+949	merge branch ' master ' of https : / / github . com / qianlifeng / wox . git
+950	added base64 decode function to the value generator ( # 27835 )
+951	merge branch ' moreresponsibleui '
+952	settings : add " learn more about admin mode " link
+953	always return filled result again
+954	working on adding checkbox
+955	merge branch ' master ' of https : / / github . com / wox - launcher / wox
+956	changed x : bind to binding to avoid reference
+957	shift to layout editor
+958	add hide query window before actual reload + show success msg
+959	add registry entry for powerrename to enable showing up on the context menu for onedrive placeholders ( # 5140 ) co - authored - by : enrico giordani <enricogior @ users . noreply . github . com>
+960	add command for user to call in plugin . sys
+961	- added option to open wox settings from the tray menu - added a checkbox option specifying whether to leave the command line open after having run a command like >ping google . com
+962	simplifying coc and point to cocmd
+963	add user selection option to url plugin
+964	move focus to type button in new row on adding a remap ( # 7586 )
+965	[ analyzers ] [ cpp ] turn on warning 26819 ( # 22796 )
+966	add empty check for getenvironmentvariable method .
+967	initial commit
+968	goign t from oobe to this , this additional options was null and crashed . ( # 9975 )
+969	tweaked settings ux
+970	defensive check for querytext being empty
+971	merge branch ' dev ' into uwperrorfix
+972	add file being held by another process error to known this occurs during app initialisation , and add empty list to allow continuing during debug
+973	merge pull request # 8243 from microsoft / lego / hb_2939_20201127000526832 lego : pull request from lego / hb_2939_20201127000526832 to master
+974	fixed commit # 334 multiple selectionchanged firing
+975	consolidation for self contained , built on # 34055 ( # 34134 )
+976	initial commit
+977	add a hotkey settings control and use it in fancyzones ( # 450 ) add a hotkey settings control and use it in fancyzones
+978	can currently watch the file system .
+979	moving launcher save settings under appdata / local / microsoft / powertoys / run
+980	remove enable property from model
+981	display the title from system . title directly instead of extracting it from the path
+982	refactoring loadplugininterfaces
+983	add theme function . and provide two themes default .
+984	prevent shortcutguide from crashing when it is being disabled while shown .
+985	enhance exception logging
+986	add ironpython environment to execute python plugins
+987	setting ' treat warnings as errors ' to ' all '
+988	[ msi ] powertoyssetupcustomactions intermediate dir ( # 9641 )
+989	turn on warnings 6031 , 26451 , 28182 ( # 22240 ) 6031 - return value ignored : ' called - function ' could return unexpected value 26451 - arithmetic overflow : using operator ' operator ' on a size - a byte value and then casting the result to a size - b byte value . cast the value to the wider type before calling operator ' operator ' to avoid overflow ( io . 2 ) 28182 - dereferencing null pointer .
+990	simplify settings handling to not rely on complex properties
+991	merge branch ' master ' into lego / hb_2939_20201109110559091
+992	adjusting event names
+993	add resource only when it is not already present ( # 3842 )
+994	merge branch ' dev '
+995	change the default width for themes .
+996	merge branch ' master ' of https : / / github . com / qianlifeng / wox . git
+997	merge pull request # 8232 from microsoft / lego / hb_2939_20201126120617106 lego : pull request from lego / hb_2939_20201126120617106 to master
+998	merge pull request # 7620 from microsoft / lego / hb_2939_20201028230559693 lego : pull request from lego / hb_2939_20201028230559693 to master
+999	merge branch ' enable_manual_reloaddata ' into dev
+1000	remove using
+1001	merge pull request # 7842 from microsoft / lego / hb_2939_20201104110551356 lego : pull request from lego / hb_2939_20201104110551356 to master
+1002	initial commit
+1003	[ advancedpaste ] improved telemetry ( # 33520 )
+1004	merge branch ' master ' of https : / / github . com / qianlifeng / wox . git
+1005	[ fancyzones ] improve code quality ( part 5 : work area initialization ) ( # 23671 )
+1006	settings : search fancy zone settings and swallow the ctrl + f event ( # 41437 )
+1007	fz : use type aliases for data types
+1008	added code to sanitize folder path ( # 2673 )
+1009	merge branch ' allow_option_websearch_openintab ' into dev
+1010	shifting to msbuild constant . https : / / github . com / dotnet / roslyn / pull / 23977
+1011	merge branch ' master ' of https : / / github . com / qianlifeng / winalfred . git
+1012	close # 38 change virtualizing mode from recycling to standard .
+1013	updated fancyzones checkboxes corresponding to settings ( # 2785 )
+1014	[ analyzers ] [ cpp ] turn on warning 26493 ( # 23990 ) and change the remaining files
+1015	add custom patched pinyin library
+1016	set warning level 4 : debug
+1017	add auto updater [ wip ] & remove uac project
+1018	[ analyzers ] [ cpp ] turn on warning 4245 ( # 22080 )
+1019	log first change exception
+1020	wrapping up everything minus var renaming ( # 5952 )
+1021	removing nowarn ' s ( # 16590 )
+1022	customize system menu items through dedicated api ( # 677 ) document new interface changes .
+1023	change directory plugin subdirectory list action
+1024	[ settings ] icon updates for new utilities ( # 20193 ) * powerocr icon updates * icon updates * update selector . xaml
+1025	[ peek ] set button color on theme change ( # 26564 ) * [ wip ] set button color manually * remove unused aliases
+1026	merge pull request # 42 from microsoft / addpinyinperformance cherry picked pinyin performance changes from jjw24 ' s master branch ( cherry picked from commit b9e437c6cd0fb75fee590a4c3e7999ec417c2eb7 )
+1027	merge branch ' dev '
+1028	add executable directory path
+1029	made data images freeze as well
+1030	updated double quotes logic ( # 7268 )
+1031	start powertoys run through the actionrunner ( # 12043 )
+1032	merge branch ' enable_userselected_programloading ' into dev
+1033	merge pull request # 8124 from microsoft / lego / hb_2939_20201119000611307 lego : pull request from lego / hb_2939_20201119000611307 to master
+1034	merge pull request # 8276 from microsoft / lego / hb_2939_20201130120702764 lego : pull request from lego / hb_2939_20201130120702764 to master
+1035	rerouting to log class vs custom logic ( # 6688 )
+1036	revert project file changes of everything sdk .
+1037	[ settings ] [ accessibility ] assign automationproperties . name to backup select folder button ( # 32579 )
+1038	add upgrade check .
+1039	initial license commit
+1040	localization : move localizable strings to . resw for runner / bootstrapper
+1041	add plugin info entry for all context menu
+1042	[ fancyzones ] split zones - settings : app zone history ( # 15690 )
+1043	add icon constant
+1044	added the wox launcher dll
+1045	getting remaining tests on stylecop ( # 5846 )
+1046	merge pull request # 288 from leon99 / dev support for assigning any key as a hotkey ; minor refactoring
+1047	add some workarounds for clean environment .
+1048	[ fancyzones ] fix warning ( # 6203 )
+1049	merge branch ' dev '
+1050	merge pull request # 8259 from microsoft / lego / hb_2939_20201128000545286 lego : pull request from lego / hb_2939_20201128000545286 to master
+1051	merge branch ' update_browserbookmark_subtitle_wording ' into dev
+1052	allow searches in context menu
+1053	[ setup ] implement modulesregistry api
+1054	working on putting together tray capabilities .
+1055	[ chore ] update copyright year for 2024 ( # 30718 )
+1056	readded necessary callback functions
+1057	update btn name to ' all programs '
+1058	merge pull request # 647 from arthur2e5 / patch - 3 readme : 看来我是对奇怪的大小写有种强迫症（
+1059	implement plugin i18n [ wip ]
+1060	cache tweaks
+1061	[ peek ] add audio previewer ( # 31619 ) * add audio previewer * fix button on activation * revert change
+1062	add display of all loaded applications
+1063	add cleanup ci job
+1064	merge pull request # 8026 from microsoft / lego / hb_2939_20201113120703275 lego : pull request from lego / hb_2939_20201113120703275 to master
+1065	use workingdirectory when strat process as proposed in # 569
+1066	increment version to 0 . 15 . 1 ( # 1428 )
+1067	upgrade to v1 . 1 . 1
+1068	add remember window position support .
+1069	add proxy setting ui # 118
+1070	removed undeclared binding ( # 4590 )
+1071	create run - as - admin - detection . md # 5308
+1072	merge with master
+1073	opening settings when user is opening already running powertoys ( # 1957 ) * added code to open general settings when opening second instance of powertoys
+1074	only pass needed setting to alphabet as alphabet class is static , its methods could be used without ever calling alphabet . initialize ( _settings ) beforehand which would end in an exception . therefor only _shouldusepinyin settings needed will be transferred with a given default value .
+1075	initial security . md commit
+1076	added a general tab page with xaml layout and controls according to spec ( # 1546 )
+1077	[ cmdpal ] tray icon settings ( # 38672 )
+1078	setting window : plugin
+1079	disable unit tests in ci ( # 1592 ) due to continue failures in ci for no apparent reason .
+1080	[ fancyzones ] failing unit tests update ( # 6065 )
+1081	checkout git submodules as powertoys . sln prebuild action
+1082	[ peek ] create setting to run not elevated ( # 26308 ) * [ peek ] create setting to run not elevated * optionally add access permissions to the handles
+1083	add radio button group and add theme select for shortcutguide
+1084	merge pull request # 144 from jjw24 / plugininitfail plugininitfail
+1085	create static bookmark class that will contain bookmark functions
+1086	add i18n support [ wip ]
+1087	[ fancyzones ] zone number settings ( # 14910 )
+1088	add name property for delete buton ( # 7895 )
+1089	[ settings ] bring window to foreground on double click / right click ( # 31034 )
+1090	merge branch ' add_reindix_program_suffix ' into dev
+1091	remove storage dependency from jsonstorage
+1092	removed anycpu of test proj
+1093	merge branch ' master ' into dev
+1094	format dpi_aware
+1095	merge branch ' master ' of https : / / www . github . com / qianlifeng / wox
+1096	make the name same as post build event in vs
+1097	merge branch ' master ' of https : / / www . github . com / qianlifeng / wox
+1098	add run as administrator to shell plugin settings
+1099	reading correct json property for " run " program . this prevents the run ( previously powerlauncher ) from being opened when settings has it disabled .
+1100	add option to run as administrator for shell plugin
+1101	add global unhandled exception check .
+1102	merge branch ' add_contextmenu_return_afterselection ' into dev
+1103	revert " wix : install . net core 3 . 0 . x instead of . net core 3 . 1 . x ( # 2943 ) " this reverts commit 01f11d94b001652e2c116fdd4fe3b73117586bd4 .
+1104	prevent duplication from loading custom program sources
+1105	[ colorpicker ] scroll color history to top after choosing new color ( # 28291 )
+1106	correcting versioning numbering
+1107	merge branch ' master ' into dev
+1108	merge branch ' dev ' of https : / / github . com / qianlifeng / wox into dev
+1109	increment version to 0 . 15 🎉
+1110	add highlight converter component
+1111	introduce shared sparse package identity for powertoys ( # 42352 )
+1112	revert " use guid to identify icon ( # 27570 ) " ( # 27669 ) this reverts commit 4bf031d28f5c66c188ca7de244921f3ee1cb14a2 .
+1113	merge branch ' master ' of https : / / github . com / qianlifeng / winalfred . git
+1114	changed to systemchromelow from accent brush ( # 2272 )
+1115	update reindex call to use disabledprogramsources
+1116	changed numberbox to slider for fz . added opacity value textblock for all sliders
+1117	update badge to show status for master only [ ci skip ] [ skip ci ]
+1118	merge remote - tracking branch ' origin / master '
+1119	upgrade to cppwinrt after the last merge conflict ( # 3745 )
+1120	stripped shortcuthelper of unneeded p / invoke methods
+1121	allow disabling of default program sources
+1122	merge branch ' master ' of https : / / github . com / microsoft / powertoys into dev / powerlauncher
+1123	another rebase fix
+1124	add ireloadable interface and method
+1125	[ hotfix ] revert " [ fancyzones ] filtering popup windows for all operations ( # 28975 ) " ( # 29532 ) this reverts commit 1b333dfee001b2654a16cc8774f8864e895db067 .
+1126	making query internals visible to wox .
+1127	[ installer ] update . net to 6 . 0 . 10 ( # 21487 )
+1128	change project generate sequence
+1129	update file handling logic
+1130	rename customsettingsscreen to modulesettings
+1131	added dependency on powerlauncher to the microsoft . launcher project
+1132	pass settings instance to alphabet again
+1133	add hotkey setting
+1134	updated installer hashes for 0 . 95 . 1 ( # 42820 ) title , updating installer links for next release .
+1135	merge branch ' dev ' into highlight - how - results - matched
+1136	merge branch ' lego / hb_2939_20201108230556187 '
+1137	fancyzones : optimize elevation detection logic ( # 2103 )
+1138	convert stringmatcher class to static and move code from fuzzysearch
+1139	[ bootstrapper ] allow msi extraction on 1809 and older ( # 11117 )
+1140	add handling when query action keyword is empty
+1141	update disable logic and add unique identifier for programs
+1142	added logging to keyboard manager ( # 9155 )
+1143	merge branch ' master ' of https : / / github . com / qianlifeng / wox . git
+1144	added in a few comments . pointed automatedname to static resource
+1145	added points from community and updated non - goals
+1146	recover downloads count .
+1147	update button positioning and label
+1148	commit to re - trigger github pr
+1149	[ feature ] powertoys hotkey conflict detection ( # 41029 )
+1150	merge branch ' master ' of https : / / github . com / microsoft / powertoys
+1151	[ fancyzones ] window opening on the last zone ( # 12284 )
+1152	revert " revert " [ file explorer add - ons ] fix file preview pane flickering on f… ( # 27093 ) " ( # 27122 ) this reverts commit 217f3f9ff3f8587fdf4d9fb209710d25ff4a6d72 .
+1153	revert " add crashreproter " this reverts commit ad81dfa001493272d1ea7e4a19ae74ca65c84622 .
+1154	settings : initialize com security to allow communication between elevated settings and webview
+1155	[ analyzers ] [ cpp ] turn on warning 26403 ( # 22795 )
+1156	[ auto - update ] [ settings ] bolden update ready / available info line ( # 11401 )
+1157	merge pull request # 8197 from microsoft / lego / hb_2939_20201124000528125 lego : pull request from lego / hb_2939_20201124000528125 to master
+1158	merge pull request # 423 from lances101 / bugfix - 271 - positioning bugfix # 271 positioning
+1159	add shared commands and move to shared
+1160	change indexer to file search
+1161	move web search setting to its own project
+1162	change icon for thirdpartyplugin indicator .
+1163	added query submitted event to handle default action on clicking a list view item
+1164	added fancy zones settings ( # 2161 )
+1165	drive detection indexer warning refinement ( # 5221 ) * show results always and conditionally show warning * changed test logic to show warning when expected * renamed unit test
+1166	enabling warnings as errors and correcting stylecop issues ( # 6007 )
+1167	merge branch ' master ' into dev
+1168	use ptlicensedlg in lieu of the standard license dialog
+1169	revert " [ fancyzones ] remove " keep windows pinned to virtual desktop location " settings ( # 3093 ) " ( # 3292 ) this reverts commit 8f59247acb6632b0712731df5df2ebc6dd556748 .
+1170	moving version to directory . build . props ( # 34055 )
+1171	updating hashes and to 74 . 1
+1172	[ runner ] update toast notification arrow - use unicode character ( # 29229 ) * " ⇨ " was " - > " * escape unicode character
+1173	manually restart is no longer needed . 24866ff032829e9bd34704d3d5970d227a4c8db3 fix the restart
+1174	copy images to output directory
+1175	remove assemblyhelper
+1176	added windows color settings link
+1177	renamed wox . plugin . indexer to microsoft . plugin . indexer
+1178	merge branch ' dev / build - features ' into dev / traies / build_features_launcher_integration
+1179	merge branch ' dev '
+1180	reorganize methods
+1181	revert " fix image didn ' t copy to output directory issues . "
+1182	- removed iwshruntimelibrary . it is no longer needed for the plugin . - added shortcuthelper for invocation calls .
+1183	setting ws_child on preview handler ( # 3048 )
+1184	removing winr ( # 2381 )
+1185	lego : pull request to master with localized lcls ( # 12422 )
+1186	lego : pull request to master with localized lcls ( # 12225 )
+1187	enhance ui test automation by collecting powertoys logs on failures ( # 41690 )
+1188	merging master into changes from launcherui . wox . infrastructure assembly info i took the changes from both branches as they will be needed . this currently doesn ' t build i will make the changes to get it building atomically .
+1189	small verb change to 0 . 51 . 1 ( # 14810 )
+1190	[ awake ] move shared keys into central props file ( # 17189 )
+1191	add option in websearches plugin settings panel for user selection
+1192	refactoring . move system plugins to seperate dlls .
+1193	fancyzone documentation typo fixes miscellanious→miscellaneous maintining→maintaining
+1194	issue template update ( # 1846 ) * update to issue_template template partially based on https : / / github . com / facebook / react - native / blob / master / . github / issue_template . md
+1195	[ deps ] upgrade wpfui to 3 . 0 . 5
+1196	[ runner ] place tooltip text for tray icon on a single line ( # 12308 )
+1197	merge branch ' master ' of https : / / github . com / qianlifeng / winalfred . git
+1198	updating the querytext to the selected item when navigating up / down with the arrow keys .
+1199	use strings / * / resources . resw instead of properties / one ( # 27972 )
+1200	adding in fxcop
+1201	added functions to remove the abstract class error
+1202	update class to inherite from settings . programsource
+1203	move log to infrastructure project .
+1204	revert " [ fxcop ] telemetry . csproj " ( # 6690 ) * revert " marking all warnings ( # 6642 ) " this reverts commit b0f09405341f8315ee22ec1a5d1bea0a1f581b9c . * added warning comment
+1205	remove tab selection
+1206	merge branch ' master ' of https : / / github . com / qianlifeng / winalfred . git
+1207	added the main and settings file which declare most of the plugin interfaces
+1208	changing test structure . need to add unit tests .
+1209	[ dev file previewer ] add option to set custom max file size and fix styling issue ( # 23689 ) * [ dev file previewer ] add option to set costum max file size and fix style issue
+1210	remove anycpu config and changed it to x64
+1211	removing fxcop
+1212	add new version window
+1213	removed build status from readme ( # 35113 ) removed build status
+1214	move constant into local scope
+1215	merge branch ' enable_manual_reloaddata ' into dev
+1216	click event will occur when setting is clicked and cause blur in center of setting window # 711
+1217	merge pull request # 340 from lances101 / master option to ignore hotkeys on fullscreen windows
+1218	merge branch ' dev '
+1219	handle key events ( # 8279 )
+1220	add build instruction
+1221	use default thread pool settings
+1222	delete unused files
+1223	merge pull request # 74 from kerams / master windowopener class
+1224	update nuget configuration
+1225	[ fancyzones ] adjust colors of secondary buttons to maintain 3 : 1 contrast ratio against white background ( # 7785 ) * adjust colors of secondary buttons to maintain 3 : 1 contrast ratio against white background * use white color withing cancel button
+1226	readme : switch status badges over to shine - oss ( # 33929 ) we are moving away from the ` ms ` organization .
+1227	installer : reduce notification spam
+1228	disabling scrollbars for gridview items .
+1229	add ncol , hwb , hsb color format + cleanup
+1230	api changes
+1231	change default height for result item
+1232	faster startup time for control panel plugin
+1233	merging in theme changes and moving win32tests to microsoft . plugin . program . unittests
+1234	merge remote - tracking branch ' origin / dev ' into dev
+1235	added goto first result command ( alt home )
+1236	add latest release link to badge
+1237	apply general settings on runner startup ( # 4302 )
+1238	deploy nuget only when commits on master branch .
+1239	[ mwb ] work without service if service doesn ' t start ( # 26521 )
+1240	merge pull request # 339 from lances101 / master fixed commit # 334 multiple selectionchanged firing
+1241	merge branch ' master ' into merge / build - features - to - master
+1242	add replace win + r option
+1243	move context menu and socre into program model
+1244	added automatic microsoft store integration ( # 18456 )
+1245	re - order of the autocomplete setting ( for image resizer ) under the right section
+1246	merge pull request # 8057 from microsoft / lego / hb_2939_20201116000536744 lego : pull request from lego / hb_2939_20201116000536744 to master
+1247	[ quick accent ] add serbian language accents ( # 22288 )
+1248	merge branch ' wip_fuzzymatchupdates ' into fuzzymatchupdates
+1249	[ analyzers ] [ cpp ] turn on warning 4456 ( # 22087 )
+1250	add query history plugin & upgrade all third - party packages
+1251	fancyzones now does its own event processing ( # 2347 ) * fancyzones now does its own event processing * removed temporary variable
+1252	add action keyword when changing qury
+1253	refactoring directory path for misc
+1254	add auto updates gui option
+1255	[ general ] consolidate to language version c # 10 ( # 19209 )
+1256	added the helper functions
+1257	remove call to save_to_settings_file
+1258	adding dependency
+1259	[ installer ] auto - start powertoys as logged - in user from installer run… ( # 27793 ) * [ installer ] auto - start powertoys as logged - in user from installer running as system * spellcheck * address feedback * spellcheck
+1260	filter duplicate program item
+1261	merge branch ' master ' into v1 . 1 . 0
+1262	revert get translation as none is provided
+1263	revert buttons on kbm landing page ( # 2870 ) * revert buttons * fixed button placement
+1264	code refactoring and add web searches setting window .
+1265	merge pull request # 90 from zlsun / master some modifications .
+1266	added log into alphabet service since it can induce a large perf hit
+1267	added localization to default sizes ( # 8928 )
+1268	change https to http becuase the ssl has expired
+1269	add sorting order by result title asc , then type being folder first .
+1270	merge branch ' master '
+1271	add simple usage
+1272	add web search feature & some ui changes .
+1273	merge remote - tracking branch ' origin / master ' into dotnet45
+1274	reversing mainwindow blur call and settings window modification added windowsaccentmode to base theme
+1275	rename global variables
+1276	program plugin : remove complicated inheritance
+1277	add user selection option for browserbookmark plugin
+1278	add fr to csproj
+1279	adjusting elevated permission verbiage to match windows
+1280	do not run elevated by default ( # 884 ) make the runner not run as elevated by default . add a setting for " run powertoys as elevated " and buttons to restart the process with the different elevation levels .
+1281	[ fancyzones ] add automationproperties . name to focusable elements ( # 7372 ) * add automationproperties . name to focusable elements * add automationproperties . name to focusable elements * use automationproperties . labeledby with buttons / text boxes * address pr comments
+1282	image resizer : fix color contrast of ' resize your pictures '
+1283	program plugin : move files
+1284	merge pull request # 1364 from martian - f / calculator - user - locale convert calculator numbers from / to user locale .
+1285	disable forwarding the escape event ( # 10697 )
+1286	[ color picker ] increase width of editor window ( # 13420 )
+1287	[ auto - update ] [ settings ] show error text with error brush ( # 11397 )
+1288	refactor setting storage related
+1289	cleaned - up dispose todo ( # 22703 )
+1290	update action - genai - issue - dedup version to v0 ( # 41547 )
+1291	merge branch ' master ' into lego / hb_2939_20201027230544851
+1292	global variable name
+1293	reducing verbosity on string ( # 16214 )
+1294	adding comments for rename based on loc team q ' s
+1295	specify focus rectangle color when focused by keyboard ( # 7899 )
+1296	simplify code , remove flashzones , remove unused code
+1297	merge pull request # 8227 from microsoft / lego / hb_2939_20201126000602371 lego : pull request from lego / hb_2939_20201126000602371 to master
+1298	setup : add - - help and - - no_dotnet commands
+1299	bootstrapper : add support for silent arg ( # 5590 )
+1300	added new interface template ( uk - ua . xaml ) & was translated into the ukrainian language
+1301	merge branch ' master ' of https : / / github . com / qianlifeng / wox
+1302	merge branch ' master ' into dev
+1303	reflected functionality changes from the last commit on the whole project .
+1304	close settings window on runner exit ( # 2695 )
+1305	merge pull request # 7546 from microsoft / lego / hb_2939_20201026110534010 lego : pull request from lego / hb_2939_20201026110534010 to master
+1306	add activate statistics
+1307	fancyzones : restrict dpi unaware windows horizontally to the current display to avoid unwanted resize
+1308	[ analyzers ] [ cpp ] turn on warning 26410 ( # 22744 )
+1309	merge branch ' master ' of https : / / github . com / wox - launcher / wox
+1310	add dropdown settings ui element
+1311	[ arm64 ] add awake module ( # 17857 )
+1312	merge branch ' enable_userselected_programloading ' into dev
+1313	delete cpp codes
+1314	added the <usewpf> tag to remove the warning
+1315	updating proper references .
+1316	remove number placeholder in the right of result item .
+1317	revert " [ powertoys run ] update to net5 ( # 12434 ) " ( # 12543 ) this reverts commit c651a4b36ef104f978a8df294c90f521a2a69e39 .
+1318	add portable python environment
+1319	add custom announcement to tab items ( # 8027 )
+1320	updated the pt run icon to # 4041 ( # 4114 )
+1321	free render target
+1322	msix : hide the " run at startup " option if running as packaged
+1323	[ installer ] update . net to 6 . 0 . 9 ( # 20894 )
+1324	removed extra closing parenthesis from the rdp entry ( # 34600 )
+1325	merge branch ' ci '
+1326	common : implement on_scope_exit helper and typed_storage
+1327	# 2 change everything default search mode
+1328	rearrange code fields - > properties - > init method - > query methods - > is methods - > get methods
+1329	adding disposed pattern
+1330	[ colorpicker ] close only flyout with escape key ( # 12441 ) when the escape key is pressed in the color picker editor , only the adjust color flyout should be closed instead of the whole window .
+1331	replace all stopwatch with timeit
+1332	adding checks
+1333	changed the debug output file paths and build events for base projects
+1334	revert mft changes .
+1335	minor modifications in readme
+1336	better logo handling for uwp # 198
+1337	addressing feedback
+1338	updating : remove all scheduled toast notifications from previous versions ( # 8644 )
+1339	change disabledprogramsource class to inherit programsource
+1340	set mainviewmodel visibility to hidden on startup
+1341	adding a build dependency to the runner project for powerkeys . this should allow developers to f5 with the runner as startup and have all the dependencies properly build , and thus make the powerkeys ui functional .
+1342	imageresizer : skip settings tab focus when hidden
+1343	add run as different user option to context menu
+1344	reduce memory usage .
+1345	[ setup ] update wix to require at least build 18362
+1346	changing ' any cpu ' to ' x64 ' for managed common project .
+1347	merge pull request # 7909 from microsoft / lego / hb_2939_20201106230530020 lego : pull request from lego / hb_2939_20201106230530020 to master
+1348	adjusting text for 2564 ( # 2606 )
+1349	added callback function for mouse click on search result
+1350	removed deployment for uwp apps ( # 2298 )
+1351	merge branch ' master ' into dev / build - features
+1352	folder results open the explorer window when selected .
+1353	allow drag drop to install wox plugin .
+1354	merge branch ' dev '
+1355	merge pull request # 115 from theclueless / imageoptimization imageoptimization
+1356	merge pull request # 7832 from microsoft / lego / hb_2939_20201103230605054 lego : pull request from lego / hb_2939_20201103230605054 to master
+1357	removing unused reader namespace from telemetrybase .
+1358	' autocomplete ' is more common than ' autocompletion '
+1359	merge branch ' master ' into dev
+1360	remove all third - party plugins into separate repos ( except wpm ) .
+1361	upgrade mahapps to 2 . 3 ( # 7466 )
+1362	added in version . prop update and the ps script
+1363	merge branch ' master ' of https : / / github . com / qianlifeng / winalfred . git
+1364	adding in ignore for alt - space ( # 2799 )
+1365	merge branch ' master ' into master
+1366	[ fancyzones ] fixed shift behavior ( # 4653 )
+1367	move nuget auto deploy back not sure why i can ' t appveyor environment
+1368	close # 48 refactor setting storage .
+1369	revert " [ pt run ] [ new plugin ] unit converter ( # 9800 ) ( # 11406 ) " this reverts commit 1dabd761e1c37224fb2ba0e6e81bb17cce736a03 , to give proper attribution to the author .
+1370	[ installer ] add missing items to installer ( # 21073 ) * [ installer ] add missing system . management . dll to settings install dir * add missing powerrename items
+1371	add descriptive name for zone increment / decrement buttons ( # 7867 )
+1372	bootstrapper : handle the unhandled
+1373	adding usewpf to get rid of warning
+1374	[ screen ruler ] close on left click and attribution adjustment ( # 20163 ) * [ screen ruler ] end measure mode sessions on left click * [ screen ruler ] move attribution to a separate section * spelling
+1375	add option to put computer to sleep
+1376	merge branch ' dev '
+1377	settings telemetry for colorpicker ( # 10417 )
+1378	merge branch ' master ' of https : / / github . com / microsoft / launcher into windowsindexerplugin
+1379	use shared commands
+1380	only include a margin if there is text to separate from the icon . ( # 41851 )
+1381	revert " fixing policheck flags " this reverts commit 0e41684cf0e2b4987fda45eb4e534fe0de177484 .
+1382	upcate ci scripts
+1383	add korean language . add korean language .
+1384	fz : disable filewatcher cb
+1385	[ hosts ] reset terminate event after closing ( # 35663 )
+1386	revert " lego : check in for master to temporary branch . ( # 9401 ) " ( # 9402 ) this reverts commit 245bd302d7f47fd371db885eb7c05cdce749b3ff .
+1387	[ installer ] add missing experimentation fluent icon ( # 24278 )
+1388	move namespace
+1389	use consistent name convention
+1390	renaming executable to powerlauncher . replaceing icons with placeholder . deleting docs folder
+1391	removing default values
+1392	using proper executable name when closing ' powerlauncher ' process
+1393	modified the output folder produced
+1394	[ imageresizer ] fix use without initializing warning ( # 29236 ) [ imageresizer ] fix use without initializing warn
+1395	merge pull request # 14 from orzfly / master add some workarounds for clean environment and use the nuget version of inputsimulator
+1396	merge pull request # 19 from jjw24 / enable_portable_mode enable portable mode
+1397	merge pull request # 105 from jjw24 / add_folderplugin_runasuser add run as different user option when file is of certain type
+1398	[ pipeline ] reduce ci , fuzz , and ui test timeout from 4 hours to 90 minutes ( # 40500 )
+1399	add more python plugin api .
+1400	add trailing slash to outdir ( # 4708 )
+1401	add ability to run as a different user for win32 programs
+1402	screen reader announces role and state for awake tray menu items ( # 13904 )
+1403	merge pull request # 7592 from microsoft / lego / hb_2939_20201027230544851 lego : pull request from lego / hb_2939_20201027230544851 to master
+1404	run unit tests in ci ( # 1568 )
+1405	settings : use actionable toast notifications for file explorer modules warning
+1406	added trailing slash to saved folders action for folder plugin
+1407	[ settings ] improve shortcut control visibility and accessibility ( # 22813 )
+1408	removed incrementalclean for launcher ( # 5172 )
+1409	merge branch ' master ' into dev
+1410	make plugin folder name readable .
+1411	adding the ability to have a tray icon
+1412	disable blur when os is not supported releated : # 330
+1413	fancyzones : do not zone windows on startup ( # 982 )
+1414	rename ' src / editor ' to ' / src / settings '
+1415	merge branch ' dev '
+1416	[ oobe ] show only oobe at first run on winui3 ( # 17957 )
+1417	added support to run apps in development mode ( # 4217 )
+1418	address feedback
+1419	bootstrapper : add cmd argument for custom log location
+1420	merge branch ' master ' into enable_userselected_programloading
+1421	merge branch ' add_browserpath_userselection ' into dev
+1422	enable portable mode
+1423	add equality checking for old keyword and new keyword
+1424	re - enabled exception during debug
+1425	updated program execution to call action on background thread . ( # 2370 )
+1426	add issue template
+1427	merge branch ' dev '

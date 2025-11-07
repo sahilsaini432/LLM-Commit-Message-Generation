@@ -1,0 +1,1428 @@
+0	update readme . md
+1	[ settings ] update image resizer properties
+2	update settingsdeeplink . cs
+3	[ ptrun ] [ plugin ] update main . md
+4	[ ptrun ] [ winalfred ] update winalfred . yml
+5	[ fancyzones ] update fancyzones . json
+6	update espresso . core . apihelper . cs ( # 2809 ) * update espresso . core . apihelper . cs *
+7	update pipeline . user . yml
+8	[ ptrun ] [ servicehelper ] update servicehelper . cs
+9	update format_sources . ps1
+10	update espressoui . app . xaml
+11	[ fancyzones ] [ editor settings tests ] add fz editor settings tests ( # 3559 ) * [ fancyzones ] [ editor settings tests
+12	[ ptrun ] [ bootstrapper ] update resources . resx . lcl
+13	[ fz ] [ settings ] add fz settings to settings . ui ( # 3809 ) * [ fz ] [ settings ] add
+14	[ kbm ] [ keyboardmanager ] update keyboardmanagerstate . cpp
+15	update powertoys . md
+16	[ espresso ] [ kbm ] add support for user interaction ( # 23927 ) * [ espresso ] [ kbm ]
+17	[ fancyzones ] update fancyzones . cpp ( # 3559 ) * update fancyzones . cpp * update fancyzones . cpp
+18	[ ci ] [ build ] update build . status . bfktntb
+19	[ fancyzones editor ] [ fz editor ] fix layout layout issue ( # 2809 ) * [ fz editor ] fix layout layout issue
+20	merge pull request # 3 from microsoft / dev / wox / apps
+21	merge pull request # 3 from microsoft / wox / plugin / program / main . cs
+22	[ ptrun ] [ plugin ] update main . md
+23	update hwnd_data_cache . md
+24	update settings . ui . xaml
+25	[ hotkey ] update hotkeymodel . md
+26	update readme . md
+27	[ colorpicker ] add colorpicker plugin to colors plugin ( # 3559 ) * added colorpicker plugin to colors plugin * added colorpicker plugin
+28	update shellcontext . md
+29	[ settings ] [ xaml ] update shellpage . xaml
+30	update action_runner . vcxproj
+31	update generalsettings . ui . dev
+32	[ espresso ] update settingshelper . cs
+33	[ ptrun ] [ bootstrapper ] update resources . resx . lcl
+34	update powerlauncher . csproj
+35	[ ptrun ] [ bootstrapper ] update resources . resx . lcl
+36	merge pull request # 1 from microsoft / dev / wox / plugin
+37	[ ptrun ] [ settings ] add settings . resw to settings . resw ( # 3559 ) * [ ptrun ] [ settings
+38	[ ptrun ] [ settings ] [ ui ] fix crash when user clicks on the main window ( # 3559 ) * [ ptrun ]
+39	update wox . core . csproj
+40	update readme . md
+41	merge pull request # 3 from microsoft / dev / wox / wox . md
+42	update readme . md
+43	[ powerlauncher ] [ xaml ] add support for powerlauncher . ui . app . xaml
+44	update resultlist . xaml
+45	update resultlist . xaml
+46	[ ptrun ] [ esrpsigner ] update signing_core . json
+47	[ ptrun ] [ mousehighlighter ] update mousehighlighter . cpp ( # 3559 ) * update mousehighlighter . cpp
+48	[ ptrun ] [ settings ] add settings . resw to settings . resw ( # 3559 ) * [ ptrun ] [ settings
+49	update ISSUE_TEMPLATE . md
+50	update resources . resx . lcl
+51	update powertoys . md
+52	[ ptrun ] [ wox ] [ calculator ] fix crash ( # 3809 ) * [ ptrun ] [ calculator ] fix crash
+53	update app . xaml
+54	update settings . ui . resw
+55	[ ptrun ] [ settings ] fix powertoys . settings . ui issue ( # 3559 ) * [ ptrun ] [ settings ]
+56	[ ci ] [ killpowerlauncher ] update ci . yml
+57	merge pull request # 1 from microsoft / releasebuild / update_release_build . md
+58	merge pull request # 3 from microsoft / github / qianlifeng / pull request # 3 from microsoft / github
+59	update powertoys . settings . ui . powertoys . settings . ui
+60	[ ptrun ] [ system ] add system . util . generic to system . util . generic
+61	update mainwindow . xaml
+62	update build . md
+63	update dwmdropshadow . cs
+64	merge pull request # 3 from microsoft / dev / powertoys / dev / powertoys . sln
+65	[ ptrun ] [ windowutilities ] add windowutilities to windowutilities . cs ( # 3559 ) * [ ptrun ]
+66	update powertoys . md
+67	update build . ps1
+68	update build . md
+69	[ ptrun ] [ settings ] fix powertoys . settings . ui issue ( # 3559 ) * [ ptrun ] [ settings ]
+70	update readme . md
+71	[ installer ] update powertoyssetup . wx
+72	update dllmain . cpp
+73	update settings . ui . library . espresso
+74	[ wox ] [ plugin ] add browserbookmark plugin to plugin list ( # 3559 ) * add browserbookmark plugin to plugin list
+75	update powerlauncher . csproj
+76	update mainwindow . xaml
+77	[ fancyzone ] [ hittest ] [ visualstudio ] update hittest . sln to 29613 . 0 . 29613 (
+78	[ ptrun ] [ settings ] add settings . ui to powertoys . settings . ui ( # 2809 ) * add settings . ui
+79	update expect . txt
+80	update settingswatcher . cs
+81	[ ptrun ] [ wox ] [ plugin ] [ settings ] [ settings ] [ settings ] [ plugin ] [ settings ] [ settings ] [
+82	update readme . md
+83	[ ptrun ] [ wox ] [ plugin ] add plugin to main . net ( # 3809 ) * add plugin to main . net
+84	[ ptrun ] [ program ] [ settings ] update program settings . xaml ( # 3809 ) * [ ptrun ] [ settings ]
+85	[ winalfred ] [ kill ] add title to signal result ( # 3559 ) * [ winalfred ] [ kill ]
+86	update expect . txt
+87	update configuration - dsc - schema . md
+88	update github . com / qianlifeng / gitignore
+89	update app . xaml
+90	[ ptrun ] [ algoritm ] [ algoritm ] [ algoritm ] [ algoritm ] [ al
+91	update settings . ui . helpers . nativemethods . cs
+92	[ ptrun ] [ wox ] [ updater ] update release . cs ( # 23927 ) * [ ptrun ] [ updater ] update
+93	[ ptrun ] [ ocr ] update ocrverlay . xaml
+94	[ settings ] update powertoys . settings . ui . settings . cs
+95	update settings . ui . library . colorformatmodel . cs
+96	update plugin metadata . md
+97	update pull_request_template . md
+98	[ ptrun ] [ measuretool ] [ ui ] update window title ( # 3559 ) * update window title * update window title * update
+99	[ windowwalker ] update dllmain . cpp
+100	[ ptrun ] [ folderplugin ] update folderplugin . md
+101	[ ptrun ] [ wox ] [ plugin ] update main . md
+102	update plugin manager . md
+103	[ fancyzones editor ] [ fancyzones editor ] fix crash in the editor ( # 3809 ) * [ fancyzones editor ] fix crash in
+104	[ ptrun ] [ wox ] [ plugin ] update main . md
+105	update readme . md
+106	[ launcher ] update gitattributes . md
+107	[ ptrun ] [ wox ] [ program ] [ program ] [ program ] [ program ] [ program ] [ program ] [ program ] [
+108	[ ptrun ] [ wox ] add support for control panel list ( # 3559 ) * [ ptrun ] [ wox ] add
+109	update basestorage . cs
+110	[ espresso ] [ kbm ] add support for user interaction ( # 23927 ) * [ espresso ] [ kbm ]
+111	[ ptrun ] [ wox ] [ plugins ] [ wox ] [ plugins ] [ wox ] [ wox ]
+112	update cmd . cs
+113	update app . xaml
+114	update commonstorage . cs
+115	update squirrel_installer . ps1
+116	update squirrel_installer . ps1
+117	update contextmenuloader . cs
+118	[ ptrun ] [ settings ] update colorrepresentationtype . cs
+119	merge pull request # 1 from microsoft / wox / core / i18n
+120	update usersettingstorage . cs
+121	[ ptrun ] [ settings ] add settings . resw to settings . resw ( # 3559 ) * [ ptrun ] [ settings
+122	[ ptrun ] [ wox ] add support for control panel ( # 3559 ) * add support for control panel
+123	update wox . core . updater . cs * update wox . core . updater
+124	update readme . md
+125	merge pull request # 1 from microsoft / dev / crutkas / update_internationalization . md
+126	update installWiX . ps1
+127	[ installer ] update powertoyssetup . wxs ( # 3559 ) * update powertoyssetup . wxs * update powerto
+128	[ ptrun ] [ settings ] [ settings ] [ settings ] [ settings ] [ settings ] [ settings ]
+129	[ ptrun ] [ wox ] [ plugin ] update main . md
+130	merge pull request # 1 from microsoft / dev / wox . md
+131	[ settings ] [ oobe ] update settings . ui . oobe . settings . ui . oobe
+132	[ installer ] update powertoyssetup . wxs ( # 3559 ) * update powertoyssetup . wxs * update powerto
+133	[ ptrun ] [ folderplugin ] update folderplugin . md
+134	update generalsettings . md
+135	update job - build - ui - tests . yml
+136	update advice . md
+137	update mainwindow . xaml
+138	[ ptrun ] [ wox ] upgrade to 2 . 0 . 0 . 1 ( # 2609 ) * [ ptrun ] [ w
+139	[ ptrun ] [ wox ] update programlogger . cs ( # 3809 ) * update programlogger . cs * update programlogger .
+140	[ ptrun ] [ mwb ] update module . md
+141	[ ptrun ] [ espresso ] update trayhelper . cs ( # 3559 ) * update trayhelper . cs * update
+142	merge pull request # 3 from microsoft / wox / plugins / findfile / main . cs
+143	[ fancyzones editor ] [ fz editor ] fix crash in editor window ( # 3809 ) * [ fz editor ] fix crash in
+144	[ fancyzones ] update zonewindow . cpp ( # 3809 ) * update zonewindow . cpp * update zonewindow . cpp
+145	update expect . txt
+146	merge pull request # 3 from microsoft / dev / wox - core / dev / wox - core
+147	[ ptrun ] [ wox ] [ calculator ] fix crash ( # 3809 ) * [ ptrun ] [ calculator ] fix crash
+148	[ installer ] update powertoyssetup . wxs ( # 3559 ) * update powertoyssetup . wxs * update powerto
+149	update thirdpartypluginindicator . cs
+150	update readme . md
+151	[ powerrename ] [ uilib ] [ xaml ] [ powerrename ] [ xaml ] [ powerrename ] [ uilib ]
+152	[ ptrun ] [ settings ] add settings . ui to powertoys . settings . ui ( # 2809 ) * add settings . ui
+153	update wox . plugin . json
+154	[ ptrun ] [ spellcheck ] update expect . txt * update expect . txt * update expect . txt
+155	merge pull request # 3 from microsoft / wox / core / exception / exceptionformatter . cs
+156	update wox . csproj
+157	[ ptrun ] [ browserbookmarks ] fix bug in wox plugin ( # 3809 ) * [ ptrun ] [ browserbookmarks
+158	update devdocs / modules / interface . md
+159	[ ptrun ] [ editor ] update editor . cpp ( # 3559 ) * update editor . cpp * update editor . cpp
+160	[ fancyzones editor ] [ fz editor ] fix crash in editor window ( # 3809 ) * [ fz editor ] fix crash in
+161	update readme . md
+162	[ ptrun ] [ environmenthelper ] update environmenthelper . cs * update environmenthelper . cs * update environmenthelper . cs
+163	[ quickburner ] [ quickburner ] [ quickburner ] [ quickburner ] [ quickburner ]
+164	[ settings ] [ colorpicker ] update colorpickerpage . xaml ( # 3809 ) * update colorpickerpage . xaml * update
+165	update mainwindow . xaml
+166	[ ptrun ] [ launcher ] update app . xaml
+167	update woxjsonstorage . cs
+168	update mainviewmodel . md
+169	merge pull request # 3 from microsoft / dev / wox / storage / basestorage . cs
+170	update general_settings . md
+171	[ ci ] [ nightly ] update ci . yml
+172	update wox . py
+173	[ fancyzones editor ] update resources . resx . lcl
+174	update bootstrapper . resx . lcl
+175	[ peek ] [ filepreviewer ] [ peek ] fix file previewer bug ( # 23927 ) * [ peek ] [
+176	[ ptrun ] [ wox ] [ plugins ] [ wox ] [ plugins ] [ wox ] [ wox ]
+177	update github . com / qianlifeng / gitignore
+178	update imagecache . cs
+179	[ ptrun ] [ add program source ] fix bug in add program source plugin ( # 3809 ) * [ ptrun ] [ add program
+180	update powertoys . md
+181	merge pull request # 1 from microsoft / dev / wox / plugins / * merge pull request # 1
+182	update mainwindow . xaml
+183	[ unitsnet ] add support for unit conversion ( # 3559 ) * add support for unit conversion * add support for
+184	update post_build . ps1
+185	update hotkey . md
+186	update espresso . csproj
+187	merge pull request # 3 from microsoft / dev / wox / plugins / en . xaml merge pull request # 3
+188	[ ptrun ] [ wox ] [ text ] [ linq ] [ linq ] [ text ] [ text ] [ linq ] [
+189	update deps / spdlog . git
+190	[ ptrun ] [ wox ] add support for control panel ( # 3559 ) * add support for control panel
+191	merge pull request # 3 from microsoft / dev / apppaths . md
+192	[ ptrun ] [ settings ] update programsettings . xaml
+193	merge pull request # 3 from microsoft / wox / plugins / wox . plugin * merge pull request # 3
+194	update mainwindow . xaml . cs
+195	update plugin . json
+196	[ ptrun ] [ plugin ] update programs . md
+197	update bug_report . md
+198	[ installer ] update powertoyssetup . wxs ( # 3559 ) * update powertoyssetup . wxs * update powerto
+199	[ ptrun ] [ wox ] add support for control panel ( # 3559 ) * add support for control panel
+200	update build . md
+201	update installer . md
+202	update local_build . ps1
+203	[ ptrun ] [ settings ] [ settings ] [ settings ] [ settings ] [ settings ] [ settings ]
+204	merge pull request # 1 from microsoft / dev / wox / plugin_update . md
+205	[ installer ] update powertoyssetup . wxs ( # 3559 ) * update powertoyssetup . wxs * update powerto
+206	update dllmain . cpp
+207	[ fancyzones editor ] [ fz editor ] fix layout layout issue ( # 2809 ) * [ fz editor ] fix layout layout issue
+208	[ ptrun ] [ sysplugins ] update sysplugin . sysplugin . sysplugin . sysplugin
+209	update wox . actionkeyword . xaml
+210	update spell - check / expect . txt
+211	update mainwindow . xaml
+212	[ ptrun ] [ filepreview ] fix bug in filepreviewcommon ( # 3559 ) * [ ptrun ] [ filepreview ] fix
+213	[ ptrun ] [ launcher ] update launchercontrol . xaml
+214	update shortcut_guide . target_state . cpp
+215	[ fancyzones ] [ unittests ] update zonewindow . cpp ( # 3809 ) * update zonewindow . cpp * update zone
+216	update spell - check . txt
+217	[ ptrun ] [ powerlauncher ] [ telemetry ] update powerlauncher . telemetry
+218	update stringmatcher . cs
+219	update commonstorage . cs
+220	update mainwindow . xaml
+221	update readme . md
+222	[ settings ] update mouseutilspage . xaml
+223	[ ptrun ] [ sysplugin ] [ sysplugin ] [ sysplugin ] [ sysplugin ] [ sysplugin ] [ sysplugin ] [ sys
+224	[ installer ] update powertoyssetup . wxs ( # 3559 ) * update powertoyssetup . wxs * update powerto
+225	update spell - check . txt
+226	[ settings ] [ ui ] [ settingspagecontrol ] [ settingspagecontrol ] [ settings ] [ ui ] [ settingspagecontrol ] [ settingspage
+227	[ installer ] update powertoyssetup . wxs ( # 3559 ) * update powertoyssetup . wxs * update powerto
+228	[ ptrun ] [ bootstrapper ] update resources . resx . lcl
+229	[ ptrun ] [ bootstrapper ] update resources . resx . lcl
+230	[ awake ] update trayhelper . md
+231	[ fancyzones editor ] update editor overlay . xaml ( # 3809 ) * update editor overlay . xaml * update editor overlay . x
+232	update actionrunner . vcxproj
+233	update black and white . xaml * update black and white . xaml * update black and white
+234	[ ptrun ] [ wox ] add support for interop services ( # 3559 ) * [ ptrun ] [ wox ] add
+235	[ ptrun ] [ wox ] update pluginsloader . cs ( # 3809 ) * update pluginsloader . cs * update
+236	update imageresizer . xaml
+237	[ ptrun ] [ wox ] [ plugin ] [ plugin ] [ wox ] [ plugin ] [ wox ] [ plugin ] [ plugin
+238	[ ptrun ] [ winalfred ] [ cmd ] [ cmd ] [ cmd ] [ winalfred ] [ cmd ] [ cmd
+239	update commonstorage . cs
+240	update mainwindow . xaml
+241	[ windowwalker ] update windowwalker . xaml
+242	update expect . txt
+243	update wox . infrastructure . logger
+244	update release . csproj
+245	[ ptrun ] [ newtonsoft ] add newtonsoft . json and newtonsoft . json . linq
+246	update action_runner . cpp
+247	[ ptrun ] [ wox ] add support for control panel list ( # 3559 ) * [ ptrun ] [ wox ] add
+248	merge pull request # 3 from microsoft / dev / wox / helper / dispatcherextensions . cs
+249	[ ptrun ] [ plugin ] update main . md
+250	[ powertoys ] add packaginglayout for powertoys package family ( # 3559 ) * add packaginglayout for powertoys
+251	[ ptrun ] [ wox ] [ plugin ] fix crash on windows ( # 3809 ) * [ ptrun ] [ plugin ] fix
+252	update everythingapi . cs ( # 4996 ) * update everythingapi . cs * update everythingapi .
+253	update wox . core . csproj
+254	[ imageresizer ] [ inputpage ] refactoring ( # 3809 ) * [ imageresizer ] refactoring *
+255	update dotnet_installation . cpp
+256	[ kbm ] update edit keyboard window ( # 3559 ) * update edit keyboard window
+257	[ fancyzones ] update zonewindowdrawing . cpp ( # 3809 ) * update zonewindowdrawing . cpp * update zone
+258	[ ptrun ] [ wox ] [ cmd ] add stopwatch to plugin ( # 3559 ) * [ ptrun ] [ cmd ]
+259	merge pull request # 1 from microsoft / microsoft / pull request # 2 from microsoft / pull request # 3 from microsoft /
+260	[ ptrun ] [ cmd ] [ linq ] [ text ] [ linefeed ] [ linefeed ] [ linefeed ] [ linefeed ]
+261	[ wox ] [ logger ] add logging to the log file ( # 3559 ) * [ wox ] [ logger ] add logging to
+262	update espressoui . csproj
+263	update readme . md
+264	[ installer ] update powertoyssetup . wxs ( # 3559 ) * update powertoyssetup . wxs * update powerto
+265	merge pull request # 3 from microsoft / dev / gitignore / update . gitignore
+266	[ ptrun ] [ docs ] update readme . md ( # 1798 ) * update readme . md * update readme . md * update readme
+267	update powertoyssetup . wixproj
+268	update expect . txt
+269	update settings . md
+270	update publicapiinstance . md
+271	[ shell ] [ espresso ] [ shell ] [ shell ] [ espresso ] [ shell ] [ espresso ] [ shell ]
+272	update plugin . json
+273	[ alwaysontop ] update alwaysontop . cpp
+274	update resultitemviewmodel . md
+275	[ installer ] update powertoyssetup . wxs ( # 3559 ) * update powertoyssetup . wxs * update powerto
+276	update findfilecontextmenustorage . cs
+277	[ kbm ] [ resx ] [ keyboardmanager ] [ resx ] [ kbm ] [ keyboardmanager ] [ resx ] [ keyboard
+278	[ ptrun ] [ plugin management ] add plugin to plugin management list ( # 3559 ) * [ ptrun ] [ plugin management ] add
+279	update readme . md
+280	update contextmenuloader . cs
+281	update readme . md
+282	[ ci ] [ killpowerlauncher ] update ci . yml
+283	update markdownpreviewhandlercontrol . md
+284	update readme . md
+285	update powertoys . md
+286	update mainwindow . xaml
+287	[ ptrun ] [ wox ] add support for control panel ( # 3559 ) * add support for control panel
+288	update urlplugin . cs
+289	update bug_report . yml
+290	[ ptrun ] [ wox ] [ plugin ] update main . md
+291	merge pull request # 3 from microsoft / dev / powertoys / dev / powertoys . sln
+292	update run - as - admin - detection . md
+293	update fancyzones . cpp
+294	[ ptrun ] [ settings ] add settings . ui to settings . ui
+295	[ ptrun ] [ wox ] [ calculator ] fix crash ( # 3809 ) * [ ptrun ] [ calculator ] fix crash
+296	[ ptrun ] [ browserbookmarks ] add support for browserbookmarks plugin ( # 3559 ) * [ ptrun ] [ browserbook
+297	update runner . cpp
+298	update settings . ui . activation
+299	merge pull request # 3 from microsoft / dev / crutkas / pull request # 3 from microsoft / dev
+300	update readme . md
+301	[ fancyzones ] update fancyzones . json
+302	update mainwindow . xaml
+303	[ fancyzones editor ] update grid resizer . xaml
+304	update build . md
+305	update plugin manager . md
+306	[ workspaces ] [ editor ] update project data . md ( # 31356 ) * update project data . md * update project data . md *
+307	[ ptrun ] [ wox ] add support for control panel list ( # 3559 ) * [ ptrun ] [ wox ] add
+308	update settings . ui . settings
+309	update videogifspec . md
+310	update hotkeysettings . ui
+311	[ unitsnet ] add support for unit conversion ( # 3559 ) * add support for unit conversion * add support for
+312	[ ptrun ] [ win32 ] update win32plugin . md
+313	[ imageresizer ] [ docs ] update resources . designer . cs ( # 3559 ) * update resources . designer . cs
+314	[ ptrun ] [ cmd ] [ settings ] add settings to settings . xaml ( # 3809 ) * [ ptrun ] [ settings
+315	update fancyzones . resx to 0 . 0 . 0 ( # 3559 ) * update fancyzones . resx to 0 . 0 .
+316	update spellcheck . expect . txt
+317	[ installer ] update powertoyssetup . wxs ( # 3559 ) * update powertoyssetup . wxs * update powerto
+318	[ ptrun ] [ settings ] fix powertoys . settings . ui issue ( # 3559 ) * [ ptrun ] [ settings ]
+319	[ ptrun ] [ launcher ] update launchercontrol . xaml
+320	update readme . md
+321	update readme . md
+322	update github . com / qianlifeng / woxapi
+323	merge pull request # 3 from microsoft / github / qianlifeng / pull request # 3 from microsoft / github
+324	update controlpanel . cs
+325	[ cmd ] [ settings ] [ settings ] [ settings ] [ settings ] [ settings ] [ settings ] [ settings ]
+326	update videogifspec . md
+327	update mainwindow . xaml
+328	update dllmain . cpp
+329	[ ptrun ] [ plugin ] update programs . md
+330	[ ptrun ] [ urihelper ] [ urihelper ] [ urihelper ] [ urihelper ] [ urihelper ] [ urihelper ] [ uri
+331	[ kbm ] update keyboardmanager . ui . keydropdowncontrol . cpp
+332	update windowsshellrun . cs
+333	[ fancyzones ] update fancyzones . json
+334	[ fancyzones editor ] [ fz editor ] fix layout layout issue ( # 2809 ) * [ fz editor ] fix layout layout issue
+335	[ fancyzones editor ] [ fancyzones editor ] [ fancyzones editor ] [ fancyzones editor ] [ fancyzones editor ] [ fancyzones editor ]
+336	[ hotkey ] [ ahk ] [ hotkey ] [ ahk ] [ hotkey ] [ ahk ] [ hotkey
+337	[ ptrun ] [ wox ] [ plugin ] update main . md ( # 23927 ) * update main . md * update main .
+338	[ imageresizer ] [ inputpage ] refactoring ( # 3809 ) * [ imageresizer ] refactoring *
+339	update xaml . cs
+340	[ ptrun ] [ settings ] add settings . resw to settings . resw ( # 3559 ) * [ ptrun ] [ settings
+341	merge pull request # 1 from microsoft / deploy / updategenerator . md
+342	merge pull request # 1 from microsoft / microsoft / pull request # 2 from microsoft / pull request # 3 from microsoft /
+343	[ ptrun ] [ plugin ] update main . md
+344	[ ptrun ] [ wox ] [ plugin ] [ calculator ] [ plugin ] [ wox ] [ plugin ] [ calculator ]
+345	update app . xaml
+346	[ espresso ] [ kbm ] add support for user interaction ( # 23927 ) * [ espresso ] [ kbm ]
+347	[ ptrun ] [ wox ] [ plugin ] [ settings ] [ settings ] [ settings ] [ settings ] [ settings ]
+348	[ ptrun ] [ wox ] add support for control panel list ( # 3559 ) * [ ptrun ] [ wox ] add
+349	[ ptrun ] [ wox ] update programlogger . cs ( # 3809 ) * update programlogger . cs * update programlogger .
+350	[ ptrun ] [ browserbookmarks ] [ plugin ] fix bug in browserbookmarks ( # 3559 ) * [ ptrun ] [
+351	[ ptrun ] [ bootstrapper ] update resources . resx . lcl
+352	[ cmdpaste ] [ pasteformattemplateselector ] [ pasteformattemplateselector ] [ pasteformattemplateselector ] [ pasteformattemplateselector ] [ paste
+353	update settings . dsc . schema . generator . csproj
+354	update logger . md
+355	update powertoys . sln
+356	[ ptrun ] [ imageloader ] fix crash when loading images ( # 23927 ) * [ ptrun ] [ imageloader ] fix crash
+357	update CMDStorage . cs
+358	[ installer ] update powertoyssetup . wx
+359	update wox . plugin . doc
+360	[ ptrun ] [ wox ] [ cmd ] [ wox ] [ cmd ] [ wox ] [ cmd ] [ wox ] [
+361	update jsonstorage . json
+362	update powertoys . md
+363	[ ptrun ] [ win32 ] update win32plugin . md
+364	merge pull request # 1 from microsoft / dev / wox / logger
+365	[ cmdpal ] update iconmarginconverter . cs ( # 3809 ) * update iconmarginconverter . cs * update iconmarginconverter . cs
+366	[ ptrun ] [ hotkey ] update hotkey . yml
+367	merge pull request # 3 from microsoft / dev / wox / plugins / en . xaml
+368	update settings . ui . resw
+369	[ ptrun ] [ unitconverter ] [ unittest ] [ inputinterpreter ] [ unitconverter ] [ unittest ] [ inputinterpreter ]
+370	update powertoyssetup . wxs
+371	[ colorpicker ] [ colorpicker ] [ colorpicker ] [ colorpicker ] [ colorpicker ] [ colorpicker ] [ colorpicker ] [ color
+372	update readme . md
+373	[ fz ] [ fz ] [ fz ] [ fz ] [ fz ] [ fz ] [ f
+374	update pipeline . user . windows . yml
+375	update mainwindow . xaml
+376	update elevation . md
+377	update mainwindow . xaml
+378	[ ptrun ] [ plugin manager ] [ plugin manager ] [ plugin manager ] [ plugin manager ]
+379	[ kbm ] [ shortcut remapping ] add shortcut shortcut to shortcut manager ( # 3559 ) * [ kbm ] [ shortcut
+380	[ ptrun ] [ settings ] [ settings ] [ settings ] [ settings ] [ settings ] [ settings ] [ settings ]
+381	update mainwindow . xaml
+382	merge pull request # 1 from microsoft / core / i18n
+383	update settings . md
+384	update readme . md
+385	update mainwindow . xaml
+386	[ ptrun ] [ wox ] add support for browser bookmarks ( # 3559 ) * [ ptrun ] [ wox ] add
+387	[ fancyzones ] update fancyzones . cpp ( # 3559 ) * update fancyzones . cpp * update fancyzones . cpp
+388	merge pull request # 5 from microsoft / dev / gitignore / update . gitignore . md
+389	update videogifspec . md
+390	merge pull request # 3 from microsoft / dev / pullrequest # 3 from microsoft / dev / pull
+391	[ ptrun ] [ settings ] add settings . ui to powertoys . settings . ui ( # 2809 ) * add settings . ui
+392	[ mouseutils ] [ findmymouse ] [ mouseutils ] [ findmymouse ] [ mouseutils ] [ findmymouse ]
+393	[ scott ] [ settings ] [ settings ] [ settings ] [ settings ] [ settings ] [ settings ] [ settings
+394	merge pull request # 2 from microsoft / dev / wox / msg . xaml . cs
+395	[ ptrun ] [ wox ] update programlogger . cs ( # 3809 ) * update programlogger . cs * update programlogger .
+396	update package . json
+397	update powertoys . md
+398	[ ptrun ] [ bootstrapper ] update resources . resx . lcl
+399	[ fancyzones ] update fancyzones . md ( # 3559 ) * update fancyzones . md * update fancyzones . md * update fancy
+400	update expect . txt
+401	update binarystorage . cs
+402	update github . com / qianlifeng / github . com / qianlifeng /
+403	[ installer ] update powertoyssetup . wxs ( # 3559 ) * update powertoyssetup . wxs * update powerto
+404	update readme . md
+405	[ ptrun ] [ xaml ] [ presentation ] add xaml : presentation to xaml application ( # 3559 ) * [ ptrun
+406	update powertoys . md
+407	[ kbm ] update edit keyboard window ( # 3559 ) * update edit keyboard window
+408	[ ptrun ] [ bootstrapper ] update resources . resx . lcl
+409	update settings . ui . csproj
+410	update imageresizer . ui . xaml * update imageresizer . ui . xaml
+411	[ ptrun ] [ settings ] [ image resizer ] update image resizer view model ( # 3559 ) * update image resizer view
+412	update bug_report . md
+413	[ fancyzones editor ] [ fz editor ] fix layout layout issue ( # 2809 ) * [ fz editor ] fix layout layout issue
+414	[ ci ] update build - powertoys - ci . yml
+415	update awake . core . manager . cs
+416	[ ptrun ] [ settings ] fix powertoys . resw . lcl ( # 3559 ) * [ ptrun ] [ settings
+417	[ ptrun ] [ updating ] update update . cpp ( # 3559 ) * [ ptrun ] [ updating ] update update . cp
+418	[ wox ] [ plugin ] add program source . xaml . cs ( # 3559 ) * add program source . xaml . cs
+419	[ ptrun ] [ indexer ] add search helper to plugin indexer plugin ( # 3559 ) * [ ptrun ] [ indexer ] add
+420	[ ptrun ] [ bootstrapper ] update resources . resx . lcl
+421	[ ptrun ] [ algoritm ] update algoritm . md
+422	[ ptrun ] [ wox ] [ window manager ] add window manager to window manager list ( # 3809 ) * [ ptrun ]
+423	[ ptrun ] [ paste ] [ xaml ] [ paste ] [ xaml ] [ xaml ] [ paste ] [ xaml ] [
+424	[ ptrun ] [ settings ] update programsettingsdisplay . md ( # 3559 ) * update programsettingsdisplay . md * update programsettings
+425	[ ptrun ] [ xaml ] [ launcher ] update app . xaml . xaml . xaml . xaml . xaml
+426	update settings . md
+427	[ ptrun ] [ system ] [ folderplugin ] [ folderplugin ] [ folderplugin ] [ folderplugin ] [ folderplugin ] [ folderplugin
+428	[ ptrun ] [ settings ] fix powertoys . settings . ui issue ( # 3559 ) * [ ptrun ] [ settings ]
+429	merge pull request # 3 from microsoft / wox / core / resource / availablelanguages . cs
+430	[ ptrun ] [ folderlink ] update folderlink . md
+431	update readme . md
+432	update app . xaml
+433	update powertoys . adml
+434	update readme . md
+435	update fancyzones . cpp
+436	[ fanyi ] [ winalfred ] [ plugin ] add winalfred plugin to main . cs
+437	[ powerrename ] update powerrenamelib . rc
+438	[ ptrun ] [ plugin ] [ settings ] [ settings ] [ settings ] [ settings ] [ plugin ] [ settings ] [
+439	[ ptrun ] [ wox ] [ plugin ] update main . md ( # 23927 ) * update main . md * update main .
+440	[ ptrun ] [ settings ] fix powertoys . settings . ui issue ( # 3559 ) * [ ptrun ] [ settings ]
+441	[ ptrun ] [ imageloader ] fix crash when loading images ( # 23927 ) * [ ptrun ] [ imageloader ] fix crash
+442	[ ptrun ] [ settings ] add settings . ui to powertoys . settings . ui ( # 2809 ) * add settings . ui
+443	update release . yml
+444	update mainwindow . xaml
+445	update powertoys . md
+446	update plugin manager . cs
+447	[ ptrun ] [ settings ] add settings . ui to powertoys . settings . ui ( # 2809 ) * add settings . ui
+448	update general_settings . md
+449	update powertoys . md
+450	[ ptrun ] [ wox ] [ plugin ] add program source to wox . plugin . program
+451	update pull_request_template . md
+452	update readme . md
+453	update mainviewmodel . md
+454	update powertoysbacklog . md
+455	[ ptrun ] [ build ] add support for powertoys plugin ( # 3559 ) * [ ptrun ] [ build ] add support
+456	[ ptrun ] [ wox ] [ plugin ] update mainpanel . md ( # 3559 ) * update mainpanel . md * update
+457	[ fancyzones ] update zone . h
+458	[ ptrun ] [ bootstrapper ] update resources . resx . lcl
+459	update powerlauncher . telemetry
+460	update readme . md
+461	update settings . ui . lib . csproj
+462	update readme . md
+463	[ ptrun ] [ updater ] update package . md ( # 31356 ) * update package . md * update package . md * update package
+464	[ espresso ] [ kbm ] add support for user interaction ( # 23927 ) * [ espresso ] [ kbm ]
+465	update runner . cpp
+466	update readme . md
+467	[ lightswitch ] update themehelper . cpp
+468	[ kbm ] [ keyboardmanager ] update keyboardmanagercommon . vcxproj
+469	update controlpanel . cs
+470	update powertoys . sln
+471	[ ptrun ] [ wox ] [ plugin ] update main . md
+472	update videogifspec . md
+473	[ fz ] [ logger settings ] add fz settings to logger settings ( # 3559 ) * [ fz ] [ logger settings ]
+474	update release . yml
+475	update package repository . cs
+476	[ ptrun ] [ nuget ] update nuget . exe
+477	update settings . ui . mainwindow . xaml
+478	update browserbookmarks . cs
+479	update directory indicator . cs
+480	[ ptrun ] [ sysplugins ] update sysplugin . sysplugin . sysplugin . sysplugin
+481	[ ptrun ] [ wox ] [ plugin ] update main . md
+482	[ colorpicker ] update appstatehandler . cs ( # 3559 ) * update appstatehandler . cs * update appstatehandler . cs
+483	update deps / spdlog . git
+484	update readme . md
+485	[ ptrun ] [ wox ] update programlogger . cs ( # 3559 ) * update programlogger . cs * update programlogger .
+486	update wox . csproj
+487	update readme . md
+488	update browserbookmarks . csproj
+489	[ ptrun ] [ wox ] update searchhelper . windowssearchapi . cs ( # 3809 ) * update searchhelper . windowssearch
+490	[ ptrun ] [ mwb ] [ logger ] add support for logging ( # 23927 ) * [ ptrun ] [ logger ] add
+491	update stringmatcher . cs
+492	[ wox ] [ settings ] add program source setting to window ( # 3559 ) * [ wox ] [ settings ] add program source
+493	[ ptrun ] [ wox ] [ plugin ] fix crash in the shell ( # 3809 ) * [ ptrun ] [
+494	update mainwindow . xaml
+495	update config . yml
+496	update wox . plugin . csproj
+497	[ ptrun ] [ settings ] add settings . ui to powertoys . settings . ui ( # 2809 ) * add settings . ui
+498	update powerrename . uilib
+499	update stringmatcher . cs
+500	[ ptrun ] [ wox ] add plugin command to plugin list ( # 3559 ) * [ ptrun ] [ wox ] add
+501	[ fancyzones editor ] [ fancyzones editor ] [ fancyzones editor ] [ fancyzones editor ] [ fancyzones editor ] [ fancyzones editor ]
+502	update resources . resx
+503	update settingwindow . xaml
+504	update powerrename . uilib
+505	update wox . customqueryhotkeysetting . xml
+506	[ ptrun ] [ windowwalker ] update windowwalker . windowwalker . windowwalker . windowwalker
+507	[ installer ] update powertoyssetup . wx
+508	update powertoys . md
+509	[ ptrun ] [ plugin management ] add plugin to plugin management list ( # 3559 ) * [ ptrun ] [ plugin management ] add
+510	[ settings ] [ telemetry ] [ settings ] [ settings ] [ settings ] [ telemetry ] [ settings ]
+511	[ kbm ] [ keyboardmanager ] update keyboardeventhandlers . cpp ( # 3809 ) * update keyboardeventhandlers . cpp *
+512	[ ptrun ] [ colorpicker ] [ colorhelper ] update colorpickerui . colorhelper . colorhelper . colorhelper
+513	[ ptrun ] [ powerrename ] update powerrenamelib . rc ( # 23927 ) * [ ptrun ] [ powerrename ] update
+514	[ installer ] update powertoyssetup . wxs ( # 3559 ) * update powertoyssetup . wxs * update powerto
+515	[ websearch ] [ websearch ] add support for search web plugin ( # 3559 ) * [ websearch ] add support for search web
+516	[ ptrun ] [ add program source plugin ] add program source plugin
+517	[ kbm ] [ kbm ] [ kbm ] [ kbm ] [ kbm ] [ kbm ] [ kbm ] [ kb
+518	[ ptrun ] [ settings ] [ settings ] [ settings ] [ settings ] [ settings ] [ settings ]
+519	update github . com / qianlifeng / github . com / qianlifeng /
+520	[ fancyzones editor ] [ fz editor ] fix crash in editor window ( # 3809 ) * [ fz editor ] fix crash in
+521	[ winalfred ] [ request ] [ net ] [ net ] [ http ] [ net ] [ http ] [ net ] [ http ]
+522	update icon_helpers . h
+523	[ ptrun ] [ settings ] add settings . ui to powertoys . settings . ui ( # 2809 ) * add settings . ui
+524	[ ptrun ] [ win32 ] update win32plugin . md
+525	[ ptrun ] [ wox ] [ launcher ] fix crash on windows ( # 3809 ) * [ ptrun ] [ wox ]
+526	[ ptrun ] [ wox ] update programlogger . cs ( # 3559 ) * update programlogger . cs * update programlogger .
+527	update wox . infrastructure . csproj
+528	update mainwindow . xaml
+529	update powertoys . sln update powertoys . sln update powertoys . sln
+530	merge pull request # 3 from microsoft / wox / plugin / main . cs
+531	merge pull request # 3 from microsoft / dev / wox / plugins / update_main_plugin . md
+532	[ ptrun ] [ nappupdate ] [ updatefeedgenerator ] update generator . exe
+533	[ settings ] [ visualstudio ] update visualstudio . ui . settings . ui . settings .
+534	[ colorpicker ] update mousehook . cs
+535	update usersettingstorage . cs
+536	merge pull request # 1 from microsoft / dev / wox / logger
+537	[ ptrun ] [ powertoys run ] update resources . resx
+538	update powertoys - steps . yml
+539	[ ptrun ] [ bootstrapper ] update resources . resx . lcl
+540	update mainviewmodel . md
+541	update config . yml
+542	update wox . core . csproj
+543	merge pull request # 3 from microsoft / dev / plugins / wox . md
+544	merge pull request # 3 from microsoft / wox / plugins / wox_plugin_indexer / class1 . cs
+545	[ ptrun ] [ ipublic ] [ plugin ] update ipublicapi . net
+546	update cmd . cs
+547	update settingwindow . xaml
+548	update readme . md
+549	merge pull request # 3 from microsoft / dev / powertoys / dev / powertoys . sln
+550	update generalsettings . md
+551	[ fancyzones ] update fancyzones . yml
+552	update expect . txt
+553	[ ptrun ] [ wox ] add support for browser bookmarks ( # 3559 ) * [ ptrun ] [ wox ] add
+554	update gitattributes . md
+555	[ fancyzones ] update fancyzones . cpp ( # 3559 ) * update fancyzones . cpp * update fancyzones . cpp
+556	update powerrename . md
+557	[ colorpicker ] [ ui ] update colorpicker . ui ( # 23927 ) * update colorpicker . ui * update colorpicker . ui
+558	[ ptrun ] [ powerrename ] update powerrenameext . cpp * update powerrenameext . cpp
+559	[ fancyzones ] update fancyzones . txt
+560	merge pull request # 3 from microsoft / dev / wox / plugins / wox . plugin
+561	[ ptrun ] [ settings ] update systemioprovider . cs ( # 3809 ) * update systemioprovider . cs * update systemio
+562	[ ptrun ] [ settings ] add settings . resw to settings . resw ( # 3559 ) * [ ptrun ] [ settings
+563	update videogifspec . md
+564	update wox . plugin . systemplugins . Program
+565	merge pull request # 3 from microsoft . com / # 3rdpartysource . microsoft . com
+566	[ installer ] update powertoyssetup . wxs ( # 3559 ) * update powertoyssetup . wxs * update powerto
+567	merge pull request # 1 from microsoft / dev / wox / add_http_handler_to_http_handler . md
+568	[ websearch ] add search web command to websearch . commands . cs ( # 3559 ) * add search web command to websearch .
+569	update winfx / 2006 / xaml / presentation * update winfx / 2006 / xaml
+570	update wox . py
+571	[ ptrun ] [ wox ] [ plugin ] [ settings ] [ settings ] [ settings ] [ wox ] [ settings ]
+572	[ ptrun ] [ ptrun ] [ plugin ] update indexer . csproj
+573	update contextmenuloader . cs
+574	update powertoys . sln
+575	update usersettingstorage . cs
+576	update wox . test . csproj
+577	update datawebrequestfactory . cs
+578	[ ptrun ] [ cmdrun ] [ cmdrun ] [ cmdrun ] [ cmdrun ] [ cmdrun ] [ cmdrun ]
+579	[ fancyzones editor ] [ fz editor ] fix crash in fancyzones editor ( # 3559 ) * [ fz editor ] fix crash
+580	[ ptrun ] [ wox ] [ settings ] [ settings ] [ settings ] [ wox ] [ settings ]
+581	[ ptrun ] [ hotfix ] add support for hotfix ( # 3559 ) * [ ptrun ] [ hotfix ] add support
+582	update thememanager . cs
+583	[ fancyzones ] update fancyzones . cpp ( # 3559 ) * update fancyzones . cpp * update fancyzones . cpp
+584	update applicationhost . config
+585	update build . md
+586	update dllmain . cpp
+587	[ ptrun ] [ bootstrapper ] update resources . resx . lcl
+588	update powerrename . uilib
+589	[ ptrun ] [ wox ] [ plugin ] add plugin to main . net ( # 3809 ) * add plugin to main . net
+590	update stringmatcher . cs
+591	update browserbookmarks . cs
+592	update usersettingstorage . cs
+593	[ installer ] update powertoyssetup . wxs ( # 3559 ) * update powertoyssetup . wxs * update powerto
+594	update cmd . cs
+595	[ ptrun ] [ wox ] update programlogger . cs ( # 3809 ) * update programlogger . cs * update programlogger .
+596	[ ptrun ] [ wox ] add support for control panel ( # 3559 ) * add support for control panel
+597	[ ptrun ] [ powertoys ] update powertoys . exe
+598	update resultlistbox . xaml
+599	update wox . plugin . csproj
+600	convert - resx - to - rc1 . ps1 ( # 31356 ) * convert - resx - to - rc1 . ps
+601	[ ptrun ] [ build ] update build . json to 1 . 0 . 0 ( # 3559 ) * [ ptrun ] [ build
+602	[ ptrun ] [ powerlauncher ] update powertoysinterop . dll
+603	[ ptrun ] [ fz ] [ settings ] update fancyzonespage . xaml ( # 3809 ) * update fancyzonespage .
+604	[ winalfred ] [ cmd ] [ linefeed ] [ linefeed ] [ linefeed ] [ cmd ] [ linefeed ]
+605	[ ptrun ] [ plugin ] add support for wox plugin ( # 3809 ) * [ ptrun ] [ plugin ] add support for
+606	[ ptrun ] [ settings ] fix powertoys . settings . ui issue ( # 3559 ) * [ ptrun ] [ settings ]
+607	[ installer ] update powertoyssetup . wxs ( # 3559 ) * update powertoyssetup . wxs * update powerto
+608	[ ptrun ] [ settings ] add newtonsoft . json to newtonsoft . json to newtonsoft . json
+609	[ powerrename ] [ uilib ] update powerrename . uilib
+610	[ ptrun ] [ wox ] [ cmd ] update toolsversion to 1 . 0 . 0 . 1 ( # 3559 ) * update
+611	[ ptrun ] [ imagepathconverter ] [ imagepathconverter ] [ imagepathconverter ] [ imagepathconverter ] [ imagepathconverter ] [
+612	update powertoys - steps . yml
+613	update poweraccent . cs
+614	[ ptrun ] [ kbm ] update keyboardhook . cpp
+615	update espresso . core . apihelper . cs ( # 2809 ) * update espresso . core . apihelper . cs *
+616	update automatic - issue - deduplication . yml
+617	[ ptrun ] [ previewpane ] update previewpane . svgpreviewcontroltests . cs ( # 3809 ) * update previewpane .
+618	[ quickaccent ] update pointaccent . cs ( # 3809 ) * update pointaccent . cs * update pointaccent .
+619	merge pull request # 1 from microsoft / microsoft / pull request # 2 from microsoft / pull request # 3 from microsoft /
+620	update wox . plugin . json
+621	update plugin . json
+622	[ ptrun ] [ plugin ] update browserbookmarks . md ( # 3559 ) * update browserbookmarks . md * update browserbook
+623	update generalsettings . md
+624	update shortcut_guide . target_state . cpp
+625	update fancyzones . cpp
+626	[ ptrun ] [ launcher ] update launchercontrol . xaml
+627	update readme . md
+628	update docviewfrm . designer . cs
+629	[ settings ] update powertoys . settings . xaml . cs
+630	merge pull request # 3 from microsoft / dev / wox / wox . md
+631	cmdpal : update trayiconservice . cs
+632	update readme . md
+633	[ ptrun ] [ csharp ] add support for non - managed common ( # 3559 ) * [ ptrun ] [ csh
+634	[ installer ] update powertoyssetup . wxs ( # 3559 ) * update powertoyssetup . wxs * update powerto
+635	[ fancyzones ] update resources . resx . lcl
+636	[ installer ] update powertoyssetup . wx
+637	[ installer ] update powertoyssetup . wxs ( # 3559 ) * update powertoyssetup . wxs * update powerto
+638	[ ptrun ] [ bootstrapper ] update resources . resx . lcl
+639	update settings_window . cpp
+640	update windowsshellrun . cs
+641	update gitignore . md
+642	merge pull request # 3 from microsoft / uac / pull request # 3 from microsoft /
+643	update binary_zip . ps1 . ps1 . ps1
+644	[ fancyzones ] update dllmain . cpp
+645	[ ptrun ] [ wox ] [ sdk ] add support for windows ( # 3559 ) * [ ptrun ] [
+646	[ ptrun ] [ wox ] update mainviewmodel . cs ( # 2809 ) * update mainviewmodel . cs * update main
+647	[ ptrun ] [ settings ] fix powertoys . settings . ui issue ( # 3559 ) * [ ptrun ] [ settings ]
+648	merge pull request # 5 from microsoft / dev / wox / infrastructure / storage / binarystorage
+649	merge pull request # 1 from microsoft / microsoft / pull request # 2 from microsoft / pull request # 3 from microsoft /
+650	update build . md
+651	update wox . plugin . indexer . csproj
+652	[ installer ] update powertoyssetup . wxs ( # 3559 ) * update powertoyssetup . wxs * update powerto
+653	[ ptrun ] [ launcher ] [ ui ] update powerlauncher . ui . xaml
+654	update browserbookmarks . cs
+655	[ installer ] update powertoyssetup . wxs ( # 3559 ) * update powertoyssetup . wxs * update powerto
+656	[ ptrun ] [ wox ] [ plugin ] update programs . uwp
+657	update readme . md
+658	[ ptrun ] [ settings ] fix powertoys . settings . ui issue ( # 3559 ) * [ ptrun ] [ settings ]
+659	[ colorpicker ] [ action runner ] update colorpicker . colorpicker . dll ( # 3559 ) * update colorpicker . colorpicker
+660	update wox . csproj
+661	update action_runner . cpp
+662	update dllmain . cpp
+663	update resultpanel . xaml
+664	[ fancyzones ] update dllmain . cpp
+665	update windowsshellrun . cs
+666	[ ptrun ] [ calculator ] [ unittest ] [ run ] [ calculator ] [ calculator ] [ unittest ] [ calculator ] [ parser ]
+667	update powerrenameext . cpp
+668	[ workspaces editor ] [ xaml ] [ editor ] [ editor ] [ workspaces editor ] [ editor ] [ xaml ] [ editor ]
+669	update runner . cpp
+670	update readme . md
+671	update wox . csproj
+672	update shortcut_guide . target_state . cpp
+673	[ ptrun ] [ wox ] [ plugin ] update main . md
+674	update readme . md
+675	[ installer ] update powertoyssetup . wxs ( # 3559 ) * update powertoyssetup . wxs * update powerto
+676	[ fancyzones editor ] update resources . resx . lcl
+677	[ ptrun ] [ settings ] [ image resizer ] update image resizer view model ( # 23927 ) * update image resizer view
+678	[ ptrun ] [ wox ] [ plugin ] update main . md
+679	update readme . md
+680	[ fancyzones ] update dllmain . cpp
+681	[ ptrun ] [ settings ] add settings . resw to settings . resw ( # 3559 ) * [ ptrun ] [ settings
+682	[ installer ] update powertoyssetup . wx
+683	[ colorpicker ] update colorpickerui . csproj ( # 3559 ) * update colorpickerui . csproj * update colorpicker .
+684	[ powerrename ] update readme . md
+685	[ ptrun ] [ ptrun ] [ unitconverter ] update units . designer . cs
+686	[ ptrun ] update PYTHONHOME to 0 . 0 . 0 ( # 3559 ) * update PYTHONHOME to 0 . 0 .
+687	update powerrename . uwpui . cpp
+688	update spell - check . txt * update spell - check . txt * update spell
+689	update wox . csproj
+690	update settings_helpers . h
+691	update winalfred . xaml . presentation
+692	merge pull request # 3 from microsoft / rutkas / pull request # 3 from microsoft /
+693	[ ptrun ] [ ipublic ] [ plugin ] update ipublicapi . net
+694	update powertoys . md
+695	update plugin manager . md
+696	update settings . ui . runner . settings . ui . settings
+697	update usersettingstorage . cs
+698	[ ci ] [ build ] update powertoys - steps . yml ( # 3809 ) * update powertoys - steps . yml *
+699	update deps / spdlog . git
+700	update icon_helpers . h
+701	update app . xaml
+702	[ ptrun ] [ build ] [ project ] [ docs ] [ build ] [ project ] [ docs ] [ build ] [
+703	update wox . yml
+704	merge pull request # 1 from microsoft / dev / wox / update
+705	[ espresso ] update settingshelper . cs
+706	merge pull request # 3 from microsoft / microsoft / pull request # 3 from microsoft /
+707	update mainwindow . xaml
+708	[ ptrun ] [ Converters ] add support for highlight text converter ( # 23927 ) * [ ptrun ] [ Converters ] add
+709	merge pull request # 3 from microsoft / wox / themes / gray . xaml * merge pull request # 3
+710	merge pull request # 3 from microsoft / dev / wox / plugins / wox . plugin
+711	merge pull request # 3 from microsoft / dev / wox / core / update_wox_core . md
+712	[ ptrun ] [ wox ] add support for control panel ( # 3559 ) * add support for control panel
+713	[ installer ] update powertoyssetup . wxs ( # 3559 ) * update powertoyssetup . wxs * update powerto
+714	[ settings ] update lightswitchsettings . cs
+715	[ ptrun ] [ settings ] add settings . ui to powertoys . settings . ui ( # 2809 ) * add settings . ui
+716	update readme . md
+717	[ ptrun ] [ bootstrapper ] update resources . resx . lcl
+718	[ ptrun ] update contextmenuloader . cs
+719	update actionkeywords . md
+720	[ ptrun ] [ settings ] add settings . ui to powertoys . settings . ui ( # 2809 ) * add settings . ui
+721	update readme . md
+722	[ ptrun ] [ colorpicker ] [ colorhelper ] update colorpickerui . colorhelper . colorhelper . colorhelper
+723	update wox . plugin . everything . csproj
+724	[ installer ] update powertoyssetup . wxs ( # 3559 ) * update powertoyssetup . wxs * update powerto
+725	[ fancyzones ] update zonewindowdrawing . cpp ( # 3809 ) * update zonewindowdrawing . cpp * update zone
+726	[ ptrun ] [ colorpicker ] [ colorpicker ] [ colorpicker ] [ colorpicker ] [ colorpicker ] [ colorpicker ] [ color
+727	update previewpane . csproj
+728	merge pull request # 3 from microsoft / dev / wox / update / release . cs
+729	update browserbookmarks . cs
+730	[ fancyzones editor ] update resources . resx . lcl
+731	update wox . csproj . csproj . csproj
+732	[ ptrun ] [ settings ] update tests . cpp ( # 3559 ) * update tests . cpp * update tests . cpp
+733	update commonstorage . cs
+734	update settingwindow . xaml
+735	[ ptrun ] [ websearch ] add websearch plugin to websearch plugin list ( # 3559 ) * [ ptrun ] [ web
+736	[ quickaccent ] update poweraccent . yml
+737	convert - resx - to - rc1 . ps1 ( # 31356 ) * convert - resx - to - rc1 . ps
+738	update image_resizer . svg
+739	[ fancyzones ] update zonewindow . cpp ( # 3809 ) * update zonewindow . cpp * update zonewindow . cpp
+740	update windowsshellrun . cs
+741	update usersettings . md
+742	[ ptrun ] [ powerlauncher ] [ telemetry ] add telemetry to telemetry . tasks ( # 3559 ) * [ ptr
+743	[ wox ] [ plugin ] [ everything ] update everythingapi . dll
+744	update config . yml
+745	merge pull request # 3 from microsoft / dev / wox /
+746	update usersettingstorage . cs
+747	update readme . md
+748	update netstandard2 . 0 . 0 . 0
+749	[ cmdletbinding ] [ buildplatform ] [ buildplatform ] [ buildplatform ] [ buildplatform ] [ buildplatform ] [ buildplatform ] [
+750	[ ptrun ] [ settings ] add settings . resw to settings . resw ( # 3559 ) * [ ptrun ] [ settings
+751	update readme . md
+752	update powerrenameext . cpp
+753	update readme . md
+754	update wox . csproj . csproj . csproj
+755	update wox . plugin . everything . xaml * update wox . plugin . everything . xaml
+756	[ ptrun ] [ wox ] [ cmd ] add support for windows ( # 3559 ) * add support for windows
+757	[ build ] [ msix ] [ msix ] [ build ] [ msix ] [ msix ] [ build ] [ msix ] [
+758	update oobe . dialog . md
+759	[ ptrun ] [ powertoys run ] fix crash on windows ( # 3809 ) * [ ptrun ] [ powertoys run
+760	[ ptrun ] [ plugin ] add support for wox plugin ( # 3809 ) * [ ptrun ] [ plugin ] add support for
+761	update readme . md
+762	update deps / spdlog
+763	[ ptrun ] [ mousehighlighter ] update mousehighlighter . cpp ( # 3559 ) * update mousehighlighter . cpp
+764	[ installer ] update powertoyssetup . wxs ( # 3559 ) * update powertoyssetup . wxs * update powerto
+765	[ fz ] [ fz ] [ fz ] [ fz ] [ fz ] [ fz ] [ f
+766	[ ptrun ] [ wox ] [ plugin ] update main . md
+767	update codeofconduct . md
+768	update applicationhost . config
+769	update settingwindow . xaml
+770	[ ptrun ] [ settings ] add settings . ui to powertoys . settings . ui ( # 2809 ) * add settings . ui
+771	update readme . md
+772	update runtime . md
+773	update readme . md
+774	update readme . md
+775	[ cmdpal ] [ dllmain ] [ cmdpal ] [ cmdpal ] [ dllmain ] [ cmdpal ] [ cmdpal ]
+776	update wox . plugin . indexer . csproj
+777	[ installer ] update powertoyssetup . wxs ( # 3559 ) * update powertoyssetup . wxs * update powerto
+778	update xaml . cs
+779	update powertoys . sln
+780	[ awake ] update trayhelper . md
+781	[ ptrun ] [ esrpsigner ] update signing_core . json
+782	[ ptrun ] [ deploy ] update powertoys . net to 1 . 0 . 0 ( # 3559 ) * update powertoys
+783	merge pull request # 1 from microsoft / wox / plugins / wox . plugin
+784	[ ptrun ] [ editor ] update editor . cpp ( # 3559 ) * update editor . cpp * update editor . cpp
+785	[ fancyzones ] update fancyzones . cpp ( # 3559 ) * update fancyzones . cpp * update fancyzones . cpp
+786	[ installer ] update powertoyssetup . wxs ( # 3559 ) * update powertoyssetup . wxs * update powerto
+787	merge pull request # 3 from microsoft / dev / crutkas / pull request # 3 from microsoft / dev
+788	update config . yml
+789	[ winalfred ] [ kill ] add title to signal result ( # 3559 ) * [ winalfred ] [ kill ]
+790	[ fancyzones ] update resources . resx . lcl
+791	update cmdpal . ext . indexer . dataSourcemanager . cs
+792	merge pull request # 3 from microsoft / dev / modules / powerrename
+793	merge pull request # 3 from microsoft / wox / plugins / findfile / main . cs
+794	update build - powertoys - steps . yml
+795	[ ptrun ] [ settings ] add settings . ui to powertoys . settings . ui ( # 2809 ) * add settings . ui
+796	[ ptrun ] [ settings ] add hotkeysettingscontrol to settings . ui ( # 3809 ) * [ ptrun ] [ settings ]
+797	[ ptrun ] [ run ] [ powertoys ] [ powertoys ] [ run ] [ powertoys ] [ powertoys ]
+798	[ fancyzones ] update zonewindow . cpp ( # 3809 ) * update zonewindow . cpp * update zonewindow . cpp
+799	update settingwindow . xaml
+800	update wox . plugin . folder . main . cs
+801	update readme . md
+802	update powertoys . sln
+803	update readme . md
+804	[ settings ] [ colorpicker ] update colorpickerpage . xaml ( # 3809 ) * update colorpickerpage . xaml * update
+805	[ ptrun ] [ algoritm ] [ algoritm ] [ algoritm ] [ algoritm ] [ al
+806	[ ptrun ] [ wox ] [ plugin ] update programs . uwp
+807	[ fancyzones editor ] update grid editor window size ( # 3809 ) * update grid editor window
+808	update powerrename . md
+809	[ fancyzones ] update fancyzones . yml
+810	[ fanyi ] [ winalfred ] [ plugin ] add winalfred plugin to main . cs
+811	update resources . resx . lcl
+812	[ wox ] [ wox ] [ wox ] [ wox ] [ wox ] [ wox ] [ w
+813	update expect . txt
+814	update resultsviewmodel . cs
+815	update settings . ui . runner . settings . ui . runner . settings
+816	update readme . md
+817	update result . md
+818	[ ptrun ] [ win32 ] update win32plugin . md
+819	update ci . yml
+820	[ settings ] update powertoys . settings . ui . Lib
+821	[ ptrun ] [ updating ] update update . cpp ( # 3559 ) * [ ptrun ] [ updating ] update update . cp
+822	update browserbookmarks . cs
+823	[ ptrun ] [ plugin ] update programs . md
+824	update windowsshellrun . cs
+825	update shortcut_guide . target_state . cpp
+826	update wox . core . resource . i18n ( # 2809 ) * update wox . core . resource . i18n *
+827	[ ptrun ] [ wox ] [ plugin ] update main . md
+828	[ ptrun ] [ wox ] [ clips ] [ clips ] [ clips ] [ wox ] [ clips ]
+829	update mainwindow . xaml
+830	[ ptrun ] [ folderplugin ] update folderplugin . md
+831	[ ptrun ] [ bootstrapper ] update resources . resx . lcl
+832	[ wox ] update language . xaml to 1 . 0 . 0 ( # 3209 ) * update language . xaml to 1 .
+833	update mainwindow . xaml
+834	update gloablhotkey . cs
+835	[ ptrun ] [ powerlauncher ] fix crash in windows ( # 3559 ) * [ ptrun ] [ powerlauncher ] fix
+836	[ fancyzones editor ] update grid editor . xaml ( # 3809 ) * update grid editor . xaml * update grid editor . x
+837	update i18n . yml
+838	update action_runner . cpp
+839	[ imageresizer ] update resizesize . cs ( # 3809 ) * update resizesize . cs * update resizesize . cs *
+840	[ ptrun ] [ strings ] [ strings ] [ strings ] [ strings ] [ strings ] [ strings ]
+841	update wox . converters . convertorbase . cs
+842	[ ptrun ] [ wox ] [ plugin ] update handler . md ( # 3559 ) * update handler . md * update handler .
+843	update loc . yml
+844	update jsonrpcplugin . json
+845	[ fancyzones ] update fancyzones . yml
+846	update readme . md
+847	merge pull request # 3 from microsoft / wox / plugin / cmd / update_cmd . cs
+848	update readme . md
+849	[ powerrename ] update dllmain . cpp
+850	[ fancyzones ] update fancyzones . cpp ( # 3559 ) * update fancyzones . cpp * update fancyzones . cpp
+851	merge pull request # 1 from microsoft / dev / specs / videogifspec . md
+852	[ ptrun ] [ folderlink ] update folderlink . md
+853	[ ptrun ] [ upgrade ] [ upgrade ] [ upgrade ] [ upgrade ] [ upgrade ] [ upgrade ] [ upgrade ]
+854	[ settings ] update poweraccentpage . xaml ( # 3809 ) * update poweraccentpage . xaml * update poweracc
+855	[ ptrun ] [ powertoys run ] update resources . resx
+856	[ ptrun ] [ algoritm ] [ algoritm ] [ algoritm ] [ algoritm ] [ al
+857	update resources . resx . lcl
+858	update appveyor . yml
+859	update thirdpartypluginindicator . cs
+860	update hackernews . main . py
+861	[ ptrun ] [ mousewithoutborders ] fix mouse without borders issue ( # 3559 ) * [ ptrun ] [ mousewithout
+862	update powertoys . md
+863	[ ptrun ] [ browserbookmarks ] fix bug in wox plugin ( # 3809 ) * [ ptrun ] [ browserbookmarks
+864	[ ptrun ] [ powerlauncher ] [ telemetry ] fix crash issue ( # 23927 ) * [ ptrun ] [ powerlaunch
+865	[ ptrun ] [ settings ] add settings . resw to settings . resw ( # 3559 ) * [ ptrun ] [ settings
+866	[ fancyzones ] update zonewindow . cpp ( # 3809 ) * update zonewindow . cpp * update zonewindow . cpp
+867	update userselectedrecord . md
+868	update fancyzones . cpp
+869	update readme . md
+870	[ ptrun ] [ xaml ] [ system ] add support for object model and specialized support ( # 3559 ) * add support for
+871	update elevation . md
+872	update readme . md
+873	update settingwindow . xaml
+874	[ installer ] update powertoyssetup . wxs ( # 3559 ) * update powertoyssetup . wxs * update powerto
+875	[ fancyzones ] update zonewindowdrawing . h
+876	[ ptrun ] [ settings ] add settings . resw to settings . resw ( # 3559 ) * [ ptrun ] [ settings
+877	update usersettingstorage . cs
+878	update settings . ui . xaml
+879	update powertoys . sln
+880	[ ptrun ] [ sysplugins ] update sysplugin . sysplugin . sysplugin . sysplugin
+881	[ wox ] [ plugin ] add program source plugin to windows plugin ( # 3559 ) * [ wox ] [ plugin ] add program
+882	update monitors . cpp
+883	[ ptrun ] [ wox ] [ plugin ] update programs . uwp
+884	update espresso . core . apihelper . cs ( # 2809 ) * update espresso . core . apihelper . cs *
+885	merge pull request # 1 from microsoft / pluginmanager / update_plugin_manager . md
+886	merge pull request # 3 from microsoft / github / qianlifeng / pull request # 3 from microsoft / github
+887	update settingwindow . xaml
+888	[ ptrun ] [ sdk ] add support for windows desktops ( # 3559 ) * [ ptrun ] [ sdk ] add support for
+889	update mainwindow . xaml
+890	update config . yml
+891	[ browserbookmark ] [ settings ] add support for open in new browser window ( # 3559 ) * add support for open in new browser
+892	[ ptrun ] [ xaml ] add language to available languages . cs ( # 3559 ) * add language to available languages . cs *
+893	[ ptrun ] [ plugin ] update clipboard . plugin . json ( # 3809 ) * update clipboard . plugin . json * update clipboard .
+894	merge pull request # 3 from microsoft / dev / wox / infrastructure . csproj update infrastructure . csproj
+895	[ ptrun ] [ indexer ] update indexersettings . cs
+896	merge pull request # 3 from microsoft / dev / wox / plugins / update_main_plugin . md
+897	[ ptrun ] [ xaml ] [ launcher ] update app . xaml . xaml . xaml . xaml . xaml
+898	[ ptrun ] [ win32 ] update win32plugin . md
+899	update settings . ui . resw
+900	[ ptrun ] [ wox ] [ plugin ] update main . md
+901	[ installer ] update powertoyssetup . wxs ( # 3559 ) * update powertoyssetup . wxs * update powerto
+902	update plugin manager . md
+903	[ ptrun ] [ launcher ] update launchercontrol . xaml
+904	[ stdafx ] [ powerrenameext ] [ powerrenameext ] [ powerrenameext ] [ powerrenameext ]
+905	[ ptrun ] [ aerodark ] update aerodark . xaml
+906	[ ptrun ] [ wox ] [ plugin ] update wox . plugin . folder
+907	[ ptrun ] [ winalfred ] [ cmd ] add support for windows alfred plugin ( # 3559 ) * [ ptr
+908	[ fancyzones ] update settings . md
+909	update readme . md
+910	update resultviewmodel . md
+911	[ ptrun ] [ win32 ] update win32plugin . md
+912	[ ptrun ] [ contextmenuloader ] update contextmenuloader
+913	update readme . md
+914	update build . md
+915	[ imageresizer ] fix resize size issue ( # 3809 ) * [ imageresizer ] fix resize size issue * [ im
+916	[ imageresizer ] [ docs ] update resources . designer . cs ( # 3559 ) * update resources . designer . cs
+917	[ fancyzones editor ] [ fancyzones editor ] fix crash in editor ( # 3559 ) * [ fancyzones editor ] fix crash in editor
+918	update powertoys . md
+919	update pipeline . user . windows . yml
+920	[ ptrun ] [ plugin ] add support for wox plugin ( # 3809 ) * [ ptrun ] [ plugin ] add support for
+921	[ ptrun ] [ wox ] update settings . md
+922	[ ptrun ] [ cmdrun ] update package . json ( # 3559 ) * update package . json * update package . json * update
+923	merge pull request # 3 from microsoft / dev / co - authored - by : josh soref <
+924	[ colorpicker ] update colorpicker . cpp
+925	update readme . md
+926	[ ptrun ] [ wox ] [ plugin ] add program source to plugin list ( # 3809 ) * add program source to plugin list
+927	[ ptrun ] [ settings ] update generalsettings . cs ( # 3809 ) * update generalsettings . cs * update generalsettings . cs
+928	update settingscontrol . xaml
+929	[ ptrun ] [ image resizer ] fix image resizer bug ( # 2809 ) * [ ptrun ] [ image resizer ]
+930	[ ptrun ] [ wox ] update mainviewmodel . cs ( # 2809 ) * update mainviewmodel . cs * update main
+931	[ espresso ] [ settings ] add settings to espresso . shell . models . settings ( # 3559 ) * add settings to
+932	[ websearch ] update searchsource . yml
+933	[ ptrun ] [ editor ] update editor . cpp ( # 3559 ) * update editor . cpp * update editor . cpp
+934	[ ptrun ] [ clean ] [ wox ] [ pluginindicator ] [ wox ] [ pluginindicator ] [ wox ] [ pluginindicator
+935	[ fancyzones ] update zonewindow . cpp ( # 3809 ) * update zonewindow . cpp * update zonewindow . cpp
+936	update readme . md
+937	update config . yml
+938	update query . md
+939	update jsonstorage . json
+940	update plugin manager . md
+941	update settings_v2 . app . xmlns
+942	[ settings ] update measuretoolviewmodel . cs ( # 3809 ) * update measuretoolviewmodel . cs * update measuretoolviewmodel
+943	update settings . ui . settings . ui . settings
+944	[ ptrun ] [ xaml ] [ launcher ] update app . xaml . xaml . xaml . xaml . xaml
+945	merge pull request # 3 from microsoft / wox / plugins / kill / main . py
+946	update spell - check . txt
+947	update CMDhistory . cs
+948	[ ptrun ] [ win32 ] update win32plugin . md
+949	[ ptrun ] [ imageresizer ] fix image path conversion issue ( # 3559 ) * [ ptrun ] [ imageres
+950	[ ptrun ] [ run ] [ valuegenerator ] [ unittests ] [ unittests ] [ valuegenerator ] [ run ] [ unittests ]
+951	update hotkeycontrol . xaml
+952	update customactionsettingscontrol . md
+953	[ ptrun ] [ wox ] [ plugin ] update main . md
+954	[ ptrun ] [ base system plugin ] add support for linq and text plugins ( # 3559 ) * [ ptrun ] [ base
+955	update readme . md
+956	[ ptrun ] [ launcher ] update launchercontrol . xaml
+957	[ ptrun ] [ settings ] add settings . resw to settings . resw ( # 3559 ) * [ ptrun ] [ settings
+958	[ ptrun ] [ hotfix ] add support for hotfix ( # 3559 ) * [ ptrun ] [ hotfix ] add support
+959	[ installer ] update powertoyssetup . wxs ( # 3559 ) * update powertoyssetup . wxs * update powerto
+960	[ ptrun ] [ hotfix ] add support for hotfix ( # 3559 ) * [ ptrun ] [ hotfix ] add support
+961	update usersettingstorage . cs
+962	update readme . md
+963	update settingscontrol . xaml
+964	[ kbm ] [ editkeyboardwindow ] [ ui ] [ editkeyboardwindow ] [ ui ] [ editkeyboardwindow ] [ editkeyboardwindow ]
+965	merge pull request # 1 from microsoft / microsoft / pull request # 2 from microsoft / pull request # 3 from microsoft /
+966	update windowsshellrun . cs
+967	update gitignore
+968	[ ptrun ] [ ptrun ] [ plugin ] update index . md
+969	update settings . ui . resw
+970	[ ptrun ] [ powerlauncher ] fix crash in windows ( # 3559 ) * [ ptrun ] [ powerlauncher ] fix
+971	[ browserbookmark ] [ settings ] add support for open in new browser window ( # 3559 ) * add support for open in new browser
+972	[ ptrun ] [ wox ] update programlogger . cs ( # 3559 ) * update programlogger . cs * update programlogger .
+973	[ ptrun ] [ bootstrapper ] update resources . resx . lcl
+974	update settingwindow . xaml
+975	update directory . build . props to 0 . 0 . 0 ( # 3559 ) * update directory . build . props to 0 . 0 .
+976	update readme . md
+977	update settings_objects . cpp
+978	[ shell ] [ espresso ] [ shell ] [ shell ] [ espresso ] [ shell ] [ espresso ] [ shell ]
+979	[ settings ] update powertoys . settings . cs ( # 3809 ) * update powertoys . settings . cs * update powerto
+980	[ ptrun ] [ add program source ] fix bug in add program source plugin ( # 3809 ) * [ ptrun ] [ add program
+981	[ ptrun ] [ wox ] [ plugin ] update index . md
+982	update assemblyhelper . cs
+983	[ arm64 ] [ winalfred ] update base system plugin
+984	[ shortcutguide ] update shortcut_guide . md
+985	[ ptrun ] [ wox ] [ plugin ] update programs . uwp
+986	[ ptrun ] [ douban ] [ plugin ] [ ini ] [ plugin ] [ ini ] [ douban ] [ plugin
+987	update powerlauncher . csproj
+988	update powertoyssetupcustomactions . vcxproj
+989	update build . md
+990	update espresso . core . apihelper . cs ( # 2809 ) * update espresso . core . apihelper . cs *
+991	[ ptrun ] [ spellcheck ] update expect . txt * update expect . txt * update expect . txt
+992	[ fancyzones editor ] update editor overlay . xaml ( # 3809 ) * update editor overlay . xaml * update editor overlay . x
+993	[ ptrun ] [ uwp ] [ plugin ] update uwp . md
+994	update mainwindow . xaml . cs * update mainwindow . xaml . cs * update mainwindow . xaml
+995	[ ptrun ] [ aerodark ] update aerodark . xaml
+996	update commonstorage . cs
+997	[ ptrun ] [ bootstrapper ] update resources . resx . lcl
+998	[ ptrun ] [ settings ] fix powertoys . settings . ui issue ( # 3559 ) * [ ptrun ] [ settings ]
+999	[ ptrun ] [ wox ] [ plugin ] update main . md
+1000	[ ptrun ] [ imageloader ] fix crash when loading images ( # 23927 ) * [ ptrun ] [ imageloader ] fix crash
+1001	[ ptrun ] [ settings ] add settings . ui to powertoys . settings . ui ( # 2809 ) * add settings . ui
+1002	update . gitignore
+1003	[ ptrun ] [ paste ] [ xaml ] [ paste ] [ xaml ] [ xaml ] [ paste ] [ xaml ] [
+1004	update wox . csproj
+1005	[ fancyzones ] update fancyzones . yml
+1006	update settings . ui . xamlindexbuilder . cs
+1007	[ fancyzones ] update fancyzonesdata . md
+1008	[ ptrun ] [ plugin ] add a new plugin to the list of plugins ( # 3809 ) * [ ptrun ] [ plugin ]
+1009	[ browserbookmark ] [ settings ] add support for open in new browser window ( # 3559 ) * add support for open in new browser
+1010	update powertoyssetup . wixproj
+1011	[ ptrun ] [ imageresizer ] fix image path conversion issue ( # 3559 ) * [ ptrun ] [ imageres
+1012	update resultpanel . xaml
+1013	[ ptrun ] [ fz ] [ settings ] update fzconfigproperties . cs
+1014	merge pull request # 1 from microsoft / microsoft / pull request # 2 from microsoft / pull request # 3 from microsoft /
+1015	merge pull request # 3 from microsoft / dev / wox / infrastructure . csproj update infrastructure . csproj
+1016	[ ptrun ] [ wox ] [ calculator ] fix crash ( # 3809 ) * [ ptrun ] [ calculator ] fix crash
+1017	update nappupdate . feedbuilder . config
+1018	update build . md
+1019	update github . com / qianlifeng / gitignore
+1020	[ ptrun ] [ settings ] [ shortcut ] add shortcut to shortcut to shortcut ( # 3559 ) * [ ptrun ] [ settings ]
+1021	[ ptrun ] [ run ] fix powertoys . run . plugin . calculator . csproj
+1022	[ ptrun ] [ powertoys ] update powertoys . yml
+1023	[ ptrun ] [ plugin ] update directoryindicator . md
+1024	update poweraccent . ui . Selector . xaml
+1025	[ peek ] [ xaml ] update peek . ui . xaml . xaml . xaml
+1026	[ ptrun ] [ system ] add system . util . generic to system . util . generic
+1027	[ ptrun ] [ wox ] update programlogger . cs ( # 3559 ) * update programlogger . cs * update programlogger .
+1028	update assemblyinfo . cs
+1029	[ ptrun ] [ imageloader ] fix crash when loading images ( # 23927 ) * [ ptrun ] [ imageloader ] fix crash
+1030	[ kbm ] [ resx ] update keyboardmanager . resx
+1031	update elevation . md
+1032	[ ptrun ] [ wox ] [ plugin ] update main . md
+1033	[ ptrun ] [ settings ] fix powertoys . settings . ui issue ( # 3559 ) * [ ptrun ] [ settings ]
+1034	[ ptrun ] [ bootstrapper ] update resources . resx . lcl
+1035	[ ptrun ] [ program ] [ logger ] update programlogger . cs ( # 3809 ) * update programlogger . cs * update program
+1036	[ ptrun ] [ wox ] upgrade to 1 . 0 . 0 . 1 ( # 3559 ) * [ ptrun ] [ w
+1037	update settings . xaml . xaml
+1038	merge pull request # 1 from microsoft / dev / wox / update
+1039	update readme . md
+1040	[ powertoys bootstrapper ] add loc items to bootstrapper . json ( # 3809 ) * add loc items to bootstrapper . json
+1041	update result . md
+1042	update fancyzones . cpp
+1043	[ ptrun ] [ imageloader ] fix crash when loading images ( # 23927 ) * [ ptrun ] [ imageloader ] fix crash
+1044	update runner . cpp
+1045	[ fz ] [ fz ] [ fz ] [ fz ] [ fz ] [ fz ] [ fz ] [ f
+1046	[ hotkey ] update hotkeymodel . md
+1047	update winalfred . settings
+1048	[ fancyzones ] update zonewindowdrawing . cpp ( # 3809 ) * update zonewindowdrawing . cpp * update zone
+1049	update wox . core . csproj
+1050	[ ptrun ] [ settings ] update settings . ui ( # 3809 ) * update settings . ui * update settings . ui * update settings
+1051	[ ptrun ] [ plugin ] update browserbookmarks . md ( # 3559 ) * update browserbookmarks . md * update browserbook
+1052	update contextmenustorage . cs
+1053	update registry . h
+1054	[ espresso ] [ trayhelper ] add tray helper for tray helper ( # 3559 ) * [ espresso ]
+1055	update build . md
+1056	[ ptrun ] [ wox ] [ window manager ] add window manager to window manager list ( # 3809 ) * [ ptrun ]
+1057	[ ptrun ] [ settings ] [ settings ] [ settings ] [ settings ] [ settings ] [ settings ] [ settings ]
+1058	update readme . md
+1059	merge pull request # 3 from microsoft / dev / wox / plugins / en . xaml * merge pull request # 3
+1060	[ shell ] [ espresso ] [ shell ] [ shell ] [ espresso ] [ shell ] [ espresso ] [ shell ]
+1061	update readme . md
+1062	[ ptrun ] [ add program source ] fix bug in add program source plugin ( # 3809 ) * [ ptrun ] [ add program
+1063	[ ptrun ] [ nlog ] [ deps ] update nlog . dll / s * update nlog . dll
+1064	[ fancyzones editor ] update resources . resx . lcl
+1065	merge pull request # 3 from microsoft / dev / plugins / wox . plugin
+1066	update app . xmanifest . xml
+1067	[ ptrun ] [ build ] update build . configuration . md
+1068	update github . com / qianlifeng / gitignore
+1069	update settingwindow . xaml
+1070	update resultlist . xaml
+1071	update devdocs / run - as - admin - detection . md
+1072	update wox . plugin . everything . csproj
+1073	update runner . cpp
+1074	merge pull request # 1 from microsoft / dev / wox / infra . md
+1075	update security . md
+1076	update settings . ui . helpers
+1077	cmdpal : update settingsmodel . cs
+1078	update readme . md
+1079	update powertoys - steps . yml
+1080	[ fancyzones ] update fancyzonesdata . md
+1081	update deps / cxxopts . props
+1082	update elevation . md
+1083	update settings_objects . cpp
+1084	update plugin manager . md
+1085	[ ptrun ] [ browserbookmarks ] update browserbookmarks . csproj ( # 3809 ) * update browserbookmarks . csproj
+1086	[ wox ] [ custompluginhotkeysetting ] add custompluginhotkeysetting to plugin installer ( # 3809 ) * [ wox
+1087	[ fancyzones ] update fancyzones . cpp
+1088	[ fancyzones editor ] [ fz editor ] fix layout layout issue ( # 2809 ) * [ fz editor ] fix layout layout issue
+1089	update settings . xaml . cs
+1090	[ ptrun ] [ settings ] update programsettings . xaml
+1091	[ ptrun ] [ websearch ] [ settings ] [ settings ] [ settings ] [ settings ] [ settings ] [
+1092	update wox . Test . csproj
+1093	update jsonrpc . wox . py
+1094	update dpi_aware . md
+1095	update resultpanel . xaml
+1096	update wox . csproj
+1097	update readme . md
+1098	[ ptrun ] [ win32 ] update win32plugin . md
+1099	[ ptrun ] [ settings ] [ settings ] [ settings ] [ settings ] [ settings ] [ settings ]
+1100	[ ptrun ] [ wox ] [ plugin ] add support for system . tools . Generic and system . tools . Linq
+1101	update mainwindow . xaml
+1102	update mainviewmodel . md
+1103	update action_runner . cpp
+1104	[ ptrun ] [ win32 ] update win32plugin . md
+1105	[ ptrun ] [ colorpicker ] [ coloreditor ] [ colorpicker ] [ colorpicker ] [ coloreditor ] [ colorpicker ] [ color
+1106	update espresso . csproj
+1107	update wox . plugin . csproj
+1108	update readme . md
+1109	[ installer ] update powertoyssetup . wxs ( # 3559 ) * update powertoyssetup . wxs * update powerto
+1110	[ pt run ] [ highlighttextconverter ] [ textconverter ] [ textconverter ] [ highlighttextconverter ] [ textconverter ] [ textconverter ]
+1111	update spell - check . txt
+1112	update tray_icon . cpp
+1113	update readme . md
+1114	[ ptrun ] [ launcher ] update app . xaml
+1115	[ ptrun ] [ wox ] [ plugin ] update programs . uwp
+1116	[ ptrun ] [ settings ] add settings . resw to settings . resw ( # 3559 ) * [ ptrun ] [ settings
+1117	update readme . md
+1118	[ oobeespresso ] add oobeespresso to settings . ui . oobe . views . oobe (
+1119	update action_runner . vcxproj
+1120	[ ptrun ] [ shortcuthelper ] update shortcuthelper . md
+1121	[ ptrun ] [ settings ] update programsettings . md ( # 3559 ) * update programsettings . md * update programsettings . md
+1122	update readme . md
+1123	[ fancyzones ] update zonewindowdrawing . h
+1124	[ ptrun ] [ plugin ] update browserbookmarks . md ( # 3559 ) * update browserbookmarks . md * update browserbook
+1125	[ fancyzones ] update fancyzones . yml
+1126	update assemblyinfo . cs
+1127	[ installer ] update powertoyssetup . wx
+1128	merge pull request # 1 from microsoft / github / qianlifeng / pull request # 2 from microsoft /
+1129	[ shell ] [ espresso ] [ shell ] [ shell ] [ espresso ] [ shell ] [ espresso ] [ shell ]
+1130	update readme . md
+1131	update powertoys . md
+1132	[ ptrun ] [ algoritm ] [ algoritm ] [ algoritm ] [ algoritm ] [ al
+1133	update commonstorage . cs
+1134	update readme . md
+1135	[ ptrun ] [ wox ] [ plugin ] update wox . plugin . folder
+1136	[ ptrun ] [ bootstrapper ] update resources . resx . lcl
+1137	merge pull request # 3 from microsoft / github / qianlifeng / pull request # 3 from microsoft / github
+1138	update stringmatcher . cs
+1139	[ installer ] update bootstrapper . yml
+1140	[ ptrun ] [ plugin ] update main . md
+1141	[ ptrun ] [ wox ] [ plugin ] update main . md
+1142	update logger_settings . md
+1143	update wox . plugin . doc / main . cs
+1144	[ imageresizer ] update resources . resx ( # 3559 ) * update resources . resx * update resources . resx *
+1145	update videogifspec . md
+1146	update readme . md
+1147	[ ptrun ] [ wox ] [ plugin ] add support for wox plugin ( # 3809 ) * add support for wox plugin
+1148	[ colorpicker ] [ ui ] update colorpicker . ui ( # 23927 ) * update colorpicker . ui * update colorpicker . ui
+1149	update hotkey_conflict_detector . h * update hotkey_conflict_detector . h * update hotkey_conflict_detector
+1150	[ ptrun ] [ launcher ] update powerlauncher . yml
+1151	update process_path . md
+1152	update theme_helpers . cpp
+1153	update thirdpartypluginindicator . cs
+1154	merge pull request # 3 from microsoft / github / qianlifeng / pull request # 3 from microsoft / github
+1155	merge pull request # 1 from microsoft / microsoft / pull request # 2 from microsoft / pull request # 3 from microsoft /
+1156	[ ptrun ] [ settings ] update textblock . xaml ( # 3809 ) * update textblock . xaml * update textblock
+1157	[ ptrun ] [ settings ] add settings . ui to powertoys . settings . ui ( # 2809 ) * add settings . ui
+1158	[ ptrun ] [ windowintophelper ] update windowintophelper . cs
+1159	[ ptrun ] [ websearch ] update search . websearch . cs
+1160	[ ptrun ] [ settings ] add settings . resw to settings . resw ( # 3559 ) * [ ptrun ] [ settings
+1161	[ ptrun ] [ pluginindicator ] [ pluginindicator ] [ pluginindicator ] [ plugin ] [ pluginindicator ] [ plugin ] [ pluginindicator ]
+1162	update thirdpartypluginindicator . cs
+1163	[ ptrun ] [ launcher ] update launchercontrol . xaml
+1164	update settings . ui . lib / boolproperty . cs
+1165	[ ptrun ] [ ptrun ] [ plugin ] update indexerDriveDetection . cs
+1166	[ ptrun ] [ ptrun ] [ wox ] update index . md ( # 3559 ) * update index . md * update index
+1167	merge pull request # 3 from microsoft / dev / wox / plugins / wox . plugin
+1168	[ ptrun ] [ upgrade ] [ upgrade ] [ upgrade ] [ upgrade ] [ upgrade ] [ upgrade ] [ upgrade
+1169	[ ptrun ] [ fz ] [ settings ] update fzconfigproperties . cs
+1170	[ ptrun ] [ run ] [ plugin ] [ plugin ] [ run ] [ plugin ] [ plugin ] [ run ] [ plugin ] [ plugin
+1171	update readme . md
+1172	update utils . md
+1173	update readme . md
+1174	update wox . csproj
+1175	update assemblyhelper . cs
+1176	[ ptrun ] [ settings ] add settings . resw to settings . resw ( # 3559 ) * [ ptrun ] [ settings
+1177	update powertoys . md
+1178	update powertoys . sln
+1179	[ ptrun ] [ settings ] [ settings ] [ settings ] [ settings ] [ settings ] [ settings ] [ settings
+1180	[ ptrun ] [ wox ] [ plugin ] update programs . uwp
+1181	update wox . csproj
+1182	merge pull request # 3 from microsoft / dev / wox / plugins / wox . plugin
+1183	[ ptrun ] [ previewpane ] add support for custom buttons ( # 23927 ) * [ ptrun ] [ previewpane ] add support
+1184	[ ptrun ] [ wox ] [ plugin ] fix crash in the shell ( # 3809 ) * [ ptrun ] [
+1185	[ ptrun ] [ settings ] add settings . ui to settings . ui ( # 2809 ) * [ ptrun ] [ settings ] add
+1186	update settings . ui
+1187	update uitestautomation . uitestbase . cs
+1188	[ launcher ] [ gitattributes ] update gitattributes . md
+1189	update readme . md
+1190	update awake . csproj
+1191	update settingscontrol . xaml
+1192	[ ptrun ] [ wox ] [ plugin ] [ settings ] [ settings ] [ settings ] [ plugin ] [ settings ] [ settings ] [
+1193	update readme . md
+1194	update ISSUE_TEMPLATE . md
+1195	[ ptrun ] [ docs ] [ docs ] [ docs ] [ docs ] [ docs ] [ docs ] [ docs
+1196	update tray_icon . cpp
+1197	update readme . md
+1198	[ ptrun ] [ powerlauncher ] fix crash in windows ( # 3559 ) * [ ptrun ] [ powerlauncher ] fix
+1199	[ mwb ] [ measuretoolui ] [ measuretoolui ] [ measuretoolui ] [ measuretoolui ] [ measuretoolui ] [
+1200	[ colorpicker ] [ unittest ] [ colorconvertertest ] [ colorpicker ] [ unittest ] [ colorconvertertest ] [ colorpicker ]
+1201	update dllmain . cpp
+1202	[ ptrun ] [ wox ] update program source . cs
+1203	update wox . pluginmanagement . csproj
+1204	[ ptrun ] [ telemetry ] update eventbase . md
+1205	[ ptrun ] [ ipublic ] [ plugin ] update ipublicapi . net
+1206	update readme . md
+1207	merge pull request # 3 from microsoft / dev / wox / plugin / indexer / class1 . cs
+1208	[ ptrun ] [ program ] update packagecatalogwrapper . json ( # 3559 ) * update packagecatalogwrapper . json * update packagecatalog
+1209	[ previewpane ] [ monaco preview handler control ] update previewpane
+1210	update powertoys . md
+1211	[ fancyzones editor ] [ fz editor ] fix crash in fancyzones editor ( # 3559 ) * [ fz editor ] fix crash
+1212	[ wox ] [ update ] add new version window to main window . xaml . cs
+1213	update readme . md
+1214	update jsonstorage . json
+1215	update browserbookmarks . cs
+1216	update mainwindow . xaml
+1217	update usersettingstorage . md
+1218	[ wox ] [ plugin ] [ pluginindicator ] [ plugin ] [ pluginindicator ] [ plugin ] [ pluginindicator ]
+1219	[ fancyzones editor ] [ fancyzones editor ] fix crash in editor ( # 3809 ) * [ fancyzones editor ] fix crash in editor
+1220	update readme . md
+1221	update app . xaml
+1222	update _markerlib . markers . default_environment
+1223	update windowopener . cs
+1224	[ ptrun ] [ wox ] [ clips ] [ wox ] [ clips ] [ wox ] [ clips ] [ w
+1225	[ fancyzones editor ] [ fz editor ] fix crash in editor window ( # 3809 ) * [ fz editor ] fix crash in
+1226	update readme . md
+1227	[ installer ] update bootstrapper . yml
+1228	update resultlist . xaml
+1229	[ settings ] [ colorpicker ] [ colorpicker ] [ colorpicker ] [ colorpicker ] [ colorpicker ] [ colorpicker ] [ colorpicker
+1230	update websearchplugin . cs
+1231	update resultpanel . xaml
+1232	[ ptrun ] [ wox ] [ plugin ] update mainpanel . md ( # 3559 ) * update mainpanel . md * update
+1233	update netcoreapp3 . 1
+1234	[ ptrun ] [ browserbookmarks ] fix bug in wox plugin ( # 3809 ) * [ ptrun ] [ browserbookmarks
+1235	update mainwindow . xaml
+1236	update readme . md
+1237	update runner . cpp
+1238	update readme . md
+1239	[ ptrun ] [ mousewithoutborders ] fix mouse without borders issue ( # 3559 ) * [ ptrun ] [ mousewithout
+1240	update settingwindow . xaml
+1241	[ fancyzones ] update fancyzones . cpp ( # 3559 ) * update fancyzones . cpp * update fancyzones . cpp
+1242	[ kbm ] [ kbm ] [ kbm ] [ kbm ] [ kbm ] [ kbm ] [ kbm ] [ kb
+1243	merge pull request # 3 from microsoft / wox / plugin / main . cs
+1244	update msstore - submissions . yml * update msstore - submissions . yml * update msstore - submissions . yml
+1245	[ ptrun ] [ settings ] update powerrenamepage . xaml ( # 3809 ) * update powerrenamepage . xaml * update
+1246	[ ptrun ] [ settings ] add settings . ui to powertoys . settings . ui ( # 2809 ) * add settings . ui
+1247	[ quickaccent ] update poweraccent . yml
+1248	update stringmatcher . cs
+1249	update build . md
+1250	[ wox ] [ cmd ] add query history plugin to query history plugin ( # 3559 ) * [ wox ] [ cmd ] add
+1251	[ fancyzones ] update dllmain . cpp
+1252	[ ptrun ] [ plugin ] update main . md
+1253	update mainwindow . xaml
+1254	merge pull request # 3 from microsoft / en - us /
+1255	[ colorpicker ] update colorpickerui . csproj ( # 3559 ) * update colorpickerui . csproj * update colorpicker .
+1256	merge pull request # 3 from microsoft / github / qianlifeng / pull request # 3 from microsoft / github
+1257	[ powerrename ] update dllmain . cpp
+1258	update powertoys . md
+1259	update expect . txt
+1260	[ ptrun ] [ plugin ] update programs . md ( # 3559 ) * update programs . md * update program
+1261	update readme . md
+1262	[ ptrun ] [ plugin ] add support for wox plugin ( # 3809 ) * [ ptrun ] [ plugin ] add support for
+1263	update settings . ui . resw
+1264	update commonstorage . cs
+1265	update github . com / qianlifeng / gitignore
+1266	[ ptrun ] [ algoritm ] [ algoritm ] [ algoritm ] [ algoritm ] [ al
+1267	[ colorpicker ] [ settings ] update colorpicker . ui . settings ( # 3559 ) * update colorpicker . ui . settings * update
+1268	[ ptrun ] [ updater ] update manager . md
+1269	[ ptrun ] [ plugin ] update main . md
+1270	update readme . md
+1271	update readme . md
+1272	update commonstorage . cs * update commonstorage . cs * update commonstorage . cs
+1273	update readme . md
+1274	update mainwindow . xaml
+1275	[ ptrun ] [ editor ] update editor . cpp ( # 3559 ) * update editor . cpp * update editor . cpp
+1276	[ ptrun ] [ add program source plugin ] add program source plugin
+1277	[ browserbookmark ] [ settings ] add support for open in new browser window ( # 3559 ) * add support for open in new browser
+1278	update wox . csproj
+1279	update generalsettings . tsx
+1280	update restart_elevated . h
+1281	[ fancyzones editor ] [ fz editor ] fix crash in editor window ( # 3809 ) * [ fz editor ] fix crash in
+1282	update imageresizer . xaml
+1283	[ ptrun ] [ wox ] [ plugin ] [ plugin ] [ wox ] [ plugin ] [ wox ] [ plugin ] [ plugin
+1284	merge pull request # 3 from microsoft / wox / plugin / calculator / main . cs
+1285	[ colorpicker ] update appstatehandler . cs ( # 3559 ) * update appstatehandler . cs * update appstatehandler . cs
+1286	[ colorpicker ] [ coloreditor ] [ colorpicker ] [ colorpicker ] [ coloreditor ] [ colorpicker ] [ coloreditor ] [ color
+1287	[ ptrun ] [ settings ] update generalpage . xaml ( # 3809 ) * update generalpage . xaml * update generalpage
+1288	[ ptrun ] [ settings ] add custom plugin hotkey to user settings ( # 3559 ) * [ ptrun ] [ settings ] add
+1289	update interop - tests . cs
+1290	update deduplication . yml
+1291	[ settings ] [ colorpicker ] update colorpickerpage . xaml ( # 3809 ) * update colorpickerpage . xaml * update
+1292	[ ptrun ] [ editor ] update editor . cpp ( # 3559 ) * update editor . cpp * update editor . cpp
+1293	[ ptrun ] [ docs ] update resources . designer . cs
+1294	update powerrename . resx
+1295	[ fancyzones editor ] [ fz editor ] fix crash in editor window ( # 3809 ) * [ fz editor ] fix crash in
+1296	[ fancyzones ] update fancyzones . cpp ( # 3559 ) * update fancyzones . cpp * update fancyzones . cpp
+1297	[ ptrun ] [ bootstrapper ] update resources . resx . lcl
+1298	[ installer ] update bootstrapper . yml
+1299	[ installer ] update bootstrapper . yml
+1300	[ ptrun ] [ microsoft ] update resourcedictionary . xaml
+1301	[ ptrun ] [ browserbookmarks ] update browserbookmarks . cs ( # 3809 ) * update browserbookmarks . cs * update
+1302	update readme . md
+1303	update usersettingstorage . md
+1304	update settings_window . cpp
+1305	[ fancyzones editor ] update resources . resx . lcl
+1306	update usersettingstorage . md
+1307	update dpi_aware . md
+1308	merge pull request # 1 from microsoft / microsoft / pull request # 2 from microsoft / pull request # 3 from microsoft /
+1309	update readme . md
+1310	update settings_objects . cpp
+1311	update awake . csproj
+1312	[ ptrun ] [ win32 ] update win32plugin . md
+1313	merge pull request # 3 from microsoft / dev / winalfred / test . vcxproj merge pull request # 3 from microsoft /
+1314	[ ptrun ] [ wox ] [ calculator ] fix crash ( # 3809 ) * [ ptrun ] [ calculator ] fix crash
+1315	[ espresso ] update espresso . rc
+1316	update resultitem . xaml
+1317	update build - powertoys - steps . yml
+1318	[ ptrun ] [ asdl ] update asdl_c . py * update asdl_c . py
+1319	[ fancyzones editor ] [ fz editor ] fix layout layout issue ( # 2809 ) * [ fz editor ] fix layout layout issue
+1320	[ ptrun ] [ settings ] update shellpage . xaml ( # 3809 ) * update shellpage . xaml
+1321	[ fancyzones ] update zonewindowdrawing . cpp ( # 3809 ) * update zonewindowdrawing . cpp * update zone
+1322	update general_settings . md
+1323	[ installer ] update powertoyssetup . wx
+1324	update thirdpartyrunplugins . md
+1325	merge pull request # 1 from microsoft / updategenerator / update_generator . md
+1326	merge pull request # 3 from microsoft / github / qianlifeng / pull request # 3 from microsoft / github
+1327	merge pull request # 1 from microsoft / dev / wox / plugins / * merge pull request # 1
+1328	update plugin manager . md
+1329	[ imageresizer ] [ xaml ] fix crash on windows ( # 3809 ) * [ imageresizer ] [ xaml
+1330	[ colorpicker ] update colorpickercontrol . xaml ( # 3809 ) * update colorpickercontrol . xaml * update colorpickercontrol
+1331	update plugin manager . md
+1332	[ ptrun ] [ wox ] update searchhelper . windowssearchapi . cs ( # 3809 ) * update searchhelper . windowssearch
+1333	update wox . core . csproj
+1334	update readme . md
+1335	update readme . md
+1336	[ ptrun ] [ wox ] [ plugin ] update programs . uwp
+1337	update resources . resx
+1338	update notifications . md
+1339	update settings . md
+1340	[ ptrun ] [ xaml ] [ launcher ] update app . xaml . xaml . xaml . xaml . xaml
+1341	update powertoys . md
+1342	[ imageresizer ] fix brice lambson license issue ( # 3559 ) * [ imageresizer ] fix brice
+1343	merge pull request # 3 from microsoft / wox / plugins / en . xaml * merge pull request # 3
+1344	[ ptrun ] [ findfile ] [ mftsearch ] [ findfile ] [ linq ] [ mftsearch ] [ linq ]
+1345	[ installer ] update powertoyssetup . wxs ( # 3559 ) * update powertoyssetup . wxs * update powerto
+1346	update powertoys . md
+1347	[ ptrun ] [ settings ] fix powertoys . settings . ui issue ( # 3559 ) * [ ptrun ] [ settings ]
+1348	[ fancyzones editor ] [ fz editor ] fix crash in fancyzones editor ( # 3559 ) * fix crash in fancyzones editor *
+1349	[ ptrun ] [ launcher ] update launchercontrol . xaml
+1350	update powertoys . md
+1351	[ installer ] update powertoyssetup . wxs ( # 3559 ) * update powertoyssetup . wxs * update powerto
+1352	[ ptrun ] [ wox ] [ plugin ] update main . md ( # 23927 ) * update main . md * update main .
+1353	merge pull request # 1 from microsoft / github / qianlifeng / pull request # 2 from microsoft /
+1354	update folderplugin . cs
+1355	update imagecache . cs
+1356	[ fancyzones editor ] update resources . resx . lcl
+1357	update telemetrybase . cs
+1358	[ ptrun ] [ settings ] add settings . resw to settings . resw ( # 3559 ) * [ ptrun ] [ settings
+1359	update wox . core . i18n
+1360	[ ptrun ] [ browserbookmark ] update bookmark . cs
+1361	[ fancyzones editor ] [ fz editor ] fix crash in fancyzones editor ( # 3559 ) * [ fz editor ] fix crash
+1362	[ cmdletbinding ] [ version ] [ version ] [ version ] [ version ] [ version ] [ version ]
+1363	update readme . md
+1364	[ ptrun ] [ powerlauncher ] fix crash in windows ( # 3559 ) * [ ptrun ] [ powerlauncher ] fix
+1365	update spell - check . txt
+1366	[ fancyzones ] update windowmovehandler . cpp
+1367	update readme . yml
+1368	merge pull request # 1 from microsoft / master / update_commonstorage . md
+1369	[ ptrun ] [ calculator ] update powertoys . run . plugin . calculator . dll
+1370	[ installer ] update powertoyssetup . wxs ( # 3559 ) * update powertoyssetup . wxs * update powerto
+1371	[ fancyzones editor ] [ fz editor ] fix layout layout issue ( # 2809 ) * [ fz editor ] fix layout layout issue
+1372	[ installer ] update bootstrapper . yml
+1373	update wox . plugin . indexer . csproj
+1374	update expect . txt
+1375	[ ptrun ] [ systemplugin ] [ systemplugin ] [ systemplugin ] [ systemplugin ] [ systemplugin ] [ systemplugin ] [ system
+1376	update wox . py
+1377	[ interop ] update interop . cpp * update interop . cpp * update interop . cpp
+1378	update dllmain . cpp
+1379	merge pull request # 1 from microsoft / github / qianlifeng / wox / pull request # 1 from microsoft /
+1380	cmdpal : update iconmarginconverter . cs
+1381	update expect . txt
+1382	[ ptrun ] [ deps ] [ deps ] [ deps ] [ deps ] [ deps ] [ deps ]
+1383	[ ptrun ] [ xaml ] add language to available languages . cs ( # 3559 ) * add language to available languages . cs *
+1384	[ fancyzones ] update fancyzones . cpp ( # 3559 ) * update fancyzones . cpp * update fancyzones . cpp
+1385	[ hosts ] [ hostsmodule ] [ hostsmodule ] [ hostsmodule ] [ hostsmodule ] [ hostsmodule ] [ hostsmodule ] [ hostsmodule
+1386	[ fancyzones editor ] update resources . resx . lcl
+1387	[ installer ] update powertoyssetup . settings . wxs ( # 3559 ) * update powertoyssetup . settings . wxs
+1388	merge pull request # 3 from microsoft / dev / wox / plugins / wox . plugin
+1389	update mainwindow . xaml
+1390	update assemblyinfo . cs
+1391	[ fancyzones editor ] [ fancyzones editor ] fix crash in editor ( # 3809 ) * [ fancyzones editor ] fix crash in editor
+1392	update wox . csproj . csproj . csproj
+1393	[ ptrun ] [ ptrun ] [ plugin ] update indexer . csproj
+1394	[ imageresizer ] update image resizer context menu ( # 3559 ) * update image resizer context menu * update image resizer
+1395	update winalfred . settings . cs
+1396	merge pull request # 3 from microsoft / dev / wox / logger / log
+1397	[ ptrun ] [ contextmenuloader ] update contextmenuloader
+1398	update oneFuzz . yml
+1399	update wox . py
+1400	update launcher . vcxproj
+1401	[ ptrun ] [ wox ] [ plugin ] add support for wox plugin ( # 3809 ) * add support for wox plugin
+1402	[ awake ] update trayhelper . md
+1403	[ ptrun ] [ settings ] fix powertoys . settings . ui issue ( # 3559 ) * [ ptrun ] [ settings ]
+1404	update powertoys - steps . yml
+1405	update common . vcxproj
+1406	[ ptrun ] [ folderplugin ] update folderplugin . md
+1407	[ settings ] [ shortcutcontrol ] [ shortcutcontrol ] [ shortcutcontrol ] [ settings ] [ shortcutcontrol ] [ shortcutcontrol ] [ shortcutcontrol ]
+1408	[ ptrun ] [ build ] update build . yml
+1409	update ISSUE_TEMPLATE . md
+1410	update plugin installer . md
+1411	[ espresso ] [ kbm ] add support for user interaction ( # 23927 ) * [ espresso ] [ kbm ]
+1412	update theme . md
+1413	[ fancyzones ] update fancyzones . cpp ( # 3559 ) * update fancyzones . cpp * update fancyzones . cpp
+1414	[ settings ] [ vcxproj ] update version to 1 . 0 . 0 ( # 3559 ) * update version to 1 . 0 .
+1415	[ websearch ] [ settings ] add settings to websearch . yml ( # 3809 ) * [ websearch ] add settings to websearch
+1416	update settings . ui . xaml
+1417	[ ptrun ] [ uwp ] [ plugin ] update uwp . md
+1418	[ settings ] [ colorpicker ] update colorpickerviewmodel . cs ( # 3559 ) * update colorpickerviewmodel . cs
+1419	[ installer ] update bootstrapper . yml
+1420	[ ptrun ] [ wox ] [ plugin ] update programsuffixes . xaml
+1421	[ ptrun ] [ browserbookmarks ] [ browserbookmarks ] [ browserbookmarks ] update browserbookmarks ( ) * [ ptrun ]
+1422	merge pull request # 3 from microsoft / dev / wox / logger / log
+1423	update plugin manager . md
+1424	merge pull request # 1 from microsoft / dev / wox / logger
+1425	[ ptrun ] [ wox ] update mainviewmodel . cs ( # 2809 ) * update mainviewmodel . cs * update main
+1426	update ISSUE_TEMPLATE . md
+1427	[ ptrun ] [ wox ] [ plugin ] add program source to wox . plugins ( # 3559 ) * [ ptrun ]
