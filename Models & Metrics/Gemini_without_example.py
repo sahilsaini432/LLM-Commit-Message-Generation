@@ -105,6 +105,10 @@ def main():
         sha = data["sha"]
         diff = data["mod_diff"]
 
+        # if no diff skip
+        if diff is None or diff == "" or diff.strip() == "":
+            continue
+
         # Apply preprocessing steps
         result = remove_between_identifiers(diff, "mmm a", "<nl>")
         diff = get_tokens(remove_between_identifiers(result, "ppp b", "<nl>"))
@@ -129,14 +133,14 @@ def main():
 
         # If the message was successfully generated or max attempts reached, save the result to the corresponding file
         if generated_msg is not None:
-            output[f"gemini_msg"] = generated_msg
+            output[f"msgGPT0"] = generated_msg
         else:
             print(f"Could not generate a message for sha {sha}.")
         time.sleep(5)
 
         results.append(output)
 
-    with open(f"{args.output}/gemini-2.5pro.jsonl", "w", encoding="utf8") as f:
+    with open(f"{args.output}/gemini-2.5pro_response_on_test.jsonl", "w", encoding="utf8") as f:
         for result in results:
             f.write(json.dumps(result) + "\n")
 

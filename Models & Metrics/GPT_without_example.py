@@ -141,6 +141,10 @@ def main():
         sha = data["sha"]
         diff = data["mod_diff"]
 
+        # if no diff skip
+        if diff is None or diff == "" or diff.strip() == "":
+            continue
+
         result = remove_between_identifiers(diff, "mmm a", "<nl>")
         diff = get_tokens(remove_between_identifiers(result, "ppp b", "<nl>"))
 
