@@ -1,4 +1,5 @@
 import json
+import ssl
 import statistics
 import re
 import nltk
@@ -11,23 +12,52 @@ import numpy as np
 import argparse
 import tqdm
 import nltk
+from nltk.translate.meteor_score import meteor_score
+
+#  Bypass SSL verification for NLTK downloads on macOS
+try:
+    _create_unverified_https_context = ssl._create_unverified_context
+except AttributeError:
+    pass
+else:
+    ssl._create_default_https_context = _create_unverified_https_context
+
+from nltk.translate.meteor_score import meteor_score
+
+nltk.download("wordnet")
 
 
 def calculate_meteor(sentence1, sentence2):
     """
-    Calculate METEOR score between two sentences
+    Calculate a custom METEOR-like score (cosine similarity with F1 weighting), normalized to [0, 1].
     """
-    # Convert both sentences to word frequency vectors
-    vectorizer = CountVectorizer().fit([sentence1, sentence2])
-    sentence1_vector = vectorizer.transform([sentence1])
-    sentence2_vector = vectorizer.transform([sentence2])
+    # Tokenize for better handling
+    words1 = sentence1.split()
+    words2 = sentence2.split()
 
-    # Calculate cosine similarity between the two vectors
-    similarity = cosine_similarity(sentence1_vector, sentence2_vector)[0][0]
+    if not words1 or not words2:
+        return 0.0
 
-    # Calculate score based on METEOR formula
-    score = 2 * similarity * len(sentence1) * len(sentence2) / (len(sentence1) + len(sentence2))
-    return score
+    # Use CountVectorizer on tokenized input for consistency
+    vectorizer = CountVectorizer(lowercase=True, token_pattern=r"\b\w+\b")
+    vec1 = vectorizer.fit_transform([" ".join(words1)])
+    vec2 = vectorizer.transform([" ".join(words2)])
+
+    similarity = cosine_similarity(vec1, vec2)[0][0]
+
+    # Word lengths
+    len1 = len(words1)
+    len2 = len(words2)
+
+    # F1-like score
+    if len1 + len2 == 0:
+        score = 0.0
+    else:
+        score = 2 * similarity * len1 * len2 / (len1 + len2)
+
+    # Normalize to [0, 1] by dividing by the maximum possible score (when sim=1 and len1=len2)
+    max_score = max(len1, len2)  # Approximation; exact max is len1 when len1==len2
+    return score / max_score if max_score > 0 else 0.0
 
 
 def calculate_bleu(reference, translation):
