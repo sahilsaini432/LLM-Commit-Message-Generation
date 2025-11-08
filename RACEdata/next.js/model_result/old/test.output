@@ -1,0 +1,674 @@
+0	add support for emitters .
+1	add support for turbo - tasks
+2	add support for static site generation
+3	add support for theme theme
+4	add support for layout - router
+5	exported for next - codemod
+6	add support for webpack / define plugins
+7	use ` Error . captureStackTrace ` in browsers +
+8	add support for launch . js
+9	add support for ` import ` to ` ` `
+10	add hmr - cache for development
+11	add support for mojibake
+12	for turbo - tasks
+13	made a new instance of this class .
+14	add support for layout
+15	add support for taskfile . js
+16	add manifest . json to manifest . json
+17	add support for basic segment cache
+18	add support for next - api
+19	add support for
+20	add support for node - explorer
+21	use render instead of render
+22	add support for turbo - tasks
+23	add support for turbopack
+24	add a package to the package list
+25	add optimizing for your application
+26	add support for turbopack file system cache
+27	add experimental middleware to module
+28	add test for test for test
+29	add styled css to emotion . js
+30	add support for vitest application
+31	use next_config instead of next_config .
+32	import page . js from
+33	add support for next - api
+34	add support for package . json
+35	babel - plugin - react - compiler
+36	add support for server - boundary
+37	add import to development - sandbox
+38	add support for turbopack - ecmascript
+39	use crate instead of marker_trait
+40	add useState and useEffect to devtools
+41	add sitemap to metadata route . mdx
+42	add support for next_edge .
+43	add custom transforms to react_compiler . js
+44	update cookie and redirect .
+45	lock - use std : :
+46	add support for IPv4 and IPv6
+47	add runtime support for turbopack
+48	add support for experimental pprb .
+49	see https : // www .
+50	add support for mjs
+51	add support for config - schema
+52	add middleware to server . js
+53	add support for manifest . json
+54	use root layout for root layout
+55	add support for next - api
+56	add snapshot to test . __snapshots__
+57	add support for config . js
+58	add support for api - reference
+59	add support for next - bundle - analyzer
+60	add support for authentication
+61	add support for revalidate data
+62	add loading - boundary to loading - boundary
+63	add support for navigating
+64	add support for api - reference
+65	add next . js to layout . js
+66	add support for pages
+67	add turbopack to module graph
+68	add support for react . js
+69	add support for async storage
+70	add support for mcp server
+71	add support for turbo
+72	use build_and_test_for_build_and_build_test for build_and_build_test_for_build_and
+73	add a patch to a package
+74	add support for babel
+75	use build_and_deploy for build_and_deploy .
+76	add support for webpack / define plugins
+77	add support for devtools
+78	add partial - prerendering - to - start
+79	use crate for key_value_database .
+80	add support for turbopack
+81	add support for dynamic rendering .
+82	made a new instance of this class .
+83	use ReactRefreshLogBox instead of ReactRefreshLogBox .
+84	add support for layout - router
+85	add bug report template to bug report template
+86	remove error - overlay - layout
+87	add support for custom packages .
+88	add support for flat - config
+89	import DebugInfo from
+90	add support for ` import ` to ` . .
+91	made a new instance of this class .
+92	add support for dynamic - data
+93	add support for ` define `
+94	use reducers for reducers
+95	add test for sanity and jsx
+96	add styling to the application
+97	import resume - data - cache from
+98	add support for next package .
+99	add uppers for aggregation update
+100	add eslint - disable support for import
+101	add routing to the application
+102	use async - request - api to import cookies
+103	add a package to a package .
+104	add manifest . json to manifest . json
+105	made a new instance of this class .
+106	generate - static - params
+107	add tests to build and test . yml
+108	add a newline at end of file .
+109	add support for next_api to project
+110	add support for turbopack
+111	import ReactNode from
+112	add support for manifest . json
+113	add support for legacy images .
+114	add turbopack for turbopack
+115	add support for next - api
+116	add support for async storage
+117	add support for testing .
+118	import ReactNode from
+119	add support for app - tw . js .
+120	add support for turbo - tasks
+121	use dynamic - apis for caching .
+122	add support for server external packages
+123	add support for create - release
+124	add two consecutive errors to the previous one
+125	add support for next package .
+126	add test suites to build and test . yml
+127	use reducers instead of reducers
+128	add manifest . json to the manifest
+129	add support for parseNotFoundError
+130	add manifest . json to the manifest
+131	for more about ignoring files
+132	add testfixtures to request - api
+133	add manifest . json to manifest . json
+134	add the module graph to the graph .
+135	add mutating - to - start
+136	add support for crypto . randomUUID ()
+137	add support for typescript plugin
+138	add support for ` package ` to ` package `
+139	add support for turbo - tasks
+140	add support for turbo - tasks
+141	add default option for route - segment - config
+142	add support for bundled modules .
+143	add support for error - boundary
+144	add support for prettierignore .
+145	add deep - dive to docs
+146	add support for new packages .
+147	add support for window - replace
+148	add error handling for nextjs - hydration - error
+149	add support for turbopack
+150	add support for create - next package
+151	revalidating data on demand by path
+152	for turbo - tasks
+153	add support for contributing .
+154	add support for custom handlers .
+155	create - next - template
+156	support turbopack - ecmascript
+157	add manifest . json to manifest . json
+158	https : // github . com /
+159	expose static exports to mdx
+160	add css - and - styling
+161	use build_and_test_for_build_and_build_test for build_and_build_test_for_build_and
+162	add turbopack to module graph
+163	made a new instance of this class .
+164	transform app - render params .
+165	import styles from ' . / style . module . css
+166	add dev overlay to project structure .
+167	add support for custom handlers .
+168	add support for next package .
+169	import awaiter from
+170	import error overlay bottom stack
+171	use create - next - install instead of import
+172	use measure width for devtools indicator
+173	use render instead of render
+174	makes a new instance of a new instance .
+175	add cssmodules - pure - check
+176	add support for custom templates .
+177	prefetch - navigations
+178	add support for _nextSetupHydrationWarning
+179	add side effects to turbopack
+180	add support for next_api to project
+181	add support for turbopack - ecmascript
+182	add support for turbopack
+183	use LRUCache for basic operations .
+184	add support for ' hello' to ' hello'
+185	add manifest . json to the manifest
+186	add build - caching to the application
+187	add support for api - reference
+188	add a package to a package .
+189	mmm a / package / next
+190	add support for next_app
+191	add manifest . json to the manifest
+192	add support for turbopack
+193	use build_and_deploy for build_and_deploy .
+194	add an error handler for errors
+195	add mdx - r - title to mdx - r
+196	add support for revalidate
+197	revalidating path and tag
+198	add support for publish - release
+199	add route - loader for next package
+200	use client - render to render components
+201	add support for url parsing .
+202	add support for next package
+203	add support for mdx configuring
+204	use proc_macro instead of proc_macro2
+205	add support for turbopack trace
+206	set the build id in
+207	add support for deploying application
+208	add support for fetching docs .
+209	use revalidatePath for api reference
+210	add support for turbo tasks
+211	add support for upgrading
+212	use a custom function to use a custom function for testing .
+213	add manifest . json to the manifest
+214	add dynamic imports to TURBOPACK
+215	add redirect and permanentRedirect to the router
+216	add support for navigation
+217	add support for turbo - tasks
+218	add support for ` next_dynamic`
+219	add support for webpack - config . js
+220	add support for require - instrumentation -
+221	add styling to app
+222	add support for webVitalsAttribution
+223	version of next - taskless .
+224	add manifest . json to the manifest
+225	add config . js to app . js
+226	repeated - 1
+227	add support for overlay
+228	add async_closure feature for async_closure
+229	add support for devtools panel stories .
+230	add support for Sirv
+231	add support for routing
+232	add support for manifest . json
+233	add support for webpack - config . js
+234	add support for package . js
+235	add support for async storage - instance
+236	add import type to app - build - manifest
+237	add an optimizer to the package list
+238	use next_config instead of next_config .
+239	add support for trait_ref_cell_mode
+240	add prerender to test . js
+241	use react - dev - overlay to handle errors
+242	use build_and_deploy for build_and_deploy .
+243	add support for build - traces
+244	made a new instance of this class .
+245	use rustc_hash and turbo_rcstr
+246	add support for turbopack
+247	add support for turbopack
+248	support loading . js for loading . js
+249	use client to create app routes
+250	add support for corepack
+251	add checklist for production - application
+252	add error type to react - overlay
+253	add support for export
+254	add support for turbo - tasks
+255	add build_reusable_workflows to build_reusable_workflows
+256	add support for package . json
+257	add modurbopack to module options
+258	add support for rustc
+259	add support for server . js
+260	add support for export
+261	add support for app - metadata
+262	add stack - pseudo - html to components
+263	add support for turbo - tasks
+264	install turbo - persistence with
+265	import PHASE_PRODUCTION_BUILD
+266	add package . js to package . js
+267	add support for turbo tasks
+268	add support for route - reference
+269	https : // github . com /
+270	add manifest . json to manifest . json
+271	add devtools to devtools
+272	add support for next_api to project
+273	reloader - client - overlay - client
+274	add support for react - performance
+275	use turbo tasks
+276	add test for turbo - tasks - backend
+277	add support for request - context - context
+278	add support for next_api to project
+279	add routing support for dynamic routes
+280	add support for webpack - config . js
+281	add support for upgrade . js
+282	add support for error handlers .
+283	add support for new packages .
+284	import head from next app .
+285	add support for externals
+286	add support for turbopack
+287	use set collections instead of set collections .
+288	convert app_structure . rs to loader tree
+289	use cache for app - render
+290	generate metadata for client and server references
+291	use build_and_test for build_and_test .
+292	add support for navigation .
+293	use unstable_noStore instead of unstable
+294	add support for action - client
+295	https : // github . com /
+296	use build_and_test_for_build_and_build_test for build_and_build_test_for_build_and
+297	add support for incremental packages .
+298	add support for preset . js
+299	add test for turbopack
+300	add routing support for dynamic routes
+301	add support for plugin - typechecked - require
+302	add support for devtools to devtools
+303	add support for turbopack
+304	add support for turbopack
+305	add support for turbo - tasks
+306	add cursorignore to file patterns .
+307	add support for preload - chunks
+308	add support for create - release
+309	makes a new instance of a new instance .
+310	add a package to the package list
+311	use anyhow : : { Result }
+312	add support for turbopack
+313	add tests to manifest . json
+314	add support for mdx configuring
+315	add support for api - reference
+316	use router - reducer for responses .
+317	add prerender manifest matcher to errors . json
+318	add support for turbopack - ecmascript
+319	add support for navigation - error
+320	add client - side entry point .
+321	change workflow_id to v0 workflow_id to v0
+322	add support for turbopack
+323	made a new instance of this class .
+324	add support for turbopack
+325	made a new instance of this class .
+326	import prompts from
+327	fixes jest / no - standalone - expect
+328	fix unstable_after
+329	add tests to manifest . json
+330	add support for turbopack
+331	add support for api - reference
+332	add turbopack to graph store
+333	add support for manifest . json
+334	made a new instance of this class .
+335	add support for codemods
+336	add stack - frame support for devtools
+337	add support for create - next - app
+338	add support for manifest . json
+339	add support for resolve - url
+340	add support for css
+341	add support for package . json
+342	add support for json - ld
+343	add manifest . json to manifest . json
+344	add support for next - api
+345	import revalidateTag from ' next / cache '
+346	add support for next_api to project
+347	generate static params for pages
+348	add a test to the test list .
+349	import stories . tsx from
+350	add support for index . js
+351	add a package to the storybook .
+352	add dynamic - page to router
+353	add support for edge index export .
+354	add support for index . js
+355	add a package to the package list
+356	add support for next - linting
+357	add support for package . json
+358	added support for access props .
+359	use turbo_tasks for turbopack
+360	add support for link components
+361	add __next_internal_client_entry_do_not_use__ to server_actions
+362	add support for future : : Future
+363	made a new instance of this class .
+364	support for turbo - tasks - backend
+365	add errors to the package list .
+366	add test - utils to run - tests
+367	add support for devtools
+368	add support for dynamic content
+369	add support for mjs .
+370	add manifest . json to manifest . json
+371	use cache for next custom transforms
+372	add import type to app_page_loader_tree .
+373	add support for setup - rust
+374	the ` globset ` crate
+375	add support for instrumentation - client
+376	add a package to the package list .
+377	add tests to manifest . json
+378	use optimize_barrel for custom transforms
+379	add redirect page to router
+380	add support for next_api
+381	add support for upgrading
+382	add support for ` forward` to ` forward` .
+383	add client import for next router
+384	add support for ` canary ` branch
+385	add turbopack for turbopack
+386	add support for ` . get - img `
+387	add reducers to router - state
+388	add support for sass options
+389	add an optimizer to the package list
+390	add devtools scale to devtools
+391	add support for router . js
+392	add support for debugging
+393	add license for next package . json
+394	add a custom layout for next page with layout
+395	expose layout to app . js
+396	add _experimental to components
+397	add db_invalidation to turbo - tasks
+398	use - link - status
+399	add support for config - schema
+400	use experimental_useEffectEvent instead of experimental_useEffectEvent
+401	add support for config - schema
+402	add support for api - reference
+403	use render instead of render
+404	add a package to the package list .
+405	add support for html - bots
+406	add warning to build / output / log
+407	add the module graph to the graph .
+408	add manifest . json to manifest . json
+409	made a new instance of this class .
+410	add postgres url to the database url
+411	add support for incoming message .
+412	add support for instrumentation
+413	expose a page to react .
+414	add call_resolver to crates
+415	add expire tag to expire tag
+416	add support for layout - router
+417	add support for turbopack
+418	add require for turbopack - core
+419	add support for - supabase - ssr
+420	add support for null and undefined
+421	mmm a / test / production / app
+422	add support for segment cache implementation .
+423	add an error to the collection .
+424	add support for client - boundary
+425	add a package to a package .
+426	add tests to turbo - tasks
+427	import connection from next / server
+428	add build_reusable_workflows to build_reusable_workflows
+429	add support for index . js
+430	add invalidator_map to invalidator_map
+431	add support for manifest . json
+432	add support for next - api
+433	made a new instance of this class .
+434	remove interception - nested - dynamic - routes
+435	add support for unstable_after
+436	add a bug to the guidelines list .
+437	add asset prefix to webpack config
+438	use Loading instead of Loading .
+439	add support for turbopack
+440	add support for node_native_binding
+441	add middleware matcher to next config .
+442	add manifest . json to manifest . json
+443	add manifest . json to the manifest
+444	add support for ` react ` to ` ` . `
+445	add support for turbo - tasks
+446	add support for babel
+447	add support for next - api
+448	add support for error handling and error overlay
+449	add manifest . json to the manifest
+450	use cache : remote instead of default
+451	add support for busting search - param .
+452	add support for next_api to project
+453	add support for kontent example
+454	add support for package . json
+455	add support for installing a new application
+456	use - request - use - request - cache
+457	add support for eslintrc .
+458	add error overlay on any thrown value .
+459	add support for app_structure .
+460	add support for custom module_id_strategies
+461	add support for built - in modules
+462	add default - empty to tsconfig
+463	add support for this package .
+464	add manifest . json to the manifest
+465	add a package to the package list
+466	use build_and_test_for_build_and_build_test for build_and_build_test_for_build_and
+467	add tests to manifest . json
+468	use bindgen_prelude instead of node_file
+469	add support for next - api
+470	add support for server - actions -
+471	add error message to error log .
+472	add support for automatic - rendering
+473	add support for map - url
+474	add the module graph to the graph .
+475	add support for next - core
+476	add support for incremental - cache
+477	use persisted_graph instead of persisted_graph
+478	add support for dev - tools - indicator
+479	made a new instance of this class .
+480	add support for testing
+481	add support for next - api
+482	add support for custom - server
+483	add nav_title to micro - frontends
+484	add support for turbopack
+485	add manifest . json to manifest . json
+486	import ReactNode from . / styles . css
+487	add support for forward - logs
+488	add manifest . json to manifest . json
+489	add runtime config to next . js app
+490	add support for ` react ` to ` ` . `
+491	add custom transforms to collections and path
+492	add support for emit - decorator - metadata
+493	add support for turbo - tasks
+494	add support for dynamic rendering
+495	add support for deploy - deno
+496	add support for turbopack - ecmascript
+497	add a package to the package list .
+498	add support for index . js
+499	use original loader to load modules
+500	add support for error stories
+501	add support for custom forms .
+502	add support for server . js
+503	add support for loading images using native browser
+504	moved to react / jsx - runtime
+505	add a package to the package list .
+506	add config based global behaviors to
+507	add support for turbopack
+508	add test actions to test actions
+509	add workflow dispatch for create release branch
+510	use turbopack_core : :
+511	use std and anyhow .
+512	import useMemo and useMergedRef
+513	add support for move - into - input
+514	add support for turbopack - ecmascript
+515	add layout . tsx to app dir
+516	add support for next - api
+517	add manifest . json to the manifest
+518	add support for manifest . json
+519	add support for upgrading
+520	add support for manifest . json
+521	add support for experimental codemods . mdx
+522	add support for turbopack
+523	add support for manifest tests
+524	add support for next_api
+525	use build_and_test_for_build_and_build_test for build_and_build_test_for_build_and
+526	add turbopack for turbo
+527	add support for turbopack
+528	add support for server external packages
+529	remove stale times
+530	add support for config . js
+531	add test_e2e_deploy_related to test_e2e_deploy
+532	import revalidatePath from next / cache
+533	add update_react to workflow . yml
+534	add support for code - frame
+535	use dev - tools - indicator for devtools
+536	add support for font . js
+537	add support for react - overlay
+538	add support for manifest . json
+539	add a warning to the error message
+540	add support for future sync and borrow
+541	generate static params for react
+542	add a custom error handler for NotFound
+543	add layout . tsx to app dir
+544	add support for turbo - rcstr
+545	add support for build_and_test
+546	add a package to a package .
+547	remove env vars for tutorial purposes
+548	import next config from path . js
+549	import app - router from ' next / navigation
+550	add support for navigating to application
+551	import side_effect_optimization
+552	remove server side props from component
+553	create - next - app
+554	add support for webpack - config . js
+555	use build_and_deploy for build_and_deploy .
+556	export default to breadcrumbs . html
+557	add support for draggable components
+558	add support for turbopack
+559	generate metadata for build and test . yml
+560	add a package to the package list .
+561	add transforms to next_server . transforms
+562	add tailwind config to app . js
+563	add support for typescript
+564	add support for serverprops - error
+565	add support for next response
+566	add support for route - specific middleware
+567	use create - error - handler
+568	use swc_core instead of swc_core
+569	add support for strict mode
+570	use package . json for package . json
+571	import error overlay layout from
+572	add support for eslint - config
+573	add turbopack to write_batch
+574	create - env - definitions
+575	add support for turbo - tasks
+576	add support for logging .
+577	use std : path : path : PathBuf
+578	add layout to context . rs
+579	add issue_stale . js to issue_stale . js to issue
+580	add support for expire path
+581	add support for dynamic data routes
+582	use react to render error log
+583	add support for CSS and Styling
+584	add error handling for local operations
+585	add support for eslint
+586	add support for incremental packages .
+587	use build_and_test_for_build_and_build_test for build_and_build_test_for_build_and
+588	import next - test - utils
+589	add support for index . js
+590	add support for eslint - plugin - next
+591	add support for installing a new application
+592	add support for turbopack
+593	add support for dynamic - io - errors
+594	add support for request - context - context
+595	add support for turbo - persistence
+596	add an example to the list of examples
+597	add support for typescript
+598	replace find - root . ts with react
+599	add support for package . json
+600	add support for caching .
+601	add support for fetch functions
+602	add support for generate - metadata
+603	add test node middleware to app . js
+604	add a package to the package list .
+605	add support for turbo - tasks
+606	add manifest . json to manifest . json
+607	add support for turbopack
+608	add layouts - and - pages
+609	add a test to the test list .
+610	add error handling for component - stack - error
+611	add manifest . json to the manifest
+612	import errors . json from
+613	add an extra extra extra extra extra extra extra extra
+614	made a new instance of this class .
+615	add manifest . json to the manifest
+616	add support for fetch - steps
+617	add support for server - actions -
+618	set __dirname and __filename to be set
+619	made a new instance of this class .
+620	add support for root layout
+621	add support for non - boundary components
+622	add support for opaque types .
+623	add build - id for lazy - id
+624	add _experimental to components
+625	use root layout for segment cache
+626	add support for ` ` to ` ` . ` . `
+627	add support for custom render
+628	add support for turbopack
+629	add turbopack for turbo
+630	use ReactRefreshLogBox instead of ReactRefreshLogBox .
+631	add support for turbopack
+632	add support for route - modules
+633	add dynamic module support for dynamic modules
+634	add support for ` import ` to ` package `
+635	add support for font . js
+636	add support for json - ld
+637	add support for logging .
+638	add support for manifest . json
+639	add an error to the image .
+640	use react_compiler instead of react_compiler . js
+641	use router - reducer for navigations
+642	expose root to app . js
+643	use turbo_json and turbo_tasks
+644	add use - cache - remote directives
+645	add support for groq
+646	add support for load - components
+647	add support for node - fetch package
+648	add support for draft mode
+649	add manifest . json to manifest . json
+650	add page . js to bundle size
+651	add support for index . js
+652	use async_trait instead of async_trait .
+653	use std . hash instead of std . hash
+654	add support for multi - zones
+655	use cache - impl for cache - impl
+656	add a page for intercepted photos
+657	add tests to manifest . json
+658	use cache for error handling .
+659	add support for next adapter .
+660	add support for turbo - tasks
+661	use no_move_vec for turbo - tasks
+662	add trace - entrypoints - plugin
+663	add support for turbo - tasks
+664	add support for react . js
+665	forbidden api - reference
+666	add support for private modules
+667	add support for layout
+668	use build_and_test_for_build_and_build_test for build_and_build_test_for_build_and
+669	add support for MIT License
+670	add devtools to devtools
+671	add build_reusable_workflows to build_reusable_workflows
+672	add support for turbopack - ecmascript
+673	add support for turbopack

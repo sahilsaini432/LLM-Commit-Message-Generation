@@ -1,0 +1,465 @@
+0	add support for common . h
+1	add support for dll rename
+2	add support for binary programs
+3	add license for Microsoft Corporation
+4	add ruleset ruleset ruleset ruleset
+5	add support for README .
+6	mmm mmm
+7	add support for expect - check
+8	add support for fancyzones
+9	mmm mmm mmm mmm
+10	add support for bitmap metadata extension
+11	add support for resource dictionary
+12	<extra_id_0> https : //
+13	add support for toyssetup
+14	add test framework to test adapter
+15	add drop iterator support for drop iterator
+16	add support for power toys
+17	add support for expect - check
+18	add support for wxs
+19	add support for old version of ppp
+20	add spell - check to project .
+21	add support for uwp application
+22	add support for system memory status
+23	mmm mmm mmm
+24	add support for fancyzones
+25	add support for this
+26	add support for wxs setup
+27	add support for imageresizer
+28	add support for ocrHelpers
+29	add support for dpi_aware
+30	mmm / runner / main
+31	mmm mmm mmm
+32	add support for powerocr .
+33	add support for mmm
+34	add support for keyboardhook
+35	add support for user interface .
+36	add support for expect - check
+37	add support for system commands plugin
+38	add support for datagrid and markdown
+39	<extra_id_0> https : // github . com /
+40	add license for Microsoft Corporation
+41	add support for wox . plugin
+42	add support for xaml
+43	add support for resources . resw
+44	add griddraghandles to griddraghandles editor
+45	add support for xaml settings
+46	add support for mmm
+47	add support for fancyzones
+48	add support for pch . h
+49	add support for file system watcher
+50	add support for AdvancedPasteXAML
+51	mmm mmm mmm
+52	add support for README .
+53	add support for README .
+54	add support for spell - check .
+55	move to main window editor .
+56	add preview control to preview handler
+57	add calculate helper to calculate helper
+58	add support for onenote
+59	add support for codeoWNERS
+60	add support for README .
+61	add logging to sqlclient
+62	add support for bcl . asyncinterfaces
+63	add support for user interface .
+64	add README / README / README
+65	add support for apppathsprogramsource .
+66	add license for Microsoft Corporation
+67	add support for githubbot . json
+68	add support for README .
+69	add support for readme .
+70	replace listitemviewmodel with listitemviewmodel .
+71	add support for interop and helpers
+72	add support for fancyzones
+73	add support for mouse without borders module
+74	remove Zoomit / Zoomit / Zoomit
+75	add support for openai .
+76	add support for wox plugin
+77	add support for expect - check
+78	add support for Win32Tests
+79	use StringMatcher instead of StringMatcher
+80	add installAndConfiguration . dsc . yaml to
+81	add support for README .
+82	add time unit tests to run
+83	add support for fancyzones
+84	add precheck for powertoys
+85	add support for reinstall_msix .
+86	add support for power launching properties
+87	add support for image resizer
+88	add support for expect - check
+89	run mmm a / b / c
+90	add test for ci - tests
+91	add support for power toys interop
+92	add support for mmm
+93	add support for windows desktop
+94	add support for README .
+95	use previewpane instead of previewpane
+96	add doc / doc / doc /
+97	add support for xaml settings
+98	add queryhistory to queryhistory
+99	add support for general settings
+100	add support for build status
+101	add support for expect - check
+102	add support for README .
+103	add a reply to a resolved issue
+104	add a rule set for ppp .
+105	add support for xaml .
+106	add support for hwnd data cache
+107	add support for expect - check
+108	add support for xaml
+109	add bootstrapper for vcxproj
+110	add support for basic tests in cmdpal
+111	add support for xaml .
+112	add new files to WXS
+113	add previewhandlercontrol for previewhandlercontrol
+114	add support for filelocksmithUI
+115	add support for extension form
+116	add support for contentpageviewmodel
+117	add support for README .
+118	use CMDSetting instead of CMDSetting .
+119	add support for ESRPSigning core
+120	add support for Windows . Forms .
+121	add a reply to our internal localization team
+122	add support for bkmeneguello
+123	add unit test for unit handler tests
+124	add support for incorrect translations
+125	add support for mmm
+126	add support for expect - check
+127	add support for Microsoft Corporation .
+128	add support for mmm
+129	add plugin to main module .
+130	add support for expect - check
+131	add support for DriveOrSharedFolderTests
+132	add logging to sqlclient
+133	add support for README .
+134	add support for user settings
+135	add fixup tool for Microsoft Visual Studio
+136	add support for fancyzones
+137	add support for u0001F4DA
+138	add support for alwaysontop
+139	add support for README .
+140	use xaml . xaml . xaml . cpp .
+141	add support for fancyzones
+142	add support for expect - check
+143	add tools / tools / MainReportTool
+144	add support for wmm
+145	add support for jsonhelper .
+146	add support for fancyzonespage
+147	add support for expect - check
+148	add support for README .
+149	add support for expect - check
+150	add license for Microsoft Corporation
+151	add keyboardmanager / keyboardmanagerenginelib / keyboardeventhandlers
+152	add workflow dispatch to Windows Store
+153	add support for lazycache
+154	add support for ColorPickerUI
+155	add support for overlay_window .
+156	add support for Microsoft Corporation
+157	add support for openwindows .
+158	add support for mmm
+159	add support for interop / interop
+160	add support for filelocksmithUI
+161	add special handling for frmScreen .
+162	add support for imageloader .
+163	include calltracer .
+164	add support for readme .
+165	add resize operation tests for resize operation
+166	add support for oobe new
+167	add support for unsupported file preview
+168	add support for wmm
+169	add projects to powerrename uwpui . rc
+170	add support for Brice Lambson .
+171	add support for user interface .
+172	add index helper to index helper
+173	add support for wox . plugins
+174	add support for powertoys .
+175	add previewpane / previewpane / previewpane
+176	add file item result to project list .
+177	add support for powerrename regexex
+178	add title bar for PeekXAML
+179	add additional parameters for download .
+180	add support for unit tests
+181	add support for shift key hook
+182	add support for user control
+183	add support for fancyzones
+184	add build - project . yml to project . yml
+185	add main window to main window
+186	add support for appcommand
+187	add support for Wox . Infrastructure . PeHeaderReader
+188	add support for editor settings
+189	add support for MSBuild caching
+190	use StringMatcher instead of StringMatcher
+191	add previewpane / previewpane / GcodeThumbnailProviderCpp / GcodeThumbnailProvider
+192	add support for gpowrapper
+193	add support for powerrename
+194	add support for wmm
+195	add support for expect - check
+196	add license for uitestautomation .
+197	add support for README .
+198	add support for spell - check .
+199	add support for fuzzing tests .
+200	add support for winapi_error .
+201	add support for findmymouse
+202	add license for Microsoft Corporation
+203	add support for plugin index .
+204	add support for general settings
+205	add support for wmm
+206	add support for ColorRepresentationHelper
+207	mmm mmm mmm mmm
+208	add mouseinfoprovider to mouseinfoprovider
+209	add support for wix
+210	add resource dictionary namespace to resource dictionary
+211	add support for wxs setup
+212	add support for general viewmodels
+213	add support for gitignore
+214	add support for resources . resw
+215	add support for toyssetup
+216	add support for markdown preview handler .
+217	<extra_id_0> https : // github . com /
+218	add codeAnalysis for global suppressions
+219	add installation for Visual Studio 2022
+220	add support for native methods
+221	add resource dictionary for xaml presentation
+222	add support for release
+223	add support for PowerAccent - PowerOCR
+224	add using System . ComponentModel
+225	add support for cutguide .
+226	add support for COMMUNITY
+227	add support for README .
+228	add support for search results page
+229	add installWiX
+230	add support for System . IO
+231	add support for wxs setup
+232	add logging to sqlclient
+233	change encoding to UTF - 8
+234	add winuiex : WindowEx to winuiex
+235	add support for README .
+236	add support for user interface .
+237	mmm mmm mmm
+238	add support for launchpage
+239	add support for dropping result from a query .
+240	add support for color picker page
+241	add support for codeoWNERS
+242	add support for color selection
+243	add support for version and signcheck .
+244	add support for OobeCmdPal
+245	add support for shiftDRAG
+246	add support for resources . resw
+247	add support for helpermanager
+248	add installWiX
+249	add support for extension service
+250	add build - project . yml to job - build - project . yml
+251	add support for README .
+252	add reportgpovalues to reportgpovalues
+253	add program source to xaml source
+254	add support for ShellViewModel
+255	add support for expect - check
+256	add support for yaml - language - server
+257	add checkbox with description control to checkbox
+258	add support for Microsoft Corporation .
+259	add license for Microsoft Corporation
+260	add support for powertoys
+261	add support for findmymouse
+262	add support for versioning
+263	add support for pluginmanager .
+264	move viewmodel to mainviewmodel
+265	add support for xaml
+266	add support for powerup / powerup
+267	add support for settings . xaml .
+268	add support for wox . infrastructure . dll
+269	add support for expect - check
+270	add support for README .
+271	add support for Microsoft Corporation .
+272	include fancyzones_notifications . h in
+273	add support for backlog
+274	mmmm mmmm
+275	add common / common / common /
+276	add support for mmm
+277	add support for winalfred
+278	add support for fancyzones data
+279	add support for powertoys
+280	add support for host service
+281	add support for extension object viewmodel
+282	add support for Microsoft Corporation
+283	add support for oobewhatsnew
+284	add support for rename context menu
+285	add support for mmm
+286	add support for mmscl .
+287	add support for plugin index .
+288	remove Zoomit / Zoomit / Zoomit
+289	add support for power toys setup
+290	add plugin to csproj .
+291	add support for unused member
+292	add support for resource calculations
+293	add support for net6 .
+294	add query tests to shell
+295	add logging to the logger
+296	add support for exploreritemtemplateselector
+297	add support for locksmith context menu
+298	mmmm mmmm
+299	add support for README .
+300	add support for resource dictionary
+301	add spelling configuration for check spelling .
+302	add support for general viewmodels
+303	add support for README .
+304	add event listener to registrypreview
+305	add support for theme helpers
+306	add support for helpermanager
+307	add support for vanara
+308	add license for Microsoft Corporation
+309	add support for xaml settings
+310	add support for FancyZonesLib
+311	add watchers to program file system watcher
+312	add support for fancyzones
+313	add support for general_settings
+314	add support for browserbookmark
+315	add license for Microsoft Corporation
+316	add support for README .
+317	add excludes to check . spelling . config
+318	add support for fancyzones
+319	add support for README .
+320	add support for README .
+321	add support for powertosetupcustomactions .
+322	use process_path instead of process_path .
+323	add support for user input .
+324	add support for mmm
+325	add support for null reference exception
+326	add support for rename uilib
+327	add resource manager to resource manager
+328	add support for shortcutguidesettings
+329	add support for custom slider
+330	add support for wxs setup
+331	add commandletbinding to generateallfilecomponents
+332	add support for locksmithext
+333	add support for Wmm / Helper
+334	add support for fancyzones editor
+335	add plugin uri to main . xml
+336	add registry / registry / registry /
+337	add fancyzones to zoneset
+338	add aliasmanager to viewmodels
+339	add support for unitconverter
+340	add support for native methods
+341	mmmm mmmm mmmm
+342	add support for fancyzones
+343	add support for ImageResizerViewModel
+344	add license for Microsoft Corporation
+345	add support for fancyzones
+346	add support for mainlistpage .
+347	add support for xaml
+348	add support for cmdpal . ext . shell .
+349	add support for power launcher for power users
+350	add support for README .
+351	add support for oobe new
+352	add support for xaml
+353	<extra_id_0> licensed under the MIT license .
+354	add mousepointercrosshairs crosshairs
+355	fix a bug in the README
+356	add support for oobewhatsnew
+357	add support for README .
+358	add support for fancyzones
+359	add support for windowwalker viewmodel
+360	mmm mmm mmm
+361	mmm mmm mmm mmm
+362	add support for README .
+363	add support for AdvancedPasteXAML
+364	add support for IWshRuntimeLibrary
+365	add a report to the report list .
+366	add tools / tools / MainReportTool
+367	add support for nuspec
+368	mmm mmm mmm
+369	mmm mmm mmm
+370	add task type to task list .
+371	add support for async navigation requests .
+372	add peek / dllmain / peek
+373	add killpowerlauncher to
+374	add support for user interface .
+375	add support for README .
+376	add support for data_and_PRIVACY
+377	use run . plugin . Calculator .
+378	add support for resources . resw
+379	add support for uwp .
+380	update / update / update / update / update
+381	add support for usersettingstorage
+382	add support for UnicodeInformation
+383	add support for project - test . yml
+384	add support for main window
+385	add plugin to main shell .
+386	infrastructure / usersettings / programsource . cs +
+387	add support for undocumented modules .
+388	add support for README .
+389	add stylecop analyzers to gitignore .
+390	add support for README .
+391	add support for ESRPSigning core
+392	add support for AdvancedPaste
+393	add license for VisualTreeUtils .
+394	add support for color picker settings .
+395	add support for user interface .
+396	add support for dllmain
+397	add support for fancyzones
+398	use hyjiacan . util . p4n
+399	add support for wmm
+400	add support for FancyZonesWindowProcessing .
+401	mmm mmm mmm
+402	add support for windows .
+403	add support for cpnet installation
+404	<extra_id_0> https : // github . com /
+405	add support for submissions
+406	add support for fancyzones
+407	add support for resources . resw
+408	add program argument parser tests for unit tests
+409	add support for plugin indexer .
+410	add support for usersetting
+411	add support for fancyzones data
+412	add support for querybuilder .
+413	add support for image resizer page
+414	add command bar to command bar
+415	add support for superseding async gate
+416	add support for rename context menu
+417	use System . Runtime . InteropServices
+418	add license for Microsoft Corporation
+419	mmmm mmmm
+420	add support for xaml
+421	add support for poweraccent
+422	add lock . json to lock . json
+423	add plugin . json to indexer . json
+424	add support for ISSUE template
+425	add support for xaml .
+426	add support for ISSUE request
+427	add support for websearch
+428	add support for plugin . json
+429	add support for README .
+430	add powertoys - steps . yml
+431	add a summary to the pipeline
+432	add support for readme .
+433	add support for websearch
+434	add support for top level viewmodel
+435	add support for powertoy_create
+436	add support for overlay_window
+437	add support for non - binary files
+438	add support for windows windows
+439	add commit 076e96f6832923ea56b67e37d77806c5d01a343f
+440	add support for native methods
+441	add user control to result listbox
+442	add support for xlink
+443	add support for user interface .
+444	add support for README .
+445	add support for logging .
+446	add support for build status
+447	add support for gitignore
+448	change encoding to utf - 8
+449	add support for plugin config
+450	add support for README .
+451	add support for history plugin .
+452	add support for colorPicker / colorPickerMonitor
+453	add support for CONTRIBUTING
+454	add support for README .
+455	add support for search web .
+456	move grideditorwindow to grideditorwindow
+457	add test tests for entry tests
+458	add plugin indicator to plugin indicator
+459	add support for ShellPage
+460	add support for expect - check
+461	add support for fundamentals editor
+462	add viewmodel to resultviewmodel
+463	add support for README .
+464	add apprename / apprenameuilib
