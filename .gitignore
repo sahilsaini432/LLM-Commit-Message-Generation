@@ -214,4 +214,6 @@ test/
 datasets/
 data/
 
-*.jsonl
+train.jsonl
+valid.jsonl
+val.jsonl
