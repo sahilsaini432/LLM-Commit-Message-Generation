@@ -5,10 +5,10 @@ from anyio import Path
 from dotenv import load_dotenv
 from rank_bm25 import BM25Okapi
 from nltk.tokenize import word_tokenize
-from perplexity import Perplexity
 import json
 import re
 import numpy as np
+import google.generativeai as genai
 import nltk
 import traceback
 from openai import OpenAI
@@ -105,8 +105,8 @@ def _chat_with_retry(client, req_kwargs, max_retries: int = 6):
 def main():
     # Get file path from as argument
     parser = argparse.ArgumentParser()
-    parser.add_argument("-d", "--dataInput", required=True, help="Original test file")
-    parser.add_argument("-r", "--result", required=True, help="File with gemini generated messages")
+    parser.add_argument("-d", "--dataInput", required=True, help="original test file")
+    parser.add_argument("-r", "--result", required=True, help="File with gpt generated messages")
     args = parser.parse_args()
 
     dataset = []
@@ -118,18 +118,15 @@ def main():
         # Parse JSON data
         dataset.append(json.loads(item))
 
+    # Read .gold file (assuming one sentence per line)
     with open(args.result, "r", encoding="utf8") as f:
-        results = f.readlines()
+        results = [line.strip() for line in f.readlines()]
 
     final_dataset = []
-    for item in tqdm.tqdm(results):
-        # Process each item
-        line = json.loads(item)
-        gptMsg = line["msgGPT0"]
-
+    for idx, item in enumerate(tqdm.tqdm(results)):
         # get line with same sha in dataset
-        dataItem = next((item for item in dataset if item["sha"] == line["sha"]), None)
-        dataItem["msgGPT0"] = gptMsg
+        dataItem = dataset[idx]
+        dataItem["msgGPT0"] = item
         final_dataset.append(dataItem)
 
     results = []
@@ -137,11 +134,26 @@ def main():
     path = Path(__file__).parent.parent
     env_path = Path(f"{path}/.env")
     load_dotenv(dotenv_path=env_path)
-    PERPEXITY_API_KEY = os.getenv("PERPEXITY_API_KEY")
+    GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
-    for data in tqdm.tqdm(dataset):
-        client = Perplexity(api_key=PERPEXITY_API_KEY)
+    # Set up Gemini API
+    genai.configure(api_key=GEMINI_API_KEY)
+    generation_config = {"temperature": 0.8, "top_p": 0.95, "max_output_tokens": 50}
+    # Define safety settings to be more permissive
+    safety_settings = [
+        {"category": "HARM_CATEGORY_HARASSMENT", "threshold": "BLOCK_NONE"},
+        {"category": "HARM_CATEGORY_HATE_SPEECH", "threshold": "BLOCK_NONE"},
+        {"category": "HARM_CATEGORY_SEXUALLY_EXPLICIT", "threshold": "BLOCK_NONE"},
+        {"category": "HARM_CATEGORY_DANGEROUS_CONTENT", "threshold": "BLOCK_NONE"},
+    ]
 
+    model = genai.GenerativeModel(
+        model_name="gemini-2.5-flash-lite",
+        generation_config=generation_config,
+        safety_settings=safety_settings,
+    )
+
+    for data in tqdm.tqdm(final_dataset):
         # Extract diff and msg
         diff = data["mod_diff"]
 
@@ -154,52 +166,15 @@ def main():
 
         # gpt message
         gptMsg = data["msgGPT0"]
-        words = gptMsg.split()
-        msg_list = []
-
-        for word in words:
-            if len(word) > 1:
-                if is_camel_case(word):
-                    msg_list.append(to_Underline(word))
-                else:
-                    msg_list.append(word)
-            else:
-                msg_list.append(word)
-        gptMsg = " ".join(msg_list)
+        prompt = f"""Code Diff - {diff}\n Commit Message - {gptMsg}\n How accurate is the commit message for the provided diff? \n Provide a single accuracy score from 1 to 10. A score of 1 indicates that the commit message is completely inaccurate and does not reflect the changes in the code diff at all. A score of 10 indicates that the commit message is perfectly accurate and fully describes all the changes made in the code diff. Only return the score as an integer between 1 and 10."""
 
         try:
-            req = dict(
-                model="sonar-pro",
-                messages=[
-                    {
-                        "role": "system",
-                        "content": "You are an expert code reviewer. Your task is to evaluate how accurately a given commit message describes the changes in a provided code diff.",
-                    },
-                    {
-                        "role": "user",
-                        "content": f"""Code Diff - {diff}\n Commit Message - {gptMsg}\n How accurate is the commit message for the provided diff? \n Provide a single accuracy score from 1 to 10. A score of 1 indicates that the commit message is completely inaccurate and does not reflect the changes in the code diff at all. A score of 10 indicates that the commit message is perfectly accurate and fully describes all the changes made in the code diff. Only return the score as an integer between 1 and 10. Dont provide any explanations or additional text.""",
-                    },
-                ],
-                max_tokens=50,
-                temperature=0.8,
-                top_p=0.95,
-            )
-
-            completion = _chat_with_retry(client, req)
-            score = completion.choices[0].message.content
- 
-            # convert score to int
-            score = int(re.findall(r"\d+", score)[0])
-
-            results.append(score)
-
-            # Wait to respect rate limits (TPM) before next request
-            _sleep_after_call(diff, max_tokens=50)
-
+            response = model.generate_content([prompt])
+            generated_score = response.text.strip()
+            results.append(int(re.findall(r"\d+", generated_score)[0]))
         except:
             traceback.print_exc()
             print(f"{item} has been retried 3 times and still failed.")
-            # break
 
     # Output average scores
     print(f"\nAverage Accuracy Score: {statistics.mean(results)}")

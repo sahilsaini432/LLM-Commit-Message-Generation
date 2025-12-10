@@ -5,7 +5,6 @@ from anyio import Path
 from dotenv import load_dotenv
 from rank_bm25 import BM25Okapi
 from nltk.tokenize import word_tokenize
-from perplexity import Perplexity
 import json
 import re
 import numpy as np
@@ -118,18 +117,15 @@ def main():
         # Parse JSON data
         dataset.append(json.loads(item))
 
+    # Read .gold file (assuming one sentence per line)
     with open(args.result, "r", encoding="utf8") as f:
-        results = f.readlines()
+        results = [line.strip() for line in f.readlines()]
 
     final_dataset = []
-    for item in tqdm.tqdm(results):
-        # Process each item
-        line = json.loads(item)
-        gptMsg = line["msgGPT0"]
-
+    for idx, item in enumerate(tqdm.tqdm(results)):
         # get line with same sha in dataset
-        dataItem = next((item for item in dataset if item["sha"] == line["sha"]), None)
-        dataItem["msgGPT0"] = gptMsg
+        dataItem = dataset[idx]
+        dataItem["msgGPT0"] = item
         final_dataset.append(dataItem)
 
     results = []
@@ -137,10 +133,12 @@ def main():
     path = Path(__file__).parent.parent
     env_path = Path(f"{path}/.env")
     load_dotenv(dotenv_path=env_path)
-    PERPEXITY_API_KEY = os.getenv("PERPEXITY_API_KEY")
+    OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
-    for data in tqdm.tqdm(dataset):
-        client = Perplexity(api_key=PERPEXITY_API_KEY)
+    for data in tqdm.tqdm(final_dataset):
+        client = OpenAI(
+            api_key=OPENAI_API_KEY,
+        )
 
         # Extract diff and msg
         diff = data["mod_diff"]
@@ -169,7 +167,7 @@ def main():
 
         try:
             req = dict(
-                model="sonar-pro",
+                model="gpt-4.1-2025-04-14",
                 messages=[
                     {
                         "role": "system",
@@ -177,7 +175,7 @@ def main():
                     },
                     {
                         "role": "user",
-                        "content": f"""Code Diff - {diff}\n Commit Message - {gptMsg}\n How accurate is the commit message for the provided diff? \n Provide a single accuracy score from 1 to 10. A score of 1 indicates that the commit message is completely inaccurate and does not reflect the changes in the code diff at all. A score of 10 indicates that the commit message is perfectly accurate and fully describes all the changes made in the code diff. Only return the score as an integer between 1 and 10. Dont provide any explanations or additional text.""",
+                        "content": f"""Code Diff - {diff}\n Commit Message - {gptMsg}\n How accurate is the commit message for the provided diff? \n Provide a single accuracy score from 1 to 10. A score of 1 indicates that the commit message is completely inaccurate and does not reflect the changes in the code diff at all. A score of 10 indicates that the commit message is perfectly accurate and fully describes all the changes made in the code diff. Only return the score as an integer between 1 and 10.""",
                     },
                 ],
                 max_tokens=50,
@@ -187,7 +185,7 @@ def main():
 
             completion = _chat_with_retry(client, req)
             score = completion.choices[0].message.content
- 
+
             # convert score to int
             score = int(re.findall(r"\d+", score)[0])
 

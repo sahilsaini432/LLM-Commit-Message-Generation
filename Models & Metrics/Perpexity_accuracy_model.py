@@ -118,18 +118,15 @@ def main():
         # Parse JSON data
         dataset.append(json.loads(item))
 
+    # Read .gold file (assuming one sentence per line)
     with open(args.result, "r", encoding="utf8") as f:
-        results = f.readlines()
+        results = [line.strip() for line in f.readlines()]
 
     final_dataset = []
-    for item in tqdm.tqdm(results):
-        # Process each item
-        line = json.loads(item)
-        gptMsg = line["msgGPT0"]
-
+    for idx, item in enumerate(tqdm.tqdm(results)):
         # get line with same sha in dataset
-        dataItem = next((item for item in dataset if item["sha"] == line["sha"]), None)
-        dataItem["msgGPT0"] = gptMsg
+        dataItem = dataset[idx]
+        dataItem["msgGPT0"] = item
         final_dataset.append(dataItem)
 
     results = []
@@ -139,7 +136,7 @@ def main():
     load_dotenv(dotenv_path=env_path)
     PERPEXITY_API_KEY = os.getenv("PERPEXITY_API_KEY")
 
-    for data in tqdm.tqdm(dataset):
+    for data in tqdm.tqdm(final_dataset):
         client = Perplexity(api_key=PERPEXITY_API_KEY)
 
         # Extract diff and msg
@@ -187,7 +184,7 @@ def main():
 
             completion = _chat_with_retry(client, req)
             score = completion.choices[0].message.content
- 
+
             # convert score to int
             score = int(re.findall(r"\d+", score)[0])
 

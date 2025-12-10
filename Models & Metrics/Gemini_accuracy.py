@@ -156,7 +156,7 @@ def main():
         safety_settings=safety_settings,
     )
 
-    for data in tqdm.tqdm(dataset):
+    for data in tqdm.tqdm(final_dataset):
         # Extract diff and msg
         diff = data["mod_diff"]
 

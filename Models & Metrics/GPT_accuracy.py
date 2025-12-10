@@ -138,7 +138,7 @@ def main():
     load_dotenv(dotenv_path=env_path)
     OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
-    for data in tqdm.tqdm(dataset):
+    for data in tqdm.tqdm(final_dataset):
         client = OpenAI(
             api_key=OPENAI_API_KEY,
         )
